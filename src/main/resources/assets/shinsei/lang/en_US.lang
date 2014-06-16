@@ -1,0 +1,118 @@
+itemGroup.shinseiItems=Shinsei Items
+itemGroup.shinseiBlocks=Shinsei Blocks
+itemGroup.shinseiTools=Shinsei Tools
+itemGroup.shinseiMachines=Shinsei Machines
+
+tile.claystone.name=Claystone
+tile.limestone.name=Limestone
+item.limestone_shard.name=Limestone Shard
+tile.siltstone.name=Siltstone
+item.silt.name=Silt
+
+item.split_wood.name=Split Wood
+
+tile.awood_furnace.name=Split Wood Furnace
+tile.iwood_furnace.name=Split Wood Furnace
+container.woodFurnace=Split Wood Furnace
+
+tile.aforge_furnace.name=Forge Furnace
+tile.iforge_furnace.name=Forge Furnace
+container.forgeFurnace=Forge Furnace
+
+tile.tool_bench.name=Tool Bench
+container.toolBench=Tool Bench
+
+tile.machine_press.name=Machine Press
+container.machinePress=Machine Press
+
+tile.marble_white.name=White Marble
+tile.marble_black.name=Black Marble
+tile.marble_blue.name=Blue Marble
+tile.marble_brown.name=Brown Marble
+tile.marble_cyan.name=Cyan Marble
+tile.marble_gray.name=Gray Marble
+tile.marble_green.name=Green Marble
+tile.marble_light_blue.name=Light Blue Marble
+tile.marble_lime.name=Lime Marble
+tile.marble_magenta.name=Magenta Marble
+tile.marble_orange.name=Orange Marble
+tile.marble_pink.name=Pink Marble
+tile.marble_purple.name=Purple Marble
+tile.marble_red.name=Red Marble
+tile.marble_silver.name=Silver Marble
+tile.marble_yellow.name=Yellow Marble
+
+tile.bauxite_ore.name=Bauxite Ore
+item.aluminum_ingot.name=Aluminum Ingot
+tile.aluminum_block.name=Aluminum Block
+tile.stibnite_ore.name=Stibnite Ore
+item.antimony_ingot.name=Antimony Ingot
+tile.antimony_block.name=Antimony Block
+tile.arsenic_ore.name=Arsenic Ore
+item.arsenic_powder.name=Arsenic Powder
+tile.copper_ore.name=Copper Ore
+item.copper_ingot.name=Copper Ingot
+tile.copper_block.name=Copper Block
+
+item.wood_tool_handle.name=Wooden Tool Handle
+item.copper_plate.name=Copper Plate
+item.axe_cast.name=Axe Cast
+item.hoe_cast.name=Hoe Cast
+item.pickaxe_cast.name=Pickaxe Cast
+item.shovel_cast.name=Shovel Cast
+item.sword_cast.name=Sword Cast
+
+item.aluminum_axe_head.name=Aluminum Axe Head
+item.copper_axe_head.name=Copper Axe Head
+item.stone_axe_head.name=Stone Axe Head
+item.diamond_axe_head.name=Diamond Axe Head
+item.gold_axe_head.name=Gold Axe Head
+item.iron_axe_head.name=Iron Axe Head
+item.wood_axe_head.name=Wood Axe Head
+
+item.aluminum_hoe_head.name=Aluminum Hoe Head
+item.copper_hoe_head.name=Copper Hoe Head
+item.stone_hoe_head.name=Stone Hoe Head
+item.diamond_hoe_head.name=Diamond Hoe Head
+item.gold_hoe_head.name=Gold Hoe Head
+item.iron_hoe_head.name=Iron Hoe Head
+item.wood_hoe_head.name=Wood Hoe Head
+
+item.aluminum_shovel_head.name=Aluminum Shovel Head
+item.copper_shovel_head.name=Copper Shovel Head
+item.stone_shovel_head.name=Stone Shovel Head
+item.diamond_shovel_head.name=Diamond Shovel Head
+item.gold_shovel_head.name=Gold Shovel Head
+item.iron_shovel_head.name=Iron Shovel Head
+item.wood_shovel_head.name=Wood Shovel Head
+
+item.aluminum_sword_blade.name=Aluminum Sword Blade
+item.copper_sword_blade.name=Copper Sword Blade
+item.stone_sword_blade.name=Stone Sword Blade
+item.diamond_sword_blade.name=Diamond Sword Head
+item.gold_sword_blade.name=Gold Sword Head
+item.iron_sword_blade.name=Iron Sword Blade
+item.wood_sword_blade.name=Wood Sword Blade
+
+item.aluminum_pickaxe_head.name=Aluminum Pickaxe Head
+item.copper_pickaxe_head.name=Copper Pickaxe Head
+item.stone_pickaxe_head.name=Stone Pickaxe Head
+item.diamond_pickaxe_head.name=Diamond Pickaxe Head
+item.gold_pickaxe_head.name=Gold Pickaxe Head
+item.iron_pickaxe_head.name=Iron Pickaxe Head
+item.wood_pickaxe_head.name=Wood Pickaxe Head
+
+item.aluminum_axe.name=Aluminum Axe;
+item.copper_axe.name=Copper Axe
+
+item.aluminum_hoe.name=Aluminum Hoe;
+item.copper_hoe.name=Copper Hoe;
+
+item.aluminum_pickaxe.name=Aluminum Pickaxe;
+item.copper_pickaxe.name=Copper Pickaxe;
+
+item.aluminum_shovel.name=Aluminum Shovel;
+item.copper_shovel.name=Copper Shovel;
+
+item.aluminum_sword.name=Aluminum Sword;
+item.copper_sword.name=Copper Sword;
