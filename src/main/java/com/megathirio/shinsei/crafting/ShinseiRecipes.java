@@ -27,6 +27,8 @@ public class ShinseiRecipes {
 			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemAluminumIngot, 9), ShinseiBlocks.blockAluminumBlock);
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemAntimonyIngot, 9), ShinseiBlocks.blockAntimonyBlock);
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemBismuthIngot, 9), ShinseiBlocks.blockBismuthBlock);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemCadmiumIngot, 9), ShinseiBlocks.blockCadmiumBlock);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemChromiumIngot, 9), ShinseiBlocks.blockChromiumBlock);
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemCopperIngot, 9), ShinseiBlocks.blockCopperBlock);
 
 		//Shaped
@@ -36,10 +38,12 @@ public class ShinseiRecipes {
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockForgeFurnaceIdle, 1), "@@@","@#@","$$$", '@', Blocks.brick_block, '#', Blocks.iron_bars, '$', "ingotIron"));
 			GameRegistry.addRecipe(new ItemStack(ShinseiMachines.blockToolBench, 1), "@@@","# #","# #", '@', Blocks.planks, '#', Items.stick);
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockMachinePress, 1), " @ ","@@@","@ @", '@', "ingotIron"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCopperBlock, 1), "@@@","@@@","@@@", '@', "ingotCopper"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockAluminumBlock, 1), "@@@","@@@","@@@", '@', "ingotAluminum"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockAntimonyBlock, 1), "@@@","@@@","@@@", '@', "ingotAntimony"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockBismuthBlock, 1), "@@@","@@@","@@@", '@', "ingotBismuth"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCadmiumBlock, 1), "@@@","@@@","@@@", '@', "ingotCadmium"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockChromiumBlock, 1), "@@@","@@@","@@@", '@', "ingotChromium"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCopperBlock, 1), "@@@","@@@","@@@", '@', "ingotCopper"));
 
 			//Tools Parts
 				//Axe Heads
@@ -69,6 +73,7 @@ public class ShinseiRecipes {
 			
 		// Smelting
 			GameRegistry.addSmelting(ShinseiBlocks.blockLimestone, new ItemStack(ShinseiBlocks.blockMarble), 1f);
+            GameRegistry.addSmelting(ShinseiBlocks.blockChromiteOre, new ItemStack(ShinseiIngots.itemChromiumIngot), 1f);
 			GameRegistry.addSmelting(ShinseiBlocks.blockCopperOre, new ItemStack(ShinseiIngots.itemCopperIngot), 1f);
 			GameRegistry.addSmelting(ShinseiBlocks.blockStibniteOre, new ItemStack(ShinseiIngots.itemAntimonyIngot), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.blockBismuthOre, new ItemStack(ShinseiIngots.itemBismuthIngot), 1f);
