@@ -1,5 +1,6 @@
 package com.megathirio.shinsei.core.slot;
 
+import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;

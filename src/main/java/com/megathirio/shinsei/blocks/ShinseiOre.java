@@ -2,6 +2,7 @@ package com.megathirio.shinsei.blocks;
 
 import java.util.Random;
 
+import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.creativetab.ShinseiTabs;
 import com.megathirio.shinsei.items.ShinseiDusts;
 import com.megathirio.shinsei.items.ShinseiItems;

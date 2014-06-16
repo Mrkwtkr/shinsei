@@ -3,6 +3,7 @@ package com.megathirio.shinsei.crafting;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import com.megathirio.shinsei.blocks.ShinseiBlocks;

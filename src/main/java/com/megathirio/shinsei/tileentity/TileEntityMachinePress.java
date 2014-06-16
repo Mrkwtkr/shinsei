@@ -1,15 +1,15 @@
 package com.megathirio.shinsei.tileentity;
 
-//import com.megathirio.shinsei.blocks.ShinseiMachines;
-//import com.megathirio.shinsei.core.container.ContainerForgeFurnace;
-//import com.megathirio.shinsei.core.container.ContainerWoodFurnace;
-//import com.megathirio.shinsei.items.ShinseiIngots;
-//import com.megathirio.shinsei.items.ShinseiItems;
+import com.megathirio.shinsei.blocks.ShinseiMachines;
+import com.megathirio.shinsei.core.container.ContainerForgeFurnace;
+import com.megathirio.shinsei.core.container.ContainerWoodFurnace;
+import com.megathirio.shinsei.items.ShinseiIngots;
+import com.megathirio.shinsei.items.ShinseiItems;
 
-//import net.minecraft.entity.player.EntityPlayer;
-//import net.minecraft.inventory.IInventory;
-//import net.minecraft.item.Item;
-//import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityMachinePress extends TileEntity /*implements IInventory*/{

@@ -1,5 +1,6 @@
 package com.megathirio.shinsei.items;
 
+import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.creativetab.ShinseiTabs;
 import com.megathirio.shinsei.lib.References;
 
