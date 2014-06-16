@@ -10,6 +10,7 @@ public final class ShinseiDusts {
 	//Item Variables
 		//Powders
 		public static Item itemArsenicPowder;
+        public static Item itemGraphitePowder;
 
 //Item Initialization
 	public static void init(){
@@ -19,6 +20,10 @@ public final class ShinseiDusts {
 		itemArsenicPowder = new ShinseiItem().setUnlocalizedName("arsenic_powder");
 		GameRegistry.registerItem(itemArsenicPowder, "arsenic_powder");
 		OreDictionary.registerOre("dustArsenic", new ItemStack(itemArsenicPowder));
-	
+
+        itemGraphitePowder = new ShinseiItem().setUnlocalizedName("graphite_powder");
+        GameRegistry.registerItem(itemGraphitePowder, "graphite_powder");
+        OreDictionary.registerOre("dustGraphite", new ItemStack(itemGraphitePowder));
+
 	}
 }

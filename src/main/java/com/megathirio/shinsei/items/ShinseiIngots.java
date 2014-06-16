@@ -11,6 +11,7 @@ public final class ShinseiIngots {
 		//Ingots
 		public static Item itemAluminumIngot;
 		public static Item itemAntimonyIngot;
+        public static Item itemBismuthIngot;
 		public static Item itemCopperIngot;
 
 //Item Initialization
@@ -25,6 +26,10 @@ public final class ShinseiIngots {
 		itemAntimonyIngot = new ShinseiItem().setUnlocalizedName("antimony_ingot");
 		GameRegistry.registerItem(itemAntimonyIngot, "antimony_ingot");
 		OreDictionary.registerOre("ingotAntimony", new ItemStack(itemAntimonyIngot));
+
+        itemBismuthIngot = new ShinseiItem().setUnlocalizedName("bismuth_ingot");
+        GameRegistry.registerItem(itemBismuthIngot, "bismuth_ingot");
+        OreDictionary.registerOre("ingotBismuth", new ItemStack(itemBismuthIngot));
 
 		itemCopperIngot = new ShinseiItem().setUnlocalizedName("copper_ingot");
 		GameRegistry.registerItem(itemCopperIngot, "copper_ingot");

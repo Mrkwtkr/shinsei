@@ -17,12 +17,15 @@ public final class ShinseiBlocks {
 	//Native Element Minerals
 	public static Block blockArsenicOre;
 	public static Block blockBauxiteOre;
+    public static Block blockBismuthOre;
 	public static Block blockCopperOre;
-	public static Block blockStibniteOre;	
+    public static Block blockGraphiteOre;
+	public static Block blockStibniteOre;
 
 	//Resource Blocks
 	public static Block blockAntimonyBlock;
 	public static Block blockAluminumBlock;
+    public static Block blockBismuthBlock;
 	public static Block blockCopperBlock;
 	
 	
@@ -39,19 +42,27 @@ public final class ShinseiBlocks {
 	
 	//Block Initialization
 		//Native element minerals
-		//Bauxite(Aluminum) is processed in Pressurized Smelter
+		//Bauxite(Aluminum) - processed in Pressurized Smelter
 		blockBauxiteOre = new ShinseiOre(Material.rock).setBlockName("bauxite_ore");
 		GameRegistry.registerBlock(blockBauxiteOre, "bauxite_ore");
 		OreDictionary.registerOre("oreAluminum", new ItemStack(blockBauxiteOre));
-		//Stibnite(Antimony) is processed in Furnaces
+		//Stibnite(Antimony) - processed in Furnaces
 		blockStibniteOre = new ShinseiOre(Material.rock).setBlockName("stibnite_ore");
 		GameRegistry.registerBlock(blockStibniteOre, "stibnite_ore");
 		OreDictionary.registerOre("oreAntimony", new ItemStack(blockStibniteOre));
-		//Arsenic
-		blockArsenicOre = new ShinseiOre(Material.rock).setBlockName("arsenic_ore").setLightLevel(.825F);
+		//Arsenic - dropped as powder from ore block
+		blockArsenicOre = new ShinseiOre(Material.rock).setBlockName("arsenic_ore");
 		GameRegistry.registerBlock(blockArsenicOre, "arsenic_ore");
 		OreDictionary.registerOre("oreArsenic", new ItemStack(blockArsenicOre));
-		
+        //Bismuth - processed in Furnaces
+        blockBismuthOre = new ShinseiOre(Material.rock).setBlockName("bismuth_ore");
+        GameRegistry.registerBlock(blockBismuthOre, "bismuth_ore");
+        OreDictionary.registerOre("oreBismuth", new ItemStack(blockBismuthOre));
+        //Graphite - dropped as powder from ore block
+        blockGraphiteOre = new ShinseiOre(Material.rock).setBlockName("graphite_ore");
+        GameRegistry.registerBlock(blockGraphiteOre, "graphite_ore");
+        OreDictionary.registerOre("oreGraphite", new ItemStack(blockGraphiteOre));
+
 
 		blockCopperOre = new ShinseiOre(Material.rock).setBlockName("copper_ore");
 		GameRegistry.registerBlock(blockCopperOre, "copper_ore");
@@ -69,15 +80,19 @@ public final class ShinseiBlocks {
 		GameRegistry.registerBlock(blockSiltstone, "siltstone");		 
 
 		//Resource Blocks
-		blockAluminumBlock = new ShinseiOre(Material.rock).setBlockName("aluminum_block");
+		blockAluminumBlock = new ShinseiOre(Material.iron).setBlockName("aluminum_block").setHardness(4.0F).setResistance(10.0F);
 		GameRegistry.registerBlock(blockAluminumBlock, "aluminum_block");
 		OreDictionary.registerOre("blockAluminum", new ItemStack(blockAluminumBlock));
 
-		blockAntimonyBlock = new ShinseiOre(Material.rock).setBlockName("antimony_block");
+		blockAntimonyBlock = new ShinseiOre(Material.rock).setBlockName("antimony_block").setHardness(2.0F).setResistance(5.0F);
 		GameRegistry.registerBlock(blockAntimonyBlock, "antimony_block");
 		OreDictionary.registerOre("blockAntimony", new ItemStack(blockAntimonyBlock));
 
-		blockCopperBlock = new ShinseiOre(Material.rock).setBlockName("copper_block");
+        blockBismuthBlock = new ShinseiOre(Material.rock).setBlockName("bismuth_block").setHardness(10.0F).setResistance(20.0F);
+        GameRegistry.registerBlock(blockBismuthBlock, "bismuth_block");
+        OreDictionary.registerOre("blockBismuth", new ItemStack(blockBismuthBlock));
+
+		blockCopperBlock = new ShinseiOre(Material.rock).setBlockName("copper_block").setHardness(5.0F).setResistance(10.0F);
 		GameRegistry.registerBlock(blockCopperBlock, "copper_block");
 
 		//Brass - alloy of copper + zinc

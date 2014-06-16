@@ -38,6 +38,8 @@ public class ShinseiOre extends Block{
 			return Items.clay_ball;
 		}else if(this == ShinseiBlocks.blockArsenicOre){
 			return ShinseiDusts.itemArsenicPowder;
+        }else if(this == ShinseiBlocks.blockGraphiteOre){
+            return ShinseiDusts.itemGraphitePowder;
 		}else{
 			return Item.getItemFromBlock(this);
 		}
@@ -54,6 +56,8 @@ public class ShinseiOre extends Block{
 			return 1 + random.nextInt(2);
 		}else if(this == ShinseiBlocks.blockArsenicOre){
 			return 3 + random.nextInt(6);
+        }else if(this == ShinseiBlocks.blockGraphiteOre){
+            return 3 + random.nextInt(8);
 		}else{
 			return 1;
 		}

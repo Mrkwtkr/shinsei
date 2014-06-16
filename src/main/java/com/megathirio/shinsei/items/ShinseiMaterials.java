@@ -16,6 +16,7 @@ public class ShinseiMaterials {
 	*/
 
 	public static ToolMaterial materialAluminum = EnumHelper.addToolMaterial("materialAluminum", 2, 175, 5.0F, 1.5F, 16);
+    public static ToolMaterial materialBismuth = EnumHelper.addToolMaterial("materialBismuth", 1, 500, 2.0F, 1.0F, 5);
 	public static ToolMaterial materialCopper = EnumHelper.addToolMaterial("materialCopper", 2, 200, 6.0F, 1.5F, 16);
 	
 	/*
