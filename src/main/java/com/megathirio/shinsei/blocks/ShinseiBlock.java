@@ -14,10 +14,10 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
-public class ShinseiOre extends Block{
+public class ShinseiBlock extends Block{
 
 	//Default Block Properties
-	public ShinseiOre(Material material){
+	public ShinseiBlock(Material material){
 		
 		super(material);
 

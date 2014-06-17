@@ -56,6 +56,11 @@ tile.bismuth_block.name=Bismuth Block
 tile.graphite_ore.name=Graphite Ore
 item.graphite_powder.name=Graphite
 tile.copper_ore.name=Copper Ore
+item.cadmium_ingot.name=Cadmium Ingot
+tile.cadmium_block.name=Cadmium Block
+item.chromium_ingot.name=Chromium Ingot
+tile.chromium_block.name=Chromium Block
+tile.chromite_ore.name=Chromite Ore
 item.copper_ingot.name=Copper Ingot
 tile.copper_block.name=Copper Block
 
