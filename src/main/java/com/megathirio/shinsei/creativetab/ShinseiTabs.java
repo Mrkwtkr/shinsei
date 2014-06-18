@@ -29,14 +29,14 @@ public final class ShinseiTabs {
 		blocksTab = new CreativeTabs("shinseiBlocks"){
 			@SideOnly(Side.CLIENT)
 			public Item getTabIconItem(){
-				return Item.getItemFromBlock(ShinseiBlocks.blockBauxiteOre) ;
+				return Item.getItemFromBlock(ShinseiBlocks.oreBauxite) ;
 			}
 		};
 
 		itemsTab = new CreativeTabs("shinseiItems"){
 			@SideOnly(Side.CLIENT)
 			public Item getTabIconItem(){
-				return ShinseiIngots.itemAluminumIngot;
+				return ShinseiIngots.ingotAluminum;
 			}
 		};
 

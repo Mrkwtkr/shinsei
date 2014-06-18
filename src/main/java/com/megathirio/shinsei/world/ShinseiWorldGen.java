@@ -39,15 +39,15 @@ public class ShinseiWorldGen implements IWorldGenerator{
 
 	public void generateSurface(Random random, int chunkX, int chunkZ, World world) {
 		//addOreSpawn(Block name, world, random, X Pos, Z Pos, Min Vein Size, Max Vein Size, Spawn Chances, Min Y Pos, Max Y Pos); 
-		addOreSpawn(ShinseiBlocks.blockArsenicOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.blockBauxiteOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.blockBismuthOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.blockStibniteOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.blockChromiteOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.blockIridiumOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.blockCopperOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.blockGraphiteOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.blockLeadOre, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+		addOreSpawn(ShinseiBlocks.oreArsenic, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+		addOreSpawn(ShinseiBlocks.oreBauxite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+        addOreSpawn(ShinseiBlocks.oreBismuth, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+		addOreSpawn(ShinseiBlocks.oreStibnite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+        addOreSpawn(ShinseiBlocks.oreChromite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+        addOreSpawn(ShinseiBlocks.oreIridium, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+		addOreSpawn(ShinseiBlocks.oreCopper, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+        addOreSpawn(ShinseiBlocks.oreGraphite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
+        addOreSpawn(ShinseiBlocks.oreLead, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
 		addOreSpawn(ShinseiBlocks.blockClaystone, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
 		addOreSpawn(ShinseiBlocks.blockLimestone, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
 	}

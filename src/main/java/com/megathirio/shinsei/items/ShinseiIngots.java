@@ -9,15 +9,15 @@ public final class ShinseiIngots {
 
 	//Item Variables
         //Ingots
-        public static Item itemAluminumIngot;
-        public static Item itemAntimonyIngot;
-        public static Item itemBismuthIngot;
-        public static Item itemCadmiumIngot;
-        public static Item itemChromiumIngot;
-        public static Item itemCopperIngot;
-        public static Item itemIndiumIngot;
-        public static Item itemIridiumIngot;
-        public static Item itemLeadIngot;
+        public static Item ingotAluminum;
+        public static Item ingotAntimony;
+        public static Item ingotBismuth;
+        public static Item ingotCadmium;
+        public static Item ingotChromium;
+        public static Item ingotCopper;
+        public static Item ingotIndium;
+        public static Item ingotIridium;
+        public static Item ingotLead;
 
 //Item Initialization
     public static void init(){
@@ -26,48 +26,48 @@ public final class ShinseiIngots {
 		//Ingots
 
         //Aluminum - processed in Pressurized Smelter from Aluminum Ore
-		itemAluminumIngot = new ShinseiItem().setUnlocalizedName("aluminum_ingot");
-		GameRegistry.registerItem(itemAluminumIngot, "aluminum_ingot");
-		OreDictionary.registerOre("ingotAluminum", new ItemStack(itemAluminumIngot));
+        ingotAluminum = new ShinseiItem().setUnlocalizedName("aluminum_ingot");
+		GameRegistry.registerItem(ingotAluminum, "aluminum_ingot");
+		OreDictionary.registerOre("ingotAluminum", new ItemStack(ingotAluminum));
 
 	    //Antimony - processed in Furnaces from Antimony Ore
-		itemAntimonyIngot = new ShinseiItem().setUnlocalizedName("antimony_ingot");
-		GameRegistry.registerItem(itemAntimonyIngot, "antimony_ingot");
-		OreDictionary.registerOre("ingotAntimony", new ItemStack(itemAntimonyIngot));
+        ingotAntimony = new ShinseiItem().setUnlocalizedName("antimony_ingot");
+		GameRegistry.registerItem(ingotAntimony, "antimony_ingot");
+		OreDictionary.registerOre("ingotAntimony", new ItemStack(ingotAntimony));
 
         //Bismuth - processed in Furnaces from Bismuth Ore
-        itemBismuthIngot = new ShinseiItem().setUnlocalizedName("bismuth_ingot");
-        GameRegistry.registerItem(itemBismuthIngot, "bismuth_ingot");
-        OreDictionary.registerOre("ingotBismuth", new ItemStack(itemBismuthIngot));
+        ingotBismuth = new ShinseiItem().setUnlocalizedName("bismuth_ingot");
+        GameRegistry.registerItem(ingotBismuth, "bismuth_ingot");
+        OreDictionary.registerOre("ingotBismuth", new ItemStack(ingotBismuth));
 
         //Cadmium - Byproduct of Zinc Ore processing
-        itemCadmiumIngot = new ShinseiItem().setUnlocalizedName("cadmium_ingot");
-        GameRegistry.registerItem(itemCadmiumIngot, "cadmium_ingot");
-        OreDictionary.registerOre("ingotCadmium", new ItemStack(itemCadmiumIngot));
+        ingotCadmium = new ShinseiItem().setUnlocalizedName("cadmium_ingot");
+        GameRegistry.registerItem(ingotCadmium, "cadmium_ingot");
+        OreDictionary.registerOre("ingotCadmium", new ItemStack(ingotCadmium));
 
         //Chromium - processed in furnaces from Chromite Ore
-        itemChromiumIngot = new ShinseiItem().setUnlocalizedName("chromium_ingot");
-        GameRegistry.registerItem(itemChromiumIngot, "chromium_ingot");
-        OreDictionary.registerOre("ingotChromium", new ItemStack(itemChromiumIngot));
+        ingotChromium = new ShinseiItem().setUnlocalizedName("chromium_ingot");
+        GameRegistry.registerItem(ingotChromium, "chromium_ingot");
+        OreDictionary.registerOre("ingotChromium", new ItemStack(ingotChromium));
 
         //Copper - processed in Furnaces from Copper Ore
-		itemCopperIngot = new ShinseiItem().setUnlocalizedName("copper_ingot");
-		GameRegistry.registerItem(itemCopperIngot, "copper_ingot");
-		OreDictionary.registerOre("ingotCopper", new ItemStack(itemCopperIngot));
+        ingotCopper = new ShinseiItem().setUnlocalizedName("copper_ingot");
+		GameRegistry.registerItem(ingotCopper, "copper_ingot");
+		OreDictionary.registerOre("ingotCopper", new ItemStack(ingotCopper));
 
         //Indium - Byproduct of Zinc Ore processing
-        itemIndiumIngot = new ShinseiItem().setUnlocalizedName("indium_ingot");
-        GameRegistry.registerItem(itemIndiumIngot, "indium_ingot");
-        OreDictionary.registerOre("ingotIndium", new ItemStack(itemIndiumIngot));
+        ingotIndium = new ShinseiItem().setUnlocalizedName("indium_ingot");
+        GameRegistry.registerItem(ingotIndium, "indium_ingot");
+        OreDictionary.registerOre("ingotIndium", new ItemStack(ingotIndium));
 
         //Iridium - Iridium powder?
-        itemIridiumIngot = new ShinseiItem().setUnlocalizedName("iridium_ingot");
-        GameRegistry.registerItem(itemIridiumIngot, "iridium_ingot");
-        OreDictionary.registerOre("ingotIridium", new ItemStack(itemIridiumIngot));
+        ingotIridium = new ShinseiItem().setUnlocalizedName("iridium_ingot");
+        GameRegistry.registerItem(ingotIridium, "iridium_ingot");
+        OreDictionary.registerOre("ingotIridium", new ItemStack(ingotIridium));
 
         //Lead - processed in furnaces from Lead Ore
-        itemLeadIngot = new ShinseiItem().setUnlocalizedName("lead_ingot");
-        GameRegistry.registerItem(itemLeadIngot, "lead_ingot");
-        OreDictionary.registerOre("ingotLead", new ItemStack(itemLeadIngot));
+        ingotLead = new ShinseiItem().setUnlocalizedName("lead_ingot");
+        GameRegistry.registerItem(ingotLead, "lead_ingot");
+        OreDictionary.registerOre("ingotLead", new ItemStack(ingotLead));
 	}
 }

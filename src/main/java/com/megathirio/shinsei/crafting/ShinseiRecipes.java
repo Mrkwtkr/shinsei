@@ -24,15 +24,15 @@ public class ShinseiRecipes {
 		//Shapeless
 			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiBlocks.blockLimestone), ShinseiItems.itemLimestoneShard, ShinseiItems.itemLimestoneShard);
 			GameRegistry.addShapelessRecipe(new ItemStack(Blocks.clay), ShinseiItems.itemSilt, ShinseiItems.itemSilt, ShinseiItems.itemSilt, Blocks.dirt);
-			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemAluminumIngot, 9), ShinseiBlocks.blockAluminumBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemAntimonyIngot, 9), ShinseiBlocks.blockAntimonyBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemBismuthIngot, 9), ShinseiBlocks.blockBismuthBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemCadmiumIngot, 9), ShinseiBlocks.blockCadmiumBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemChromiumIngot, 9), ShinseiBlocks.blockChromiumBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemCopperIngot, 9), ShinseiBlocks.blockCopperBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemIndiumIngot, 9), ShinseiBlocks.blockIndiumBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemIridiumIngot, 9), ShinseiBlocks.blockIridiumBlock);
-            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.itemLeadIngot, 9), ShinseiBlocks.blockLeadBlock);
+			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotAluminum, 9), ShinseiBlocks.blockAluminum);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotAntimony, 9), ShinseiBlocks.blockAntimony);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotBismuth, 9), ShinseiBlocks.blockBismuth);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotCadmium, 9), ShinseiBlocks.blockCadmium);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotChromium, 9), ShinseiBlocks.blockChromium);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotCopper, 9), ShinseiBlocks.blockCopper);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotIndium, 9), ShinseiBlocks.blockIndium);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotIridium, 9), ShinseiBlocks.blockIridium);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotLead, 9), ShinseiBlocks.blockLead);
 
 		//Shaped
 			//Machines
@@ -43,15 +43,15 @@ public class ShinseiRecipes {
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockMachinePress, 1), " @ ","@@@","@ @", '@', "ingotIron"));
 
             //Blocks
-			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockAluminumBlock, 1), "@@@","@@@","@@@", '@', "ingotAluminum"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockAntimonyBlock, 1), "@@@","@@@","@@@", '@', "ingotAntimony"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockBismuthBlock, 1), "@@@","@@@","@@@", '@', "ingotBismuth"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCadmiumBlock, 1), "@@@","@@@","@@@", '@', "ingotCadmium"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockChromiumBlock, 1), "@@@","@@@","@@@", '@', "ingotChromium"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCopperBlock, 1), "@@@","@@@","@@@", '@', "ingotCopper"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockIndiumBlock, 1), "@@@","@@@","@@@", '@', "ingotIndium"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockIridiumBlock, 1), "@@@","@@@","@@@", '@', "ingotIridium"));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockLeadBlock, 1), "@@@","@@@","@@@", '@', "ingotLead"));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockAluminum, 1), "@@@","@@@","@@@", '@', "ingotAluminum"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockAntimony, 1), "@@@","@@@","@@@", '@', "ingotAntimony"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockBismuth, 1), "@@@","@@@","@@@", '@', "ingotBismuth"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCadmium, 1), "@@@","@@@","@@@", '@', "ingotCadmium"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockChromium, 1), "@@@","@@@","@@@", '@', "ingotChromium"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockCopper, 1), "@@@","@@@","@@@", '@', "ingotCopper"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockIndium, 1), "@@@","@@@","@@@", '@', "ingotIndium"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockIridium, 1), "@@@","@@@","@@@", '@', "ingotIridium"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.blockLead, 1), "@@@","@@@","@@@", '@', "ingotLead"));
 
 			//Tools Parts
 				//Axe Heads
@@ -81,11 +81,11 @@ public class ShinseiRecipes {
 			
 		// Smelting
 			GameRegistry.addSmelting(ShinseiBlocks.blockLimestone, new ItemStack(ShinseiBlocks.blockMarble), 1f);
-            GameRegistry.addSmelting(ShinseiBlocks.blockChromiteOre, new ItemStack(ShinseiIngots.itemChromiumIngot), 1f);
-			GameRegistry.addSmelting(ShinseiBlocks.blockCopperOre, new ItemStack(ShinseiIngots.itemCopperIngot), 1f);
-			GameRegistry.addSmelting(ShinseiBlocks.blockStibniteOre, new ItemStack(ShinseiIngots.itemAntimonyIngot), 1f);
-            GameRegistry.addSmelting(ShinseiBlocks.blockBismuthOre, new ItemStack(ShinseiIngots.itemBismuthIngot), 1f);
-            GameRegistry.addSmelting(ShinseiBlocks.blockLeadOre, new ItemStack(ShinseiIngots.itemLeadIngot), 1f);
+            GameRegistry.addSmelting(ShinseiBlocks.oreChromite, new ItemStack(ShinseiIngots.ingotChromium), 1f);
+			GameRegistry.addSmelting(ShinseiBlocks.oreCopper, new ItemStack(ShinseiIngots.ingotCopper), 1f);
+			GameRegistry.addSmelting(ShinseiBlocks.oreStibnite, new ItemStack(ShinseiIngots.ingotAntimony), 1f);
+            GameRegistry.addSmelting(ShinseiBlocks.oreBismuth, new ItemStack(ShinseiIngots.ingotBismuth), 1f);
+            GameRegistry.addSmelting(ShinseiBlocks.oreLead, new ItemStack(ShinseiIngots.ingotLead), 1f);
 
 	}
 

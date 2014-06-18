@@ -48,7 +48,7 @@ public class MachinePressCraftingManager
     	
 		//Tool Parts
     		//Casts
-    		this.addRecipe(new ItemStack(ShinseiTools.itemCopperPlate, 3),new Object[] {"@"," ", '@', ShinseiBlocks.blockCopperBlock});
+    		this.addRecipe(new ItemStack(ShinseiTools.itemCopperPlate, 3),new Object[] {"@"," ", '@', ShinseiBlocks.blockCopper});
     		this.addRecipe(new ItemStack(ShinseiTools.itemAxeCast, 1),new Object[] {"@","#", '@', ShinseiTools.itemStoneAxeHead, '#', ShinseiTools.itemCopperPlate});
     		this.addRecipe(new ItemStack(ShinseiTools.itemHoeCast, 1),new Object[] {"@","#", '@', ShinseiTools.itemStoneHoeHead, '#', ShinseiTools.itemCopperPlate});
     		this.addRecipe(new ItemStack(ShinseiTools.itemPickaxeCast, 1),new Object[] {"@","#", '@', ShinseiTools.itemStonePickaxeHead, '#', ShinseiTools.itemCopperPlate});
@@ -57,36 +57,36 @@ public class MachinePressCraftingManager
 
     	
     		//Axe Heads
-			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumAxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemAluminumIngot, '#', ShinseiTools.itemAxeCast});
-			this.addRecipe(new ItemStack(ShinseiTools.itemCopperAxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemCopperIngot, '#', ShinseiTools.itemAxeCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumAxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotAluminum, '#', ShinseiTools.itemAxeCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemCopperAxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotCopper, '#', ShinseiTools.itemAxeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemGoldAxeHead, 1),new Object[] {"@","#", '@', Items.gold_ingot, '#', ShinseiTools.itemAxeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemDiamondAxeHead, 1),new Object[] {"@","#", '@', Items.diamond, '#', ShinseiTools.itemAxeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemIronAxeHead, 1),new Object[] {"@","#", '@', Items.iron_ingot, '#', ShinseiTools.itemAxeCast});
 	
 			//Hoe Heads
-			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumHoeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemAluminumIngot, '#', ShinseiTools.itemHoeCast});
-			this.addRecipe(new ItemStack(ShinseiTools.itemCopperHoeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemCopperIngot, '#', ShinseiTools.itemHoeCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumHoeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotAluminum, '#', ShinseiTools.itemHoeCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemCopperHoeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotCopper, '#', ShinseiTools.itemHoeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemGoldHoeHead, 1),new Object[] {"@","#", '@', Items.gold_ingot, '#', ShinseiTools.itemHoeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemDiamondHoeHead, 1),new Object[] {"@","#", '@', Items.diamond, '#', ShinseiTools.itemHoeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemIronHoeHead, 1),new Object[] {"@","#", '@', Items.iron_ingot, '#', ShinseiTools.itemHoeCast});
 		
 			//Pickaxe Heads
-			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumPickaxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemAluminumIngot, '#', ShinseiTools.itemPickaxeCast});
-			this.addRecipe(new ItemStack(ShinseiTools.itemCopperPickaxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemCopperIngot, '#', ShinseiTools.itemPickaxeCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumPickaxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotAluminum, '#', ShinseiTools.itemPickaxeCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemCopperPickaxeHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotCopper, '#', ShinseiTools.itemPickaxeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemGoldPickaxeHead, 1),new Object[] {"@","#", '@', Items.gold_ingot, '#', ShinseiTools.itemPickaxeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemDiamondPickaxeHead, 1),new Object[] {"@","#", '@', Items.diamond, '#', ShinseiTools.itemPickaxeCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemIronPickaxeHead, 1),new Object[] {"@","#", '@', Items.iron_ingot, '#', ShinseiTools.itemPickaxeCast});
 		
 			//Shovel Heads
-			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumShovelHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemAluminumIngot, '#', ShinseiTools.itemShovelCast});
-			this.addRecipe(new ItemStack(ShinseiTools.itemCopperShovelHead, 1),new Object[] {"@","#", '@', ShinseiIngots.itemCopperIngot, '#', ShinseiTools.itemShovelCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumShovelHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotAluminum, '#', ShinseiTools.itemShovelCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemCopperShovelHead, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotCopper, '#', ShinseiTools.itemShovelCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemGoldShovelHead, 1),new Object[] {"@","#", '@', Items.gold_ingot, '#', ShinseiTools.itemShovelCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemDiamondShovelHead, 1),new Object[] {"@","#", '@', Items.diamond, '#', ShinseiTools.itemShovelCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemIronShovelHead, 1),new Object[] {"@","#", '@', Items.iron_ingot, '#', ShinseiTools.itemShovelCast});
  		
 			//Sword Blades
-			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumSwordBlade, 1),new Object[] {"@","#", '@', ShinseiIngots.itemAluminumIngot, '#', ShinseiTools.itemSwordCast});
-			this.addRecipe(new ItemStack(ShinseiTools.itemCopperSwordBlade, 1),new Object[] {"@","#", '@', ShinseiIngots.itemCopperIngot, '#', ShinseiTools.itemSwordCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemAluminumSwordBlade, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotAluminum, '#', ShinseiTools.itemSwordCast});
+			this.addRecipe(new ItemStack(ShinseiTools.itemCopperSwordBlade, 1),new Object[] {"@","#", '@', ShinseiIngots.ingotCopper, '#', ShinseiTools.itemSwordCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemGoldSwordBlade, 1),new Object[] {"@","#", '@', Items.gold_ingot, '#', ShinseiTools.itemSwordCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemDiamondSwordBlade, 1),new Object[] {"@","#", '@', Items.diamond, '#', ShinseiTools.itemSwordCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemIronSwordBlade, 1),new Object[] {"@","#", '@', Items.iron_ingot, '#', ShinseiTools.itemSwordCast});

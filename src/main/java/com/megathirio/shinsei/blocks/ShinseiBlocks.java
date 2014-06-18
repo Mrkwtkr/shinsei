@@ -13,26 +13,26 @@ public final class ShinseiBlocks {
 
 //Block Variables
 	//Native Element Minerals
-	public static Block blockArsenicOre;
-	public static Block blockBauxiteOre;
-    public static Block blockBismuthOre;
-    public static Block blockChromiteOre;
-	public static Block blockCopperOre;
-    public static Block blockGraphiteOre;
-	public static Block blockStibniteOre;
-    public static Block blockIridiumOre;
-    public static Block blockLeadOre;
+	public static Block oreArsenic;
+	public static Block oreBauxite;
+    public static Block oreBismuth;
+    public static Block oreChromite;
+	public static Block oreCopper;
+    public static Block oreGraphite;
+	public static Block oreStibnite;
+    public static Block oreIridium;
+    public static Block oreLead;
 
 	//Resource Blocks
-	public static Block blockAntimonyBlock;
-	public static Block blockAluminumBlock;
-    public static Block blockBismuthBlock;
-    public static Block blockCadmiumBlock;
-    public static Block blockChromiumBlock;
-	public static Block blockCopperBlock;
-    public static Block blockIndiumBlock;
-    public static Block blockIridiumBlock;
-    public static Block blockLeadBlock;
+	public static Block blockAntimony;
+	public static Block blockAluminum;
+    public static Block blockBismuth;
+    public static Block blockCadmium;
+    public static Block blockChromium;
+	public static Block blockCopper;
+    public static Block blockIndium;
+    public static Block blockIridium;
+    public static Block blockLead;
 
 	
 	//Mineral Blocks
@@ -52,58 +52,48 @@ public final class ShinseiBlocks {
         	//Harvest levels: Wood:0; Stone:1; Iron:2; Diamond:3; Gold:0
 
     		//Bauxite - processed in Pressurized Smelter
-    		blockBauxiteOre = new ShinseiBlock(Material.rock).setBlockName("bauxite_ore");
-            blockBauxiteOre.setHarvestLevel("pickaxe", 1);
-    		GameRegistry.registerBlock(blockBauxiteOre, "bauxite_ore");
-    		OreDictionary.registerOre("oreAluminum", new ItemStack(blockBauxiteOre));
+    		oreBauxite = new ShinseiOre(Material.rock).setBlockName("bauxite_ore");
+    		GameRegistry.registerBlock(oreBauxite, "bauxite_ore");
+    		OreDictionary.registerOre("oreAluminum", new ItemStack(oreBauxite));
 
 	    	//Stibnite - processed in Furnaces
-    		blockStibniteOre = new ShinseiBlock(Material.rock).setBlockName("stibnite_ore");
-            blockStibniteOre.setHarvestLevel("pickaxe", 1);
-    		GameRegistry.registerBlock(blockStibniteOre, "stibnite_ore");
-    		OreDictionary.registerOre("oreAntimony", new ItemStack(blockStibniteOre));
+    		oreStibnite = new ShinseiOre(Material.rock).setBlockName("stibnite_ore");
+    		OreDictionary.registerOre("oreAntimony", new ItemStack(oreStibnite));
 
     		//Arsenic Ore - drops Arsenic
-    		blockArsenicOre = new ShinseiBlock(Material.rock).setBlockName("arsenic_ore");
-            blockArsenicOre.setHarvestLevel("pickaxe", 1);
-    		GameRegistry.registerBlock(blockArsenicOre, "arsenic_ore");
-    		OreDictionary.registerOre("oreArsenic", new ItemStack(blockArsenicOre));
+    		oreArsenic = new ShinseiOre(Material.rock).setBlockName("arsenic_ore");
+    		GameRegistry.registerBlock(oreArsenic, "arsenic_ore");
+    		OreDictionary.registerOre("oreArsenic", new ItemStack(oreArsenic));
 
             //Bismuth Ore - processed in Furnaces
-            blockBismuthOre = new ShinseiBlock(Material.rock).setBlockName("bismuth_ore");
-            blockBismuthOre.setHarvestLevel("pickaxe", 1);
-            GameRegistry.registerBlock(blockBismuthOre, "bismuth_ore");
-            OreDictionary.registerOre("oreBismuth", new ItemStack(blockBismuthOre));
+            oreBismuth = new ShinseiOre(Material.rock).setBlockName("bismuth_ore");
+            GameRegistry.registerBlock(oreBismuth, "bismuth_ore");
+            OreDictionary.registerOre("oreBismuth", new ItemStack(oreBismuth));
 
             //Graphite Ore - drops Graphite
-            blockGraphiteOre = new ShinseiBlock(Material.rock).setBlockName("graphite_ore");
-            blockGraphiteOre.setHarvestLevel("pickaxe", 1);
-            GameRegistry.registerBlock(blockGraphiteOre, "graphite_ore");
-            OreDictionary.registerOre("oreGraphite", new ItemStack(blockGraphiteOre));
+            oreGraphite = new ShinseiOre(Material.rock).setBlockName("graphite_ore");
+            GameRegistry.registerBlock(oreGraphite, "graphite_ore");
+            OreDictionary.registerOre("oreGraphite", new ItemStack(oreGraphite));
 
             //Chromite Ore - processed in Furnaces
-            blockChromiteOre = new ShinseiBlock(Material.rock).setBlockName("chromite_ore");
-            blockChromiteOre.setHarvestLevel("pickaxe", 1);
-            GameRegistry.registerBlock(blockChromiteOre, "chromite_ore");
-            OreDictionary.registerOre("oreChromite", new ItemStack(blockChromiteOre));
+            oreChromite = new ShinseiOre(Material.rock).setBlockName("chromite_ore");
+            GameRegistry.registerBlock(oreChromite, "chromite_ore");
+            OreDictionary.registerOre("oreChromite", new ItemStack(oreChromite));
 
             //Copper Ore - processed in Furnaces
-    		blockCopperOre = new ShinseiBlock(Material.rock).setBlockName("copper_ore");
-            blockCopperOre.setHarvestLevel("pickaxe", 1);
-    		GameRegistry.registerBlock(blockCopperOre, "copper_ore");
-    		OreDictionary.registerOre("oreCopper", new ItemStack(blockCopperOre));
+    		oreCopper = new ShinseiOre(Material.rock).setBlockName("copper_ore");
+    		GameRegistry.registerBlock(oreCopper, "copper_ore");
+    		OreDictionary.registerOre("oreCopper", new ItemStack(oreCopper));
 
             //Iridium Ore - processed in
-            blockIridiumOre = new ShinseiBlock(Material.rock).setBlockName("iridium_ore");
-            blockIridiumOre.setHarvestLevel("pickaxe", 1);
-            GameRegistry.registerBlock(blockIridiumOre, "iridium_ore");
-            OreDictionary.registerOre("oreIridium", new ItemStack(blockIridiumOre));
+            oreIridium = new ShinseiOre(Material.rock).setBlockName("iridium_ore");
+            GameRegistry.registerBlock(oreIridium, "iridium_ore");
+            OreDictionary.registerOre("oreIridium", new ItemStack(oreIridium));
 
             //Lead Ore - processed in Furnaces
-            blockLeadOre = new ShinseiBlock(Material.rock).setBlockName("lead_ore");
-            blockLeadOre.setHarvestLevel("pickaxe", 1);
-            GameRegistry.registerBlock(blockLeadOre, "lead_ore");
-            OreDictionary.registerOre("oreLead", new ItemStack(blockLeadOre));
+            oreLead = new ShinseiOre(Material.rock).setBlockName("lead_ore");
+            GameRegistry.registerBlock(oreLead, "lead_ore");
+            OreDictionary.registerOre("oreLead", new ItemStack(oreLead));
 
     		//Mineral Blocks
     		blockClaystone = new ShinseiBlock(Material.clay).setBlockName("claystone").setResistance(2F).setHardness(0.5F);
@@ -122,49 +112,44 @@ public final class ShinseiBlocks {
             OreDictionary.registerOre("blockSilt", new ItemStack(blockSiltstone));
 
     		//Resource Blocks
-    		blockAluminumBlock = new ShinseiBlock(Material.iron).setBlockName("aluminum_block").setHardness(2.75F).setResistance(5.5F);
-            blockAluminumBlock.setHarvestLevel("pickaxe", 2);
-    		GameRegistry.registerBlock(blockAluminumBlock, "aluminum_block");
-    		OreDictionary.registerOre("blockAluminum", new ItemStack(blockAluminumBlock));
+    		blockAluminum = new ShinseiBlock(Material.iron).setBlockName("aluminum_block").setHardness(2.75F).setResistance(5.5F);
+    		GameRegistry.registerBlock(blockAluminum, "aluminum_block");
+    		OreDictionary.registerOre("blockAluminum", new ItemStack(blockAluminum));
 
-    		blockAntimonyBlock = new ShinseiBlock(Material.iron).setBlockName("antimony_block").setHardness(2.0F).setResistance(5.0F);
-            blockAntimonyBlock.setHarvestLevel("pickaxe", 2);
-    		GameRegistry.registerBlock(blockAntimonyBlock, "antimony_block");
-    		OreDictionary.registerOre("blockAntimony", new ItemStack(blockAntimonyBlock));
+    		blockAntimony = new ShinseiBlock(Material.iron).setBlockName("antimony_block");
+    		GameRegistry.registerBlock(blockAntimony, "antimony_block");
+    		OreDictionary.registerOre("blockAntimony", new ItemStack(blockAntimony));
 
-            blockBismuthBlock = new ShinseiBlock(Material.iron).setBlockName("bismuth_block").setHardness(10.0F).setResistance(20.0F);
-            blockBismuthBlock.setHarvestLevel("pickaxe", 2);
-            GameRegistry.registerBlock(blockBismuthBlock, "bismuth_block");
-            OreDictionary.registerOre("blockBismuth", new ItemStack(blockBismuthBlock));
+            blockBismuth = new ShinseiBlock(Material.iron).setBlockName("bismuth_block").setHardness(10.0F).setResistance(20.0F);
+            GameRegistry.registerBlock(blockBismuth, "bismuth_block");
+            OreDictionary.registerOre("blockBismuth", new ItemStack(blockBismuth));
 
-            blockCadmiumBlock = new ShinseiBlock(Material.iron).setBlockName("cadmium_block").setHardness(2.0F).setResistance(5.0F);
-            blockCadmiumBlock.setHarvestLevel("pickaxe", 2);
-            GameRegistry.registerBlock(blockCadmiumBlock, "cadmium_block");
-            OreDictionary.registerOre("blockCadmium", new ItemStack(blockCadmiumBlock));
+            blockCadmium = new ShinseiBlock(Material.iron).setBlockName("cadmium_block");
+            GameRegistry.registerBlock(blockCadmium, "cadmium_block");
+            OreDictionary.registerOre("blockCadmium", new ItemStack(blockCadmium));
 
-            blockChromiumBlock = new ShinseiBlock(Material.iron).setBlockName("chromium_block").setHardness(8.5F).setResistance(15.0F);
-            blockChromiumBlock.setHarvestLevel("pickaxe", 2);
-            GameRegistry.registerBlock(blockChromiumBlock, "chromium_block");
-            OreDictionary.registerOre("blockChromium", new ItemStack(blockChromiumBlock));
+            blockChromium = new ShinseiBlock(Material.iron).setBlockName("chromium_block").setHardness(8.5F).setResistance(15.0F);
+            GameRegistry.registerBlock(blockChromium, "chromium_block");
+            OreDictionary.registerOre("blockChromium", new ItemStack(blockChromium));
 
-    		blockCopperBlock = new ShinseiBlock(Material.iron).setBlockName("copper_block").setHardness(5.0F).setResistance(10.0F);
-            blockCopperBlock.setHarvestLevel("pickaxe", 2);
-    		GameRegistry.registerBlock(blockCopperBlock, "copper_block");
-            OreDictionary.registerOre("blockCopper", new ItemStack(blockCopperBlock));
+    		blockCopper = new ShinseiBlock(Material.iron).setBlockName("copper_block").setHardness(5.0F).setResistance(10.0F);
+    		GameRegistry.registerBlock(blockCopper, "copper_block");
+            OreDictionary.registerOre("blockCopper", new ItemStack(blockCopper));
 
-            blockIndiumBlock = new ShinseiBlock(Material.iron).setBlockName("indium_block").setHardness(2.0F).setResistance(5.0F);
-            blockIndiumBlock.setHarvestLevel("pickaxe", 2);
-            GameRegistry.registerBlock(blockIndiumBlock, "indium_block");
-            OreDictionary.registerOre("blockIndium", new ItemStack(blockIndiumBlock));
+            blockIndium = new ShinseiBlock(Material.iron).setBlockName("indium_block");
+            GameRegistry.registerBlock(blockIndium, "indium_block");
+            OreDictionary.registerOre("blockIndium", new ItemStack(blockIndium));
 
-            blockIridiumBlock = new ShinseiBlock(Material.iron).setBlockName("iridium_block").setHardness(2.0F).setResistance(5.0F);
-            blockIridiumBlock.setHarvestLevel("pickaxe", 2);
-            GameRegistry.registerBlock(blockIridiumBlock, "iridium_block");
-            OreDictionary.registerOre("blockIridium", new ItemStack(blockIridiumBlock));
+            blockIridium = new ShinseiBlock(Material.iron).setBlockName("iridium_block");
+            GameRegistry.registerBlock(blockIridium, "iridium_block");
+            OreDictionary.registerOre("blockIridium", new ItemStack(blockIridium));
+
+            blockLead = new ShinseiBlock(Material.iron).setBlockName("lead_block");
+            GameRegistry.registerBlock(blockLead, "lead_block");
+            OreDictionary.registerOre("blockLead", new ItemStack(blockLead));
 
         //Building Blocks
     		blockMarble = new BlockMarble().setBlockName("marble");
-            blockMarble.setHarvestLevel("pickaxe", 2);
     		GameRegistry.registerBlock(blockMarble, ItemMarbleBlock.class, "marble");
     		OreDictionary.registerOre("blockStone", new ItemStack(Blocks.stone));
 

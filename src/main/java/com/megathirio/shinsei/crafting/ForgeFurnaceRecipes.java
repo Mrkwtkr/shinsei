@@ -21,8 +21,8 @@ public class ForgeFurnaceRecipes {
 	
 	public static ItemStack getOutput(Item item, Item item2, Item item3){
 		//Recipe 1
-		if(item == ShinseiIngots.itemAluminumIngot && item2 == ShinseiIngots.itemChromiumIngot && item3 == ShinseiDusts.itemArsenicPowder || item2 == ShinseiIngots.itemAluminumIngot && item == ShinseiIngots.itemChromiumIngot && item3 == ShinseiDusts.itemArsenicPowder){
-			return new ItemStack(ShinseiIngots.itemIndiumIngot, 2);
+		if(item == ShinseiIngots.ingotAluminum && item2 == ShinseiIngots.ingotChromium && item3 == ShinseiDusts.dustArsenic || item2 == ShinseiIngots.ingotAluminum && item == ShinseiIngots.ingotChromium && item3 == ShinseiDusts.dustArsenic){
+			return new ItemStack(ShinseiIngots.ingotIndium, 2);
 		}
             return null;
 	}

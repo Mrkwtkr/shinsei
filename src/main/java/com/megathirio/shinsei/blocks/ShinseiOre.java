@@ -1,30 +1,28 @@
 package com.megathirio.shinsei.blocks;
 
-import java.util.Random;
-
-import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.creativetab.ShinseiTabs;
 import com.megathirio.shinsei.items.ShinseiDusts;
 import com.megathirio.shinsei.items.ShinseiItems;
 import com.megathirio.shinsei.lib.References;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
-public class ShinseiBlock extends Block{
+import java.util.Random;
+
+public class ShinseiOre extends Block{
 
 	//Default Block Properties
-	public ShinseiBlock(Material material){
+	public ShinseiOre(Material material){
 		
 		super(material);
 
-		this.setHardness(2f);
-		this.setResistance(5f);
-        this.setHarvestLevel("pickaxe", 2);
-  		setCreativeTab(ShinseiTabs.blocksTab);
+		this.setHardness(1f);
+		this.setResistance(3f);
+	    this.setHarvestLevel("pickaxe", 1);
+		setCreativeTab(ShinseiTabs.blocksTab);
 		this.setStepSound(soundTypeStone);
 		this.enableStats = true;
 	}
@@ -37,6 +35,10 @@ public class ShinseiBlock extends Block{
 			return ShinseiItems.itemSilt;
 		}else if(this == ShinseiBlocks.blockClaystone){
 			return Items.clay_ball;
+		}else if(this == ShinseiBlocks.oreArsenic){
+			return ShinseiDusts.dustArsenic;
+        }else if(this == ShinseiBlocks.oreGraphite){
+            return ShinseiDusts.dustGraphite;
 		}else{
 			return Item.getItemFromBlock(this);
 		}
@@ -51,6 +53,10 @@ public class ShinseiBlock extends Block{
 			return 1 + random.nextInt(3);
 		}else if(this == ShinseiBlocks.blockClaystone){
 			return 1 + random.nextInt(2);
+		}else if(this == ShinseiBlocks.oreArsenic){
+			return 3 + random.nextInt(6);
+        }else if(this == ShinseiBlocks.oreGraphite){
+            return 3 + random.nextInt(8);
 		}else{
 			return 1;
 		}

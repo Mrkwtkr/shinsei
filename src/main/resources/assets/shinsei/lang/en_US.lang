@@ -64,10 +64,14 @@ item.indium_ingot.name=Indium Ingot
 tile.indium_block.name=Indium Block
 tile.iridium_ore.name=Iridium Ore
 item.iridium_ingot.name=Iridium Ingot
+item.iridium_powder.name=Iridium Powder
 tile.iridium_block.name=Iridium Block
 tile.copper_ore.name=Copper Ore
 item.copper_ingot.name=Copper Ingot
 tile.copper_block.name=Copper Block
+tile.lead_ore.name=Lead Ore
+item.lead_ingot.name=Lead Ingot
+tile.lead_block.name=Lead Block
 
 item.wood_tool_handle.name=Wooden Tool Handle
 item.copper_plate.name=Copper Plate

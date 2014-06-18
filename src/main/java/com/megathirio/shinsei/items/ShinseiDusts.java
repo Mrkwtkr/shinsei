@@ -9,25 +9,25 @@ public final class ShinseiDusts {
 
 	//Item Variables
 		//Powders
-		public static Item itemArsenicPowder;
-        public static Item itemGraphitePowder;
-        public static Item itemIridiumPowder;
+		public static Item dustArsenic;
+        public static Item dustGraphite;
+        public static Item dustIridium;
 
 //Item Initialization
 	public static void init(){
 		
 	//Item Initialzation
 		//Powders
-		itemArsenicPowder = new ShinseiItem().setUnlocalizedName("arsenic_powder");
-		GameRegistry.registerItem(itemArsenicPowder, "arsenic_powder");
-		OreDictionary.registerOre("dustArsenic", new ItemStack(itemArsenicPowder));
+        dustArsenic = new ShinseiItem().setUnlocalizedName("arsenic_powder");
+		GameRegistry.registerItem(dustArsenic, "arsenic_powder");
+		OreDictionary.registerOre("dustArsenic", new ItemStack(dustArsenic));
 
-        itemGraphitePowder = new ShinseiItem().setUnlocalizedName("graphite_powder");
-        GameRegistry.registerItem(itemGraphitePowder, "graphite_powder");
-        OreDictionary.registerOre("dustGraphite", new ItemStack(itemGraphitePowder));
+        dustGraphite = new ShinseiItem().setUnlocalizedName("graphite_powder");
+        GameRegistry.registerItem(dustGraphite, "graphite_powder");
+        OreDictionary.registerOre("dustGraphite", new ItemStack(dustGraphite));
 
-        itemIridiumPowder = new ShinseiItem().setUnlocalizedName("iridium_powder");
-        GameRegistry.registerItem(itemIridiumPowder, "iridium_powder");
-        OreDictionary.registerOre("dustIridium", new ItemStack(itemIridiumPowder));
+        dustIridium = new ShinseiItem().setUnlocalizedName("iridium_powder");
+        GameRegistry.registerItem(dustIridium, "iridium_powder");
+        OreDictionary.registerOre("dustIridium", new ItemStack(dustIridium));
 	}
 }
