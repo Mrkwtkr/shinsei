@@ -34,19 +34,23 @@ public class GuiForgeFurnace extends GuiContainer{
 		this.fontRendererObj.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 3, 4210752);
 	}
 	
-	@Override
-	protected void drawGuiContainerBackgroundLayer(float var1, int var2,
-			int var3) {
-		
-		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-		Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
-		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
-		
-		//power bar
-		
-		//progress arrow
-		
-		
-	}
+    @Override
+    protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) {
+
+        GL11.glColor4f(1f, 1f, 1f, 1f);
+        Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
+        drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
+
+        if(this.forgeFurnace.isForging()){
+
+            int k = this.forgeFurnace.getForgePowerRemainingScaled(32);
+            drawTexturedModalRect(guiLeft + 38, guiTop + 48 - k, 176, 32 - k, 10, k + 2);
+
+        }
+
+        int k = this.forgeFurnace.getForgeProgressScaled(24);
+        drawTexturedModalRect(guiLeft + 108, guiTop + 36, 186, 0, k + 1, 16);
+
+    }
 
 }

@@ -135,4 +135,24 @@ public class ForgeFurnace extends BlockContainer{
 		return new TileEntityForgeFurnace();
 	}
 
+    public static void updateBlockState(boolean isForging, World world, int xCoord, int yCoord, int zCoord) {
+
+        int i = world.getBlockMetadata(xCoord, yCoord, zCoord);
+        TileEntity entity = world.getTileEntity(xCoord, yCoord, zCoord);
+        keepInventory = true;
+
+        if(isForging){
+            world.setBlock(xCoord, yCoord, zCoord, ShinseiMachines.blockForgeFurnaceActi);
+        }else{
+            world.setBlock(xCoord, yCoord, zCoord, ShinseiMachines.blockForgeFurnaceIdle);
+        }
+
+        keepInventory = false;
+        world.setBlockMetadataWithNotify(xCoord,yCoord, zCoord, i, 2);
+
+        if(entity != null){
+            entity.validate();
+            world.setTileEntity(xCoord, yCoord, zCoord, entity);
+        }
+    }
 }

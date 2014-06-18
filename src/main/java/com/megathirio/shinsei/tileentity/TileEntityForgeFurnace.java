@@ -1,9 +1,11 @@
 package com.megathirio.shinsei.tileentity;
 
+import com.megathirio.shinsei.blocks.ForgeFurnace;
 import com.megathirio.shinsei.crafting.ForgeFurnaceRecipes;
 import com.megathirio.shinsei.items.ShinseiItems;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.Item;
@@ -19,7 +21,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 	public int dualPower;
 	public int dualCookTime;
 	public static final int maxPower = 60000;
-	public static final int forgeSpeed = 100;
+	public static final int forgeSpeed = 200;
 	
 	private static final int[] slots_top = new int[]{0, 1, 2};
 	private static final int[] slots_bottom = new int[]{4};
@@ -191,10 +193,9 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 		if(slots[0] == null || slots[1] == null || slots[2] == null){
 			return false;
 		}
-		
-		ItemStack itemstack = ForgeFurnaceRecipes.getForgeResult(slots[0].getItem(), slots[1].getItem(), slots[2].getItem());
-		
-		if(itemstack == null){
+        ItemStack itemstack = ForgeFurnaceRecipes.getForgeResult(slots[0].getItem(), slots[1].getItem(), slots[2].getItem());
+
+     	if(itemstack == null){
 			return false;
 		}
 		
@@ -225,7 +226,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 				slots[4].stackSize += itemstack.stackSize;
 			}
 			
-			for(int i = 0; i < 3; i++){
+			for(int i = 0; i < 4; i++){
 				if(slots[i].stackSize <= 0){
 					slots[i] = new ItemStack(slots[i].getItem().setFull3D());
 				}else{
@@ -238,8 +239,62 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 			}
 		}
 	}
-	
+
+    public boolean hasPower(){
+
+        return dualPower > 0;
+    }
+
+    public boolean isForging(){
+
+        return this.dualCookTime > 0;
+    }
+
 	public void updateEntity(){
-		
+
+        boolean flag = this.hasPower();
+        boolean flag1 = false;
+
+        if(hasPower() && this.isForging()){
+            this.dualPower--;
+        }
+
+        if(!worldObj.isRemote){
+            if(this.hasItemPower(this.slots[3]) && this.dualPower <(this.maxPower - this.getItemPower(this.slots[3]))) {
+                this.dualPower += getItemPower(this.slots[3]);
+
+                if(this.slots[3] != null){
+                    flag1 = true;
+
+                    this.slots[3].stackSize--;
+                    if(this.slots[3].stackSize == 0){
+                        this.slots[3] = this.slots[3].getItem().getContainerItem(this.slots[3]);
+                    }
+                }
+            }
+
+            if(hasPower() && canForge()){
+
+                dualCookTime++;
+
+                if(this.dualCookTime == this.forgeSpeed){
+                    this.dualCookTime =0;
+                    this.forgeItem();
+                    flag1 = true;
+                }
+            }else{
+                dualCookTime = 0;
+            }
+
+            if(flag != this.hasPower()){
+                flag1 = true;
+                ForgeFurnace.updateBlockState(this.isForging(), this.worldObj, this.xCoord, this.yCoord, this.zCoord);
+            }
+        }
+
+        if(flag1){
+
+            this.markDirty();
+        }
 	}
 }
