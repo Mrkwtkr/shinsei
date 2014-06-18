@@ -11,6 +11,7 @@ public final class ShinseiDusts {
 		//Powders
 		public static Item itemArsenicPowder;
         public static Item itemGraphitePowder;
+        public static Item itemIridiumPowder;
 
 //Item Initialization
 	public static void init(){
@@ -25,5 +26,8 @@ public final class ShinseiDusts {
         GameRegistry.registerItem(itemGraphitePowder, "graphite_powder");
         OreDictionary.registerOre("dustGraphite", new ItemStack(itemGraphitePowder));
 
+        itemIridiumPowder = new ShinseiItem().setUnlocalizedName("iridium_powder");
+        GameRegistry.registerItem(itemIridiumPowder, "iridium_powder");
+        OreDictionary.registerOre("dustIridium", new ItemStack(itemIridiumPowder));
 	}
 }

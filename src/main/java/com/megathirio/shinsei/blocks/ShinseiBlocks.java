@@ -21,6 +21,7 @@ public final class ShinseiBlocks {
     public static Block blockGraphiteOre;
 	public static Block blockStibniteOre;
     public static Block blockIridiumOre;
+    public static Block blockLeadOre;
 
 	//Resource Blocks
 	public static Block blockAntimonyBlock;
@@ -31,6 +32,7 @@ public final class ShinseiBlocks {
 	public static Block blockCopperBlock;
     public static Block blockIndiumBlock;
     public static Block blockIridiumBlock;
+    public static Block blockLeadBlock;
 
 	
 	//Mineral Blocks
@@ -91,13 +93,19 @@ public final class ShinseiBlocks {
     		GameRegistry.registerBlock(blockCopperOre, "copper_ore");
     		OreDictionary.registerOre("oreCopper", new ItemStack(blockCopperOre));
 
-            //Iridium Ore - processed in
+            //Iridium Ore - processed in hydrochloric acid
             blockIridiumOre = new ShinseiBlock(Material.rock).setBlockName("iridium_ore");
             blockIridiumOre.setHarvestLevel("pickaxe", 1);
             GameRegistry.registerBlock(blockIridiumOre, "iridium_ore");
             OreDictionary.registerOre("oreIridium", new ItemStack(blockIridiumOre));
 
-    		//Mineral Blocks
+            //Lead Ore - processed in furnaces
+            blockLeadOre = new ShinseiBlock(Material.rock).setBlockName("lead_ore");
+            blockLeadOre.setHarvestLevel("pickaxe", 1);
+            GameRegistry.registerBlock(blockLeadOre, "lead_ore");
+            OreDictionary.registerOre("oreLead", new ItemStack(blockLeadOre));
+
+        //Mineral Blocks
     		blockClaystone = new ShinseiBlock(Material.clay).setBlockName("claystone").setResistance(2F).setHardness(0.5F);
     		blockClaystone.setHarvestLevel("shovel", 0);
     		GameRegistry.registerBlock(blockClaystone, "claystone");
@@ -153,6 +161,11 @@ public final class ShinseiBlocks {
             blockIridiumBlock.setHarvestLevel("pickaxe", 2);
             GameRegistry.registerBlock(blockIridiumBlock, "iridium_block");
             OreDictionary.registerOre("blockIridium", new ItemStack(blockIridiumBlock));
+
+            blockLeadBlock = new ShinseiBlock(Material.iron).setBlockName("lead_block").setHardness(2.0F).setResistance(5.0F);
+            blockLeadBlock.setHarvestLevel("pickaxe", 2);
+            GameRegistry.registerBlock(blockLeadBlock, "lead_block");
+            OreDictionary.registerOre("blockLead", new ItemStack(blockLeadBlock));
 
         //Building Blocks
     		blockMarble = new BlockMarble().setBlockName("marble");

@@ -16,6 +16,8 @@ public final class ShinseiIngots {
         public static Item itemChromiumIngot;
         public static Item itemCopperIngot;
         public static Item itemIndiumIngot;
+        public static Item itemIridiumIngot;
+        public static Item itemLeadIngot;
 
 //Item Initialization
     public static void init(){
@@ -58,5 +60,14 @@ public final class ShinseiIngots {
         GameRegistry.registerItem(itemIndiumIngot, "indium_ingot");
         OreDictionary.registerOre("ingotIndium", new ItemStack(itemIndiumIngot));
 
+        //Iridium - Byproduct of Iridium Ore in an acid bath
+        itemIridiumIngot = new ShinseiItem().setUnlocalizedName("iridium_ingot");
+        GameRegistry.registerItem(itemIridiumIngot, "iridium_ingot");
+        OreDictionary.registerOre("ingotIridium", new ItemStack(itemIridiumIngot));
+
+        //Lead - Byproduct of Zinc Ore processing
+        itemLeadIngot = new ShinseiItem().setUnlocalizedName("lead_ingot");
+        GameRegistry.registerItem(itemLeadIngot, "lead_ingot");
+        OreDictionary.registerOre("ingotLead", new ItemStack(itemLeadIngot));
 	}
 }
