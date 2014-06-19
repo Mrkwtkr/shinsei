@@ -21,7 +21,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 	public int dualPower;
 	public int dualCookTime;
 	public static final int maxPower = 60000;
-	public static final int forgeSpeed = 200;
+	public static final int forgeSpeed = 50;
 	
 	private static final int[] slots_top = new int[]{0, 1, 2};
 	private static final int[] slots_bottom = new int[]{4};

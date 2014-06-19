@@ -101,9 +101,6 @@ public class ToolBenchCraftingManager
         this.addRecipe(new ItemStack(Blocks.planks, 4, 4), new Object[] {"@", '@', new ItemStack(Blocks.log2, 1, 0)});
         this.addRecipe(new ItemStack(Blocks.planks, 4, 5), new Object[] {"@", '@', new ItemStack(Blocks.log2, 1, 1)});
 		this.addRecipe(new ItemStack(Items.stick, 4),new Object[] {"@","@", '@', Blocks.planks});
-		//this.addRecipe(new ItemStack(ShinseiItems.itemSplitWood, 2),new Object[] {"@", '@',  Blocks.log});
-		//this.addRecipe(new ItemStack(ShinseiItems.itemSplitWood, 2),new Object[] {"@", '@',  Blocks.log2});
-
  		
         Collections.sort(this.recipes, new ToolBenchRecipeSorter(this));
       

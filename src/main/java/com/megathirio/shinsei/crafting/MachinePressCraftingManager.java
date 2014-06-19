@@ -91,6 +91,9 @@ public class MachinePressCraftingManager
 			this.addRecipe(new ItemStack(ShinseiTools.itemDiamondSwordBlade, 1),new Object[] {"@","#", '@', Items.diamond, '#', ShinseiTools.itemSwordCast});
 			this.addRecipe(new ItemStack(ShinseiTools.itemIronSwordBlade, 1),new Object[] {"@","#", '@', Items.iron_ingot, '#', ShinseiTools.itemSwordCast});
 
+            this.addRecipe(new ItemStack(ShinseiItems.itemSplitWood, 2),new Object[] {"@", '@',  Blocks.log});
+            this.addRecipe(new ItemStack(ShinseiItems.itemSplitWood, 2),new Object[] {"@", '@',  Blocks.log2});
+
     	Collections.sort(this.recipes, new MachinePressRecipeSorter(this));
       
     }

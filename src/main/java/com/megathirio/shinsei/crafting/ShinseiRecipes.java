@@ -86,6 +86,8 @@ public class ShinseiRecipes {
 			GameRegistry.addSmelting(ShinseiBlocks.oreStibnite, new ItemStack(ShinseiIngots.ingotAntimony), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.oreBismuth, new ItemStack(ShinseiIngots.ingotBismuth), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.oreLead, new ItemStack(ShinseiIngots.ingotLead), 1f);
+            GameRegistry.addSmelting(ShinseiBlocks.oreBauxite, new ItemStack(ShinseiIngots.ingotAluminum), 1f);
+            GameRegistry.addSmelting(ShinseiBlocks.oreIridium, new ItemStack(ShinseiIngots.ingotIridium), 1f);
 
 	}
 
