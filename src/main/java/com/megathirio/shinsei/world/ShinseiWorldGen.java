@@ -10,58 +10,59 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
-public class ShinseiWorldGen implements IWorldGenerator{
+public class ShinseiWorldGen implements IWorldGenerator {
 
 	@Override
-	public void generate(Random random, int chunkX, int chunkZ, World world,
-			IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
+	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 
 		switch(world.provider.dimensionId){
 		
-		case 0: generateSurface(random, chunkX*16, chunkZ*16, world); break;
+		case 0:
+            generateSurface(world, random, chunkX*16, chunkZ*16);
 
-		case 1: generateEnd(random, chunkX*16, chunkZ*16, world); break;
+		case 1:
+            generateEnd(world, random, chunkX*16, chunkZ*16);
 
-		case -1: generateNether(random, chunkX*16, chunkZ*16, world); break;
+		case -1:
+            generateNether(world, random, chunkX*16, chunkZ*16);
 
 		}
 	}
 
-	public void generateNether(Random random, int chunkX, int chunkZ, World world) {
+    public void generateSurface(World world, Random random, int x, int z) {
+        //this.addOreSpawn(ShinseBlocks.Blockname, world, random, xPos, zPos, maxX, maxZ, maxVeinSize, chanceToSpawn, minY, maxY);
+        this.addOreSpawn(ShinseiBlocks.oreArsenic, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreBauxite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreBismuth, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreStibnite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreChromite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreIridium, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreCopper, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreGraphite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreLead, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.blockSiltstone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.blockClaystone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.blockLimestone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+    }
+
+    public void generateNether(World world, Random random, int x, int z) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void generateEnd(Random random, int chunkX, int chunkZ, World world) {
+	public void generateEnd(World world, Random random, int x, int z) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void generateSurface(Random random, int chunkX, int chunkZ, World world) {
-		//addOreSpawn(Block name, world, random, X Pos, Z Pos, Min Vein Size, Max Vein Size, Spawn Chances, Min Y Pos, Max Y Pos); 
-		addOreSpawn(ShinseiBlocks.oreArsenic, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.oreBauxite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.oreBismuth, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.oreStibnite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.oreChromite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.oreIridium, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.oreCopper, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.oreGraphite, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-        addOreSpawn(ShinseiBlocks.oreLead, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.blockClaystone, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-		addOreSpawn(ShinseiBlocks.blockLimestone, world, random, chunkX, chunkZ, 4, 16, 20, 0, 256);
-	}
-
-	public void addOreSpawn(Block block, World world, Random random,
-			int blockXPos, int blockZPos, int minVainSize, int maxVainSize, int chancesToSpawn, int minY, int maxY) {
+	public void addOreSpawn(Block block, World world, Random random, int xPos, int zPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY) {
 	
-		for(int i = 0; i < chancesToSpawn; i++){
+		for(int i = 0; i < chanceToSpawn; i++){
 			
-			int posX = blockXPos + random.nextInt(16);
+			int posX = xPos + random.nextInt(maxX);
 			int posY = minY + random.nextInt(maxY - minY);
-			int posZ = blockZPos + random.nextInt(16);
-			new WorldGenMinable(block, (minVainSize + random.nextInt(maxVainSize - minVainSize)), Blocks.stone).generate(world, random, posX, posY, posZ);
-			
+			int posZ = zPos + random.nextInt(maxZ);
+            (new WorldGenMinable(block, maxVeinSize)).generate(world, random, posX, posY, posZ);
 		}
 	}
 	

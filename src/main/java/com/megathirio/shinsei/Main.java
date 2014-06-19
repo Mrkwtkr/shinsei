@@ -29,6 +29,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class Main {
 
+    ShinseiWorldGen eventWorldGen = new ShinseiWorldGen();
+
 	public static final String modid = "shinsei";
 	@Instance(References.MODID)
 	public static Main instance;
