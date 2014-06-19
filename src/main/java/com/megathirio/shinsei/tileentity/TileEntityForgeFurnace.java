@@ -16,109 +16,112 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityForgeFurnace extends TileEntity implements ISidedInventory{
 
-	private ItemStack slots[];
-	
+    private String customName;
+
+    private static final int[] slots_top = new int[]{0, 1, 2};
+    private static final int[] slots_bottom = new int[]{4};
+    private static final int[] slots_side = new int[]{3};
+
+	private ItemStack slots[] = new ItemStack[5];
+
+    public static final int forgeSpeed = 50;
+    public static final int maxPower = 60000;
 	public int dualPower;
 	public int dualCookTime;
-	public static final int maxPower = 60000;
-	public static final int forgeSpeed = 50;
-	
-	private static final int[] slots_top = new int[]{0, 1, 2};
-	private static final int[] slots_bottom = new int[]{4};
-	private static final int[] slots_side = new int[]{3};
-	
-	private String customName;
-	
-	public TileEntityForgeFurnace(){
-		slots = new ItemStack[5];
-	}
 
-	@Override
-	public int getSizeInventory() {
-		return slots.length;
-	}
+    public void setGuiDisplayName(String displayName){
 
-	@Override
-	public ItemStack getStackInSlot(int i) {
-		return slots[i];
-	}
+        this.customName = displayName;
+    }
 
-	@Override
-	public ItemStack decrStackSize(int i, int j) {
-		
-		if(slots[i] != null){
-			if(slots[i].stackSize <= j){
-				ItemStack itemstack = slots[i];
-				slots[i] = null;
-				return itemstack;
-			}
-			ItemStack itemstack1 = slots[i].splitStack(j);
-			if(slots[i].stackSize == 0){
-				slots[i] = null;
-			}
-			return itemstack1;
-		}else{
-			return null;
-		}
-	}
+    @Override
+    public String getInventoryName() {
+        return this.hasCustomInventoryName() ? this.customName : "container.forgeFurnace";
+    }
 
-	@Override
-	public ItemStack getStackInSlotOnClosing(int i) {
+    @Override
+    public boolean hasCustomInventoryName() {
 
-		if(slots[i] != null){
-			ItemStack itemstack = slots[i];
-			slots[i] = null;
-			return itemstack;
-		}else{
-			return null;
-		}
-	}
+        return this.customName != null && this.customName.length() > 0;
+    }
 
-	@Override
-	public void setInventorySlotContents(int i, ItemStack itemstack) {
+    @Override
+    public int getSizeInventory() {
 
-		slots[i] = itemstack;
-		if(itemstack != null && itemstack.stackSize > getInventoryStackLimit()){
-			itemstack.stackSize = getInventoryStackLimit();
-		}
-	}
+        return slots.length;
+    }
 
-	@Override
-	public String getInventoryName() {	
-		return this.hasCustomInventoryName() ? this.customName : "container.forgeFurnace";
-	}
+    @Override
+    public ItemStack getStackInSlot(int i) {
 
-	@Override
-	public boolean hasCustomInventoryName() {
-		return this.customName != null && this.customName.length() > 0;
-	}
-	
-	@Override
-	public int getInventoryStackLimit() {
-		return 64;
-	}
+        return slots[i];
+    }
 
-	@Override
-	public boolean isUseableByPlayer(EntityPlayer player) {
+    @Override
+    public ItemStack decrStackSize(int i, int j) {
 
-		if(worldObj.getTileEntity(xCoord, yCoord, zCoord) != this){
-			return false;
-		}else{
-			return player.getDistanceSq((double)xCoord + 0.5D, (double)yCoord + 0.5D, (double)zCoord + 0.5D) <= 64;
-		}
-	}
+        if(this.slots[i] != null){
+            ItemStack itemstack;
+            if(slots[i].stackSize <= j){
+                itemstack = this.slots[i];
+                slots[i] = null;
+                return itemstack;
+            }else {
+                itemstack = this.slots[i].splitStack(j);
 
-	public void openInventory() {}
-	public void closeInventory() {}
+                if (this.slots[i].stackSize == 0) {
+                    this.slots[i] = null;
+                }
+                return itemstack;
+            }
+        }else{
+            return null;
+        }
+    }
 
-	@Override
-	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
+    @Override
+    public ItemStack getStackInSlotOnClosing(int i) {
+        if(this.slots[i] != null){
+            ItemStack itemstack = this.slots[i];
+            this.slots[i] = null;
+            return itemstack;
+        }
+            return null;
+    }
 
-		return i == 4 ? false : (i == 1 ? hasItemPower(itemstack) : true);
-	}
-	
+    @Override
+    public void setInventorySlotContents(int i, ItemStack itemstack) {
+
+        this.slots[i] = itemstack;
+        if(itemstack != null && itemstack.stackSize > getInventoryStackLimit()){
+            itemstack.stackSize = getInventoryStackLimit();
+        }
+    }
+
+    @Override
+    public int getInventoryStackLimit() {
+        return 64;
+    }
+
+
+    @Override
+    public boolean isUseableByPlayer(EntityPlayer entityplayer) {
+        return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) != this ? false : entityplayer.getDistanceSq((double)this.xCoord + 0.5D, (double)this.yCoord + 0.5D, (double)this.zCoord + 0.5D) <= 64.0D;
+    }
+
+    public void openInventory() {}
+
+    public void closeInventory() {}
+
+    @Override
+    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
+
+        return i == 4 ? false : (i == 1 ? hasItemPower(itemstack) : true);
+    }
+
 	public boolean hasItemPower(ItemStack itemstack){
-		return getItemPower(itemstack) > 0;
+
+        return getItemPower(itemstack) > 0;
 	}
 	
 	private static int getItemPower(ItemStack itemstack){
@@ -288,7 +291,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 
             if(flag != this.hasPower()){
                 flag1 = true;
-                ForgeFurnace.updateBlockState(this.isForging(), this.worldObj, this.xCoord, this.yCoord, this.zCoord);
+                ForgeFurnace.updateForgeFurnaceBlockState(this.isForging(), this.worldObj, this.xCoord, this.yCoord, this.zCoord);
             }
         }
 
@@ -297,4 +300,10 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
             this.markDirty();
         }
 	}
+
+    public TileEntityForgeFurnace(){
+        slots = new ItemStack[5];
+    }
+
+
 }
