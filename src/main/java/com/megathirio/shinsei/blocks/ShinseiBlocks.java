@@ -58,7 +58,8 @@ public final class ShinseiBlocks {
 
 	    	//Stibnite - processed in Furnaces
     		oreStibnite = new ShinseiOre(Material.rock).setBlockName("stibnite_ore");
-//    		OreDictionary.registerOre("oreAntimony", new ItemStack(oreStibnite));
+            GameRegistry.registerBlock(oreStibnite, "stibnite_ore");
+            OreDictionary.registerOre("oreAntimony", new ItemStack(oreStibnite));
 
     		//Arsenic Ore - drops Arsenic
     		oreArsenic = new ShinseiOre(Material.rock).setBlockName("arsenic_ore");
