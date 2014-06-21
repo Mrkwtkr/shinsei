@@ -28,9 +28,9 @@ public class ContainerWoodFurnace extends Container{
 		this.addSlotToContainer(new Slot(tileEntity, 0,  85, 36));//input slot
 		this.addSlotToContainer(new Slot(tileEntity, 1,  35, 53));//fuel slot
 		this.addSlotToContainer(new SlotFurnace(invPlayer.player, tileEntity, 2,  143, 35));//output slot
-		this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity,  3,  8, 17));//upgrade slot 1
-		//this.addSlotToContainer(new Slot(tileentity, 4,  8, 35));//upgrade slot 2
-		//this.addSlotToContainer(new Slot(tileentity, 5,  8, 53));//upgrade slot 3
+		this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 3,  8, 17));//upgrade slot 1
+		this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 4,  8, 35));//upgrade slot 2
+		this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 5,  8, 53));//upgrade slot 3
 		
 		//Inventory Slots
 		for(int i = 0; i < 3; i++){

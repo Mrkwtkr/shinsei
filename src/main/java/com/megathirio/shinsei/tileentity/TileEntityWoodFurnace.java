@@ -30,12 +30,13 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     private static final int[] slots_bottom = new int[]{2, 1};
     private static final int[] slots_side = new int[]{1};
 
-    private ItemStack[] slots = new ItemStack[4];
+    private ItemStack[] slots = new ItemStack[6];
 
     public int furnaceSpeed = 200; //Number of ticks that determines when item is smelted
     public int burnTime; //Number of ticks that the furnace will keep burning
     public int currentItemBurnTime; //Number of ticks that a fresh copy of the currently burning item would keep the furnace burning for
     public int cookTime; //Number of ticks that the current item has been cooking for
+    public int upEff;
 
 
     public void setGuiDisplayName(String displayName) {
@@ -109,7 +110,6 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
 
     @Override
     public int getInventoryStackLimit() {
-
         return 64;
     }
 
@@ -127,16 +127,14 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     @Override
     public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 
-        return i == 2 ? false : (i == 1 ? isItemFuel(itemstack) : true);
+        return i == 2 ? true : (i == 1 ? isItemFuel(itemstack) : false);
     }
-
     public static boolean isItemFuel(ItemStack itemstack) {
 
         return getItemBurnTime(itemstack) > 0;
     }
 
-    private static int getItemBurnTime(ItemStack itemstack) {
-
+    public static int getItemBurnTime (ItemStack itemstack) {
         if (itemstack == null) {
             return 0;
         } else {
@@ -177,7 +175,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         boolean flag1 = false;
 
         if (this.isBurning()) {
-            this.burnTime--;
+            --this.burnTime;
         }
         if (!this.worldObj.isRemote) {
             if (this.burnTime == 0 && this.canSmelt()) {
@@ -187,7 +185,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
                     flag1 = true;
 
                     if (this.slots[1] != null) {
-                        this.slots[1].stackSize--;
+                        --this.slots[1].stackSize;
 
                         if (this.slots[1].stackSize == 0) {
                             this.slots[1] = this.slots[1].getItem().getContainerItem(this.slots[1]);
@@ -197,7 +195,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
             }
 
             if (this.isBurning() && this.canSmelt()) {
-                this.cookTime++;
+                ++this.cookTime;
                 if (this.cookTime == this.furnaceSpeedUpgrade()) {
                     this.cookTime = 0;
                     this.smeltItem();
@@ -240,18 +238,19 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
             ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
 
             if(this.slots[2] == null){
-               if(furnaceOutputUpgrade() == true){
-                   this.slots[2] = itemstack.copy();
-                }
                 this.slots[2] = itemstack.copy();
+/*                if (furnaceOutputUpgrade())
+                {
+                    ++this.slots[2].stackSize;
+                }*/
             }else if(this.slots[2].isItemEqual(itemstack)){
-                if(furnaceOutputUpgrade() == true){
+/*                if(furnaceOutputUpgrade() == true){
                     this.slots[2].stackSize += itemstack.stackSize;
-                }
+                }*/
                 this.slots[2].stackSize += itemstack.stackSize;
             }
 
-            this.slots[0].stackSize--;
+            --this.slots[0].stackSize;
 
             if(this.slots[0].stackSize <= 0) {
                 this.slots[0] = null;
@@ -261,9 +260,9 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     }
 
     @Override
-    public int[] getAccessibleSlotsFromSide(int var1) {
+    public int[] getAccessibleSlotsFromSide(int i) {
 
-        return var1 == 0 ? slots_bottom : (var1 == 1 ? slots_top : slots_side);
+        return i == 0 ? slots_bottom : (i == 1 ? slots_top : slots_side);
     }
 
     @Override
@@ -341,31 +340,55 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     }
 
     public int furnaceSpeedUpgrade() {
-        ItemStack itemstack = this.slots[3];
-        if (itemstack == null) {
-            return this.furnaceSpeed;
-        } else {
-            Item item = itemstack.getItem();
-
-            if (item == ShinseiDusts.dustIridium) {
-                return this.furnaceSpeed / 2;
+        ItemStack[] upSlots = new ItemStack[3];
+        int upSpeed = this.furnaceSpeed;
+        for (int i = 0; i < 3; i++) {
+            upSlots[i] = this.slots[i + 3];
+            if (upSlots[i] != null) {
+                Item item = upSlots[i].getItem();
+                if (item == ShinseiItems.itemBellows) {
+                    upSpeed = upSpeed - 75;
+                    this.burnTime = this.burnTime - 1;
+                }else if(item == ShinseiItems.itemPistonBellows) {
+                    upSpeed = upSpeed - 100;
+                    this.burnTime = this.burnTime - 3;
+                    --this.currentItemBurnTime;
+                }
             }
-            return this.furnaceSpeed;
         }
+    return upSpeed;
     }
-
+/*
     public boolean furnaceOutputUpgrade(){
-        ItemStack itemstack = this.slots[3];
-        if (itemstack == null) {
-            return false;
-        } else {
-            Item item = itemstack.getItem();
-
-            if (item == ShinseiDusts.dustArsenic) {
-                return true;
+        ItemStack[] upSlots = new ItemStack[3];
+        boolean upOutput = false;
+        for (int i = 0; i < 3; i++) {
+            upSlots[i] = this.slots[i + 3];
+            if (upSlots[i] != null) {
+                Item item = upSlots[i].getItem();
+                if (item == ShinseiDusts.dustIridium) {
+                    upOutput = true;
+                }
             }
-            return false;
         }
+        return upOutput;
     }
+
+    public int furnaceEfficiencyUpgrade(){
+        ItemStack[] upSlots = new ItemStack[3];
+        for (int i = 0; i < 3; i++) {
+            upSlots[i] = this.slots[i + 3];
+            if (upSlots[i] != null) {
+                Item item = upSlots[i].getItem();
+                if (item == ShinseiItems.itemIronHeatPlate) {
+                    upEff += 400;
+                }else if(item == ShinseiItems.itemCopperHeatPlate) {
+                    upEff += 1200;
+                }
+            }
+        }
+        return upEff;
+    }
+    */
 }
 

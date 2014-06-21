@@ -1,6 +1,7 @@
 package com.megathirio.shinsei.core.container;
 
 import com.megathirio.shinsei.core.slot.SlotForgeFurnace;
+import com.megathirio.shinsei.core.slot.SlotUpgrade;
 import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
 import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
 
@@ -19,21 +20,21 @@ public class ContainerForgeFurnace extends Container {
 	private int dualPower;
 	private int lastItemBurnTime;
 	
-	public ContainerForgeFurnace(InventoryPlayer invPlayer, TileEntityForgeFurnace teForgeFurnace){
+	public ContainerForgeFurnace(InventoryPlayer invPlayer, TileEntityForgeFurnace tileEntity){
 		dualCookTime = 0;
 		dualPower = 0;
 		lastItemBurnTime = 0;
 		
-		forgeFurnace = teForgeFurnace;
+		forgeFurnace = tileEntity;
 		
-		this.addSlotToContainer(new Slot(teForgeFurnace, 0, 85, 17));//Input Slot 1
-		this.addSlotToContainer(new Slot(teForgeFurnace, 1, 85, 35));//Input Slot 2
-		this.addSlotToContainer(new Slot(teForgeFurnace, 2, 85, 53));//Input Slot 3
-		this.addSlotToContainer(new Slot(teForgeFurnace, 3, 35, 53));//Fuel Slot
-		this.addSlotToContainer(new SlotForgeFurnace(invPlayer.player, teForgeFurnace, 4, 143, 35));//Output Slot
-		//this.addSlotToContainer(new Slot(teForgeFurnace, 3, 8, 17));//Upgrade Slot 1
-		//this.addSlotToContainer(new Slot(teForgeFurnace, 3, 8, 35));//Upgrade Slot 2
-		//this.addSlotToContainer(new Slot(teForgeFurnace, 3, 8, 53));//Upgrade Slot 3
+		this.addSlotToContainer(new Slot(tileEntity, 0, 85, 17));//Input Slot 1
+		this.addSlotToContainer(new Slot(tileEntity, 1, 85, 35));//Input Slot 2
+		this.addSlotToContainer(new Slot(tileEntity, 2, 85, 53));//Input Slot 3
+		this.addSlotToContainer(new Slot(tileEntity, 3, 35, 53));//Fuel Slot
+		this.addSlotToContainer(new SlotForgeFurnace(invPlayer.player, tileEntity, 4, 143, 35));//Output Slot
+//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 3,  8, 17));//upgrade slot 1
+//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 4,  8, 35));//upgrade slot 2
+//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 5,  8, 53));//upgrade slot 3
 		
 		//Inventory Slots
 		for(int i = 0; i < 3; i++){

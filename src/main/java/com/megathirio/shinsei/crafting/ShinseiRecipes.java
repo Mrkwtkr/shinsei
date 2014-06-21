@@ -36,6 +36,9 @@ public class ShinseiRecipes {
 
 		//Shaped
 			//Machines
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.itemBellows, 1), "  @"," @#","$@@", '@', "stickWood", '#', Items.leather, '$', "ingotIron"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.itemPistonBellows, 1), "  @"," @#","$%@", '@', "stickWood", '#', Items.leather, '$', "ingotIron", '%', Blocks.piston));
+            GameRegistry.addRecipe(new ItemStack(Blocks.furnace, 1), "@@@","@ @","@@@", '@', Blocks.cobblestone);
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.furnace, 1), "@@@","@ @","@@@", '@', "blockStone"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockWoodFurnaceIdle, 1), "@@@","@#@","$%$", '@', "blockStone", '#', Blocks.glass_pane, '$', "ingotIron", '%', Blocks.iron_bars));
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockForgeFurnaceIdle, 1), "@@@","@#@","$$$", '@', Blocks.brick_block, '#', Blocks.iron_bars, '$', "ingotIron"));

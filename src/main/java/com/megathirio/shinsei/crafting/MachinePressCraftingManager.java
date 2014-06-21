@@ -50,13 +50,15 @@ public class MachinePressCraftingManager
 		//Tool Parts
     		//Casts
 
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperPlate, 3), "@"," ", '@', ShinseiBlocks.blockCopper);
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperPlate, 3), "@"," ", '@', ShinseiBlocks.blockCopper);
-            this.addRecipe(new ItemStack(ShinseiTools.itemAxeCast, 1), "@","#", '@', ShinseiTools.itemStoneAxeHead, '#', ShinseiTools.itemCopperPlate);
-            this.addRecipe(new ItemStack(ShinseiTools.itemHoeCast, 1), "@","#", '@', ShinseiTools.itemStoneHoeHead, '#', ShinseiTools.itemCopperPlate);
-       		this.addRecipe(new ItemStack(ShinseiTools.itemPickaxeCast, 1), "@","#", '@', ShinseiTools.itemStonePickaxeHead, '#', ShinseiTools.itemCopperPlate);
-       		this.addRecipe(new ItemStack(ShinseiTools.itemShovelCast, 1), "@","#", '@', ShinseiTools.itemStoneShovelHead, '#', ShinseiTools.itemCopperPlate);
-       		this.addRecipe(new ItemStack(ShinseiTools.itemSwordCast, 1), "@","#", '@', ShinseiTools.itemStoneSwordBlade, '#', ShinseiTools.itemCopperPlate);
+            this.addRecipe(new ItemStack(ShinseiItems.itemCopperPlate, 3), "@"," ", '@', ShinseiBlocks.blockCopper);
+            this.addRecipe(new ItemStack(ShinseiItems.itemIronPlate, 3), "@"," ", '@', Blocks.iron_block);
+            this.addRecipe(new ItemStack(ShinseiItems.itemCopperHeatPlate, 1), "@","@", '@', ShinseiItems.itemCopperPlate);
+            this.addRecipe(new ItemStack(ShinseiItems.itemIronHeatPlate, 1), "@","@", '@', ShinseiItems.itemIronPlate);
+            this.addRecipe(new ItemStack(ShinseiTools.itemAxeCast, 1), "@","#", '@', ShinseiTools.itemStoneAxeHead, '#', ShinseiItems.itemCopperPlate);
+            this.addRecipe(new ItemStack(ShinseiTools.itemHoeCast, 1), "@","#", '@', ShinseiTools.itemStoneHoeHead, '#', ShinseiItems.itemCopperPlate);
+       		this.addRecipe(new ItemStack(ShinseiTools.itemPickaxeCast, 1), "@","#", '@', ShinseiTools.itemStonePickaxeHead, '#', ShinseiItems.itemCopperPlate);
+       		this.addRecipe(new ItemStack(ShinseiTools.itemShovelCast, 1), "@","#", '@', ShinseiTools.itemStoneShovelHead, '#', ShinseiItems.itemCopperPlate);
+       		this.addRecipe(new ItemStack(ShinseiTools.itemSwordCast, 1), "@","#", '@', ShinseiTools.itemStoneSwordBlade, '#', ShinseiItems.itemCopperPlate);
 
 
     		//Axe Heads

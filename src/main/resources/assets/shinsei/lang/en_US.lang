@@ -73,8 +73,13 @@ tile.lead_ore.name=Lead Ore
 item.lead_ingot.name=Lead Ingot
 tile.lead_block.name=Lead Block
 
+item.bellows.name=Bellows
+item.bellows_piston.name=Piston Bellows
 item.wood_tool_handle.name=Wooden Tool Handle
 item.copper_plate.name=Copper Plate
+item.iron_plate.name=Iron Plate
+item.copper_heat_plate.name=Copper Heat Plate
+item.iron_heat_plate.name=Iron Heat Plate
 item.axe_cast.name=Axe Cast
 item.hoe_cast.name=Hoe Cast
 item.pickaxe_cast.name=Pickaxe Cast
