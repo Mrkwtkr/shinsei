@@ -130,7 +130,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 			return 0;
 		}else{
 			Item item = itemstack.getItem();
-			if(item == ShinseiItems.itemSplitWood) return 1600;
+			if(item == ShinseiItems.fuelCoke) return 3200;
 			return 0;
 		}
 	}

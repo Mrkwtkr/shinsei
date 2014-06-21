@@ -22,7 +22,8 @@ public class ShinseiRecipes {
 		RecipeOverride.overrideRecipe();
 		
 		//Shapeless
-			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiBlocks.blockLimestone), ShinseiItems.itemLimestoneShard, ShinseiItems.itemLimestoneShard);
+            GameRegistry.addShapelessRecipe(new ItemStack(ShinseiItems.itemSlakedLime), ShinseiItems.itemQuicklime, ShinseiItems.itemQuicklime, ShinseiItems.itemQuicklime, Items.water_bucket);
+			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiBlocks.blockLimestone), ShinseiItems.itemLime, ShinseiItems.itemLime);
 			GameRegistry.addShapelessRecipe(new ItemStack(Blocks.clay), ShinseiItems.itemSilt, ShinseiItems.itemSilt, ShinseiItems.itemSilt, Blocks.dirt);
 			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotAluminum, 9), ShinseiBlocks.blockAluminum);
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiIngots.ingotAntimony, 9), ShinseiBlocks.blockAntimony);
@@ -83,7 +84,8 @@ public class ShinseiRecipes {
 				GameRegistry.addRecipe(new ItemStack(ShinseiTools.itemWoodSwordBlade, 1), " @ "," @ "," @ ", '@', Blocks.planks);
 			
 		// Smelting
-			GameRegistry.addSmelting(ShinseiBlocks.blockLimestone, new ItemStack(ShinseiBlocks.blockMarble), 1f);
+			GameRegistry.addSmelting(ShinseiItems.itemLime, new ItemStack(ShinseiItems.itemQuicklime), 1f);
+            GameRegistry.addSmelting(ShinseiItems.itemSlakedLime, new ItemStack(ShinseiBlocks.blockLimestone), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.oreChromite, new ItemStack(ShinseiIngots.ingotChromium), 1f);
 			GameRegistry.addSmelting(ShinseiBlocks.oreCopper, new ItemStack(ShinseiIngots.ingotCopper), 1f);
 			GameRegistry.addSmelting(ShinseiBlocks.oreStibnite, new ItemStack(ShinseiIngots.ingotAntimony), 1f);

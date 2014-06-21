@@ -9,11 +9,14 @@ public final class ShinseiItems {
 
 //Item Variables
 	//Fuels
-	public static Item itemSplitWood;
-	
+	public static Item fuelSplitWood;
+    public static Item fuelCoke;
+
 	
 	//Mineral Drops
-	public static Item itemLimestoneShard;
+	public static Item itemLime;
+    public static Item itemQuicklime;
+    public static Item itemSlakedLime;
 	public static Item itemSilt;
 
     //Upgrades
@@ -29,13 +32,23 @@ public final class ShinseiItems {
 		
 	//Item Initialzation
 		//Fuels
-		itemSplitWood = new ShinseiItem().setUnlocalizedName("split_wood");
-		GameRegistry.registerItem(itemSplitWood, "split_wood");
-		
+		fuelSplitWood = new ShinseiItem().setUnlocalizedName("split_wood");
+		GameRegistry.registerItem(fuelSplitWood, "split_wood");
+
+        fuelCoke = new ShinseiItem().setUnlocalizedName("coke");
+        GameRegistry.registerItem(fuelCoke, "coke");
+
 		//Mineral Drops
-		itemLimestoneShard = new ShinseiItem().setUnlocalizedName("limestone_shard");
-		GameRegistry.registerItem(itemLimestoneShard, "limestone_shard");
-		itemSilt = new ShinseiItem().setUnlocalizedName("silt");
+		itemLime = new ShinseiItem().setUnlocalizedName("lime");
+		GameRegistry.registerItem(itemLime, "lime");
+
+        itemQuicklime = new ShinseiItem().setUnlocalizedName("quicklime");
+        GameRegistry.registerItem(itemLime, "quicklime");
+
+        itemSlakedLime = new ShinseiItem().setUnlocalizedName("slaked_lime");
+        GameRegistry.registerItem(itemSlakedLime, "slaked_lime");
+
+        itemSilt = new ShinseiItem().setUnlocalizedName("silt");
 		GameRegistry.registerItem(itemSilt, "silt");
 
         //Upgrades

@@ -149,7 +149,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
 
             }
 
-            if (item == ShinseiItems.itemSplitWood) return 1600;
+            if (item == ShinseiItems.fuelSplitWood) return 1600;
             if (item == ShinseiTools.itemWoodToolHandle) return 400;
             if (item == ShinseiTools.itemWoodAxeHead) return 400;
             if (item == ShinseiTools.itemWoodHoeHead) return 400;
