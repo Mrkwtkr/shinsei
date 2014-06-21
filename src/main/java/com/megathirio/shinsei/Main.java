@@ -31,7 +31,7 @@ public class Main {
 
     ShinseiWorldGen eventWorldGen = new ShinseiWorldGen();
 
-	public static final String modid = "shinsei";
+//	public static final String modid = "shinsei";
 
     @Instance(References.MODID)
 	public static Main instance;
