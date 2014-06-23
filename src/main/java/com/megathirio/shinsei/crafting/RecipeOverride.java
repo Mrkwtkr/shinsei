@@ -1,18 +1,18 @@
 package com.megathirio.shinsei.crafting;
 
-import java.util.List;
-import java.util.Iterator;
+import java.util.*;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.item.crafting.IRecipe;
 
 public class RecipeOverride {
 
-    public static void overrideRecipe() {
+    public static void overrideCraftingRecipe() {
         List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();
 
         Iterator<IRecipe> override = recipes.iterator();
@@ -38,4 +38,10 @@ public class RecipeOverride {
             }
         }
     }
+
+    public static void overrideSmeltingRecipe() {
+
+
+    }
+
 }

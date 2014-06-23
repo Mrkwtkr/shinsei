@@ -19,8 +19,9 @@ public class ShinseiRecipes {
 	public static void init(){
 
 		//Override Recipes
-		RecipeOverride.overrideRecipe();
-		
+		RecipeOverride.overrideCraftingRecipe();
+        RecipeOverride.overrideSmeltingRecipe();
+
 		//Shapeless
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiItems.itemSlakedLime), ShinseiItems.itemQuicklime, ShinseiItems.itemQuicklime, ShinseiItems.itemQuicklime, Items.water_bucket);
 			GameRegistry.addShapelessRecipe(new ItemStack(ShinseiBlocks.blockLimestone), ShinseiItems.itemLime, ShinseiItems.itemLime);

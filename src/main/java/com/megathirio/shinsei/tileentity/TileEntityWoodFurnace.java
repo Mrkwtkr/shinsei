@@ -40,7 +40,6 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     public int upEff;
     public boolean upRetort = false;
 
-
     public void setGuiDisplayName(String displayName) {
 
         this.customName = displayName;
@@ -172,7 +171,6 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     }
 
     public void updateEntity() {
-
         boolean flag = this.burnTime > 0;
         boolean flag1 = false;
 
@@ -305,7 +303,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     }
 
     public int getCookProgressScaled(int i) {
-        return this.cookTime * i / this.furnaceSpeedUpgrade();
+        return this.cookTime * i / (this.furnaceSpeedUpgrade());
     }
 
     public void readFromNBT(NBTTagCompound nbt) {
@@ -390,22 +388,21 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         }
         return upRetort;
     }
-/*
-    public int furnaceEfficiencyUpgrade(){
+
+    public void furnaceEfficiencyUpgrade(){
         ItemStack[] upSlots = new ItemStack[3];
         for (int i = 0; i < 3; i++) {
             upSlots[i] = this.slots[i + 3];
             if (upSlots[i] != null) {
                 Item item = upSlots[i].getItem();
                 if (item == ShinseiItems.itemIronHeatPlate) {
-                    upEff += 400;
+                    upEff = 600;
                 }else if(item == ShinseiItems.itemCopperHeatPlate) {
-                    upEff += 1200;
+                    upEff = 1200;
                 }
             }
         }
-        return upEff;
     }
-    */
+
 }
 
