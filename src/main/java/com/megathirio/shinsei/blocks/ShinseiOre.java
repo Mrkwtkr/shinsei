@@ -30,7 +30,7 @@ public class ShinseiOre extends Block{
 	public Item getItemDropped(int i, Random random, int j){
 		
 		if(this == ShinseiBlocks.blockLimestone){
-			return ShinseiItems.itemLimestoneShard;
+			return ShinseiItems.itemLime;
 		}else if(this == ShinseiBlocks.blockSiltstone){
 			return ShinseiItems.itemSilt;
 		}else if(this == ShinseiBlocks.blockClaystone){

@@ -19,6 +19,8 @@ public class SlotUpgrade extends Slot {
             return true;
         }else if(itemstack.getItem() == ShinseiItems.itemPistonBellows) {
             return true;
+        }else if(itemstack.getItem() == ShinseiItems.itemRetort) {
+            return true;
         }else if(itemstack.getItem() == ShinseiItems.itemCopperHeatPlate) {
             return true;
         }else if(itemstack.getItem() == ShinseiItems.itemIronHeatPlate) {

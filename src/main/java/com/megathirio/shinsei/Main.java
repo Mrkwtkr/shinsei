@@ -1,17 +1,11 @@
 package com.megathirio.shinsei;
 
-import com.megathirio.shinsei.blocks.ShinseiBlocks;
-import com.megathirio.shinsei.blocks.ShinseiMachines;
-import com.megathirio.shinsei.core.handler.CraftingHandler;
-import com.megathirio.shinsei.core.handler.FuelHandler;
-import com.megathirio.shinsei.core.handler.GuiHandler;
+import com.megathirio.shinsei.blocks.*;
+import com.megathirio.shinsei.core.handler.*;
 import com.megathirio.shinsei.core.proxy.CommonProxy;
 import com.megathirio.shinsei.crafting.ShinseiRecipes;
 import com.megathirio.shinsei.creativetab.ShinseiTabs;
-import com.megathirio.shinsei.items.ShinseiDusts;
-import com.megathirio.shinsei.items.ShinseiIngots;
-import com.megathirio.shinsei.items.ShinseiItems;
-import com.megathirio.shinsei.items.ShinseiTools;
+import com.megathirio.shinsei.items.*;
 import com.megathirio.shinsei.lib.References;
 import com.megathirio.shinsei.world.ShinseiWorldGen;
 
@@ -19,9 +13,7 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -45,25 +37,28 @@ public class Main {
 	@Mod.EventHandler
 	public static void preInit(FMLPreInitializationEvent event){
 		
-		//Creative Tabs Initialization
+		//Creative Tab Initializations
 		ShinseiTabs.init();
 
-		//Block Initialization
+		//Block Initializations
 		ShinseiBlocks.init();
 
-		//Machines Initialization
+		//Machine Initializations
 		ShinseiMachines.init();
 
-		//Item Initialization
+		//Item Initializations
 		ShinseiItems.init();
 
-		//Item Initialization
+		//Ingot Initializations
 		ShinseiIngots.init();
 
-		//Dusts Initialization
+		//Dust Initializations
 		ShinseiDusts.init();
 
-		//Tools Initialization
+        //Fuel Initializations
+        ShinseiFuels.init();
+
+        //Tool Initializations
 		ShinseiTools.init();
 
 		//WorldGen Registry

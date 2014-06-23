@@ -3,6 +3,7 @@ package com.megathirio.shinsei.tileentity;
 import com.megathirio.shinsei.blocks.WoodFurnace;
 import com.megathirio.shinsei.crafting.WoodFurnaceRecipes;
 import com.megathirio.shinsei.items.ShinseiDusts;
+import com.megathirio.shinsei.items.ShinseiFuels;
 import com.megathirio.shinsei.items.ShinseiItems;
 import com.megathirio.shinsei.items.ShinseiTools;
 import net.minecraft.block.Block;
@@ -37,6 +38,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     public int currentItemBurnTime; //Number of ticks that a fresh copy of the currently burning item would keep the furnace burning for
     public int cookTime; //Number of ticks that the current item has been cooking for
     public int upEff;
+    public boolean upRetort = false;
 
 
     public void setGuiDisplayName(String displayName) {
@@ -149,7 +151,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
 
             }
 
-            if (item == ShinseiItems.fuelSplitWood) return 1600;
+            if (item == ShinseiFuels.fuelSplitWood) return 1600;
             if (item == ShinseiTools.itemWoodToolHandle) return 400;
             if (item == ShinseiTools.itemWoodAxeHead) return 400;
             if (item == ShinseiTools.itemWoodHoeHead) return 400;
@@ -218,10 +220,18 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     }
 
     public boolean canSmelt() {
+        upRetort = furnaceRetortUpgrade();
         if (this.slots[0] == null) {
             return false;
         }else{
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
+            ItemStack itemstack;
+            if(upRetort == true && this.slots[0].getItem() == Items.coal) {
+                ItemStack itemstack0 = WoodFurnaceRecipes.getWoodFurnaceResult(this.slots[0].getItem());
+                itemstack = itemstack0;
+            }else {
+                ItemStack itemstack1 = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
+                itemstack = itemstack1;
+            }
 
             if(itemstack == null) return false;
             if(this.slots[2] == null) return true;
@@ -234,8 +244,16 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     }
 
     public void smeltItem(){
+        upRetort = furnaceRetortUpgrade();
         if(this.canSmelt()){
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
+            ItemStack itemstack;
+            if(upRetort == true && this.slots[0].getItem() == Items.coal) {
+                ItemStack itemstack0 = WoodFurnaceRecipes.getWoodFurnaceResult(this.slots[0].getItem());
+                itemstack = itemstack0;
+            }else {
+                ItemStack itemstack1 = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
+                itemstack = itemstack1;
+            }
 
             if(this.slots[2] == null){
                 this.slots[2] = itemstack.copy();
@@ -358,22 +376,21 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         }
     return upSpeed;
     }
-/*
-    public boolean furnaceOutputUpgrade(){
+
+    public boolean furnaceRetortUpgrade(){
         ItemStack[] upSlots = new ItemStack[3];
-        boolean upOutput = false;
         for (int i = 0; i < 3; i++) {
             upSlots[i] = this.slots[i + 3];
             if (upSlots[i] != null) {
                 Item item = upSlots[i].getItem();
-                if (item == ShinseiDusts.dustIridium) {
-                    upOutput = true;
+                if (item == ShinseiItems.itemRetort) {
+                    upRetort = true;
                 }
             }
         }
-        return upOutput;
+        return upRetort;
     }
-
+/*
     public int furnaceEfficiencyUpgrade(){
         ItemStack[] upSlots = new ItemStack[3];
         for (int i = 0; i < 3; i++) {

@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
+import com.megathirio.shinsei.items.ShinseiFuels;
 import com.megathirio.shinsei.items.ShinseiItems;
 import com.megathirio.shinsei.items.ShinseiTools;
 
@@ -45,13 +46,13 @@ public class ToolBenchCraftingManager
     	recipes = new ArrayList();
 
     //Items
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.itemAluminumAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.itemCopperAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.wooden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.stone_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.iron_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.golden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiItems.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.diamond_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.itemAluminumAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.itemCopperAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.wooden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.stone_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.iron_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.golden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.diamond_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
 
         //Tool Parts
     	//Handles

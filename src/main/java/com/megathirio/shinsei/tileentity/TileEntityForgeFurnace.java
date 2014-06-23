@@ -2,6 +2,7 @@ package com.megathirio.shinsei.tileentity;
 
 import com.megathirio.shinsei.blocks.ForgeFurnace;
 import com.megathirio.shinsei.crafting.ForgeFurnaceRecipes;
+import com.megathirio.shinsei.items.ShinseiFuels;
 import com.megathirio.shinsei.items.ShinseiItems;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -130,7 +131,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 			return 0;
 		}else{
 			Item item = itemstack.getItem();
-			if(item == ShinseiItems.fuelCoke) return 3200;
+			if(item == ShinseiFuels.fuelCoke) return 3200;
 			return 0;
 		}
 	}

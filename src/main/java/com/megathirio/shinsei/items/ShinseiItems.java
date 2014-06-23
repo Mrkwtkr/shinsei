@@ -8,11 +8,7 @@ import net.minecraftforge.oredict.OreDictionary;
 public final class ShinseiItems {
 
 //Item Variables
-	//Fuels
-	public static Item fuelSplitWood;
-    public static Item fuelCoke;
 
-	
 	//Mineral Drops
 	public static Item itemLime;
     public static Item itemQuicklime;
@@ -22,6 +18,7 @@ public final class ShinseiItems {
     //Upgrades
     public static Item itemBellows;
     public static Item itemPistonBellows;
+    public static Item itemRetort;
     public static Item itemCopperPlate;
     public static Item itemIronPlate;
     public static Item itemCopperHeatPlate;
@@ -31,19 +28,12 @@ public final class ShinseiItems {
 	public static void init(){
 		
 	//Item Initialzation
-		//Fuels
-		fuelSplitWood = new ShinseiItem().setUnlocalizedName("split_wood");
-		GameRegistry.registerItem(fuelSplitWood, "split_wood");
-
-        fuelCoke = new ShinseiItem().setUnlocalizedName("coke");
-        GameRegistry.registerItem(fuelCoke, "coke");
-
 		//Mineral Drops
 		itemLime = new ShinseiItem().setUnlocalizedName("lime");
 		GameRegistry.registerItem(itemLime, "lime");
 
         itemQuicklime = new ShinseiItem().setUnlocalizedName("quicklime");
-        GameRegistry.registerItem(itemLime, "quicklime");
+        GameRegistry.registerItem(itemQuicklime, "quicklime");
 
         itemSlakedLime = new ShinseiItem().setUnlocalizedName("slaked_lime");
         GameRegistry.registerItem(itemSlakedLime, "slaked_lime");
@@ -57,6 +47,9 @@ public final class ShinseiItems {
 
         itemPistonBellows = new ShinseiItem().setUnlocalizedName("bellows_piston").setMaxStackSize(1);
         GameRegistry.registerItem(itemPistonBellows, "bellows_piston");
+
+        itemRetort = new ShinseiItem().setUnlocalizedName("retort").setMaxStackSize(1);
+        GameRegistry.registerItem(itemRetort, "retort");
 
         itemCopperPlate = new ShinseiItem().setUnlocalizedName("copper_plate");
         GameRegistry.registerItem(itemCopperPlate, "copper_plate");

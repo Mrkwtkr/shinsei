@@ -2,6 +2,7 @@ package com.megathirio.shinsei.crafting;
 
 import com.megathirio.shinsei.blocks.ShinseiBlocks;
 import com.megathirio.shinsei.items.ShinseiDusts;
+import com.megathirio.shinsei.items.ShinseiFuels;
 import com.megathirio.shinsei.items.ShinseiIngots;
 import com.megathirio.shinsei.items.ShinseiItems;
 import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
@@ -23,8 +24,8 @@ public class WoodFurnaceRecipes {
 	
 	public static ItemStack getOutput(Item item){
         //Recipe 1
-        if(item == Item.getItemFromBlock(ShinseiBlocks.oreBauxite)){
-            return new ItemStack(ShinseiIngots.ingotAluminum, stackSize);
+        if(item == Items.coal){
+            return new ItemStack(ShinseiFuels.fuelCoke, stackSize);
         }
             return null;
 	}

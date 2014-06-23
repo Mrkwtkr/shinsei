@@ -5,11 +5,14 @@ itemGroup.shinseiMachines=Shinsei Machines
 
 tile.claystone.name=Claystone
 tile.limestone.name=Limestone
-item.limestone_shard.name=Limestone Shard
+item.lime.name=Lime
+item.quicklime.name=Quicklime
+item.slaked_lime.name=Slaked Lime
 tile.siltstone.name=Siltstone
 item.silt.name=Silt
 
 item.split_wood.name=Split Wood
+item.coke.name=Coke
 
 tile.awood_furnace.name=Split Wood Furnace
 tile.iwood_furnace.name=Split Wood Furnace
@@ -75,6 +78,7 @@ tile.lead_block.name=Lead Block
 
 item.bellows.name=Bellows
 item.bellows_piston.name=Piston Bellows
+item.retort.name=Retort
 item.wood_tool_handle.name=Wooden Tool Handle
 item.copper_plate.name=Copper Plate
 item.iron_plate.name=Iron Plate
