@@ -40,8 +40,15 @@ public class RecipeOverride {
     }
 
     public static void overrideSmeltingRecipe() {
+        Map recipes = FurnaceRecipes.smelting().getSmeltingList();
 
-
+        Iterator override = recipes.entrySet().iterator();
+        while (override.hasNext()) {
+            Map.Entry<ItemStack, ???> entry = override.next();
+            if (entry.) {
+                override.remove();
+            }
+        }
     }
 
 }
