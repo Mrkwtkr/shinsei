@@ -4,12 +4,10 @@ import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import scala.util.Random;
 
 import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.creativetab.ShinseiTabs;
 import com.megathirio.shinsei.lib.References;
-import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
@@ -26,6 +24,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
+import java.util.Random;
 
 public class ForgeFurnace extends BlockContainer{
 

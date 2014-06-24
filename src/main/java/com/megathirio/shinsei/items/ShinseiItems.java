@@ -10,9 +10,7 @@ public final class ShinseiItems {
 //Item Variables
 
 	//Mineral Drops
-	public static Item itemLime;
-    public static Item itemQuicklime;
-    public static Item itemSlakedLime;
+    public static Item bucketSlakedLime;
 	public static Item itemSilt;
 
     //Upgrades
@@ -29,14 +27,8 @@ public final class ShinseiItems {
 		
 	//Item Initialzation
 		//Mineral Drops
-		itemLime = new ShinseiItem().setUnlocalizedName("lime");
-		GameRegistry.registerItem(itemLime, "lime");
-
-        itemQuicklime = new ShinseiItem().setUnlocalizedName("quicklime");
-        GameRegistry.registerItem(itemQuicklime, "quicklime");
-
-        itemSlakedLime = new ShinseiItem().setUnlocalizedName("slaked_lime");
-        GameRegistry.registerItem(itemSlakedLime, "slaked_lime");
+        bucketSlakedLime = new ShinseiItem().setUnlocalizedName("bucket_slaked_lime").setMaxStackSize(1);
+        GameRegistry.registerItem(bucketSlakedLime, "bucket_slaked_lime");
 
         itemSilt = new ShinseiItem().setUnlocalizedName("silt");
 		GameRegistry.registerItem(itemSilt, "silt");

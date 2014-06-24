@@ -13,16 +13,19 @@ public final class ShinseiMachines {
 	//Furnaces
 	public static Block blockWoodFurnaceIdle;
 	public static Block blockWoodFurnaceActi;
-	public static final int guiIDWoodFurnace = 0;
+	public static final int guiIDWoodFurnace = 2;
 	public static Block blockForgeFurnaceIdle;
 	public static Block blockForgeFurnaceActi;
-	public static final int guiIDForgeFurnace = 1;
+	public static final int guiIDForgeFurnace = 3;
+    public static Block blockPressureFurnaceIdle;
+    public static Block blockPressureFurnaceActi;
+    public static final int guiIDPressureFurnace = 4;
 
 	//Work Stations
 	public static Block blockToolBench;
-	public static final int guiIDToolBench = 2;
+	public static final int guiIDToolBench = 0;
 	public static Block blockMachinePress;
-	public static final int guiIDMachinePress = 3;
+	public static final int guiIDMachinePress = 1;
 	
 	public static void init(){
 	
@@ -33,6 +36,12 @@ public final class ShinseiMachines {
 		blockWoodFurnaceActi = new WoodFurnace(true).setBlockName("awood_furnace").setLightLevel(0.875F).setHardness(3.5F).setCreativeTab(null);
 		GameRegistry.registerBlock(blockWoodFurnaceActi, "awood_furnace");
 		GameRegistry.registerTileEntity(TileEntityWoodFurnace.class, "WoodFurnace");
+
+        blockPressureFurnaceIdle = new PressureFurnace(false).setBlockName("ipressure_furnace").setHardness(3.5F);
+        GameRegistry.registerBlock(blockPressureFurnaceIdle, "ipressure_furnace");
+        blockPressureFurnaceActi = new PressureFurnace(true).setBlockName("apressure_furnace").setLightLevel(0.875F).setHardness(3.5F);
+        GameRegistry.registerBlock(blockPressureFurnaceActi, "apressure_furnace");
+        //GameRegistry.registerTileEntity(TileEntityPressureFurnace.class, "PressureFurnace");
 
 		blockForgeFurnaceIdle = new ForgeFurnace(false).setBlockName("iforge_furnace").setHardness(3.5F);
 		GameRegistry.registerBlock(blockForgeFurnaceIdle, "iforge_furnace");

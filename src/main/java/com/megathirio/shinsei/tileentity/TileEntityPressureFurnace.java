@@ -1,8 +1,7 @@
 package com.megathirio.shinsei.tileentity;
 
-import com.megathirio.shinsei.blocks.WoodFurnace;
-import com.megathirio.shinsei.crafting.WoodFurnaceRecipes;
-import com.megathirio.shinsei.items.ShinseiDusts;
+import com.megathirio.shinsei.blocks.PressureFurnace;
+import com.megathirio.shinsei.crafting.PressureFurnaceRecipes;
 import com.megathirio.shinsei.items.ShinseiFuels;
 import com.megathirio.shinsei.items.ShinseiItems;
 import com.megathirio.shinsei.items.ShinseiTools;
@@ -12,18 +11,13 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemHoe;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
-import net.minecraft.item.ItemTool;
+import net.minecraft.item.*;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory {
+public class TileEntityPressureFurnace extends TileEntity implements ISidedInventory {
 
     private String customName;
 
@@ -48,7 +42,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
 
     public String getInventoryName() {
 
-        return this.hasCustomInventoryName() ? this.customName : "container.woodFurnace";
+        return this.hasCustomInventoryName() ? this.customName : "container.pressureFurnace";
     }
 
     public boolean hasCustomInventoryName() {
@@ -210,7 +204,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
             if (flag != this.isBurning()) {
 
                 flag1 = true;
-                WoodFurnace.updateWoodFurnaceBlockState(this.burnTime > 0, this.worldObj, this.xCoord, this.yCoord, this.zCoord);
+                PressureFurnace.updatePressureFurnaceBlockState(this.burnTime > 0, this.worldObj, this.xCoord, this.yCoord, this.zCoord);
             }
         }
 
@@ -226,7 +220,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         }else{
             ItemStack itemstack;
             if(upRetort == true && this.slots[0].getItem() == Items.coal) {
-                ItemStack itemstack0 = WoodFurnaceRecipes.getWoodFurnaceResult(this.slots[0].getItem());
+                ItemStack itemstack0 = PressureFurnaceRecipes.getPressureFurnaceResult(this.slots[0].getItem());
                 itemstack = itemstack0;
             }else {
                 ItemStack itemstack1 = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
@@ -248,7 +242,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         if(this.canSmelt()){
             ItemStack itemstack;
             if(upRetort == true && this.slots[0].getItem() == Items.coal) {
-                ItemStack itemstack0 = WoodFurnaceRecipes.getWoodFurnaceResult(this.slots[0].getItem());
+                ItemStack itemstack0 = PressureFurnaceRecipes.getPressureFurnaceResult(this.slots[0].getItem());
                 itemstack = itemstack0;
             }else {
                 ItemStack itemstack1 = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);

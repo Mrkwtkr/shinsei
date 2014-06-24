@@ -1,14 +1,12 @@
 package com.megathirio.shinsei.blocks;
 
-import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-
 import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.creativetab.ShinseiTabs;
 import com.megathirio.shinsei.lib.References;
-import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
-
+import com.megathirio.shinsei.tileentity.TileEntityPressureFurnace;
+import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -26,7 +24,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class WoodFurnace extends BlockContainer{
+public class PressureFurnace extends BlockContainer {
 
 	private final boolean isActive;
 
@@ -35,26 +33,29 @@ public class WoodFurnace extends BlockContainer{
 
 	@SideOnly(Side.CLIENT)
 	private IIcon iconTop;
-	
+
 	@SideOnly(Side.CLIENT)
 	private IIcon iconBot;
 
 	public static boolean keepInventory;
 	private Random rand = new Random();
-	
-	public WoodFurnace(boolean blockState) {
+
+	public PressureFurnace(boolean blockState) {
 		
 		super(Material.rock);
 		
 		setCreativeTab(ShinseiTabs.machinesTab);
 		this.isActive = blockState;
-	
+
+        if(isActive){
+            this.setLightLevel(.825F);
+        }
 	}
 
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister){
 	
-		this.blockIcon = iconRegister.registerIcon(References.MODID + ":" + this.getUnlocalizedName().substring(6) + "_side");
+		this.blockIcon = iconRegister.registerIcon(References.MODID + ":" + (this.isActive ? this.getUnlocalizedName().substring(6) + "_side_acti" : this.getUnlocalizedName().substring(6) + "_side_idle"));
 		this.iconFront = iconRegister.registerIcon(References.MODID + ":" + (this.isActive ? this.getUnlocalizedName().substring(6) + "_acti" : this.getUnlocalizedName().substring(6) + "_idle"));
 		this.iconTop = iconRegister.registerIcon(References.MODID + ":" + (this.isActive ? this.getUnlocalizedName().substring(6) + "_top_acti" : this.getUnlocalizedName().substring(6) + "_top_idle"));
 		this.iconBot = iconRegister.registerIcon(References.MODID + ":" + this.getUnlocalizedName().substring(6) + "_bot");
@@ -66,19 +67,40 @@ public class WoodFurnace extends BlockContainer{
 		
 		return metadata == 0 && side == 3 ? this.iconFront : side == 1 ? this.iconTop : side == 0 ? this.iconBot : (side == metadata ? this.iconFront : this.blockIcon);
 	}
-	
+
 	public Item getItem(){
 		
-		return Item.getItemFromBlock(ShinseiMachines.blockWoodFurnaceIdle);
+		return Item.getItemFromBlock(ShinseiMachines.blockPressureFurnaceIdle);
 	}
 	
 	public void onBlockAdded(World world, int x, int y, int z){
 		
 		super.onBlockAdded(world, x, y, z);
 		this.setDefaultDirection(world, x, y, z);
-	}
-	
-	private void setDefaultDirection(World world, int x, int y, int z) {
+
+        if(!world.isRemote){
+            if(this.isActive && !world.isBlockIndirectlyGettingPowered(x, y, z)){
+                world.scheduleBlockUpdate(x, y, z, this, 4);
+            }
+        }else if(!this.isActive && world.isBlockIndirectlyGettingPowered(x, y, z)){
+            world.setBlock(x, y, z, ShinseiMachines.blockPressureFurnaceActi, 0, 2);
+        }
+
+    }
+
+    public void onNeighborBlockChange(World world, int x, int y, int z, Block block){
+
+        if(!world.isRemote){
+            if(this.isActive && !world.isBlockIndirectlyGettingPowered(x, y, z)){
+                world.scheduleBlockUpdate(x, y, z, this, 4);
+            }
+        }else if(!this.isActive && world.isBlockIndirectlyGettingPowered(x, y, z)){
+            world.setBlock(x, y, z, ShinseiMachines.blockPressureFurnaceActi, 0, 2);
+        }
+
+    }
+
+    private void setDefaultDirection(World world, int x, int y, int z) {
 		if(!world.isRemote){
 			
 			Block b1 = world.getBlock(x, y, z - 1);
@@ -113,20 +135,19 @@ public class WoodFurnace extends BlockContainer{
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ){
 		
 		if(!world.isRemote){
-			FMLNetworkHandler.openGui(player, Main.instance, ShinseiMachines.guiIDWoodFurnace, world, x, y, z);
+			FMLNetworkHandler.openGui(player, Main.instance, ShinseiMachines.guiIDPressureFurnace, world, x, y, z);
 		}
 		
 		return true;
 	}
-	
-	@Override
-	public TileEntity createNewTileEntity(World world, int i) {
-		
-		return new TileEntityWoodFurnace();
-	}
+
+    @Override
+    public TileEntity createNewTileEntity(World world, int i) {
+
+        return new TileEntityPressureFurnace();
+    }
 
     @SideOnly(Side.CLIENT)
-
     public void randomDisplayTick(World world, int x, int y, int z, Random random) {
         if(this.isActive) {
             int direction = world.getBlockMetadata(x, y, z);
@@ -177,11 +198,11 @@ public class WoodFurnace extends BlockContainer{
 		}
 		
 		if(itemstack.hasDisplayName()){
-			((TileEntityWoodFurnace)world.getTileEntity(x, y, z)).setGuiDisplayName(itemstack.getDisplayName());
+			((TileEntityPressureFurnace)world.getTileEntity(x, y, z)).setGuiDisplayName(itemstack.getDisplayName());
 		}
 	}
 
-	public static void updateWoodFurnaceBlockState(boolean active, World worldObj, int xCoord, int yCoord, int zCoord) {
+    public static void updatePressureFurnaceBlockState(boolean active, World worldObj, int xCoord, int yCoord, int zCoord) {
 		
 		int i = worldObj.getBlockMetadata(xCoord, yCoord, zCoord);
 		
@@ -189,9 +210,9 @@ public class WoodFurnace extends BlockContainer{
 		keepInventory = true;
 		
 		if(active){
-			worldObj.setBlock(xCoord, yCoord, zCoord, ShinseiMachines.blockWoodFurnaceActi);
+			worldObj.setBlock(xCoord, yCoord, zCoord, ShinseiMachines.blockPressureFurnaceActi);
 		}else{
-			worldObj.setBlock(xCoord, yCoord, zCoord, ShinseiMachines.blockWoodFurnaceIdle);
+			worldObj.setBlock(xCoord, yCoord, zCoord, ShinseiMachines.blockPressureFurnaceIdle);
 			
 		}
 
@@ -205,9 +226,9 @@ public class WoodFurnace extends BlockContainer{
 	}
 	
 	public void breakBlock(World world, int x, int y, int z, Block oldBlock, int oldMetadata){
-		
+
 		if(!keepInventory){
-			TileEntityWoodFurnace tileentity = (TileEntityWoodFurnace) world.getTileEntity(x, y, z);
+			TileEntityPressureFurnace tileentity = (TileEntityPressureFurnace) world.getTileEntity(x, y, z);
 			
 			if(tileentity != null){
 				
@@ -250,6 +271,7 @@ public class WoodFurnace extends BlockContainer{
 	
 	public Item getItem(World world, int x, int y, int z){
 		
-		return Item.getItemFromBlock(ShinseiMachines.blockWoodFurnaceIdle);
+		return Item.getItemFromBlock(ShinseiMachines.blockPressureFurnaceIdle);
+
 	}
 }

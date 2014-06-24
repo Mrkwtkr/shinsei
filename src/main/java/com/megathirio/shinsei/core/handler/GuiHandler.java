@@ -5,12 +5,15 @@ import com.megathirio.shinsei.core.container.ContainerForgeFurnace;
 import com.megathirio.shinsei.core.container.ContainerMachinePress;
 import com.megathirio.shinsei.core.container.ContainerToolBench;
 import com.megathirio.shinsei.core.container.ContainerWoodFurnace;
+import com.megathirio.shinsei.core.container.ContainerPressureFurnace;
 import com.megathirio.shinsei.core.gui.GuiForgeFurnace;
 import com.megathirio.shinsei.core.gui.GuiMachinePress;
 import com.megathirio.shinsei.core.gui.GuiToolBench;
 import com.megathirio.shinsei.core.gui.GuiWoodFurnace;
+import com.megathirio.shinsei.core.gui.GuiPressureFurnace;
 import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
 import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
+import com.megathirio.shinsei.tileentity.TileEntityPressureFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -39,8 +42,14 @@ public class GuiHandler implements IGuiHandler {
 				
 					return new ContainerForgeFurnace(player.inventory, (TileEntityForgeFurnace) entity);
 				}
-				return null;		
-			}
+				return null;
+            case ShinseiMachines.guiIDPressureFurnace:
+                if(entity instanceof TileEntityPressureFurnace){
+
+                    return new ContainerPressureFurnace(player.inventory, (TileEntityPressureFurnace) entity);
+                }
+                return null;
+            }
 
 			switch(ID){
 			case ShinseiMachines.guiIDToolBench:
@@ -75,6 +84,13 @@ public class GuiHandler implements IGuiHandler {
 					
 				}
 				return null;
+            case ShinseiMachines.guiIDPressureFurnace:
+                if(entity instanceof TileEntityPressureFurnace){
+
+                    return new GuiPressureFurnace(player.inventory, (TileEntityPressureFurnace) entity);
+
+                }
+                return null;
 		}
 			switch(ID){
 			case ShinseiMachines.guiIDToolBench:

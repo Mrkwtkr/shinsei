@@ -31,10 +31,8 @@ public class ShinseiBlock extends Block{
 
 	public Item getItemDropped(int i, Random random, int j){
 		
-		if(this == ShinseiBlocks.blockLimestone){
-			return ShinseiItems.itemLime;
-		}else if(this == ShinseiBlocks.blockSiltstone){
-			return ShinseiItems.itemSilt;
+		if(this == ShinseiBlocks.blockSiltstone){
+            return ShinseiItems.itemSilt;
 		}else if(this == ShinseiBlocks.blockClaystone){
 			return Items.clay_ball;
 		}else{
@@ -45,10 +43,8 @@ public class ShinseiBlock extends Block{
 
 	public int quantityDropped(Random random){
 
-		if(this == ShinseiBlocks.blockLimestone){
-			return 1 + random.nextInt(2);
-		}else if(this == ShinseiBlocks.blockSiltstone){
-			return 1 + random.nextInt(3);
+		if(this == ShinseiBlocks.blockSiltstone){
+            return 1 + random.nextInt(3);
 		}else if(this == ShinseiBlocks.blockClaystone){
 			return 1 + random.nextInt(2);
 		}else{

@@ -12,8 +12,10 @@ public final class ShinseiDusts {
 		public static Item dustArsenic;
         public static Item dustGraphite;
         public static Item dustIridium;
+        public static Item dustQuicklime;
 
-//Item Initialization
+
+    //Item Initialization
 	public static void init(){
 		
 	//Item Initialzation
@@ -29,5 +31,10 @@ public final class ShinseiDusts {
         dustIridium = new ShinseiItem().setUnlocalizedName("iridium_powder");
         GameRegistry.registerItem(dustIridium, "iridium_powder");
         OreDictionary.registerOre("dustIridium", new ItemStack(dustIridium));
+
+        dustQuicklime = new ShinseiItem().setUnlocalizedName("quicklime");
+        GameRegistry.registerItem(dustQuicklime, "quicklime");
+        OreDictionary.registerOre("dustQuicklime", new ItemStack(dustQuicklime));
+
 	}
 }

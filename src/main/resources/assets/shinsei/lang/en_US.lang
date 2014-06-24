@@ -14,6 +14,10 @@ item.silt.name=Silt
 item.split_wood.name=Split Wood
 item.coke.name=Coke
 
+tile.apressure_furnace.name=Pressure Furnace
+tile.ipressure_furnace.name=Pressure Furnace
+container.pressureFurnace=Pressure Furnace
+
 tile.awood_furnace.name=Split Wood Furnace
 tile.iwood_furnace.name=Split Wood Furnace
 container.woodFurnace=Split Wood Furnace
@@ -78,7 +82,7 @@ tile.lead_block.name=Lead Block
 
 item.bellows.name=Bellows
 item.bellows_piston.name=Piston Bellows
-item.retort.name=Retort
+item.retort.name=Retort Chamber
 item.wood_tool_handle.name=Wooden Tool Handle
 item.copper_plate.name=Copper Plate
 item.iron_plate.name=Iron Plate
