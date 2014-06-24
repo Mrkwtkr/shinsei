@@ -7,7 +7,7 @@ tile.claystone.name=Claystone
 tile.limestone.name=Limestone
 item.lime.name=Lime
 item.quicklime.name=Quicklime
-item.slaked_lime.name=Slaked Lime
+item.bucket_slaked_lime.name=Slaked Lime
 tile.siltstone.name=Siltstone
 item.silt.name=Silt
 

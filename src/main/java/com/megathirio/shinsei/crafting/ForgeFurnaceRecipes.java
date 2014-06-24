@@ -22,10 +22,15 @@ public class ForgeFurnaceRecipes {
 	}
 	
 	public static ItemStack getOutput(Item item, Item item2, Item item3){
-		//Troll Recipe 1
-		if(item == ShinseiIngots.ingotAluminum && item2 == ShinseiIngots.ingotChromium && item3 == ShinseiDusts.dustArsenic || item2 == ShinseiIngots.ingotAluminum && item == ShinseiIngots.ingotChromium && item3 == ShinseiDusts.dustArsenic){
-			return new ItemStack(ShinseiDusts.dustIridium, 2);
+		//Iron Ore Recipe
+		if(item == Item.getItemFromBlock(Blocks.iron_ore) && item2 == ShinseiDusts.dustQuicklime && item3 == null || item2 == Item.getItemFromBlock(Blocks.iron_ore) && item == ShinseiDusts.dustQuicklime && item3 == null){
+			return new ItemStack(Items.iron_ingot, 2);
 		}
-            return null;
+        //White Marble Recipe
+        if(item == Item.getItemFromBlock(Blocks.iron_ore) && item2 == ShinseiDusts.dustQuicklime && item3 == ShinseiDusts.dustQuicklime || item2 == Item.getItemFromBlock(Blocks.iron_ore) && item == ShinseiDusts.dustQuicklime && item3 == ShinseiDusts.dustQuicklime){
+            return new ItemStack(Items.iron_ingot, 2);
+        }
+
+        return null;
 	}
 }

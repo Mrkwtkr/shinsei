@@ -37,12 +37,12 @@ public class ShinseiWorldGen implements IWorldGenerator {
         this.addOreSpawn(ShinseiBlocks.oreStibnite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
         this.addOreSpawn(ShinseiBlocks.oreChromite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
         this.addOreSpawn(ShinseiBlocks.oreIridium, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        this.addOreSpawn(ShinseiBlocks.oreCopper, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.oreCopper, world, random, x, z, 16, 16, 4+random.nextInt(8), 35, 0, 60);
         this.addOreSpawn(ShinseiBlocks.oreGraphite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
         this.addOreSpawn(ShinseiBlocks.oreLead, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        this.addOreSpawn(ShinseiBlocks.blockSiltstone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        this.addOreSpawn(ShinseiBlocks.blockClaystone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        this.addOreSpawn(ShinseiBlocks.blockLimestone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
+        this.addOreSpawn(ShinseiBlocks.blockSiltstone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 64, 128);
+        this.addOreSpawn(ShinseiBlocks.blockClaystone, world, random, x, z, 16, 16, 4+random.nextInt(8), 30, 60, 256);
+        this.addOreSpawn(ShinseiBlocks.blockLimestone, world, random, x, z, 16, 16, 6+random.nextInt(16), 40, 0, 256);
     }
 
     public void generateNether(World world, Random random, int x, int z) {
