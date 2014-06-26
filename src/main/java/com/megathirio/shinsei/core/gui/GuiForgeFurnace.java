@@ -34,16 +34,16 @@ public class GuiForgeFurnace extends GuiContainer{
 	}
 	
     @Override
-    protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) {
+    protected void drawGuiContainerBackgroundLayer(float flK, int intI, int intJ) {
 
         GL11.glColor4f(1f, 1f, 1f, 1f);
         Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
         drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 
-        if(this.forgeFurnace.isForging()){
+        if(this.forgeFurnace.hasPower()){
 
-            int k = this.forgeFurnace.getForgePowerRemainingScaled(32);
-            drawTexturedModalRect(guiLeft + 38, guiTop + 48 - k, 176, 32 - k, 10, k + 2);
+            int intK = this.forgeFurnace.getForgePowerRemainingScaled(32);
+            drawTexturedModalRect(guiLeft + 38, guiTop + 48 - intK, 176, 32 - intK, 10, intK + 2);
 
         }
 

@@ -23,14 +23,9 @@ public class ForgeFurnaceRecipes {
 	
 	public static ItemStack getOutput(Item item, Item item2, Item item3){
 		//Iron Ore Recipe
-		if(item == Item.getItemFromBlock(Blocks.iron_ore) && item2 == ShinseiDusts.dustQuicklime && item3 == null || item2 == Item.getItemFromBlock(Blocks.iron_ore) && item == ShinseiDusts.dustQuicklime && item3 == null){
+		if(item == Item.getItemFromBlock(Blocks.iron_ore) && item2 == ShinseiDusts.dustQuicklime && item3 == ShinseiDusts.dustQuicklime || item2 == Item.getItemFromBlock(Blocks.iron_ore) && item == ShinseiDusts.dustQuicklime && item3 == ShinseiDusts.dustQuicklime){
 			return new ItemStack(Items.iron_ingot, 2);
 		}
-        //White Marble Recipe
-        if(item == Item.getItemFromBlock(Blocks.iron_ore) && item2 == ShinseiDusts.dustQuicklime && item3 == ShinseiDusts.dustQuicklime || item2 == Item.getItemFromBlock(Blocks.iron_ore) && item == ShinseiDusts.dustQuicklime && item3 == ShinseiDusts.dustQuicklime){
-            return new ItemStack(Items.iron_ingot, 2);
-        }
-
         return null;
 	}
 }

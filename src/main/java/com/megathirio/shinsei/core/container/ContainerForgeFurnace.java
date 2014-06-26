@@ -14,50 +14,50 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 
 public class ContainerForgeFurnace extends Container {
-	
-	private TileEntityForgeFurnace forgeFurnace;
-	private int dualCookTime;
-	private int dualPower;
-	private int lastItemBurnTime;
-	
-	public ContainerForgeFurnace(InventoryPlayer invPlayer, TileEntityForgeFurnace tileEntity){
-		dualCookTime = 0;
-		dualPower = 0;
-		lastItemBurnTime = 0;
-		
-		forgeFurnace = tileEntity;
-		
-		this.addSlotToContainer(new Slot(tileEntity, 0, 85, 17));//Input Slot 1
-		this.addSlotToContainer(new Slot(tileEntity, 1, 85, 35));//Input Slot 2
-		this.addSlotToContainer(new Slot(tileEntity, 2, 85, 53));//Input Slot 3
-		this.addSlotToContainer(new Slot(tileEntity, 3, 35, 53));//Fuel Slot
-		this.addSlotToContainer(new SlotForgeFurnace(invPlayer.player, tileEntity, 4, 143, 35));//Output Slot
-//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 3,  8, 17));//upgrade slot 1
-//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 4,  8, 35));//upgrade slot 2
-//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, tileEntity, 5,  8, 53));//upgrade slot 3
-		
-		//Inventory Slots
-		for(int i = 0; i < 3; i++){
-			for(int j = 0; j < 9; j++){
-				this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
-			}
-		}
-		
-		//Hotbar Slots
-		for(int i = 0; i < 9; i++){
-			this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 142));
-		}
 
-	}
-	
-	public void addCraftingtoCrafters(ICrafting crafting){
-		
-		super.addCraftingToCrafters(crafting);
-		crafting.sendProgressBarUpdate(this, 0, this.forgeFurnace.dualCookTime);
-		crafting.sendProgressBarUpdate(this, 1, this.forgeFurnace.dualPower);
-	}
+    private TileEntityForgeFurnace forgeFurnace;
+    private int dualCookTime;
+    private int dualPower;
+    private int lastItemBurnTime;
 
-	public ItemStack transferStackInSlot(EntityPlayer player, int i)
+    public ContainerForgeFurnace(InventoryPlayer invPlayer, TileEntityForgeFurnace teForgeFurnace){
+        dualCookTime = 0;
+        dualPower = 0;
+        lastItemBurnTime = 0;
+
+        forgeFurnace = teForgeFurnace;
+
+        this.addSlotToContainer(new Slot(teForgeFurnace, 0, 85, 17));//Input Slot 1
+        this.addSlotToContainer(new Slot(teForgeFurnace, 1, 85, 35));//Input Slot 2
+        this.addSlotToContainer(new Slot(teForgeFurnace, 2, 85, 53));//Input Slot 3
+        this.addSlotToContainer(new Slot(teForgeFurnace, 3, 35, 53));//Fuel Slot
+        this.addSlotToContainer(new SlotForgeFurnace(invPlayer.player, teForgeFurnace, 4, 143, 35));//Output Slot
+//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, teForgeFurnace, 3,  8, 17));//upgrade slot 1
+//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, teForgeFurnace, 4,  8, 35));//upgrade slot 2
+//        this.addSlotToContainer(new SlotUpgrade(invPlayer.player, teForgeFurnace, 5,  8, 53));//upgrade slot 3
+
+        //Inventory Slots
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 9; j++){
+                this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+            }
+        }
+
+        //Hotbar Slots
+        for(int i = 0; i < 9; i++){
+            this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 142));
+        }
+
+    }
+
+    public void addCraftingToCrafters(ICrafting crafting){
+
+        super.addCraftingToCrafters(crafting);
+        crafting.sendProgressBarUpdate(this, 0, this.forgeFurnace.dualCookTime);
+        crafting.sendProgressBarUpdate(this, 1, this.forgeFurnace.dualPower);
+    }
+
+    public ItemStack transferStackInSlot(EntityPlayer player, int i)
     {
         ItemStack itemstack = null;
         Slot slot = (Slot)this.inventorySlots.get(i);
@@ -111,11 +111,40 @@ public class ContainerForgeFurnace extends Container {
         return itemstack;
     }
 
-	
-	@Override
-	public boolean canInteractWith(EntityPlayer player) {
 
-		return forgeFurnace.isUseableByPlayer(player);
-	}
+    @Override
+    public boolean canInteractWith(EntityPlayer player) {
 
+        return forgeFurnace.isUseableByPlayer(player);
+    }
+
+    public void detectAndSendChanges(){
+        super.detectAndSendChanges();
+
+        for(int i = 0; i < this.crafters.size(); i++){
+            ICrafting par1 = (ICrafting)this.crafters.get(i);
+
+            if(this.dualCookTime != this.forgeFurnace.dualCookTime){
+                par1.sendProgressBarUpdate(this, 0, this.forgeFurnace.dualCookTime);
+            }
+
+            if(this.dualPower != this.forgeFurnace.dualPower){
+                par1.sendProgressBarUpdate(this, 1, this.forgeFurnace.dualPower);
+            }
+        }
+
+        this.dualCookTime = this.forgeFurnace.dualCookTime;
+        this.dualPower = this.forgeFurnace.dualPower;
+    }
+
+    public void updateProgressBar(int i, int j){
+        if(i == 0){
+            forgeFurnace.dualCookTime = j;
+        }
+
+        if(i == 1){
+            forgeFurnace.dualPower = j;
+        }
+
+    }
 }

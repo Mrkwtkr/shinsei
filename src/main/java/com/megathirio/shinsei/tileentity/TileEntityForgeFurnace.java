@@ -18,12 +18,15 @@ import net.minecraft.tileentity.TileEntity;
 public class TileEntityForgeFurnace extends TileEntity implements ISidedInventory{
 
     private String customName;
+    private ItemStack slots[];
 
     private static final int[] slots_top = new int[]{0, 1, 2};
     private static final int[] slots_bottom = new int[]{4};
     private static final int[] slots_side = new int[]{3};
 
-	private ItemStack slots[] = new ItemStack[5];
+    public TileEntityForgeFurnace(){
+        slots = new ItemStack[5];
+    }
 
     public static final int forgeSpeed = 50;
     public static final int maxPower = 60000;
@@ -100,6 +103,11 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
     }
 
     @Override
+    public int[] getAccessibleSlotsFromSide(int i) {
+        return i == 0 ? slots_bottom : (i == 1 ? slots_top : slots_side);
+    }
+
+    @Override
     public int getInventoryStackLimit() {
         return 64;
     }
@@ -170,11 +178,6 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 	}
 
 	@Override
-	public int[] getAccessibleSlotsFromSide(int i) {
-		return i == 0 ? slots_bottom : (i == 1 ? slots_top : slots_side);
-	}
-
-	@Override
 	public boolean canInsertItem(int i, ItemStack itemstack, int j) {
 		return this.isItemValidForSlot(i, itemstack);
 	}
@@ -230,7 +233,7 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
 				slots[4].stackSize += itemstack.stackSize;
 			}
 			
-			for(int i = 0; i < 4; i++){
+			for(int i = 0; i < 3; i++){
 				if(slots[i].stackSize <= 0){
 					slots[i] = new ItemStack(slots[i].getItem().setFull3D());
 				}else{
@@ -301,10 +304,5 @@ public class TileEntityForgeFurnace extends TileEntity implements ISidedInventor
             this.markDirty();
         }
 	}
-
-    public TileEntityForgeFurnace(){
-        slots = new ItemStack[5];
-    }
-
 
 }
