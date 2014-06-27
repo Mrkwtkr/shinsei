@@ -26,14 +26,20 @@ import net.minecraft.tileentity.TileEntity;
 public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory {
 
     private String customName;
+
     //slot = 0:Input slot - slot = 1:Fuel slot - slot = 2:Output slot - slot = 3, 4, 5:Upgrade slots
-    private static final int[] slotsTop = new int[]{0};
-    private static final int[] slotsBot = new int[]{2, 1};
-    private static final int[] slotsSide = new int[]{1};
+    public static final int[] slotsInputs = new int[1];
+    public static final int[] slotsFuels = new int[1];
+    public static final int[] slotsOutputs = new int[1];
+    public static final int[] slotsUpgrades = new int[3];
+    public static final int slotsTotal = slotsInputs.length + slotsOutputs.length + slotsFuels.length + slotsUpgrades.length;
+    public static final int sltFuelStart = slotsInputs.length;
+    public static final int sltOutStart = slotsInputs.length + slotsFuels.length;
+    public static final int sltUpStart = slotsInputs.length + slotsOutputs.length + slotsFuels.length;
 
-    private ItemStack[] slots = new ItemStack[6];
+    private ItemStack[] slots = new ItemStack[slotsTotal];
 
-    public int furnaceSpeed = 200; //Number of ticks that determines when item is smelted
+    public int intSpeed = 200; //Number of ticks that determines when item is smelted
     public int burnTime; //Number of ticks that the furnace will keep burning
     public int currentItemBurnTime; //Number of ticks that a fresh copy of the currently burning item would keep the furnace burning for
     public int cookTime; //Number of ticks that the current item has been cooking for
@@ -42,9 +48,38 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
 
     @Override
     public int[] getAccessibleSlotsFromSide(int intSide) {
+        int[] slotsTop = new int[slotsInputs.length];
+        int[] slotsBot = new int[slotsFuels.length + slotsOutputs.length];
+        int[] slotsSide = new int[slotsFuels.length];
+
+        for(int i = 0; i < slotsInputs.length ; i++){
+            slotsTop[i] = i;
+        }
+        for(int i = 0; i < slotsFuels.length ; i++){
+            slotsSide[i] = i + sltFuelStart;
+        }
+        for(int i = 0; i < slotsOutputs.length ; i++){
+            slotsBot[i] = i + sltOutStart;
+        }
+
+
         //intSide = 0: Bottom Side - intSide = 1: Top Side - intSide = 2: North Side - intSide = 3: South Side - intSide = 4: West Side - intSide = 5: East Side
         return intSide == 0 ? slotsBot : (intSide == 1 ? slotsTop : slotsSide);
     }
+
+    @Override
+    public boolean canInsertItem(int intSlot, ItemStack istackItem, int intSide) {
+
+        return this.isItemValidForSlot(intSlot, istackItem);
+    }
+
+    @Override
+    public boolean canExtractItem(int intSlot, ItemStack istackItem, int intSide) {
+
+        return intSide != 1 || intSlot != 1 || istackItem.getItem() == Items.bucket;
+    }
+
+    public int getSizeInventory() { return this.slots.length; }
 
     public void setGuiDisplayName(String displayName) {
 
@@ -61,15 +96,8 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         return this.customName != null && this.customName.length() > 0;
     }
 
-    public int getSizeInventory() {
-
-        return this.slots.length;
-    }
-
     @Override
-    public ItemStack getStackInSlot(int i) {
-        return this.slots[i];
-    }
+    public ItemStack getStackInSlot(int intSlot) { return this.slots[intSlot]; }
 
     @Override
     public ItemStack decrStackSize(int i, int j) {
@@ -282,19 +310,6 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         }
     }
 
-
-    @Override
-    public boolean canInsertItem(int i, ItemStack itemstack, int j) {
-
-        return this.isItemValidForSlot(i, itemstack);
-    }
-
-    @Override
-    public boolean canExtractItem(int i, ItemStack itemstack, int j) {
-
-        return j != 0 || i != 1 || itemstack.getItem() == Items.bucket;
-    }
-
     public int getBurnTimeRemainingScaled(int i) {
         if (this.currentItemBurnTime == 0) {
             this.currentItemBurnTime = this.furnaceSpeedUpgrade();
@@ -359,7 +374,7 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
 
     public int furnaceSpeedUpgrade() {
         ItemStack[] upSlots = new ItemStack[3];
-        int upSpeed = this.furnaceSpeed;
+        int upSpeed = this.intSpeed;
         for (int i = 0; i < 3; i++) {
             upSlots[i] = this.slots[i + 3];
             if (upSlots[i] != null) {
