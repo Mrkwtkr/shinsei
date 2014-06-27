@@ -2,14 +2,17 @@ package com.megathirio.shinsei.core.handler;
 
 import com.megathirio.shinsei.blocks.ShinseiMachines;
 import com.megathirio.shinsei.core.container.ContainerForgeFurnace;
+import com.megathirio.shinsei.core.container.ContainerPressureFurnace;
 import com.megathirio.shinsei.core.container.ContainerMachinePress;
 import com.megathirio.shinsei.core.container.ContainerToolBench;
 import com.megathirio.shinsei.core.container.ContainerWoodFurnace;
 import com.megathirio.shinsei.core.gui.GuiForgeFurnace;
+import com.megathirio.shinsei.core.gui.GuiPressureFurnace;
 import com.megathirio.shinsei.core.gui.GuiMachinePress;
 import com.megathirio.shinsei.core.gui.GuiToolBench;
 import com.megathirio.shinsei.core.gui.GuiWoodFurnace;
 import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
+import com.megathirio.shinsei.tileentity.TileEntityPressureFurnace;
 import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -40,12 +43,12 @@ public class GuiHandler implements IGuiHandler {
 					return new ContainerForgeFurnace(player.inventory, (TileEntityForgeFurnace) entity);
 				}
 				return null;
-/*            case ShinseiMachines.guiIDPressureFurnace:
+            case ShinseiMachines.guiIDPressureFurnace:
                 if(entity instanceof TileEntityPressureFurnace){
 
                     return new ContainerPressureFurnace(player.inventory, (TileEntityPressureFurnace) entity);
                 }
-                return null; */
+                return null;
             }
 
 			switch(ID){
@@ -81,13 +84,13 @@ public class GuiHandler implements IGuiHandler {
 					
 				}
 				return null;
-/*            case ShinseiMachines.guiIDPressureFurnace:
+            case ShinseiMachines.guiIDPressureFurnace:
                 if(entity instanceof TileEntityPressureFurnace){
 
                     return new GuiPressureFurnace(player.inventory, (TileEntityPressureFurnace) entity);
 
                 }
-                return null; */
+                return null;
 		}
 			switch(ID){
 			case ShinseiMachines.guiIDToolBench:

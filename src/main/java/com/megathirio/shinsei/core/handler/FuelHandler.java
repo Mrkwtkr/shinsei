@@ -25,7 +25,8 @@ public class FuelHandler implements IFuelHandler{
 		*/	 
 		//Fuel Burn Times
 		if(fuel.getItem() == ShinseiFuels.fuelSplitWood) return 800;
-	
+        if(fuel.getItem() == ShinseiFuels.fuelCoke) return 3200;
+
 		return 0;
 	}
 

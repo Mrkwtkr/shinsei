@@ -1,5 +1,6 @@
 package com.megathirio.shinsei.crafting;
 
+import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.items.ShinseiDusts;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -19,10 +20,12 @@ public class ShinseiRecipes {
 	
 	public static void init(){
 
-		//Override Recipes
-		RecipeOverride.overrideCraftingRecipe();
-//        RecipeOverride.overrideSmeltingRecipe();
 
+		//Override Recipes
+        if (Main.vanillaRecipes() == false) {
+            RecipeOverride.overrideCraftingRecipe();
+//        RecipeOverride.overrideSmeltingRecipe();
+        }
 		//Shapeless
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiItems.bucketSlakedLime), ShinseiDusts.dustQuicklime, ShinseiDusts.dustQuicklime, ShinseiDusts.dustQuicklime, Items.water_bucket);
 			GameRegistry.addShapelessRecipe(new ItemStack(Blocks.clay), ShinseiItems.itemSilt, ShinseiItems.itemSilt, ShinseiItems.itemSilt, Blocks.dirt);

@@ -26,10 +26,10 @@ import net.minecraft.tileentity.TileEntity;
 public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory {
 
     private String customName;
-
-    private static final int[] slots_top = new int[]{0};
-    private static final int[] slots_bottom = new int[]{2, 1};
-    private static final int[] slots_side = new int[]{1};
+    //slot = 0:Input slot - slot = 1:Fuel slot - slot = 2:Output slot - slot = 3, 4, 5:Upgrade slots
+    private static final int[] slotsTop = new int[]{0};
+    private static final int[] slotsBot = new int[]{2, 1};
+    private static final int[] slotsSide = new int[]{1};
 
     private ItemStack[] slots = new ItemStack[6];
 
@@ -40,6 +40,11 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
     public int upEff = 0;
     public boolean upRetort = false;
 
+    @Override
+    public int[] getAccessibleSlotsFromSide(int intSide) {
+        //intSide = 0: Bottom Side - intSide = 1: Top Side - intSide = 2: North Side - intSide = 3: South Side - intSide = 4: West Side - intSide = 5: East Side
+        return intSide == 0 ? slotsBot : (intSide == 1 ? slotsTop : slotsSide);
+    }
 
     public void setGuiDisplayName(String displayName) {
 
@@ -277,11 +282,6 @@ public class TileEntityWoodFurnace extends TileEntity implements ISidedInventory
         }
     }
 
-    @Override
-    public int[] getAccessibleSlotsFromSide(int i) {
-
-        return i == 0 ? slots_bottom : (i == 1 ? slots_top : slots_side);
-    }
 
     @Override
     public boolean canInsertItem(int i, ItemStack itemstack, int j) {

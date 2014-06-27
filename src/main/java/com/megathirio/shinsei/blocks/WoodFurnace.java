@@ -121,7 +121,6 @@ public class WoodFurnace extends BlockContainer{
 	
 	@Override
 	public TileEntity createNewTileEntity(World world, int i) {
-		
 		return new TileEntityWoodFurnace();
 	}
 
