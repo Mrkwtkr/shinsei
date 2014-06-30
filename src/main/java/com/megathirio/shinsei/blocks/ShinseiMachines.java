@@ -55,11 +55,11 @@ public final class ShinseiMachines {
         GameRegistry.registerTileEntity(TileEntityPressureFurnace.class, "PressureFurnace");
 
 
-        blockShinseiFurnaceIdle = new ShinseiFurnace(false).setBlockName("ishinsei_furnace").setHardness(3.5F);
+/*        blockShinseiFurnaceIdle = new ShinseiFurnace(false).setBlockName("ishinsei_furnace").setHardness(3.5F);
         GameRegistry.registerBlock(blockShinseiFurnaceIdle, "ishinsei_furnace");
         blockShinseiFurnaceActi = new ShinseiFurnace(true).setBlockName("ashinsei_furnace").setLightLevel(0.875F).setHardness(3.5F).setCreativeTab(null);
         GameRegistry.registerBlock(blockShinseiFurnaceActi, "ashinsei_furnace");
-
+*/
 
 		//Work Stations
 		blockToolBench = new ToolBench(Material.wood).setBlockName("tool_bench").setBlockTextureName("");

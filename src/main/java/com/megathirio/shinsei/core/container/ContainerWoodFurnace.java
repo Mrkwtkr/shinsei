@@ -17,8 +17,8 @@ public class ContainerWoodFurnace extends Container{
 
 	private TileEntityWoodFurnace woodFurnace;
 	
-	public int lastBurnTime; //Number of ticks that the furnace will keep burning 
-	public int lastCurrentItemBurnTime; //Number of ticks that a fresh copy of the currently burning item would keep the furnace burning for 
+	public int lastBurnTime; //Number of ticks that the furnace will keep burning
+	public int lastCurrentItemBurnTime; //Number of ticks that a fresh copy of the currently burning item would keep the furnace burning for
 	public int lastCookTime; //Number of ticks that the current item has been cooking for
 	
 	public ContainerWoodFurnace(InventoryPlayer invPlayer, TileEntityWoodFurnace tileEntity){
@@ -49,9 +49,9 @@ public class ContainerWoodFurnace extends Container{
 	public void addCraftingToCrafters (ICrafting icrafting){
 		
 		super.addCraftingToCrafters(icrafting);
-		icrafting.sendProgressBarUpdate(this, 0, this.woodFurnace.cookTime);
-		icrafting.sendProgressBarUpdate(this, 1, this.woodFurnace.burnTime);
-		icrafting.sendProgressBarUpdate(this, 2, this.woodFurnace.currentItemBurnTime);
+		icrafting.sendProgressBarUpdate(this, 0, this.woodFurnace.intCookTime);
+		icrafting.sendProgressBarUpdate(this, 1, this.woodFurnace.intBurnTime);
+		icrafting.sendProgressBarUpdate(this, 2, this.woodFurnace.intCurrentItemBurnTime);
 	}
 	
 	public void detectAndSendChanges(){
@@ -60,20 +60,20 @@ public class ContainerWoodFurnace extends Container{
 		for(int i = 0; i < this.crafters.size(); i++){
 			ICrafting icrafting = (ICrafting) this.crafters.get(i);
 			
-			if(this.lastCookTime != this.woodFurnace.cookTime){
-				icrafting.sendProgressBarUpdate(this, 0, this.woodFurnace.cookTime);
+			if(this.lastCookTime != this.woodFurnace.intCookTime){
+				icrafting.sendProgressBarUpdate(this, 0, this.woodFurnace.intCookTime);
 			}
-			if(this.lastBurnTime != this.woodFurnace.burnTime){
-				icrafting.sendProgressBarUpdate(this, 1, this.woodFurnace.burnTime);
+			if(this.lastBurnTime != this.woodFurnace.intBurnTime){
+				icrafting.sendProgressBarUpdate(this, 1, this.woodFurnace.intBurnTime);
 			}
-			if(this.lastCurrentItemBurnTime != this.woodFurnace.currentItemBurnTime){
-				icrafting.sendProgressBarUpdate(this, 2, this.woodFurnace.currentItemBurnTime);
+			if(this.lastCurrentItemBurnTime != this.woodFurnace.intCurrentItemBurnTime){
+				icrafting.sendProgressBarUpdate(this, 2, this.woodFurnace.intCurrentItemBurnTime);
 			}
 		}
 		
-		this.lastCookTime = this.woodFurnace.cookTime;
-		this.lastBurnTime = this.woodFurnace.burnTime;
-		this.lastCurrentItemBurnTime = this.woodFurnace.currentItemBurnTime;
+		this.lastCookTime = this.woodFurnace.intCookTime;
+		this.lastBurnTime = this.woodFurnace.intBurnTime;
+		this.lastCurrentItemBurnTime = this.woodFurnace.intCurrentItemBurnTime;
 		
 	}
 	
@@ -81,15 +81,15 @@ public class ContainerWoodFurnace extends Container{
 	public void updateProgressBar(int par1, int par2){
 		
 		if(par1 == 0){
-			this.woodFurnace.cookTime = par2;
+			this.woodFurnace.intCookTime = par2;
 		}
 
 		if(par1 == 1){
-			this.woodFurnace.burnTime = par2;
+			this.woodFurnace.intBurnTime = par2;
 		}
 
 		if(par1 == 2){
-			this.woodFurnace.currentItemBurnTime = par2;
+			this.woodFurnace.intCurrentItemBurnTime = par2;
 		}
 
 	}
