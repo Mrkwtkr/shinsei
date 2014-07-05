@@ -1,6 +1,6 @@
 package com.megathirio.shinsei.core.container;
 
-import com.megathirio.shinsei.blocks.ShinseiMachines;
+import com.megathirio.shinsei.init.ShinseiMachines;
 import com.megathirio.shinsei.crafting.ToolBenchCraftingManager;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -60,11 +60,11 @@ public class ContainerToolBench extends Container {
 	@Override
 	public boolean canInteractWith(EntityPlayer player) {
 
-		if(worldObj.getBlock(posX, posY, posZ) != ShinseiMachines.blockToolBench){
-			return false;
-		}else{
+//		if(worldObj.getBlock(posX, posY, posZ) != ShinseiMachines.blockToolBench){
+//			return false;
+//		}else{
 			return player.getDistanceSq((double)posX + 0.5D, (double)posY + 0.5D, (double)posZ + 0.5D) <= 64.0D;
-		}
+//		}
 	}
 
 	public void onContainerClosed(EntityPlayer par1EntityPlayer) {

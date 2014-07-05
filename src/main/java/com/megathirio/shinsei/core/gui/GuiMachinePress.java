@@ -1,24 +1,21 @@
 package com.megathirio.shinsei.core.gui;
 
+import com.megathirio.shinsei.reference.Reference;
 import org.lwjgl.opengl.GL11;
 
 import com.megathirio.shinsei.core.container.ContainerMachinePress;
-import com.megathirio.shinsei.lib.References;
-import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
 import com.megathirio.shinsei.tileentity.TileEntityMachinePress;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class GuiMachinePress extends GuiContainer {
 
-	private ResourceLocation texture = new ResourceLocation(References.MODID + ":" + "textures/gui/containers/gui_machine_press.png");
+	private ResourceLocation texture = new ResourceLocation(Reference.RESOURCE_PREFIX + "textures/gui/containers/gui_machine_press.png");
 	private TileEntityMachinePress machinePress;
 
 	public GuiMachinePress(InventoryPlayer invPlayer, World world, int x, int y, int z) {

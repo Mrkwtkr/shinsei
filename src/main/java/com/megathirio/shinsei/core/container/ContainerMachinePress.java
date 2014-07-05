@@ -1,6 +1,6 @@
 package com.megathirio.shinsei.core.container;
 
-import com.megathirio.shinsei.blocks.ShinseiMachines;
+import com.megathirio.shinsei.init.ShinseiMachines;
 import com.megathirio.shinsei.crafting.MachinePressCraftingManager;
 
 import net.minecraft.entity.player.EntityPlayer;

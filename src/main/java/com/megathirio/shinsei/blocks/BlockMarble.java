@@ -2,9 +2,8 @@ package com.megathirio.shinsei.blocks;
 
 import java.util.List;
 
-import com.megathirio.shinsei.Main;
-import com.megathirio.shinsei.creativetab.ShinseiTabs;
-import com.megathirio.shinsei.lib.References;
+import com.megathirio.shinsei.init.ShinseiTabs;
+import com.megathirio.shinsei.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -41,7 +40,7 @@ public class BlockMarble extends Block{
 		
 		texture = new IIcon[subBlocks.length];
 		for(int i = 0; i < subBlocks.length; i++){
-			texture[i] = iconRegister.registerIcon(References.MODID + ":" + "marble_" + subBlocks[i]);
+			texture[i] = iconRegister.registerIcon(Reference.RESOURCE_PREFIX + "marble_" + subBlocks[i]);
 		}
 	}
 	

@@ -1,5 +1,6 @@
 package com.megathirio.shinsei.renderer;
 
+import com.megathirio.shinsei.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -9,12 +10,11 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import com.megathirio.shinsei.lib.References;
 import com.megathirio.shinsei.model.ModelToolBench;
 
 public class RenderToolBench extends TileEntitySpecialRenderer{
 
-	public static final ResourceLocation texture = new ResourceLocation(References.MODID + ":" + "textures/models/tool_bench.png");
+	public static final ResourceLocation texture = new ResourceLocation(Reference.RESOURCE_PREFIX + "textures/models/tool_bench.png");
 	
 	private ModelToolBench model;
 	

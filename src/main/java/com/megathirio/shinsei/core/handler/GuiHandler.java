@@ -1,19 +1,13 @@
 package com.megathirio.shinsei.core.handler;
 
-import com.megathirio.shinsei.blocks.ShinseiMachines;
-import com.megathirio.shinsei.core.container.ContainerForgeFurnace;
-import com.megathirio.shinsei.core.container.ContainerPressureFurnace;
+import com.megathirio.shinsei.init.ShinseiMachines;
+import com.megathirio.shinsei.core.container.ContainerTatara;
 import com.megathirio.shinsei.core.container.ContainerMachinePress;
 import com.megathirio.shinsei.core.container.ContainerToolBench;
-import com.megathirio.shinsei.core.container.ContainerWoodFurnace;
-import com.megathirio.shinsei.core.gui.GuiForgeFurnace;
-import com.megathirio.shinsei.core.gui.GuiPressureFurnace;
+import com.megathirio.shinsei.core.gui.GuiTatara;
 import com.megathirio.shinsei.core.gui.GuiMachinePress;
 import com.megathirio.shinsei.core.gui.GuiToolBench;
-import com.megathirio.shinsei.core.gui.GuiWoodFurnace;
-import com.megathirio.shinsei.tileentity.TileEntityForgeFurnace;
-import com.megathirio.shinsei.tileentity.TileEntityPressureFurnace;
-import com.megathirio.shinsei.tileentity.TileEntityWoodFurnace;
+import com.megathirio.shinsei.tileentity.TileEntityTatara;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -31,29 +25,17 @@ public class GuiHandler implements IGuiHandler {
 		if(entity != null){
 			
 			switch(ID){
-			case ShinseiMachines.guiIDWoodFurnace:
-				if(entity instanceof TileEntityWoodFurnace){
+			case ShinseiMachines.guiIDTatara:
+				if(entity instanceof TileEntityTatara){
 					
-					return new ContainerWoodFurnace(player.inventory, (TileEntityWoodFurnace) entity);
+					return new ContainerTatara(player.inventory, (TileEntityTatara) entity);
 				}
 				return null;		
-			case ShinseiMachines.guiIDForgeFurnace:
-				if(entity instanceof TileEntityForgeFurnace){
-				
-					return new ContainerForgeFurnace(player.inventory, (TileEntityForgeFurnace) entity);
-				}
-				return null;
-            case ShinseiMachines.guiIDPressureFurnace:
-                if(entity instanceof TileEntityPressureFurnace){
-
-                    return new ContainerPressureFurnace(player.inventory, (TileEntityPressureFurnace) entity);
-                }
-                return null;
             }
 
 			switch(ID){
-			case ShinseiMachines.guiIDToolBench:
-				return ID == ShinseiMachines.guiIDToolBench && world.getBlock(x, y, z) == ShinseiMachines.blockToolBench ? new ContainerToolBench(player.inventory, world, x, y, z) : null;
+//			case ShinseiMachines.guiIDToolBench:
+//				return ID == ShinseiMachines.guiIDToolBench && world.getBlock(x, y, z) == ShinseiMachines.blockToolBench ? new ContainerToolBench(player.inventory, world, x, y, z) : null;
 			case ShinseiMachines.guiIDMachinePress:
 				return ID == ShinseiMachines.guiIDMachinePress && world.getBlock(x, y, z) == ShinseiMachines.blockMachinePress ? new ContainerMachinePress(player.inventory, world, x, y, z) : null;
 			}
@@ -70,31 +52,17 @@ public class GuiHandler implements IGuiHandler {
 		if(entity != null){
 			
 			switch(ID){
-			case ShinseiMachines.guiIDWoodFurnace:
-				if(entity instanceof TileEntityWoodFurnace){
+			case ShinseiMachines.guiIDTatara:
+				if(entity instanceof TileEntityTatara){
 					
-					return new GuiWoodFurnace(player.inventory, (TileEntityWoodFurnace) entity);
-					
-				}
-				return null;
-			case ShinseiMachines.guiIDForgeFurnace:
-				if(entity instanceof TileEntityForgeFurnace){
-					
-					return new GuiForgeFurnace(player.inventory, (TileEntityForgeFurnace) entity);
+					return new GuiTatara(player.inventory, (TileEntityTatara) entity);
 					
 				}
 				return null;
-            case ShinseiMachines.guiIDPressureFurnace:
-                if(entity instanceof TileEntityPressureFurnace){
-
-                    return new GuiPressureFurnace(player.inventory, (TileEntityPressureFurnace) entity);
-
-                }
-                return null;
 		}
 			switch(ID){
-			case ShinseiMachines.guiIDToolBench:
-				return ID == ShinseiMachines.guiIDToolBench && world.getBlock(x, y, z) == ShinseiMachines.blockToolBench ? new GuiToolBench(player.inventory, world, x, y, z) : null;
+//			case ShinseiMachines.guiIDToolBench:
+//				return ID == ShinseiMachines.guiIDToolBench && world.getBlock(x, y, z) == ShinseiMachines.blockToolBench ? new GuiToolBench(player.inventory, world, x, y, z) : null;
 			case ShinseiMachines.guiIDMachinePress:
 				return ID == ShinseiMachines.guiIDMachinePress && world.getBlock(x, y, z) == ShinseiMachines.blockMachinePress ? new GuiMachinePress(player.inventory, world, x, y, z) : null;
 			}

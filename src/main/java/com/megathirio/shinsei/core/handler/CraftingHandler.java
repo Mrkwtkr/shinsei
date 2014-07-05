@@ -1,7 +1,6 @@
 package com.megathirio.shinsei.core.handler;
 
-import com.megathirio.shinsei.items.ShinseiItem;
-import com.megathirio.shinsei.items.ShinseiTools;
+import com.megathirio.shinsei.init.ShinseiTools;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;

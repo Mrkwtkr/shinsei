@@ -1,9 +1,10 @@
 package com.megathirio.shinsei.blocks;
 
-import com.megathirio.shinsei.creativetab.ShinseiTabs;
-import com.megathirio.shinsei.items.ShinseiDusts;
-import com.megathirio.shinsei.items.ShinseiItems;
-import com.megathirio.shinsei.lib.References;
+import com.megathirio.shinsei.init.ShinseiTabs;
+import com.megathirio.shinsei.init.ShinseiBlocks;
+import com.megathirio.shinsei.init.ShinseiDusts;
+import com.megathirio.shinsei.init.ShinseiItems;
+import com.megathirio.shinsei.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -65,7 +66,7 @@ public class ShinseiOre extends Block{
 	@Override
 	public void registerBlockIcons(IIconRegister iconRegister){
 		
-		blockIcon = iconRegister.registerIcon(References.MODID + ":" + this.getUnlocalizedName().substring(5));
+		blockIcon = iconRegister.registerIcon(Reference.RESOURCE_PREFIX + this.getUnlocalizedName().substring(5));
 	}
 
 }

@@ -3,9 +3,9 @@ package com.megathirio.shinsei.world;
 import java.util.Random;
 
 import com.megathirio.shinsei.Main;
-import com.megathirio.shinsei.blocks.ShinseiBlocks;
+import com.megathirio.shinsei.init.ShinseiBlocks;
+import com.megathirio.shinsei.reference.ConfigValues;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -33,14 +33,14 @@ public class ShinseiWorldGen implements IWorldGenerator {
     public void generateSurface(World world, Random random, int x, int z) {
         //this.addOreSpawn(ShinseBlocks.Blockname, world, random, xPos, zPos, maxX, maxZ, maxVeinSize, chanceToSpawn, minY, maxY);
         this.addOreSpawn(ShinseiBlocks.oreArsenic, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        if(Main.aluminumOre() == true){this.addOreSpawn(ShinseiBlocks.oreBauxite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);}
+        if(ConfigValues.booBauxiteValue == true){this.addOreSpawn(ShinseiBlocks.oreBauxite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);}
         this.addOreSpawn(ShinseiBlocks.oreBismuth, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
         this.addOreSpawn(ShinseiBlocks.oreStibnite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
         this.addOreSpawn(ShinseiBlocks.oreChromite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
         this.addOreSpawn(ShinseiBlocks.oreIridium, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        if(Main.copperOre() == true){this.addOreSpawn(ShinseiBlocks.oreCopper, world, random, x, z, 16, 16, 4 + random.nextInt(8), 35, 0, 60);}
+        if(ConfigValues.booCopperValue == true){this.addOreSpawn(ShinseiBlocks.oreCopper, world, random, x, z, 16, 16, 4 + random.nextInt(8), 35, 0, 60);}
         this.addOreSpawn(ShinseiBlocks.oreGraphite, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);
-        if(Main.leadOre() == true){this.addOreSpawn(ShinseiBlocks.oreLead, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);}
+        if(ConfigValues.booLeadValue == true){this.addOreSpawn(ShinseiBlocks.oreLead, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 38, 100);}
         this.addOreSpawn(ShinseiBlocks.blockSiltstone, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 64, 128);
         this.addOreSpawn(ShinseiBlocks.blockClaystone, world, random, x, z, 16, 16, 4+random.nextInt(8), 30, 60, 256);
         this.addOreSpawn(ShinseiBlocks.blockLimestone, world, random, x, z, 16, 16, 6+random.nextInt(16), 40, 0, 256);

@@ -1,18 +1,19 @@
 package com.megathirio.shinsei.crafting;
 
 import com.megathirio.shinsei.Main;
-import com.megathirio.shinsei.items.ShinseiDusts;
+import com.megathirio.shinsei.init.ShinseiDusts;
+import com.megathirio.shinsei.reference.ConfigValues;
+import com.megathirio.shinsei.reference.Reference;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-import com.megathirio.shinsei.blocks.ShinseiBlocks;
-import com.megathirio.shinsei.blocks.ShinseiMachines;
+import com.megathirio.shinsei.init.ShinseiBlocks;
+import com.megathirio.shinsei.init.ShinseiMachines;
 import com.megathirio.shinsei.items.ShinseiIngots;
-import com.megathirio.shinsei.items.ShinseiItems;
-import com.megathirio.shinsei.items.ShinseiTools;
+import com.megathirio.shinsei.init.ShinseiItems;
+import com.megathirio.shinsei.init.ShinseiTools;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -22,9 +23,8 @@ public class ShinseiRecipes {
 
 
 		//Override Recipes
-        if (Main.vanillaRecipes() == false) {
+        if (ConfigValues.booToolValue == false) {
             RecipeOverride.overrideCraftingRecipe();
-//        RecipeOverride.overrideSmeltingRecipe();
         }
 		//Shapeless
             GameRegistry.addShapelessRecipe(new ItemStack(ShinseiItems.bucketSlakedLime), ShinseiDusts.dustQuicklime, ShinseiDusts.dustQuicklime, ShinseiDusts.dustQuicklime, Items.water_bucket);
@@ -45,9 +45,8 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.itemPistonBellows, 1), "  @"," @#","$%@", '@', "stickWood", '#', Items.leather, '$', "ingotIron", '%', Blocks.piston));
             GameRegistry.addRecipe(new ItemStack(Blocks.furnace, 1), "@@@","@ @","@@@", '@', Blocks.cobblestone);
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.furnace, 1), "@@@","@ @","@@@", '@', "blockStone"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockWoodFurnaceIdle, 1), "@@@","@#@","$%$", '@', "blockStone", '#', Blocks.glass_pane, '$', "ingotLead", '%', Blocks.furnace));
-			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockForgeFurnaceIdle, 1), "@@@","@#@","$$$", '@', Blocks.brick_block, '#', Blocks.furnace, '$', "blockStone"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockToolBench, 1), "@@@","# #","# #", '@', "plankWood", '#', "stickWood"));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockTataraIdle, 1), "@@@","@ @","@#@", '@', "blockClay", '#', Blocks.furnace));
+//			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockToolBench, 1), "@@@","# #","# #", '@', "plankWood", '#', "stickWood"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiMachines.blockMachinePress, 1), " @ ","@@@","@ @", '@', "ingotIron"));
 
             //Blocks

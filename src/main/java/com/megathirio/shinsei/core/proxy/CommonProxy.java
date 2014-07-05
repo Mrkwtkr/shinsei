@@ -1,12 +1,5 @@
 package com.megathirio.shinsei.core.proxy;
 
-public class CommonProxy {
+public abstract class CommonProxy implements IProxy{
 
-	public void registerRenderThings(){
-		
-	}
-	
-	public void registerTileEntitySpecialRenderer(){
-		
-	}
 }

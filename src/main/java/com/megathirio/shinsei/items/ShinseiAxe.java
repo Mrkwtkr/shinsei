@@ -1,8 +1,7 @@
 package com.megathirio.shinsei.items;
 
-import com.megathirio.shinsei.Main;
-import com.megathirio.shinsei.creativetab.ShinseiTabs;
-import com.megathirio.shinsei.lib.References;
+import com.megathirio.shinsei.init.ShinseiTabs;
+import com.megathirio.shinsei.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -23,7 +22,7 @@ public class ShinseiAxe extends ItemAxe {
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister iconRegister){
 		
-		itemIcon = iconRegister.registerIcon(References.MODID + ":" + this.getUnlocalizedName().substring(5));
+		itemIcon = iconRegister.registerIcon(Reference.RESOURCE_PREFIX + this.getUnlocalizedName().substring(5));
 	}
 
 }

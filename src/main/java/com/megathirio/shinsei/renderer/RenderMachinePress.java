@@ -1,5 +1,6 @@
 package com.megathirio.shinsei.renderer;
 
+import com.megathirio.shinsei.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -9,12 +10,11 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import com.megathirio.shinsei.lib.References;
 import com.megathirio.shinsei.model.ModelMachinePress;
 
 public class RenderMachinePress extends TileEntitySpecialRenderer{
 
-	public static final ResourceLocation texture = new ResourceLocation(References.MODID + ":" + "textures/models/machine_press.png");
+	public static final ResourceLocation texture = new ResourceLocation(Reference.RESOURCE_PREFIX + "textures/models/machine_press.png");
 	
 	private ModelMachinePress model;
 	

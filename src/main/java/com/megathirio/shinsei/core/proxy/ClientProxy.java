@@ -1,12 +1,13 @@
 package com.megathirio.shinsei.core.proxy;
 
+import com.megathirio.shinsei.renderer.*;
+import com.megathirio.shinsei.tileentity.TileEntityTatara;
 import cpw.mods.fml.client.registry.ClientRegistry;
 
-import com.megathirio.shinsei.blocks.ShinseiMachines;
-import com.megathirio.shinsei.renderer.ItemRenderMachinePress;
-import com.megathirio.shinsei.renderer.ItemRenderToolBench;
-import com.megathirio.shinsei.renderer.RenderMachinePress;
-import com.megathirio.shinsei.renderer.RenderToolBench;
+import com.megathirio.shinsei.init.ShinseiMachines;
+//import com.megathirio.shinsei.renderer.ItemRenderTataraIdle;
+//import com.megathirio.shinsei.renderer.ItemRenderTataraActi;
+//import com.megathirio.shinsei.renderer.RenderTataraActi;
 import com.megathirio.shinsei.tileentity.TileEntityMachinePress;
 import com.megathirio.shinsei.tileentity.TileEntityToolBench;
 
@@ -18,11 +19,16 @@ import net.minecraftforge.client.MinecraftForgeClient;
 public class ClientProxy extends CommonProxy {
 	
 	public void registerRenderThings(){
-		
-		//Tool Bench
+
+        //Tatara Bench
+        TileEntitySpecialRenderer renderTataraIdle = new RenderTataraIdle();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTatara.class, renderTataraIdle);
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ShinseiMachines.blockTataraIdle), new ItemRenderTataraIdle(renderTataraIdle, new TileEntityTatara()));
+
+        //Tool Bench
 		TileEntitySpecialRenderer renderToolBench = new RenderToolBench();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityToolBench.class, renderToolBench);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ShinseiMachines.blockToolBench), new ItemRenderToolBench(renderToolBench, new TileEntityToolBench()));
+//		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ShinseiMachines.blockToolBench), new ItemRenderToolBench(renderToolBench, new TileEntityToolBench()));
 
 		//Machine Press
 		TileEntitySpecialRenderer renderMachinePress = new RenderMachinePress();

@@ -1,8 +1,9 @@
 package com.megathirio.shinsei.blocks;
 
 import com.megathirio.shinsei.Main;
-import com.megathirio.shinsei.creativetab.ShinseiTabs;
-import com.megathirio.shinsei.lib.References;
+import com.megathirio.shinsei.init.ShinseiTabs;
+import com.megathirio.shinsei.init.ShinseiMachines;
+import com.megathirio.shinsei.reference.Reference;
 import com.megathirio.shinsei.tileentity.TileEntityToolBench;
 
 import net.minecraft.block.Block;
@@ -48,7 +49,7 @@ public class ToolBench extends BlockContainer{
 	@Override
 	public void registerBlockIcons(IIconRegister iconRegister){
 		
-		blockIcon = iconRegister.registerIcon(References.MODID + ":" + this.getUnlocalizedName().substring(5));
+		blockIcon = iconRegister.registerIcon(Reference.RESOURCE_PREFIX + this.getUnlocalizedName().substring(5));
 	}
 
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int q, float a, float b, float c){

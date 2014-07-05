@@ -1,21 +1,20 @@
 package com.megathirio.shinsei.core.gui;
 
+import com.megathirio.shinsei.reference.Reference;
 import org.lwjgl.opengl.GL11;
 
 import com.megathirio.shinsei.core.container.ContainerToolBench;
-import com.megathirio.shinsei.lib.References;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 public class GuiToolBench extends GuiContainer {
 
-	private ResourceLocation texture = new ResourceLocation(References.MODID + ":" + "textures/gui/containers/gui_tool_bench.png");
+	private ResourceLocation texture = new ResourceLocation(Reference.RESOURCE_PREFIX + "textures/gui/containers/gui_tool_bench.png");
 	
 	public GuiToolBench(InventoryPlayer invPlayer, World world, int x, int y, int z) {
 		super(new ContainerToolBench(invPlayer, world, x, y, z));

@@ -70,16 +70,6 @@ public class ModelToolBench extends ModelBase
   }
   
   
-  public void renderModel(float f){
-	    benchtop.render(f);
-	    leftleg.render(f);
-	    rightleg.render(f);
-	    leftfoot.render(f);
-	    rightfoot.render(f);
-	    brace.render(f);
-	  
-  }
-  
   private void setRotation(ModelRenderer model, float x, float y, float z)
   {
     model.rotateAngleX = x;

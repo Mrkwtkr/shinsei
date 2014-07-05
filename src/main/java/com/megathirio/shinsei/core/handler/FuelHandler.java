@@ -1,7 +1,6 @@
 package com.megathirio.shinsei.core.handler;
 
-import com.megathirio.shinsei.items.ShinseiFuels;
-import com.megathirio.shinsei.items.ShinseiItems;
+import com.megathirio.shinsei.init.ShinseiFuels;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.IFuelHandler;
 

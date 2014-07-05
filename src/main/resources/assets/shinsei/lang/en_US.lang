@@ -14,17 +14,9 @@ item.silt.name=Silt
 item.split_wood.name=Split Wood
 item.coke.name=Coke
 
-tile.apressure_furnace.name=Pressure Furnace
-tile.ipressure_furnace.name=Pressure Furnace
-container.pressureFurnace=Pressure Furnace
-
-tile.awood_furnace.name=Split Wood Furnace
-tile.iwood_furnace.name=Split Wood Furnace
-container.woodFurnace=Split Wood Furnace
-
-tile.aforge_furnace.name=Forge Furnace
-tile.iforge_furnace.name=Forge Furnace
-container.forgeFurnace=Forge Furnace
+tile.atatara.name=Tatara
+tile.itatara.name=Tatara
+container.tatara=Tatara
 
 tile.tool_bench.name=Tool Bench
 container.toolBench=Tool Bench
@@ -48,6 +40,16 @@ tile.marble_purple.name=Purple Marble
 tile.marble_red.name=Red Marble
 tile.marble_silver.name=Silver Marble
 tile.marble_yellow.name=Yellow Marble
+
+tile.log_sakura.name=Sakura Wood
+tile.log_ume.name=Ume Wood
+tile.log_momiji.name=Momiji Wood
+tile.log_matsu.name=Matsu Wood
+
+tile.leaf_sakura.name=Sakura Leaf
+tile.leaf_ume.name=Ume Leaf
+tile.leaf_momiji.name=Momiji Leaf
+tile.leaf_matsu.name=Matsu Leaf
 
 tile.bauxite_ore.name=Bauxite Ore
 item.aluminum_ingot.name=Aluminum Ingot
