@@ -5,9 +5,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-import com.megathirio.shinsei.init.ShinseiFuels;
+import com.megathirio.shinsei.init.ShinseiItems;
 import com.megathirio.shinsei.init.ShinseiTools;
 
+import com.megathirio.shinsei.item.tool.AxeShinsei;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -41,13 +42,13 @@ public class ToolBenchCraftingManager
     	recipes = new ArrayList();
 
     //Items
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.itemAluminumAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.itemCopperAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.wooden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.stone_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.iron_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.golden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
-        this.addRecipe(new ItemStack(ShinseiFuels.fuelSplitWood, 2), "@", "#", '@', new ItemStack(Items.diamond_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+//        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiItems.itemAluminumAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiItems.copperAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.wooden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.stone_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.iron_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.golden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        this.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.diamond_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
 
         //Tool Parts
     	//Handles
@@ -56,8 +57,8 @@ public class ToolBenchCraftingManager
     	
     //Tools
 		//Axes
-		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumAxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumAxeHead, '#', ShinseiTools.itemWoodToolHandle});
-		this.addRecipe(new ItemStack(ShinseiTools.itemCopperAxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperAxeHead, '#', ShinseiTools.itemWoodToolHandle});
+//		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumAxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumAxeHead, '#', ShinseiTools.itemWoodToolHandle});
+		this.addRecipe(new ItemStack(ShinseiItems.copperAxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperAxeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.stone_axe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemStoneAxeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.golden_axe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemGoldAxeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.diamond_axe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemDiamondAxeHead, '#', ShinseiTools.itemWoodToolHandle});
@@ -65,8 +66,8 @@ public class ToolBenchCraftingManager
  		this.addRecipe(new ItemStack(Items.wooden_axe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemWoodAxeHead, '#', ShinseiTools.itemWoodToolHandle});
 
  		//Hoes
-		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumHoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumHoeHead, '#', ShinseiTools.itemWoodToolHandle});
-		this.addRecipe(new ItemStack(ShinseiTools.itemCopperHoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperHoeHead, '#', ShinseiTools.itemWoodToolHandle});
+//		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumHoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumHoeHead, '#', ShinseiTools.itemWoodToolHandle});
+		this.addRecipe(new ItemStack(ShinseiItems.copperHoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperHoeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.stone_hoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemStoneHoeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.golden_hoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemGoldHoeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.diamond_hoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemDiamondHoeHead, '#', ShinseiTools.itemWoodToolHandle});
@@ -74,8 +75,8 @@ public class ToolBenchCraftingManager
  		this.addRecipe(new ItemStack(Items.wooden_hoe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemWoodHoeHead, '#', ShinseiTools.itemWoodToolHandle});
 
  		//Pickaxes
-		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumPickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
-		this.addRecipe(new ItemStack(ShinseiTools.itemCopperPickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
+//		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumPickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
+		this.addRecipe(new ItemStack(ShinseiItems.copperPickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
 		this.addRecipe(new ItemStack(Items.stone_pickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemStonePickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.golden_pickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemGoldPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.diamond_pickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemDiamondPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
@@ -83,8 +84,8 @@ public class ToolBenchCraftingManager
  		this.addRecipe(new ItemStack(Items.wooden_pickaxe, 1),new Object[] {"@", "#", '@', ShinseiTools.itemWoodPickaxeHead, '#', ShinseiTools.itemWoodToolHandle});
 
 		//Shovels
-		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumShovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumShovelHead, '#', ShinseiTools.itemWoodToolHandle});
-		this.addRecipe(new ItemStack(ShinseiTools.itemCopperShovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperShovelHead, '#', ShinseiTools.itemWoodToolHandle});
+//		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumShovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumShovelHead, '#', ShinseiTools.itemWoodToolHandle});
+		this.addRecipe(new ItemStack(ShinseiItems.copperShovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperShovelHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.stone_shovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemStoneShovelHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.golden_shovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemGoldShovelHead, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.diamond_shovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemDiamondShovelHead, '#', ShinseiTools.itemWoodToolHandle});
@@ -92,8 +93,8 @@ public class ToolBenchCraftingManager
  		this.addRecipe(new ItemStack(Items.wooden_shovel, 1),new Object[] {"@", "#", '@', ShinseiTools.itemWoodShovelHead, '#', ShinseiTools.itemWoodToolHandle});
 
 		//Swords
-		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumSword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumSwordBlade, '#', ShinseiTools.itemWoodToolHandle});
-		this.addRecipe(new ItemStack(ShinseiTools.itemCopperSword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperSwordBlade, '#', ShinseiTools.itemWoodToolHandle});
+//		this.addRecipe(new ItemStack(ShinseiTools.itemAluminumSword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemAluminumSwordBlade, '#', ShinseiTools.itemWoodToolHandle});
+		this.addRecipe(new ItemStack(ShinseiItems.copperSword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemCopperSwordBlade, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.stone_sword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemStoneSwordBlade, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.golden_sword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemGoldSwordBlade, '#', ShinseiTools.itemWoodToolHandle});
  		this.addRecipe(new ItemStack(Items.diamond_sword, 1),new Object[] {"@", "#", '@', ShinseiTools.itemDiamondSwordBlade, '#', ShinseiTools.itemWoodToolHandle});

@@ -1,5 +1,6 @@
 package com.megathirio.shinsei.core.handler;
 
+import com.megathirio.shinsei.init.ShinseiItems;
 import com.megathirio.shinsei.init.ShinseiTools;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.init.Items;
@@ -103,8 +104,8 @@ public class CraftingHandler {
                 }
 
                 ItemStack axeCopper = event.craftMatrix.getStackInSlot(i);
-                if(axeCopper != null && axeCopper.getItem() == ShinseiTools.itemCopperAxe){
-                    ItemStack k = new ItemStack(ShinseiTools.itemCopperAxe, 2, (axeCopper.getItemDamage() + 2));
+                if(axeCopper != null && axeCopper.getItem() == ShinseiItems.copperAxe){
+                    ItemStack k = new ItemStack(ShinseiItems.copperAxe, 2, (axeCopper.getItemDamage() + 2));
 
                     if(k.getItemDamage() >= k.getMaxDamage()){
                         k.stackSize--;
@@ -112,15 +113,17 @@ public class CraftingHandler {
                     event.craftMatrix.setInventorySlotContents(i, k);
                 }
 
-                ItemStack axeAluminum = event.craftMatrix.getStackInSlot(i);
-                if(axeAluminum != null && axeAluminum.getItem() == ShinseiTools.itemAluminumAxe){
-                    ItemStack k = new ItemStack(ShinseiTools.itemAluminumAxe, 2, (axeAluminum.getItemDamage() + 2));
+/*
+ItemStack axeAluminum = event.craftMatrix.getStackInSlot(i);
+if(axeAluminum != null && axeAluminum.getItem() == ShinseiTools.itemAluminumAxe){
+ItemStack k = new ItemStack(ShinseiTools.itemAluminumAxe, 2, (axeAluminum.getItemDamage() + 2));
 
-                    if(k.getItemDamage() >= k.getMaxDamage()){
-                        k.stackSize--;
-                    }
-                    event.craftMatrix.setInventorySlotContents(i, k);
-                }
+if(k.getItemDamage() >= k.getMaxDamage()){
+k.stackSize--;
+}
+event.craftMatrix.setInventorySlotContents(i, k);
+}
+*/
 
             }
 		}

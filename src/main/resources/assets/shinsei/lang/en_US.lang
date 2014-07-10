@@ -1,152 +1,169 @@
-itemGroup.shinseiItems=Shinsei Items
-itemGroup.shinseiBlocks=Shinsei Blocks
-itemGroup.shinseiTools=Shinsei Tools
-itemGroup.shinseiMachines=Shinsei Machines
+itemGroup.shinsei:shinseiItems=Shinsei Items
+itemGroup.shinsei:shinseiLiquids=Shinsei Liquids
+itemGroup.shinsei:shinseiDusts=Shinsei Dusts
+itemGroup.shinsei:shinseiBlocks=Shinsei Blocks
+itemGroup.shinsei:shinseiTools=Shinsei Tools
+itemGroup.shinsei:shinseiMachines=Shinsei Machines
 
-tile.claystone.name=Claystone
-tile.limestone.name=Limestone
-item.lime.name=Lime
-item.quicklime.name=Quicklime
-item.bucket_slaked_lime.name=Slaked Lime
-tile.siltstone.name=Siltstone
-item.silt.name=Silt
+tile.shinsei:limestone.name=Limestone
+tile.shinsei:claystone.name=Claystone
+tile.shinsei:siltstone.name=Siltstone
 
-item.split_wood.name=Split Wood
-item.coke.name=Coke
+tile.shinsei:arsenicOre.name=Arsenic Ore
+tile.shinsei:antimonyOre.name=Antimony Ore
+tile.shinsei:bauxiteOre.name=Bauxite Ore
+tile.shinsei:berylOre.name=Beryl Ore
+tile.shinsei:bismuthOre.name=Bismuth Ore
+tile.shinsei:chromiteOre.name=Chromite Ore
+tile.shinsei:copperOre.name=Copper Ore
+tile.shinsei:graphiteOre.name=Graphite Ore
+tile.shinsei:iridiumOre.name=Iridium Ore
+tile.shinsei:galenaOre.name=Lead Ore
+tile.shinsei:stibniteOre.name=Stibnite Ore
 
-tile.atatara.name=Tatara
-tile.itatara.name=Tatara
-container.tatara=Tatara
+item.shinsei:splitWood.name=Split Wood
+item.shinsei:coke.name=Coke
 
-tile.tool_bench.name=Tool Bench
-container.toolBench=Tool Bench
+item.shinsei:slakedLime.name=Slaked Lime
 
-tile.machine_press.name=Machine Press
-container.machinePress=Machine Press
+item.shinsei:arsenicDust.name=Arsenic Powder
+item.shinsei:graphiteDust.name=Graphite Powder
+item.shinsei:iridiumDust.name=Iridium Powder
+item.shinsei:quicklime.name=Quicklime
 
-tile.marble_white.name=White Marble
-tile.marble_black.name=Black Marble
-tile.marble_blue.name=Blue Marble
-tile.marble_brown.name=Brown Marble
-tile.marble_cyan.name=Cyan Marble
-tile.marble_gray.name=Gray Marble
-tile.marble_green.name=Green Marble
-tile.marble_light_blue.name=Light Blue Marble
-tile.marble_lime.name=Lime Marble
-tile.marble_magenta.name=Magenta Marble
-tile.marble_orange.name=Orange Marble
-tile.marble_pink.name=Pink Marble
-tile.marble_purple.name=Purple Marble
-tile.marble_red.name=Red Marble
-tile.marble_silver.name=Silver Marble
-tile.marble_yellow.name=Yellow Marble
+item.shinsei:aluminumIngot.name=Aluminum Ingot
+item.shinsei:antimonyIngot.name=Antimony Ingot
+item.shinsei:bismuthIngot.name=Bismuth Ingot
+item.shinsei:cadmiumIngot.name=Cadmium Ingot
+item.shinsei:chromiumIngot.name=Chromium Ingot
+item.shinsei:indiumIngot.name=Indium Ingot
+item.shinsei:iridiumIngot.name=Iridium Ingot
+item.shinsei:copperIngot.name=Copper Ingot
+item.shinsei:leadIngot.name=Lead Ingot
 
-tile.log_sakura.name=Sakura Wood
-tile.log_ume.name=Ume Wood
-tile.log_momiji.name=Momiji Wood
-tile.log_matsu.name=Matsu Wood
+item.shinsei:aquamarineGem.name=Aquamarine
+item.shinsei:scarletEmeraldGem.name=Scarlet Emerald
 
-tile.leaf_sakura.name=Sakura Leaf
-tile.leaf_ume.name=Ume Leaf
-tile.leaf_momiji.name=Momiji Leaf
-tile.leaf_matsu.name=Matsu Leaf
+item.shinsei:copperAxe.name=Copper Axe
+item.shinsei:copperHoe.name=Copper Hoe
+item.shinsei:copperPickaxe.name=Copper Pickaxe
+item.shinsei:copperShovel.name=Copper Shovel
+item.shinsei:copperSword.name=Copper Sword
 
-tile.bauxite_ore.name=Bauxite Ore
-item.aluminum_ingot.name=Aluminum Ingot
-tile.aluminum_block.name=Aluminum Block
-tile.stibnite_ore.name=Stibnite Ore
-item.antimony_ingot.name=Antimony Ingot
-tile.antimony_block.name=Antimony Block
-tile.arsenic_ore.name=Arsenic Ore
-item.arsenic_powder.name=Arsenic
-tile.bismuth_ore.name=Bismuth Ore
-item.bismuth_ingot.name=Bismuth Ingot
-tile.bismuth_block.name=Bismuth Block
-tile.graphite_ore.name=Graphite Ore
-item.graphite_powder.name=Graphite
-item.cadmium_ingot.name=Cadmium Ingot
-tile.cadmium_block.name=Cadmium Block
-tile.chromite_ore.name=Chromite Ore
-item.chromium_ingot.name=Chromium Ingot
-tile.chromium_block.name=Chromium Block
-item.indium_ingot.name=Indium Ingot
-tile.indium_block.name=Indium Block
-tile.iridium_ore.name=Iridium Ore
-item.iridium_ingot.name=Iridium Ingot
-item.iridium_powder.name=Iridium Powder
-tile.iridium_block.name=Iridium Block
-tile.copper_ore.name=Copper Ore
-item.copper_ingot.name=Copper Ingot
-tile.copper_block.name=Copper Block
-tile.lead_ore.name=Lead Ore
-item.lead_ingot.name=Lead Ingot
-tile.lead_block.name=Lead Block
+item.shinsei:silt.name=Silt
 
-item.bellows.name=Bellows
-item.bellows_piston.name=Piston Bellows
-item.retort.name=Retort Chamber
-item.wood_tool_handle.name=Wooden Tool Handle
-item.copper_plate.name=Copper Plate
-item.iron_plate.name=Iron Plate
-item.copper_heat_plate.name=Copper Heat Plate
-item.iron_heat_plate.name=Iron Heat Plate
-item.axe_cast.name=Axe Cast
-item.hoe_cast.name=Hoe Cast
-item.pickaxe_cast.name=Pickaxe Cast
-item.shovel_cast.name=Shovel Cast
-item.sword_cast.name=Sword Cast
 
-item.aluminum_axe_head.name=Aluminum Axe Head
-item.copper_axe_head.name=Copper Axe Head
-item.stone_axe_head.name=Stone Axe Head
-item.diamond_axe_head.name=Diamond Axe Head
-item.gold_axe_head.name=Gold Axe Head
-item.iron_axe_head.name=Iron Axe Head
-item.wood_axe_head.name=Wood Axe Head
 
-item.aluminum_hoe_head.name=Aluminum Hoe Head
-item.copper_hoe_head.name=Copper Hoe Head
-item.stone_hoe_head.name=Stone Hoe Head
-item.diamond_hoe_head.name=Diamond Hoe Head
-item.gold_hoe_head.name=Gold Hoe Head
-item.iron_hoe_head.name=Iron Hoe Head
-item.wood_hoe_head.name=Wood Hoe Head
 
-item.aluminum_shovel_head.name=Aluminum Shovel Head
-item.copper_shovel_head.name=Copper Shovel Head
-item.stone_shovel_head.name=Stone Shovel Head
-item.diamond_shovel_head.name=Diamond Shovel Head
-item.gold_shovel_head.name=Gold Shovel Head
-item.iron_shovel_head.name=Iron Shovel Head
-item.wood_shovel_head.name=Wood Shovel Head
 
-item.aluminum_sword_blade.name=Aluminum Sword Blade
-item.copper_sword_blade.name=Copper Sword Blade
-item.stone_sword_blade.name=Stone Sword Blade
-item.diamond_sword_blade.name=Diamond Sword Head
-item.gold_sword_blade.name=Gold Sword Head
-item.iron_sword_blade.name=Iron Sword Blade
-item.wood_sword_blade.name=Wood Sword Blade
+tile.shinsei:atatara.name=Tatara
+tile.shinsei:itatara.name=Tatara
+container.shinsei:tatara=Tatara
 
-item.aluminum_pickaxe_head.name=Aluminum Pickaxe Head
-item.copper_pickaxe_head.name=Copper Pickaxe Head
-item.stone_pickaxe_head.name=Stone Pickaxe Head
-item.diamond_pickaxe_head.name=Diamond Pickaxe Head
-item.gold_pickaxe_head.name=Gold Pickaxe Head
-item.iron_pickaxe_head.name=Iron Pickaxe Head
-item.wood_pickaxe_head.name=Wood Pickaxe Head
+tile.shinsei:tool_bench.name=Tool Bench
+container.shinsei:toolBench=Tool Bench
 
-item.aluminum_axe.name=Aluminum Axe;
-item.copper_axe.name=Copper Axe
+tile.shinsei:machine_press.name=Machine Press
+container.shinsei:machinePress=Machine Press
 
-item.aluminum_hoe.name=Aluminum Hoe;
-item.copper_hoe.name=Copper Hoe;
+tile.shinsei:marbleWhite.name=White Marble
+tile.shinsei:marbleBlack.name=Black Marble
+tile.shinsei:marbleBlue.name=Blue Marble
+tile.shinsei:marbleBrown.name=Brown Marble
+tile.shinsei:marbleCyan.name=Cyan Marble
+tile.shinsei:marbleGray.name=Gray Marble
+tile.shinsei:marbleGreen.name=Green Marble
+tile.shinsei:marbleLtBlue.name=Light Blue Marble
+tile.shinsei:marbleLime.name=Lime Marble
+tile.shinsei:marbleMagenta.name=Magenta Marble
+tile.shinsei:marbleOrange.name=Orange Marble
+tile.shinsei:marblePink.name=Pink Marble
+tile.shinsei:marblePurple.name=Purple Marble
+tile.shinsei:marbleRed.name=Red Marble
+tile.shinsei:marbleSilver.name=Silver Marble
+tile.shinsei:marbleYellow.name=Yellow Marble
 
-item.aluminum_pickaxe.name=Aluminum Pickaxe;
-item.copper_pickaxe.name=Copper Pickaxe;
+tile.shinsei:logSakura.name=Sakura Wood
+tile.shinsei:logUme.name=Ume Wood
+tile.shinsei:logMomiji.name=Momiji Wood
+tile.shinsei:logMatsu.name=Matsu Wood
 
-item.aluminum_shovel.name=Aluminum Shovel;
-item.copper_shovel.name=Copper Shovel;
+tile.shinsei:leafSakura.name=Sakura Leaf
+tile.shinsei:leafUme.name=Ume Leaf
+tile.shinsei:leafMomiji.name=Momiji Leaf
+tile.shinsei:leafMatsu.name=Matsu Leaf
 
-item.aluminum_sword.name=Aluminum Sword;
-item.copper_sword.name=Copper Sword;
+tile.shinsei:aluminumBlock.name=Aluminum Block
+tile.shinsei:antimonyBlock.name=Antimony Block
+tile.shinsei:bismuthBlock.name=Bismuth Block
+tile.shinsei:cadmiumBlock.name=Cadmium Block
+tile.shinsei:chromiumBlock.name=Chromium Block
+tile.shinsei:indiumBlock.name=Indium Block
+tile.shinsei:iridiumBlock.name=Iridium Block
+tile.shinsei:copperBlock.name=Copper Block
+tile.shinsei:leadblock.name=Lead Block
+
+item.shinsei:woodToolHandle.name=Wooden Tool Handle
+item.shinsei:copperPlate.name=Copper Plate
+item.shinsei:ironPlate.name=Iron Plate
+item.shinsei:copperHeatPlate.name=Copper Heat Plate
+item.shinsei:ironHeatPlate.name=Iron Heat Plate
+item.shinsei:axeCast.name=Axe Cast
+item.shinsei:hoeCast.name=Hoe Cast
+item.shinsei:pickaxeCast.name=Pickaxe Cast
+item.shinsei:shovelCast.name=Shovel Cast
+item.shinsei:swordCast.name=Sword Cast
+
+item.shinsei:aluminumAxeHead.name=Aluminum Axe Head
+item.shinsei:copperAxeHead.name=Copper Axe Head
+item.shinsei:stoneAxeHead.name=Stone Axe Head
+item.shinsei:diamondAxeHead.name=Diamond Axe Head
+item.shinsei:goldAxeHead.name=Gold Axe Head
+item.shinsei:ironAxeHead.name=Iron Axe Head
+item.shinsei:woodAxeHead.name=Wood Axe Head
+
+item.shinsei:aluminumHoeHead.name=Aluminum Hoe Head
+item.shinsei:copperHoeHead.name=Copper Hoe Head
+item.shinsei:stoneHoeHead.name=Stone Hoe Head
+item.shinsei:diamondHoeHead.name=Diamond Hoe Head
+item.shinsei:goldHoeHead.name=Gold Hoe Head
+item.shinsei:ironHoeHead.name=Iron Hoe Head
+item.shinsei:woodHoeHead.name=Wood Hoe Head
+
+item.shinsei:aluminumShovelHead.name=Aluminum Shovel Head
+item.shinsei:copperShovelHead.name=Copper Shovel Head
+item.shinsei:stoneShovelHead.name=Stone Shovel Head
+item.shinsei:diamondShovelHead.name=Diamond Shovel Head
+item.shinsei:goldShovelHead.name=Gold Shovel Head
+item.shinsei:ironShovelHead.name=Iron Shovel Head
+item.shinsei:woodShovelHead.name=Wood Shovel Head
+
+item.shinsei:aluminumSwordBlade.name=Aluminum Sword Blade
+item.shinsei:copperSwordBlade.name=Copper Sword Blade
+item.shinsei:stoneSwordBlade.name=Stone Sword Blade
+item.shinsei:diamondSwordBlade.name=Diamond Sword Head
+item.shinsei:goldSwordBlade.name=Gold Sword Head
+item.shinsei:ironSwordBlade.name=Iron Sword Blade
+item.shinsei:woodSwordBlade.name=Wood Sword Blade
+
+item.shinsei:aluminumPickaxeHead.name=Aluminum Pickaxe Head
+item.shinsei:copperPickaxeHead.name=Copper Pickaxe Head
+item.shinsei:stonePickaxeHead.name=Stone Pickaxe Head
+item.shinsei:diamondPickaxeHead.name=Diamond Pickaxe Head
+item.shinsei:goldPickaxeHead.name=Gold Pickaxe Head
+item.shinsei:ironPickaxeHead.name=Iron Pickaxe Head
+item.shinsei:woodPickaxeHead.name=Wood Pickaxe Head
+
+item.shinsei:aluminumAxe.name=Aluminum Axe;
+
+item.shinsei:aluminumHoe.name=Aluminum Hoe;
+item.shinsei:copperHoe.name=Copper Hoe;
+
+item.shinsei:aluminumPickaxe.name=Aluminum Pickaxe;
+item.shinsei:copperPickaxe.name=Copper Pickaxe;
+
+item.shinsei:aluminumShovel.name=Aluminum Shovel;
+item.shinsei:copperShovel.name=Copper Shovel;
+
+item.shinsei:aluminumSword.name=Aluminum Sword;
+item.shinsei:copperSword.name=Copper Sword;

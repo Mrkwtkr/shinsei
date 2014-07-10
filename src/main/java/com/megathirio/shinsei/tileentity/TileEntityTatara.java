@@ -1,6 +1,6 @@
 package com.megathirio.shinsei.tileentity;
 
-import com.megathirio.shinsei.init.ShinseiFuels;
+import com.megathirio.shinsei.init.ShinseiItems;
 import com.megathirio.shinsei.init.ShinseiTools;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -143,7 +143,7 @@ public class TileEntityTatara extends TileEntity implements ISidedInventory {
 
             }
 
-            if (item == ShinseiFuels.fuelSplitWood) return 800;
+            if (item == ShinseiItems.splitWood) return 800;
             if (item == ShinseiTools.itemWoodToolHandle) return 200;
             if (item == ShinseiTools.itemWoodAxeHead) return 200;
             if (item == ShinseiTools.itemWoodHoeHead) return 200;

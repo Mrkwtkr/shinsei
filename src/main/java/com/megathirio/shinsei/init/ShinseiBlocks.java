@@ -1,30 +1,46 @@
 package com.megathirio.shinsei.init;
 
-import com.megathirio.shinsei.blocks.BlockMarble;
-import com.megathirio.shinsei.blocks.BlockShinsei;
-import com.megathirio.shinsei.blocks.ShinseiOre;
-import com.megathirio.shinsei.items.ItemMarbleBlock;
+import com.megathirio.shinsei.block.mineral.BlockClaystone;
+import com.megathirio.shinsei.block.mineral.BlockHalite;
+import com.megathirio.shinsei.block.mineral.BlockLimestone;
+import com.megathirio.shinsei.block.BlockMarble;
+import com.megathirio.shinsei.block.BlockShinsei;
+import com.megathirio.shinsei.block.OreShinsei;
+import com.megathirio.shinsei.block.mineral.BlockSiltstone;
+import com.megathirio.shinsei.block.ore.*;
 
+import com.megathirio.shinsei.reference.Names;
+import com.megathirio.shinsei.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public final class ShinseiBlocks {
 
 //Block Variables
-	//Native Element Minerals
-	public static Block oreArsenic;
-	public static Block oreBauxite;
-    public static Block oreBismuth;
-    public static Block oreChromite;
-	public static Block oreCopper;
-    public static Block oreGraphite;
-	public static Block oreStibnite;
-    public static Block oreIridium;
-    public static Block oreLead;
+	//Ores
+    public static OreShinsei acanthiteOre = new BlockAcanthiteOre();
+	public static OreShinsei arsenicOre = new BlockArsenicOre();
+	public static OreShinsei baryteOre = new BlockBaryteOre();
+    public static OreShinsei berylOre = new BlockBerylOre();
+    public static OreShinsei bauxiteOre = new BlockBauxiteOre();
+    public static OreShinsei bismuthOre = new BlockBismuthOre();
+    public static OreShinsei borniteOre = new BlockBorniteOre();
+    public static OreShinsei cassiteriteOre = new BlockCassiteriteOre();
+    public static OreShinsei chalcociteOre = new BlockChalcociteOre();
+    public static OreShinsei chalcopyriteOre = new BlockChalcopyriteOre();
+    public static OreShinsei chromiteOre = new BlockChromiteOre();
+    public static OreShinsei cinnabarOre = new BlockCinnabarOre();
+	public static OreShinsei copperOre = new BlockCopperOre();
+    public static OreShinsei dolomiteOre = new BlockDolomiteOre();
+    public static OreShinsei hematiteOre = new BlockHematiteOre();
+    public static OreShinsei galenaOre = new BlockGalenaOre();
+    public static OreShinsei graphiteOre = new BlockGraphiteOre();
+    public static OreShinsei iridiumOre = new BlockIridiumOre();
+    public static OreShinsei molybdeniteOre = new BlockMolybdeniteOre();
+    public static OreShinsei pentlanditeOre = new BlockPentlanditeOre();
+    public static OreShinsei stibniteOre = new BlockStibniteOre();
 
 	//Resource Blocks
 	public static Block blockAntimony;
@@ -38,124 +54,73 @@ public final class ShinseiBlocks {
     public static Block blockLead;
 
 	
-	//Mineral Blocks
-	public static Block blockClaystone;
-	public static Block blockLimestone;
-	public static Block blockSiltstone;
-	
+	//Minerals
+    public static BlockShinsei claystoneBlock = new BlockClaystone();
+    public static BlockShinsei limestoneBlock = new BlockLimestone();
+    public static BlockShinsei marbleBlock = new BlockMarble();
+	public static BlockShinsei siltstoneBlock = new BlockSiltstone();
+    public static BlockShinsei haliteBlock = new BlockHalite();
 
-	//Building Blocks
-	public static Block blockMarble;
-	
 	public static void init(){
 	
 	//Block Initialization
+        //Ore
+        GameRegistry.registerBlock(acanthiteOre, Names.Blocks.ACANTHITE_ORE);
+        GameRegistry.registerBlock(arsenicOre, Names.Blocks.ARSENIC_ORE);
+        GameRegistry.registerBlock(baryteOre, Names.Blocks.BARYTE_ORE);
+        GameRegistry.registerBlock(berylOre, Names.Blocks.BERYL_ORE);
+        GameRegistry.registerBlock(bauxiteOre, Names.Blocks.BAUXITE_ORE);
+        GameRegistry.registerBlock(bismuthOre, Names.Blocks.BISMUTH_ORE);
+        GameRegistry.registerBlock(borniteOre, Names.Blocks.BORNITE_ORE);
+        GameRegistry.registerBlock(cassiteriteOre, Names.Blocks.CASSITERITE_ORE);
+        GameRegistry.registerBlock(chalcociteOre, Names.Blocks.CHALCOCITE_ORE);
+        GameRegistry.registerBlock(chalcopyriteOre, Names.Blocks.CHALCOPYRITE_ORE);
+        GameRegistry.registerBlock(chromiteOre, Names.Blocks.CHROMITE_ORE);
+        GameRegistry.registerBlock(cinnabarOre, Names.Blocks.CINNABAR_ORE);
+        GameRegistry.registerBlock(copperOre, Names.Blocks.COPPER_ORE);
+        GameRegistry.registerBlock(dolomiteOre, Names.Blocks.DOLOMITE_ORE);
+        GameRegistry.registerBlock(galenaOre, Names.Blocks.GALENA_ORE);
+        GameRegistry.registerBlock(graphiteOre, Names.Blocks.GRAPHITE_ORE);
+        GameRegistry.registerBlock(iridiumOre, Names.Blocks.IRIDIUM_ORE);
+        GameRegistry.registerBlock(molybdeniteOre, Names.Blocks.MOLYBDENITE_ORE);
+        GameRegistry.registerBlock(pentlanditeOre, Names.Blocks.PENTLANDITE_ORE);
+        GameRegistry.registerBlock(stibniteOre, Names.Blocks.STIBNITE_ORE);
 
-		//Native element minerals
-        	//Harvest levels: Wood:0; Stone:1; Iron:2; Diamond:3; Gold:0
+        //Mineral Blocks
+        GameRegistry.registerBlock(claystoneBlock, Names.Blocks.CLAYSTONE);
+        GameRegistry.registerBlock(limestoneBlock, Names.Blocks.LIMESTONE);
+        GameRegistry.registerBlock(marbleBlock, Names.Blocks.MARBLE);
+        GameRegistry.registerBlock(siltstoneBlock, Names.Blocks.SILTSTONE);
+        GameRegistry.registerBlock(haliteBlock, Names.Blocks.HALITE);
 
-    		//Bauxite - processed in Pressurized Smelter
-    		oreBauxite = new ShinseiOre(Material.rock).setBlockName("bauxite_ore");
-    		GameRegistry.registerBlock(oreBauxite, "bauxite_ore");
-    		OreDictionary.registerOre("oreAluminum", new ItemStack(oreBauxite));
-
-	    	//Stibnite - processed in Furnaces
-    		oreStibnite = new ShinseiOre(Material.rock).setBlockName("stibnite_ore");
-            GameRegistry.registerBlock(oreStibnite, "stibnite_ore");
-            OreDictionary.registerOre("oreAntimony", new ItemStack(oreStibnite));
-
-    		//Arsenic Ore - drops Arsenic
-    		oreArsenic = new ShinseiOre(Material.rock).setBlockName("arsenic_ore");
-    		GameRegistry.registerBlock(oreArsenic, "arsenic_ore");
-    		OreDictionary.registerOre("oreArsenic", new ItemStack(oreArsenic));
-
-            //Bismuth Ore - processed in Furnaces
-            oreBismuth = new ShinseiOre(Material.rock).setBlockName("bismuth_ore");
-            GameRegistry.registerBlock(oreBismuth, "bismuth_ore");
-            OreDictionary.registerOre("oreBismuth", new ItemStack(oreBismuth));
-
-            //Graphite Ore - drops Graphite
-            oreGraphite = new ShinseiOre(Material.rock).setBlockName("graphite_ore");
-            GameRegistry.registerBlock(oreGraphite, "graphite_ore");
-            OreDictionary.registerOre("oreGraphite", new ItemStack(oreGraphite));
-
-            //Chromite Ore - processed in Furnaces
-            oreChromite = new ShinseiOre(Material.rock).setBlockName("chromite_ore");
-            GameRegistry.registerBlock(oreChromite, "chromite_ore");
-            OreDictionary.registerOre("oreChromite", new ItemStack(oreChromite));
-
-            //Copper Ore - processed in Furnaces
-    		oreCopper = new ShinseiOre(Material.rock).setBlockName("copper_ore");
-    		GameRegistry.registerBlock(oreCopper, "copper_ore");
-    		OreDictionary.registerOre("oreCopper", new ItemStack(oreCopper));
-
-            //Iridium Ore - processed in
-            oreIridium = new ShinseiOre(Material.rock).setBlockName("iridium_ore");
-            GameRegistry.registerBlock(oreIridium, "iridium_ore");
-            OreDictionary.registerOre("oreIridium", new ItemStack(oreIridium));
-
-            //Lead Ore - processed in Furnaces
-            oreLead = new ShinseiOre(Material.rock).setBlockName("lead_ore");
-            GameRegistry.registerBlock(oreLead, "lead_ore");
-            OreDictionary.registerOre("oreLead", new ItemStack(oreLead));
-
-    		//Mineral Blocks
-    		blockClaystone = new BlockShinsei(Material.clay).setBlockName("claystone").setResistance(2F).setHardness(0.5F);
-    		blockClaystone.setHarvestLevel("shovel", 0);
-    		GameRegistry.registerBlock(blockClaystone, "claystone");
-            OreDictionary.registerOre("blockClay", new ItemStack(blockClaystone));
-
-    		blockLimestone = new BlockShinsei(Material.rock).setBlockName("limestone");
-            blockLimestone.setHarvestLevel("pickaxe", 0);
-    		GameRegistry.registerBlock(blockLimestone, "limestone");
-    		OreDictionary.registerOre("blockStone", new ItemStack(blockLimestone));
-
-    		blockSiltstone = new BlockShinsei(Material.clay).setBlockName("siltstone").setResistance(2F).setHardness(0.5F);
-    		blockSiltstone.setHarvestLevel("shovel", 0);
-    		GameRegistry.registerBlock(blockSiltstone, "siltstone");
-            OreDictionary.registerOre("blockSilt", new ItemStack(blockSiltstone));
 
     		//Resource Blocks
     		blockAluminum = new BlockShinsei(Material.iron).setBlockName("aluminum_block").setHardness(2.75F).setResistance(5.5F);
     		GameRegistry.registerBlock(blockAluminum, "aluminum_block");
-    		OreDictionary.registerOre("blockAluminum", new ItemStack(blockAluminum));
 
     		blockAntimony = new BlockShinsei(Material.iron).setBlockName("antimony_block");
     		GameRegistry.registerBlock(blockAntimony, "antimony_block");
-    		OreDictionary.registerOre("blockAntimony", new ItemStack(blockAntimony));
 
             blockBismuth = new BlockShinsei(Material.iron).setBlockName("bismuth_block").setHardness(10.0F).setResistance(20.0F);
             GameRegistry.registerBlock(blockBismuth, "bismuth_block");
-            OreDictionary.registerOre("blockBismuth", new ItemStack(blockBismuth));
 
             blockCadmium = new BlockShinsei(Material.iron).setBlockName("cadmium_block");
             GameRegistry.registerBlock(blockCadmium, "cadmium_block");
-            OreDictionary.registerOre("blockCadmium", new ItemStack(blockCadmium));
 
             blockChromium = new BlockShinsei(Material.iron).setBlockName("chromium_block").setHardness(8.5F).setResistance(15.0F);
             GameRegistry.registerBlock(blockChromium, "chromium_block");
-            OreDictionary.registerOre("blockChromium", new ItemStack(blockChromium));
 
     		blockCopper = new BlockShinsei(Material.iron).setBlockName("copper_block").setHardness(5.0F).setResistance(10.0F);
     		GameRegistry.registerBlock(blockCopper, "copper_block");
-            OreDictionary.registerOre("blockCopper", new ItemStack(blockCopper));
 
             blockIndium = new BlockShinsei(Material.iron).setBlockName("indium_block");
             GameRegistry.registerBlock(blockIndium, "indium_block");
-            OreDictionary.registerOre("blockIndium", new ItemStack(blockIndium));
 
             blockIridium = new BlockShinsei(Material.iron).setBlockName("iridium_block");
             GameRegistry.registerBlock(blockIridium, "iridium_block");
-            OreDictionary.registerOre("blockIridium", new ItemStack(blockIridium));
 
             blockLead = new BlockShinsei(Material.iron).setBlockName("lead_block");
             GameRegistry.registerBlock(blockLead, "lead_block");
-            OreDictionary.registerOre("blockLead", new ItemStack(blockLead));
-
-        //Building Blocks
-    		blockMarble = new BlockMarble().setBlockName("marble");
-    		GameRegistry.registerBlock(blockMarble, ItemMarbleBlock.class, "marble");
-    		OreDictionary.registerOre("blockStone", new ItemStack(Blocks.stone));
 
 	}
 }

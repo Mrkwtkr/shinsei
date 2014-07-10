@@ -13,19 +13,4 @@ public class SlotTatara extends Slot {
 
 	}
 
-    @Override
-    public boolean isItemValid(ItemStack itemstack) {
-        if (itemstack.getItem() == ShinseiItems.itemBellows) {
-            return true;
-        }else if(itemstack.getItem() == ShinseiItems.itemPistonBellows) {
-            return true;
-        }else if(itemstack.getItem() == ShinseiItems.itemRetort) {
-            return true;
-        }else if(itemstack.getItem() == ShinseiItems.itemCopperHeatPlate) {
-            return true;
-        }else if(itemstack.getItem() == ShinseiItems.itemIronHeatPlate) {
-            return true;
-        }
-        return false;
-    }
 }

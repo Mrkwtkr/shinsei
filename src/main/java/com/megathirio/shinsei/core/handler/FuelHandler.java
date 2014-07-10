@@ -1,6 +1,6 @@
 package com.megathirio.shinsei.core.handler;
 
-import com.megathirio.shinsei.init.ShinseiFuels;
+import com.megathirio.shinsei.init.ShinseiItems;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.IFuelHandler;
 
@@ -23,8 +23,8 @@ public class FuelHandler implements IFuelHandler{
 	 	 Blaze Rod - 2400
 		*/	 
 		//Fuel Burn Times
-		if(fuel.getItem() == ShinseiFuels.fuelSplitWood) return 800;
-        if(fuel.getItem() == ShinseiFuels.fuelCoke) return 3200;
+		if(fuel.getItem() == ShinseiItems.splitWood) return 800;
+        if(fuel.getItem() == ShinseiItems.coke) return 2400;
 
 		return 0;
 	}

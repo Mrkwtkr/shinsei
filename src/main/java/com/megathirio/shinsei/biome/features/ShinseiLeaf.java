@@ -52,7 +52,7 @@ public class ShinseiLeaf extends BlockLeaves{
     }
 
     /**
-     * returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
+     * returns a list of block with the same ID, but different meta (eg: wood returns 4 block)
      */
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item item, CreativeTabs tabs, List list)

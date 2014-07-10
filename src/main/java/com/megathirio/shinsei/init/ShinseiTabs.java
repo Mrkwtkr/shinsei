@@ -1,53 +1,57 @@
 package com.megathirio.shinsei.init;
 
-import com.megathirio.shinsei.init.ShinseiBlocks;
-import com.megathirio.shinsei.init.ShinseiMachines;
-import com.megathirio.shinsei.items.ShinseiIngots;
-import com.megathirio.shinsei.init.ShinseiTools;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import com.megathirio.shinsei.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public final class ShinseiTabs {
+public class ShinseiTabs {
+    public static final CreativeTabs BLOCKS_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock(ShinseiBlocks.blockCopper);
+        }
+    };
 
-//Tabs Variables
-	public static CreativeTabs blocksTab;
-	public static CreativeTabs itemsTab;
-	public static CreativeTabs toolsTab;
-	public static CreativeTabs machinesTab;
-	
-	
-//Tabs Initialization
-	public static void init(){
+    public static final CreativeTabs ORES_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock(ShinseiBlocks.borniteOre);
+        }
+    };
 
-		blocksTab = new CreativeTabs("shinseiBlocks"){
-			@SideOnly(Side.CLIENT)
-			public Item getTabIconItem(){
-				return Item.getItemFromBlock(ShinseiBlocks.oreBauxite) ;
-			}
-		};
+    public static final CreativeTabs ITEMS_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return ShinseiItems.scarletEmeraldGem;
+        }
+    };
 
-		itemsTab = new CreativeTabs("shinseiItems"){
-			@SideOnly(Side.CLIENT)
-			public Item getTabIconItem(){
-				return ShinseiIngots.ingotAluminum;
-			}
-		};
+    public static final CreativeTabs POWDERS_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return ShinseiItems.arsenicPowder;
+        }
+    };
 
-		toolsTab = new CreativeTabs("shinseiTools"){
-			@SideOnly(Side.CLIENT)
-			public Item getTabIconItem(){
-				return ShinseiTools.itemAluminumPickaxe;
-			}
-		};
+    public static final CreativeTabs MACHINES_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock(ShinseiBlocks.blockAluminum);
+        }
+    };
 
-		machinesTab = new CreativeTabs("shinseiMachines"){
-			@SideOnly(Side.CLIENT)
-			public Item getTabIconItem(){
-				return Item.getItemFromBlock(ShinseiMachines.blockMachinePress);
-			}
-		};
-}
+    public static final CreativeTabs TOOLS_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return ShinseiItems.copperPickaxe;
+        }
+    };
+
+    public static final CreativeTabs LIQUIDS_TAB = new CreativeTabs(Reference.MOD_ID) {
+        @Override
+        public Item getTabIconItem() {
+            return ShinseiItems.slakedLime;
+        }
+    };
+
 }

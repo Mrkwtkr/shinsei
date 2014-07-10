@@ -1,0 +1,20 @@
+package com.megathirio.shinsei.block.mineral;
+
+import com.megathirio.shinsei.block.BlockShinsei;
+import com.megathirio.shinsei.block.OreShinsei;
+import com.megathirio.shinsei.reference.Names;
+import net.minecraft.block.material.Material;
+
+public class BlockLimestone extends OreShinsei {
+    public BlockLimestone(){
+        super(Material.rock);
+        this.setBlockName(Names.Blocks.LIMESTONE);
+        this.setHardness(1F);
+        this.setResistance(2.5F);
+        this.setStepSound(soundTypeStone);
+        this.setHarvestLevel("pickaxe", 0);
+    }
+
+    public boolean isOre(){ return true;}
+
+}

@@ -4,9 +4,10 @@ import com.megathirio.shinsei.core.handler.ConfigurationHandler;
 import com.megathirio.shinsei.core.handler.*;
 import com.megathirio.shinsei.core.proxy.IProxy;
 import com.megathirio.shinsei.crafting.ShinseiRecipes;
+import com.megathirio.shinsei.init.ShinseiItems;
 import com.megathirio.shinsei.init.ShinseiTabs;
 import com.megathirio.shinsei.init.*;
-import com.megathirio.shinsei.items.*;
+import com.megathirio.shinsei.item.*;
 import com.megathirio.shinsei.reference.Reference;
 import com.megathirio.shinsei.utility.LogHelper;
 import com.megathirio.shinsei.world.ShinseiWorldGen;
@@ -18,6 +19,7 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY)
 
@@ -46,11 +48,14 @@ public class Main {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
-		//Creative Tab Initializations
-		ShinseiTabs.init();
+//		//Creative Tab Initializations
+//		ShinseiTabs.init();
 
-		//Block Initializations
+ 		//Block Initializations
 		ShinseiBlocks.init();
+
+        //Item Ore Dictionary Registration
+        ShinseiOreDict.items();
 
         //Block Initializations
         ShinseiTrees.init();
@@ -61,21 +66,12 @@ public class Main {
 		//Item Initializations
 		ShinseiItems.init();
 
-		//Ingot Initializations
-		ShinseiIngots.init();
-
-		//Dust Initializations
-		ShinseiDusts.init();
-
-        //Fuel Initializations
-        ShinseiFuels.init();
-
         //Tool Initializations
 		ShinseiTools.init();
 
 		//WorldGen Registry
 		GameRegistry.registerWorldGenerator(new ShinseiWorldGen(), 1);
-		
+
 		//Renderers
 		proxy.registerRenderThings();
 
@@ -94,9 +90,12 @@ public class Main {
 		
 		//Fuel Handler Registration
 		GameRegistry.registerFuelHandler(new FuelHandler());
-		
+
+        //Block Ore Dictionary Registration
+        ShinseiOreDict.blocks();
+
 		//Recipes Initialization
-            ShinseiRecipes.init();
+        ShinseiRecipes.init();
 
         LogHelper.info("Initialization Complete!");
 

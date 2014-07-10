@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.megathirio.shinsei.init.ShinseiBlocks;
-import com.megathirio.shinsei.items.ShinseiIngots;
 import com.megathirio.shinsei.init.ShinseiItems;
 import com.megathirio.shinsei.init.ShinseiTools;
 
@@ -45,48 +44,48 @@ public class MachinePressCraftingManager
 		//Tool Parts
     		//Casts
 
-            this.addRecipe(new ItemStack(ShinseiItems.itemCopperPlate, 3), "@"," ", '@', ShinseiBlocks.blockCopper);
-            this.addRecipe(new ItemStack(ShinseiItems.itemIronPlate, 3), "@"," ", '@', Blocks.iron_block);
-            this.addRecipe(new ItemStack(ShinseiItems.itemCopperHeatPlate, 1), "@","@", '@', ShinseiItems.itemCopperPlate);
-            this.addRecipe(new ItemStack(ShinseiItems.itemIronHeatPlate, 1), "@","@", '@', ShinseiItems.itemIronPlate);
-            this.addRecipe(new ItemStack(ShinseiTools.itemAxeCast, 1), "@","#", '@', ShinseiTools.itemStoneAxeHead, '#', ShinseiItems.itemCopperPlate);
-            this.addRecipe(new ItemStack(ShinseiTools.itemHoeCast, 1), "@","#", '@', ShinseiTools.itemStoneHoeHead, '#', ShinseiItems.itemCopperPlate);
-       		this.addRecipe(new ItemStack(ShinseiTools.itemPickaxeCast, 1), "@","#", '@', ShinseiTools.itemStonePickaxeHead, '#', ShinseiItems.itemCopperPlate);
-       		this.addRecipe(new ItemStack(ShinseiTools.itemShovelCast, 1), "@","#", '@', ShinseiTools.itemStoneShovelHead, '#', ShinseiItems.itemCopperPlate);
-       		this.addRecipe(new ItemStack(ShinseiTools.itemSwordCast, 1), "@","#", '@', ShinseiTools.itemStoneSwordBlade, '#', ShinseiItems.itemCopperPlate);
+            this.addRecipe(new ItemStack(ShinseiItems.copperPlate, 3), "@"," ", '@', ShinseiBlocks.blockCopper);
+            this.addRecipe(new ItemStack(ShinseiItems.ironPlate, 3), "@"," ", '@', Blocks.iron_block);
+            this.addRecipe(new ItemStack(ShinseiItems.copperHeatPlate, 1), "@","@", '@', ShinseiItems.copperPlate);
+            this.addRecipe(new ItemStack(ShinseiItems.ironHeatPlate, 1), "@","@", '@', ShinseiItems.ironPlate);
+            this.addRecipe(new ItemStack(ShinseiTools.itemAxeCast, 1), "@","#", '@', ShinseiTools.itemStoneAxeHead, '#', ShinseiItems.copperPlate);
+            this.addRecipe(new ItemStack(ShinseiTools.itemHoeCast, 1), "@","#", '@', ShinseiTools.itemStoneHoeHead, '#', ShinseiItems.copperPlate);
+       		this.addRecipe(new ItemStack(ShinseiTools.itemPickaxeCast, 1), "@","#", '@', ShinseiTools.itemStonePickaxeHead, '#', ShinseiItems.copperPlate);
+       		this.addRecipe(new ItemStack(ShinseiTools.itemShovelCast, 1), "@","#", '@', ShinseiTools.itemStoneShovelHead, '#', ShinseiItems.copperPlate);
+       		this.addRecipe(new ItemStack(ShinseiTools.itemSwordCast, 1), "@","#", '@', ShinseiTools.itemStoneSwordBlade, '#', ShinseiItems.copperPlate);
 
 
     		//Axe Heads
-            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumAxeHead, 1), "@", "#", '@', ShinseiIngots.ingotAluminum, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperAxeHead, 1), "@", "#", '@', ShinseiIngots.ingotCopper, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumAxeHead, 1), "@", "#", '@', ShinseiItems.aluminumIngot, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemCopperAxeHead, 1), "@", "#", '@', ShinseiItems.copperIngot, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemGoldAxeHead, 1), "@", "#", '@', Items.gold_ingot, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemDiamondAxeHead, 1), "@", "#", '@', Items.diamond, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemIronAxeHead, 1), "@", "#", '@', Items.iron_ingot, '#', new ItemStack(ShinseiTools.itemAxeCast, 1, OreDictionary.WILDCARD_VALUE));
 
 			//Hoe Heads
-            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumHoeHead, 1), "@", "#", '@', ShinseiIngots.ingotAluminum, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperHoeHead, 1), "@", "#", '@', ShinseiIngots.ingotCopper, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumHoeHead, 1), "@", "#", '@', ShinseiItems.aluminumIngot, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemCopperHoeHead, 1), "@", "#", '@', ShinseiItems.copperIngot, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemGoldHoeHead, 1), "@", "#", '@', Items.gold_ingot, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemDiamondHoeHead, 1), "@", "#", '@', Items.diamond, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemIronHoeHead, 1), "@", "#", '@', Items.iron_ingot, '#', new ItemStack(ShinseiTools.itemHoeCast, 1, OreDictionary.WILDCARD_VALUE));
 		
 			//Pickaxe Heads
-            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumPickaxeHead, 1), "@", "#", '@', ShinseiIngots.ingotAluminum, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperPickaxeHead, 1), "@", "#", '@', ShinseiIngots.ingotCopper, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumPickaxeHead, 1), "@", "#", '@', ShinseiItems.aluminumIngot, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemCopperPickaxeHead, 1), "@", "#", '@', ShinseiItems.copperIngot, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemGoldPickaxeHead, 1), "@", "#", '@', Items.gold_ingot, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemDiamondPickaxeHead, 1), "@", "#", '@', Items.diamond, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemIronPickaxeHead, 1), "@", "#", '@', Items.iron_ingot, '#', new ItemStack(ShinseiTools.itemPickaxeCast, 1, OreDictionary.WILDCARD_VALUE));
 		
 			//Shovel Heads
-            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumShovelHead, 1), "@", "#", '@', ShinseiIngots.ingotAluminum, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperShovelHead, 1), "@", "#", '@', ShinseiIngots.ingotCopper, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumShovelHead, 1), "@", "#", '@', ShinseiItems.aluminumIngot, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemCopperShovelHead, 1), "@", "#", '@', ShinseiItems.copperIngot, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemGoldShovelHead, 1), "@", "#", '@', Items.gold_ingot, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemDiamondShovelHead, 1), "@", "#", '@', Items.diamond, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemIronShovelHead, 1), "@", "#", '@', Items.iron_ingot, '#', new ItemStack(ShinseiTools.itemShovelCast, 1, OreDictionary.WILDCARD_VALUE));
  		
 			//Sword Blades
-            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumSwordBlade, 1), "@", "#", '@', ShinseiIngots.ingotAluminum, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
-            this.addRecipe(new ItemStack(ShinseiTools.itemCopperSwordBlade, 1), "@", "#", '@', ShinseiIngots.ingotCopper, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemAluminumSwordBlade, 1), "@", "#", '@', ShinseiItems.aluminumIngot, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
+            this.addRecipe(new ItemStack(ShinseiTools.itemCopperSwordBlade, 1), "@", "#", '@', ShinseiItems.copperIngot, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemGoldSwordBlade, 1), "@", "#", '@', Items.gold_ingot, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemDiamondSwordBlade, 1), "@", "#", '@', Items.diamond, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
             this.addRecipe(new ItemStack(ShinseiTools.itemIronSwordBlade, 1), "@", "#", '@', Items.iron_ingot, '#', new ItemStack(ShinseiTools.itemSwordCast, 1, OreDictionary.WILDCARD_VALUE));
