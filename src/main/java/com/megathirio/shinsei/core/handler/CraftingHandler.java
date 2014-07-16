@@ -19,36 +19,36 @@ public class CraftingHandler {
 			if(event.craftMatrix.getStackInSlot(i) != null){
 
                 ItemStack axeCast = event.craftMatrix.getStackInSlot(i);
-                if(axeCast != null && axeCast.getItem() == ShinseiTools.itemAxeCast){
-                    ItemStack k = new ItemStack(ShinseiTools.itemAxeCast, 2);
+                if(axeCast != null && axeCast.getItem() == ShinseiTools.axeCast){
+                    ItemStack k = new ItemStack(ShinseiTools.axeCast, 2);
 
                     event.craftMatrix.setInventorySlotContents(i, k);
                 }
 
                 ItemStack pickaxeCast = event.craftMatrix.getStackInSlot(i);
-                if(pickaxeCast != null && pickaxeCast.getItem() == ShinseiTools.itemPickaxeCast){
-                    ItemStack k = new ItemStack(ShinseiTools.itemPickaxeCast, 2);
+                if(pickaxeCast != null && pickaxeCast.getItem() == ShinseiTools.pickaxeCast){
+                    ItemStack k = new ItemStack(ShinseiTools.pickaxeCast, 2);
 
                     event.craftMatrix.setInventorySlotContents(i, k);
                 }
 
                 ItemStack hoeCast = event.craftMatrix.getStackInSlot(i);
-                if(hoeCast != null && hoeCast.getItem() == ShinseiTools.itemHoeCast){
-                    ItemStack k = new ItemStack(ShinseiTools.itemHoeCast, 2);
+                if(hoeCast != null && hoeCast.getItem() == ShinseiTools.hoeCast){
+                    ItemStack k = new ItemStack(ShinseiTools.hoeCast, 2);
 
                     event.craftMatrix.setInventorySlotContents(i, k);
                 }
 
                 ItemStack shovelCast = event.craftMatrix.getStackInSlot(i);
-                if(shovelCast != null && shovelCast.getItem() == ShinseiTools.itemShovelCast){
-                    ItemStack k = new ItemStack(ShinseiTools.itemShovelCast, 2);
+                if(shovelCast != null && shovelCast.getItem() == ShinseiTools.shovelCast){
+                    ItemStack k = new ItemStack(ShinseiTools.shovelCast, 2);
 
                     event.craftMatrix.setInventorySlotContents(i, k);
                 }
 
                 ItemStack swordCast = event.craftMatrix.getStackInSlot(i);
-                if(swordCast != null && swordCast.getItem() == ShinseiTools.itemSwordCast){
-                    ItemStack k = new ItemStack(ShinseiTools.itemSwordCast, 2);
+                if(swordCast != null && swordCast.getItem() == ShinseiTools.swordCast){
+                    ItemStack k = new ItemStack(ShinseiTools.swordCast, 2);
 
                     event.craftMatrix.setInventorySlotContents(i, k);
                 }
@@ -104,8 +104,8 @@ public class CraftingHandler {
                 }
 
                 ItemStack axeCopper = event.craftMatrix.getStackInSlot(i);
-                if(axeCopper != null && axeCopper.getItem() == ShinseiItems.copperAxe){
-                    ItemStack k = new ItemStack(ShinseiItems.copperAxe, 2, (axeCopper.getItemDamage() + 2));
+                if(axeCopper != null && axeCopper.getItem() == ShinseiTools.copperAxe){
+                    ItemStack k = new ItemStack(ShinseiTools.copperAxe, 2, (axeCopper.getItemDamage() + 2));
 
                     if(k.getItemDamage() >= k.getMaxDamage()){
                         k.stackSize--;

@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class BlockClaystone extends OreShinsei {
+public class BlockClaystone extends BlockShinsei {
     public BlockClaystone(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.CLAYSTONE);
@@ -28,7 +28,5 @@ public class BlockClaystone extends OreShinsei {
     public int quantityDropped(Random random){
         return (random.nextInt(3) + 2);
     }
-
-    public boolean isOre(){ return true;}
 
 }

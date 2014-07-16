@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockDolomiteOre extends OreShinsei {
     public BlockDolomiteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.DOLOMITE_ORE);
+        this.setBlockName(Names.Ores.DOLOMITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

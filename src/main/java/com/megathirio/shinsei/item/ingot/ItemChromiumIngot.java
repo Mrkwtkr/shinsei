@@ -8,7 +8,7 @@ public class ItemChromiumIngot extends ItemShinsei {
 
     public ItemChromiumIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.CHROMIUM_INGOT);
+        this.setUnlocalizedName(Names.Ingots.CHROMIUM_INGOT);
 
     }
 

@@ -1,178 +1,151 @@
 package com.megathirio.shinsei.init;
 
-import com.megathirio.shinsei.item.*;
+import com.megathirio.shinsei.item.ItemShinsei;
 import com.megathirio.shinsei.item.tool.*;
+import com.megathirio.shinsei.item.tool.part.*;
+import com.megathirio.shinsei.reference.Names;
+import com.megathirio.shinsei.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public final class ShinseiTools {
+//Tool Varriables
 
-//Tool Variables
-	//Casts
-	public static Item itemAxeCast;
-	public static Item itemHoeCast;
-	public static Item itemPickaxeCast;
-	public static Item itemShovelCast;
-	public static Item itemSwordCast;
+    //Tools
+        //Axes
+        public static AxeShinsei copperAxe = new ItemCopperAxe();
 
-	//Tool Parts
-	public static Item itemWoodToolHandle;
-	
-	//Axes
-	public static Item itemAluminumAxeHead;
-	public static Item itemCopperAxeHead;
-	public static Item itemStoneAxeHead;
-	public static Item itemDiamondAxeHead;
-	public static Item itemGoldAxeHead;
-	public static Item itemIronAxeHead;
-	public static Item itemWoodAxeHead;
-	
-	//Hoes
-	public static Item itemAluminumHoeHead;
-	public static Item itemCopperHoeHead;
-	public static Item itemStoneHoeHead;
-	public static Item itemDiamondHoeHead;
-	public static Item itemGoldHoeHead;
-	public static Item itemIronHoeHead;
-	public static Item itemWoodHoeHead;
-	
-	//Pickaxes
-	public static Item itemAluminumPickaxeHead;
-	public static Item itemCopperPickaxeHead;
-	public static Item itemStonePickaxeHead;
-	public static Item itemDiamondPickaxeHead;
-	public static Item itemGoldPickaxeHead;
-	public static Item itemIronPickaxeHead;
-	public static Item itemWoodPickaxeHead;
-	
-	//Shovels
-	public static Item itemAluminumShovelHead;
-	public static Item itemCopperShovelHead;
-	public static Item itemStoneShovelHead;
-	public static Item itemDiamondShovelHead;
-	public static Item itemGoldShovelHead;
-	public static Item itemIronShovelHead;
-	public static Item itemWoodShovelHead;
-	
-	//Swords
-	public static Item itemAluminumSwordBlade;
-	public static Item itemCopperSwordBlade;
-	public static Item itemStoneSwordBlade;
-	public static Item itemDiamondSwordBlade;
-	public static Item itemGoldSwordBlade;
-	public static Item itemIronSwordBlade;
-	public static Item itemWoodSwordBlade;
-	
-	
-	//Tool Initialization
+        //Hoes
+        public static HoeShinsei copperHoe = new ItemCopperHoe();
+
+        //Pickaxes
+        public static PickaxeShinsei copperPickaxe = new ItemCopperPickaxe();
+
+        //Shovels
+        public static ShovelShinsei copperShovel = new ItemCopperShovel();
+
+        //Swords
+        public static SwordShinsei copperSword = new ItemCopperSword();
+
+    //Tool Parts
+        //Misc
+        public static ItemShinsei woodToolHandle = new ItemWoodToolHandle();
+
+        //Axes
+        public static ItemShinsei copperAxeHead = new ItemCopperAxeHead();
+        public static ItemShinsei diamondAxeHead = new ItemDiamondAxeHead();
+        public static ItemShinsei goldAxeHead = new ItemGoldAxeHead();
+        public static ItemShinsei ironAxeHead = new ItemIronAxeHead();
+        public static ItemShinsei stoneAxeHead = new ItemStoneAxeHead();
+        public static ItemShinsei woodAxeHead = new ItemWoodAxeHead();
+
+        //Hoes
+        public static ItemShinsei copperHoeHead = new ItemCopperHoeHead();
+        public static ItemShinsei diamondHoeHead = new ItemDiamondHoeHead();
+        public static ItemShinsei goldHoeHead = new ItemGoldHoeHead();
+        public static ItemShinsei ironHoeHead = new ItemIronHoeHead();
+        public static ItemShinsei stoneHoeHead = new ItemStoneHoeHead();
+        public static ItemShinsei woodHoeHead = new ItemWoodHoeHead();
+
+        //Pickaxes
+        public static ItemShinsei copperPickaxeHead = new ItemCopperPickaxeHead();
+        public static ItemShinsei diamondPickaxeHead = new ItemDiamondPickaxeHead();
+        public static ItemShinsei goldPickaxeHead = new ItemGoldPickaxeHead();
+        public static ItemShinsei ironPickaxeHead = new ItemIronPickaxeHead();
+        public static ItemShinsei stonePickaxeHead = new ItemStonePickaxeHead();
+        public static ItemShinsei woodPickaxeHead = new ItemWoodPickaxeHead();
+
+        //Shovels
+        public static ItemShinsei copperShovelHead = new ItemCopperShovelHead();
+        public static ItemShinsei diamondShovelHead = new ItemDiamondShovelHead();
+        public static ItemShinsei goldShovelHead = new ItemGoldShovelHead();
+        public static ItemShinsei ironShovelHead = new ItemIronShovelHead();
+        public static ItemShinsei stoneShovelHead = new ItemStoneShovelHead();
+        public static ItemShinsei woodShovelHead = new ItemWoodShovelHead();
+
+        //Swords
+        public static ItemShinsei copperSwordBlade = new ItemCopperSwordBlade();
+        public static ItemShinsei diamondSwordBlade = new ItemDiamondSwordBlade();
+        public static ItemShinsei goldSwordBlade = new ItemGoldSwordBlade();
+        public static ItemShinsei ironSwordBlade = new ItemIronSwordBlade();
+        public static ItemShinsei stoneSwordBlade = new ItemStoneSwordBlade();
+        public static ItemShinsei woodSwordBlade = new ItemWoodSwordBlade();
+
+    //Tool Casts
+        public static ItemShinsei axeCast = new ItemAxeCast();
+        public static ItemShinsei hoeCast = new ItemHoeCast();
+        public static ItemShinsei pickaxeCast = new ItemPickaxeCast();
+        public static ItemShinsei shovelCast = new ItemShovelCast();
+        public static ItemShinsei swordCast = new ItemSwordCast();
+
+//Tool Initialization
 	public static void init(){
-		
-		//Casts
-		itemAxeCast = new ItemShinsei().setUnlocalizedName("axe_cast");
-		GameRegistry.registerItem(itemAxeCast, "axe_cast");
+    //Tools
+        //Axes
+        GameRegistry.registerItem(copperAxe, Names.Tools.COPPER_AXE);
 
-		itemHoeCast = new ItemShinsei().setUnlocalizedName("hoe_cast");
-		GameRegistry.registerItem(itemHoeCast, "hoe_cast");
+        //Hoes
+        GameRegistry.registerItem(copperHoe, Names.Tools.COPPER_HOE);
 
-		itemPickaxeCast = new ItemShinsei().setUnlocalizedName("pickaxe_cast");
-		GameRegistry.registerItem(itemPickaxeCast, "pickaxe_cast");
+        //Pickaxes
+        GameRegistry.registerItem(copperPickaxe, Names.Tools.COPPER_PICKAXE);
 
-		itemShovelCast = new ItemShinsei().setUnlocalizedName("shovel_cast");
-		GameRegistry.registerItem(itemShovelCast, "shovel_cast");
+        //Shovels
+        GameRegistry.registerItem(copperShovel, Names.Tools.COPPER_SHOVEL);
 
-		itemSwordCast = new ItemShinsei().setUnlocalizedName("sword_cast");
-		GameRegistry.registerItem(itemSwordCast, "sword_cast");
+        //Swords
+        GameRegistry.registerItem(copperSword, Names.Tools.COPPER_SWORD);
 
+    //Tool Parts
+        //Misc
+        GameRegistry.registerItem(woodToolHandle, Names.Tools.WOOD_TOOL_HANDLE);
 
-		//Tool Parts		
-		itemWoodToolHandle = new ItemShinsei().setUnlocalizedName("wood_tool_handle").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemWoodToolHandle, "wood_tool_handle");
-		
-		
-		//Axes
-		itemAluminumAxeHead = new ItemShinsei().setUnlocalizedName("aluminum_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemAluminumAxeHead, "aluminum_axe_head");
-		itemCopperAxeHead = new ItemShinsei().setUnlocalizedName("copper_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemCopperAxeHead, "copper_axe_head");
-		itemStoneAxeHead = new ItemShinsei().setUnlocalizedName("stone_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemStoneAxeHead, "stone_axe_head");
-		itemGoldAxeHead = new ItemShinsei().setUnlocalizedName("gold_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemGoldAxeHead, "gold_axe_head");
-		itemDiamondAxeHead = new ItemShinsei().setUnlocalizedName("diamond_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemDiamondAxeHead, "diamond_axe_head");
-		itemIronAxeHead = new ItemShinsei().setUnlocalizedName("iron_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemIronAxeHead, "iron_axe_head");
-		itemWoodAxeHead = new ItemShinsei().setUnlocalizedName("wood_axe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemWoodAxeHead, "wood_axe_head");
+        //Axes
+        GameRegistry.registerItem(copperAxeHead, Names.Tools.COPPER_AXE_HEAD);
+        GameRegistry.registerItem(diamondAxeHead, Names.Tools.DIAMOND_AXE_HEAD);
+        GameRegistry.registerItem(goldAxeHead, Names.Tools.GOLD_AXE_HEAD);
+        GameRegistry.registerItem(ironAxeHead, Names.Tools.IRON_AXE_HEAD);
+        GameRegistry.registerItem(stoneAxeHead, Names.Tools.STONE_AXE_HEAD);
+        GameRegistry.registerItem(woodAxeHead, Names.Tools.WOOD_AXE_HEAD);
 
-		
-		//Hoes
-		itemAluminumHoeHead = new ItemShinsei().setUnlocalizedName("aluminum_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemAluminumHoeHead, "aluminum_hoe_head");
-		itemCopperHoeHead = new ItemShinsei().setUnlocalizedName("copper_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemCopperHoeHead, "copper_hoe_head");
-		itemStoneHoeHead = new ItemShinsei().setUnlocalizedName("stone_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemStoneHoeHead, "stone_hoe_head");
-		itemGoldHoeHead = new ItemShinsei().setUnlocalizedName("gold_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemGoldHoeHead, "gold_hoe_head");
-		itemDiamondHoeHead = new ItemShinsei().setUnlocalizedName("diamond_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemDiamondHoeHead, "diamond_hoe_head");
-		itemIronHoeHead = new ItemShinsei().setUnlocalizedName("iron_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemIronHoeHead, "iron_hoe_head");
-		itemWoodHoeHead = new ItemShinsei().setUnlocalizedName("wood_hoe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemWoodHoeHead, "wood_hoe_head");
-		
-		
-		//Pickaxes
-		itemAluminumPickaxeHead = new ItemShinsei().setUnlocalizedName("aluminum_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemAluminumPickaxeHead, "aluminum_pickaxe_head");
-		itemCopperPickaxeHead = new ItemShinsei().setUnlocalizedName("copper_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemCopperPickaxeHead, "copper_pickaxe_head");
-		itemStonePickaxeHead = new ItemShinsei().setUnlocalizedName("stone_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemStonePickaxeHead, "stone_pickaxe_head");
-		itemGoldPickaxeHead = new ItemShinsei().setUnlocalizedName("gold_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemGoldPickaxeHead, "gold_pickaxe_head");
-		itemDiamondPickaxeHead = new ItemShinsei().setUnlocalizedName("diamond_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemDiamondPickaxeHead, "diamond_pickaxe_head");
-		itemIronPickaxeHead = new ItemShinsei().setUnlocalizedName("iron_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemIronPickaxeHead, "iron_pickaxe_head");
-		itemWoodPickaxeHead = new ItemShinsei().setUnlocalizedName("wood_pickaxe_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemWoodPickaxeHead, "wood_pickaxe_head");
+        //Hoes
+        GameRegistry.registerItem(copperHoeHead, Names.Tools.COPPER_HOE_HEAD);
+        GameRegistry.registerItem(diamondHoeHead, Names.Tools.DIAMOND_HOE_HEAD);
+        GameRegistry.registerItem(goldHoeHead, Names.Tools.GOLD_HOE_HEAD);
+        GameRegistry.registerItem(ironHoeHead, Names.Tools.IRON_HOE_HEAD);
+        GameRegistry.registerItem(stoneHoeHead, Names.Tools.STONE_HOE_HEAD);
+        GameRegistry.registerItem(woodHoeHead, Names.Tools.WOOD_HOE_HEAD);
 
-		
-		//Shovels
-		itemAluminumShovelHead = new ItemShinsei().setUnlocalizedName("aluminum_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemAluminumShovelHead, "aluminum_shovel_head");
-		itemCopperShovelHead = new ItemShinsei().setUnlocalizedName("copper_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemCopperShovelHead, "copper_shovel_head");
-		itemStoneShovelHead = new ItemShinsei().setUnlocalizedName("stone_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemStoneShovelHead, "stone_shovel_head");
-		itemGoldShovelHead = new ItemShinsei().setUnlocalizedName("gold_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemGoldShovelHead, "gold_shovel_head");
-		itemDiamondShovelHead = new ItemShinsei().setUnlocalizedName("diamond_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemDiamondShovelHead, "diamond_shovel_head");
-		itemIronShovelHead = new ItemShinsei().setUnlocalizedName("iron_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemIronShovelHead, "iron_shovel_head");
-		itemWoodShovelHead = new ItemShinsei().setUnlocalizedName("wood_shovel_head").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemWoodShovelHead, "wood_shovel_head");
+        //Pickaxes
+        GameRegistry.registerItem(copperPickaxeHead, Names.Tools.COPPER_PICKAXE_HEAD);
+        GameRegistry.registerItem(diamondPickaxeHead, Names.Tools.DIAMOND_PICKAXE_HEAD);
+        GameRegistry.registerItem(goldPickaxeHead, Names.Tools.GOLD_PICKAXE_HEAD);
+        GameRegistry.registerItem(ironPickaxeHead, Names.Tools.IRON_PICKAXE_HEAD);
+        GameRegistry.registerItem(stonePickaxeHead, Names.Tools.STONE_PICKAXE_HEAD);
+        GameRegistry.registerItem(woodPickaxeHead, Names.Tools.WOOD_PICKAXE_HEAD);
 
-		
-		
-		//Swords
-		itemAluminumSwordBlade = new ItemShinsei().setUnlocalizedName("aluminum_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemAluminumSwordBlade, "aluminum_sword_blade");
-		itemCopperSwordBlade = new ItemShinsei().setUnlocalizedName("copper_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemCopperSwordBlade, "copper_sword_blade");
-		itemStoneSwordBlade = new ItemShinsei().setUnlocalizedName("stone_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemStoneSwordBlade, "stone_sword_blade");
-		itemGoldSwordBlade = new ItemShinsei().setUnlocalizedName("gold_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemGoldSwordBlade, "gold_sword_blade");
-		itemDiamondSwordBlade = new ItemShinsei().setUnlocalizedName("diamond_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemDiamondSwordBlade, "diamond_sword_blade");
-		itemIronSwordBlade = new ItemShinsei().setUnlocalizedName("iron_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemIronSwordBlade, "iron_sword_blade");
-		itemWoodSwordBlade = new ItemShinsei().setUnlocalizedName("wood_sword_blade").setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-		GameRegistry.registerItem(itemWoodSwordBlade, "wood_sword_blade");
-		
-	}
+        //Shovels
+        GameRegistry.registerItem(copperShovelHead, Names.Tools.COPPER_SHOVEL_HEAD);
+        GameRegistry.registerItem(diamondShovelHead, Names.Tools.DIAMOND_SHOVEL_HEAD);
+        GameRegistry.registerItem(goldShovelHead, Names.Tools.GOLD_SHOVEL_HEAD);
+        GameRegistry.registerItem(ironShovelHead, Names.Tools.IRON_SHOVEL_HEAD);
+        GameRegistry.registerItem(stoneShovelHead, Names.Tools.STONE_SHOVEL_HEAD);
+        GameRegistry.registerItem(woodShovelHead, Names.Tools.WOOD_SHOVEL_HEAD);
+
+        //Swords
+        GameRegistry.registerItem(copperSwordBlade, Names.Tools.COPPER_SWORD_BLADE);
+        GameRegistry.registerItem(diamondSwordBlade, Names.Tools.DIAMOND_SWORD_BLADE);
+        GameRegistry.registerItem(goldSwordBlade, Names.Tools.GOLD_SWORD_BLADE);
+        GameRegistry.registerItem(ironSwordBlade, Names.Tools.IRON_SWORD_BLADE);
+        GameRegistry.registerItem(stoneSwordBlade, Names.Tools.STONE_SWORD_BLADE);
+        GameRegistry.registerItem(woodSwordBlade, Names.Tools.WOOD_SWORD_BLADE);
+
+        //Tool Casts
+        GameRegistry.registerItem(axeCast, Names.Tools.AXE_CAST);
+        GameRegistry.registerItem(hoeCast, Names.Tools.HOE_CAST);
+        GameRegistry.registerItem(pickaxeCast, Names.Tools.PICKAXE_CAST);
+        GameRegistry.registerItem(shovelCast, Names.Tools.SHOVEL_CAST);
+        GameRegistry.registerItem(swordCast, Names.Tools.SWORD_CAST);
+
+    }
 }

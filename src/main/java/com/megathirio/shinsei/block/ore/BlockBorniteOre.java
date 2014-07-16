@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockBorniteOre extends OreShinsei {
     public BlockBorniteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.BORNITE_ORE);
+        this.setBlockName(Names.Ores.BORNITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

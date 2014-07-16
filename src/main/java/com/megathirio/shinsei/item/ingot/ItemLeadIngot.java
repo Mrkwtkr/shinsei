@@ -8,7 +8,7 @@ public class ItemLeadIngot extends ItemShinsei {
 
     public ItemLeadIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.LEAD_INGOT);
+        this.setUnlocalizedName(Names.Ingots.LEAD_INGOT);
 
     }
 

@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockMolybdeniteOre extends OreShinsei {
     public BlockMolybdeniteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.MOLYBDENITE_ORE);
+        this.setBlockName(Names.Ores.MOLYBDENITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

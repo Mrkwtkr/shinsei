@@ -20,8 +20,8 @@ public class ShinseiOreDict {
         OreDictionary.registerOre("ingotTin", ShinseiItems.tinIngot);
 
         //Liquids
-        OreDictionary.registerOre("slakedLime", ShinseiItems.slakedLime);
-        OreDictionary.registerOre("mercury", ShinseiItems.mercury);
+//        OreDictionary.registerOre("slakedLime", ShinseiLiquids.slakedLimeBucket);
+//        OreDictionary.registerOre("mercury", ShinseiItems.mercury);
 
         //Dusts
         OreDictionary.registerOre("dustAluminum", ShinseiItems.aluminumPowder);
@@ -57,18 +57,15 @@ public class ShinseiOreDict {
         //Ores
         OreDictionary.registerOre("oreAluminum", ShinseiBlocks.bauxiteOre);
         OreDictionary.registerOre("oreAntimony", ShinseiBlocks.stibniteOre);
-        OreDictionary.registerOre("oreArsenic", ShinseiBlocks.arsenicOre);
-        OreDictionary.registerOre("oreBaryte", ShinseiBlocks.baryteOre);
+        OreDictionary.registerOre("oreArsenic", ShinseiBlocks.realgarOre);
+        OreDictionary.registerOre("oreBaryte", ShinseiBlocks.bariteOre);
         OreDictionary.registerOre("oreBeryl", ShinseiBlocks.berylOre);
         OreDictionary.registerOre("oreBismuth", ShinseiBlocks.bismuthOre);
         OreDictionary.registerOre("oreChromite", ShinseiBlocks.chromiteOre);
         OreDictionary.registerOre("oreCinnabar", ShinseiBlocks.cinnabarOre);
         OreDictionary.registerOre("oreCopper", ShinseiBlocks.borniteOre);
-        OreDictionary.registerOre("oreCopper", ShinseiBlocks.chalcociteOre);
         OreDictionary.registerOre("oreCopper", ShinseiBlocks.chalcopyriteOre);
-        OreDictionary.registerOre("oreCopper", ShinseiBlocks.copperOre);
         OreDictionary.registerOre("oreGraphite", ShinseiBlocks.graphiteOre);
-        OreDictionary.registerOre("oreIridium", ShinseiBlocks.iridiumOre);
 //        OreDictionary.registerOre("oreIron", ShinseiBlocks.hematiteOre);
         OreDictionary.registerOre("oreLead", ShinseiBlocks.galenaOre);
         OreDictionary.registerOre("oreMagnesium", ShinseiBlocks.dolomiteOre);

@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockHematiteOre extends OreShinsei {
     public BlockHematiteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.HEMATITE_ORE);
+        this.setBlockName(Names.Ores.HEMATITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

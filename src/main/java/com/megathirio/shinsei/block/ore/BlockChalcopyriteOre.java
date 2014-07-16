@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockChalcopyriteOre extends OreShinsei {
     public BlockChalcopyriteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.CHALCOPYRITE_ORE);
+        this.setBlockName(Names.Ores.CHALCOPYRITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

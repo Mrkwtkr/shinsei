@@ -16,6 +16,7 @@ public class OreShinsei extends BlockShinsei{
 		this.setStepSound(soundTypeStone);
         this.setCreativeTab(ShinseiTabs.ORES_TAB);
         this.enableStats = true;
-
 	}
+    public boolean isOre(){ return true;}
+
 }

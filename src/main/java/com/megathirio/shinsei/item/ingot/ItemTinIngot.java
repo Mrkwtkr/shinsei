@@ -8,7 +8,7 @@ public class ItemTinIngot extends ItemShinsei {
 
     public ItemTinIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.TIN_INGOT);
+        this.setUnlocalizedName(Names.Ingots.TIN_INGOT);
 
     }
 

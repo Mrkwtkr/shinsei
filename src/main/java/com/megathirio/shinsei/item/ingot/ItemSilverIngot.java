@@ -8,7 +8,7 @@ public class ItemSilverIngot extends ItemShinsei {
 
     public ItemSilverIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.SILVER_INGOT);
+        this.setUnlocalizedName(Names.Ingots.SILVER_INGOT);
 
     }
 

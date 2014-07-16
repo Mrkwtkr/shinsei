@@ -8,7 +8,7 @@ public class ItemAntimonyIngot extends ItemShinsei {
 
     public ItemAntimonyIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.ANTIMONY_INGOT);
+        this.setUnlocalizedName(Names.Ingots.ANTIMONY_INGOT);
 
     }
 

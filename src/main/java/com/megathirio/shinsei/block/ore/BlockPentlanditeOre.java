@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockPentlanditeOre extends OreShinsei {
     public BlockPentlanditeOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.PENTLANDITE_ORE);
+        this.setBlockName(Names.Ores.PENTLANDITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

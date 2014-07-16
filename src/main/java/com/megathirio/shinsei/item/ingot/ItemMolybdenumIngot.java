@@ -8,7 +8,7 @@ public class ItemMolybdenumIngot extends ItemShinsei {
 
     public ItemMolybdenumIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.MOLYBDENUM_INGOT);
+        this.setUnlocalizedName(Names.Ingots.MOLYBDENUM_INGOT);
 
     }
 

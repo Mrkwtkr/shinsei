@@ -17,7 +17,7 @@ public class BlockBerylOre extends OreShinsei {
 
     public BlockBerylOre() {
         super(Material.rock);
-        this.setBlockName(Names.Blocks.BERYL_ORE);
+        this.setBlockName(Names.Ores.BERYL_ORE);
         this.setHarvestLevel("pickaxe", 2);
     }
 
@@ -36,13 +36,6 @@ public class BlockBerylOre extends OreShinsei {
 
     @Override
     public int quantityDropped(Random random) {
-        if (itemDrop == Items.emerald) {
-            intQty = random.nextInt(2) + 1;
-        } else if (itemDrop == ShinseiItems.aquamarineGem) {
-            intQty = random.nextInt(3) + 1;
-        } else{
-            intQty = 1;
-        }
-        return intQty;
+        return random.nextInt(2) + 1;
     }
 }

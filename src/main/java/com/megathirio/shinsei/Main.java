@@ -48,8 +48,8 @@ public class Main {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
-//		//Creative Tab Initializations
-//		ShinseiTabs.init();
+ 		//Fluid Initializations
+ 		ShinseiFluids.init();
 
  		//Block Initializations
 		ShinseiBlocks.init();
@@ -81,6 +81,9 @@ public class Main {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+
+        //Fluid Handler Initialization
+        FluidHandler.init();
 
 		//Crafting Handler Registration
 		FMLCommonHandler.instance().bus().register(new CraftingHandler());

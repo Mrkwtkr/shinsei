@@ -5,7 +5,7 @@ import com.megathirio.shinsei.reference.Names;
 public class ItemSalt extends ItemShinsei {
     public ItemSalt(){
         super();
-        this.setUnlocalizedName(Names.Items.SALT);
+        this.setUnlocalizedName(Names.Powders.SALT);
 
     }
 

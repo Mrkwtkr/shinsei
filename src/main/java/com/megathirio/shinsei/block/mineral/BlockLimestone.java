@@ -5,7 +5,7 @@ import com.megathirio.shinsei.block.OreShinsei;
 import com.megathirio.shinsei.reference.Names;
 import net.minecraft.block.material.Material;
 
-public class BlockLimestone extends OreShinsei {
+public class BlockLimestone extends BlockShinsei {
     public BlockLimestone(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.LIMESTONE);
@@ -14,7 +14,5 @@ public class BlockLimestone extends OreShinsei {
         this.setStepSound(soundTypeStone);
         this.setHarvestLevel("pickaxe", 0);
     }
-
-    public boolean isOre(){ return true;}
 
 }

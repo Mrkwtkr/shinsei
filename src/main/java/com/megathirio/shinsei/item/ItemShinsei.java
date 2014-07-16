@@ -16,8 +16,6 @@ public class ItemShinsei extends Item {
 		super();
         if(isPowder()){
             setCreativeTab(ShinseiTabs.POWDERS_TAB);
-        }else if(isLiquid()){
-            setCreativeTab(ShinseiTabs.LIQUIDS_TAB);
         }else{
             setCreativeTab(ShinseiTabs.ITEMS_TAB);
         }
@@ -46,5 +44,4 @@ public class ItemShinsei extends Item {
 	}
 
     public boolean isPowder(){ return false; }
-    public boolean isLiquid(){ return false; }
 }

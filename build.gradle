@@ -17,13 +17,12 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-0.1.0a"
+version = "1.7.10-0.1.5a"
 group= "com.megathirio.shinsei" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "shinsei"
 
 minecraft {
-    version = "1.7.10-10.13.0.1178"
-    assetDir = "eclipse/assets"
+    version = "1.7.10-10.13.0.1182"
 }
 
 dependencies {

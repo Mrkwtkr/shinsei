@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockGalenaOre extends OreShinsei {
     public BlockGalenaOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.GALENA_ORE);
+        this.setBlockName(Names.Ores.GALENA_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

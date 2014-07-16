@@ -144,12 +144,12 @@ public class TileEntityTatara extends TileEntity implements ISidedInventory {
             }
 
             if (item == ShinseiItems.splitWood) return 800;
-            if (item == ShinseiTools.itemWoodToolHandle) return 200;
-            if (item == ShinseiTools.itemWoodAxeHead) return 200;
-            if (item == ShinseiTools.itemWoodHoeHead) return 200;
-            if (item == ShinseiTools.itemWoodPickaxeHead) return 200;
-            if (item == ShinseiTools.itemWoodShovelHead) return 200;
-            if (item == ShinseiTools.itemWoodSwordBlade) return 200;
+            if (item == ShinseiTools.woodToolHandle) return 200;
+            if (item == ShinseiTools.woodAxeHead) return 200;
+            if (item == ShinseiTools.woodHoeHead) return 200;
+            if (item == ShinseiTools.woodPickaxeHead) return 200;
+            if (item == ShinseiTools.woodShovelHead) return 200;
+            if (item == ShinseiTools.woodSwordBlade) return 200;
             if (item == Items.stick) return 100;
             if (item instanceof ItemTool && ((ItemTool) item).getToolMaterialName().equals("WOOD")) return 200;
             if (item instanceof ItemSword && ((ItemSword) item).getToolMaterialName().equals("WOOD")) return 200;

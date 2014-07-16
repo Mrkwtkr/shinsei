@@ -9,7 +9,7 @@ public class ItemCopperIngot extends ItemShinsei {
 
     public ItemCopperIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.COPPER_INGOT);
+        this.setUnlocalizedName(Names.Ingots.COPPER_INGOT);
     }
 
 

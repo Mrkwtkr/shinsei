@@ -11,7 +11,7 @@ import java.util.Random;
 public class BlockGraphiteOre extends OreShinsei {
     public BlockGraphiteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.GRAPHITE_ORE);
+        this.setBlockName(Names.Ores.GRAPHITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

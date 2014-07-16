@@ -31,9 +31,9 @@ public class BlockMarble extends BlockShinsei{
 		setHardness(5f);
 		setResistance(8f);
 		setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-            this.setBlockName(Names.Blocks.MARBLE);
+        this.setBlockName(Names.Blocks.MARBLE);
     }
-	
+
 	//MetaBlock Texture Setup
 	@SideOnly(Side.CLIENT)
 	@Override
@@ -44,27 +44,27 @@ public class BlockMarble extends BlockShinsei{
 			texture[i] = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + subBlocks[i]);
 		}
 	}
-	
+
 	//MetaBlocks added to CreativeTab
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item block, CreativeTabs creativeTabs, List list){
-		
-		for(int i = 0; i < subBlocks.length; i++){	
+
+		for(int i = 0; i < subBlocks.length; i++){
 			list.add(new ItemStack(block, 1, i));
 		}
 	}
-	
-	//Sets MetaBlock Texture 
+
+	//Sets MetaBlock Texture
 	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side, int meta){
-		
+
 		return texture[meta];
 	}
 
-	//Sets MetaBlock 
+	//Sets MetaBlock
 	public int damageDropped(int meta){
-		
+
 		return meta;
 	}
 }

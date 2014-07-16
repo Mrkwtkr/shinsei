@@ -8,7 +8,7 @@ public class ItemAquamarineGem extends ItemShinsei {
 
     public ItemAquamarineGem(){
         super();
-        this.setUnlocalizedName(Names.Items.AQUAMARINE_GEM);
+        this.setUnlocalizedName(Names.Ingots.AQUAMARINE_GEM);
 
     }
 

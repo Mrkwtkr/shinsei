@@ -8,7 +8,7 @@ public class ItemIridiumIngot extends ItemShinsei {
 
     public ItemIridiumIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.IRIDIUM_INGOT);
+        this.setUnlocalizedName(Names.Ingots.IRIDIUM_INGOT);
 
     }
 

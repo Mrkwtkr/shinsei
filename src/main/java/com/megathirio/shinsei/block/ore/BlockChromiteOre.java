@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockChromiteOre extends OreShinsei {
     public BlockChromiteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.CHROMITE_ORE);
+        this.setBlockName(Names.Ores.CHROMITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class BlockSiltstone extends OreShinsei {
+public class BlockSiltstone extends BlockShinsei {
     public BlockSiltstone(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.SILTSTONE);
@@ -27,7 +27,5 @@ public class BlockSiltstone extends OreShinsei {
     public int quantityDropped(Random random){
         return (random.nextInt(3) + 2);
     }
-
-    public boolean isOre(){ return true;}
 
 }

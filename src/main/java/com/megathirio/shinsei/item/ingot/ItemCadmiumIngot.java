@@ -8,7 +8,7 @@ public class ItemCadmiumIngot extends ItemShinsei {
 
     public ItemCadmiumIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.CADMIUM_INGOT);
+        this.setUnlocalizedName(Names.Ingots.CADMIUM_INGOT);
 
     }
 

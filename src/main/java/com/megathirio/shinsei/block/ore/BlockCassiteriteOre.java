@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockCassiteriteOre extends OreShinsei {
     public BlockCassiteriteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.CASSITERITE_ORE);
+        this.setBlockName(Names.Ores.CASSITERITE_ORE);
         this.setHarvestLevel("pickaxe", 1);
     }
 

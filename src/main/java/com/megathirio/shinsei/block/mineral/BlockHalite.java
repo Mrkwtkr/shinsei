@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class BlockHalite extends OreShinsei {
+public class BlockHalite extends BlockShinsei {
     public BlockHalite(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.HALITE);
@@ -26,7 +26,4 @@ public class BlockHalite extends OreShinsei {
     public int quantityDropped(Random random){
         return (random.nextInt(4) + 3);
     }
-
-    public boolean isOre(){ return true;}
-
 }

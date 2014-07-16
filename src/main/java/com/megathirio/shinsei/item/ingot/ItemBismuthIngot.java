@@ -8,7 +8,7 @@ public class ItemBismuthIngot extends ItemShinsei {
 
     public ItemBismuthIngot(){
         super();
-        this.setUnlocalizedName(Names.Items.BISMUTH_INGOT);
+        this.setUnlocalizedName(Names.Ingots.BISMUTH_INGOT);
 
     }
 

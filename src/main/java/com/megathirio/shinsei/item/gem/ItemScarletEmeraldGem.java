@@ -8,7 +8,7 @@ public class ItemScarletEmeraldGem extends ItemShinsei {
 
     public ItemScarletEmeraldGem(){
         super();
-        this.setUnlocalizedName(Names.Items.SCARLET_EMERALD_GEM);
+        this.setUnlocalizedName(Names.Ingots.SCARLET_EMERALD_GEM);
 
     }
 
