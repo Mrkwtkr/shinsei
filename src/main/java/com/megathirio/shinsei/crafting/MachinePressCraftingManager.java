@@ -43,8 +43,6 @@ public class MachinePressCraftingManager
     	
 		//Tool Parts
     		//Casts
-
-            this.addRecipe(new ItemStack(ShinseiItems.copperPlate, 3), "@"," ", '@', ShinseiBlocks.blockCopper);
             this.addRecipe(new ItemStack(ShinseiItems.ironPlate, 3), "@"," ", '@', Blocks.iron_block);
             this.addRecipe(new ItemStack(ShinseiItems.copperHeatPlate, 1), "@","@", '@', ShinseiItems.copperPlate);
             this.addRecipe(new ItemStack(ShinseiItems.ironHeatPlate, 1), "@","@", '@', ShinseiItems.ironPlate);

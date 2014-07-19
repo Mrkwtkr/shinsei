@@ -12,8 +12,7 @@ import java.util.Random;
 
 public class BlockBerylOre extends OreShinsei {
     Item itemDrop = null;
-    int intQty = 0;
-    int intDrop = 0;
+    int intQty = 1;
 
     public BlockBerylOre() {
         super(Material.rock);
@@ -23,19 +22,20 @@ public class BlockBerylOre extends OreShinsei {
 
     @Override
     public Item getItemDropped(int intX, Random random, int intY) {
-        int intDrop = random.nextInt(3);
-        if(intDrop == 0){
-            itemDrop = Items.emerald;
-        }else if(intDrop == 1){
-            itemDrop = ShinseiItems.aquamarineGem;
-        }else{
+        int intWeight = random.nextInt(100) + 1;
+        if (intWeight <= 5){
             itemDrop = ShinseiItems.scarletEmeraldGem;
+            intQty = 1;
+        }else if(intWeight <= 15) {
+            itemDrop = Items.emerald;
+            intQty = random.nextInt(1) + 1;
+        }else {
+            itemDrop = ShinseiItems.aquamarineGem;
+            intQty = random.nextInt(2) + 1;
         }
         return itemDrop;
     }
 
     @Override
-    public int quantityDropped(Random random) {
-        return random.nextInt(2) + 1;
-    }
+    public int quantityDropped(Random random) { return intQty; }
 }

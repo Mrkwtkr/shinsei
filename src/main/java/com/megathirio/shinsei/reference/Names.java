@@ -49,6 +49,7 @@ public class Names {
         public static final String BORNITE_ORE = "borniteOre";
         public static final String CINNABAR_ORE = "cinnabarOre";
         public static final String CASSITERITE_ORE = "cassiteriteOre";
+        public static final String CHALCEDONY_ORE = "chalcedonyOre";
         public static final String CHALCOPYRITE_ORE = "chalcopyriteOre";
         public static final String CHROMITE_ORE = "chromiteOre";
         public static final String COBALTITE_ORE = "cobaltiteOre";
@@ -58,7 +59,9 @@ public class Names {
         public static final String GALENA_ORE = "galenaOre";
         public static final String GRAPHITE_ORE = "graphiteOre";
         public static final String HEMATITE_ORE = "hematiteOre";
-        public static final String IRIDIUM_ORE = "iridiumOre";
+        public static final String ILMENITE_ORE = "ilmeniteOre";
+        public static final String JADEITE_ORE = "jadeiteOre";
+        public static final String MAGNETITE_ORE = "magnetiteOre";
         public static final String MOLYBDENITE_ORE = "molybdeniteOre";
         public static final String PENTLANDITE_ORE = "pentlanditeOre";
         public static final String PLATINUM_ORE = "platinumOre";
@@ -103,6 +106,7 @@ public class Names {
         //Gems
         public static final String AMETHYST_GEM = "amethystGem";
         public static final String AQUAMARINE_GEM = "aquamarineGem";
+        public static final String JADE_GEM = "jadeGem";
         public static final String SCARLET_EMERALD_GEM = "scarletEmeraldGem";
 
         public static final String CALCITE_CRYSTAL = "calciteCrystal";

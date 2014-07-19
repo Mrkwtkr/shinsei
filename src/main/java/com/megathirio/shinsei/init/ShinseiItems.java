@@ -71,6 +71,7 @@ public final class ShinseiItems {
     //Gems
     public static ItemShinsei amethystGem = new ItemAmethystGem();
     public static ItemShinsei aquamarineGem = new ItemAquamarineGem();
+    public static ItemShinsei jadeGem = new ItemJadeGem();
     public static ItemShinsei scarletEmeraldGem = new ItemScarletEmeraldGem();
 
     public static ItemShinsei calciteCrystal = new ItemCalciteCrystal();
@@ -150,6 +151,7 @@ public final class ShinseiItems {
         //Gems
         GameRegistry.registerItem(amethystGem, Names.Ingots.AMETHYST_GEM);
         GameRegistry.registerItem(aquamarineGem, Names.Ingots.AQUAMARINE_GEM);
+        GameRegistry.registerItem(jadeGem, Names.Ingots.JADE_GEM);
         GameRegistry.registerItem(scarletEmeraldGem, Names.Ingots.SCARLET_EMERALD_GEM);
 
         GameRegistry.registerItem(calciteCrystal, Names.Ingots.CALCITE_CRYSTAL);

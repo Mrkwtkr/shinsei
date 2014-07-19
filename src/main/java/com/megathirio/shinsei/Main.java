@@ -5,9 +5,7 @@ import com.megathirio.shinsei.core.handler.*;
 import com.megathirio.shinsei.core.proxy.IProxy;
 import com.megathirio.shinsei.crafting.ShinseiRecipes;
 import com.megathirio.shinsei.init.ShinseiItems;
-import com.megathirio.shinsei.init.ShinseiTabs;
 import com.megathirio.shinsei.init.*;
-import com.megathirio.shinsei.item.*;
 import com.megathirio.shinsei.reference.Reference;
 import com.megathirio.shinsei.utility.LogHelper;
 import com.megathirio.shinsei.world.ShinseiWorldGen;
@@ -19,7 +17,6 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY)
 
@@ -28,8 +25,6 @@ public class Main {
     ShinseiWorldGen eventWorldGen = new ShinseiWorldGen();
 
 //	public static final String modid = "shinsei";
-    //Config file variables
-        public static String strTestConfig;
 
     @Instance(Reference.MOD_ID)
 	public static Main instance;
@@ -72,10 +67,7 @@ public class Main {
 		//WorldGen Registry
 		GameRegistry.registerWorldGenerator(new ShinseiWorldGen(), 1);
 
-		//Renderers
-		proxy.registerRenderThings();
-
-        LogHelper.info("Pre Initialization Complete!");
+       LogHelper.info("Pre Initialization Complete!");
 
     }
 	

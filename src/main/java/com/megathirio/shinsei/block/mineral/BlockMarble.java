@@ -1,7 +1,8 @@
-package com.megathirio.shinsei.block;
+package com.megathirio.shinsei.block.mineral;
 
 import java.util.List;
 
+import com.megathirio.shinsei.block.BlockShinsei;
 import com.megathirio.shinsei.init.ShinseiTabs;
 import com.megathirio.shinsei.reference.Names;
 import com.megathirio.shinsei.reference.Reference;
@@ -15,7 +16,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
-public class BlockMarble extends BlockShinsei{
+public class BlockMarble extends BlockShinsei {
 
 	//Variables
 	@SideOnly(Side.CLIENT)
