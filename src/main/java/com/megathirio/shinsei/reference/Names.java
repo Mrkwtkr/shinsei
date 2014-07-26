@@ -11,17 +11,28 @@ public class Names {
         public static final String POWDER_TAB = "powderTab";
         public static final String ITEM_TAB = "itemTab";
     }
+
     public static final class Blocks{
         //Minerals
         public static final String BASALT = "basaltBlock";
+        public static final String BASALT_COBBLE = "basaltCobble";
         public static final String CHALK = "chalkBlock";
-        public static final String CLAYSTONE = "claystoneBlock";
+        public static final String GRANITE = "granite";
         public static final String GYPSUM = "gypsumBlock";
-        public static final String GRANITE = "graniteBlock";
         public static final String HALITE = "haliteBlock";
         public static final String LIMESTONE = "limestoneBlock";
         public static final String MARBLE = "marble";
         public static final String SILTSTONE = "siltstoneBlock";
+
+        //Blocks
+        public static final String ALUMINUM_BLOCK = "aluminumBlock";
+        public static final String AMETHYST_BLOCK = "amethystBlock";
+        public static final String APATITE_BLOCK = "apatiteBlock";
+        public static final String AQUAMARINE_BLOCK = "aquamarineBlock";
+        public static final String BARIUM_BLOCK = "bariumBlock";
+        public static final String SCARLET_EMERALD_BLOCK = "scarletEmeraldBlock";
+        public static final String SILVER_BLOCK = "silverBlock";
+
     }
 
     public static final class Machines{
@@ -40,34 +51,50 @@ public class Names {
         public static final String ACANTHITE_ORE = "acanthiteOre";
         public static final String AMETHYST_ORE = "amethystOre";
         public static final String APATITE_ORE = "apatiteOre";
-        public static final String REALGAR_ORE = "realgarOre";
         public static final String BARITE_ORE = "bariteOre";
-        public static final String BERYL_ORE = "berylOre";
         public static final String BAUXITE_ORE = "bauxiteOre";
+        public static final String BERYL_ORE = "berylOre";
         public static final String BISMUTH_ORE = "bismuthOre";
         public static final String BORAX_ORE = "boraxOre";
         public static final String BORNITE_ORE = "borniteOre";
-        public static final String CINNABAR_ORE = "cinnabarOre";
         public static final String CASSITERITE_ORE = "cassiteriteOre";
         public static final String CHALCEDONY_ORE = "chalcedonyOre";
         public static final String CHALCOPYRITE_ORE = "chalcopyriteOre";
         public static final String CHROMITE_ORE = "chromiteOre";
+        public static final String CINNABAR_ORE = "cinnabarOre";
         public static final String COBALTITE_ORE = "cobaltiteOre";
+        public static final String CORUNDUM_ORE = "corundumOre";
         public static final String CRYOLITE_ORE = "cryoliteOre";
         public static final String DOLOMITE_ORE = "dolomiteOre";
         public static final String FLUORITE_ORE = "fluoriteOre";
         public static final String GALENA_ORE = "galenaOre";
+        public static final String GOETHITE_ORE = "goethiteOre";
         public static final String GRAPHITE_ORE = "graphiteOre";
         public static final String HEMATITE_ORE = "hematiteOre";
         public static final String ILMENITE_ORE = "ilmeniteOre";
         public static final String JADEITE_ORE = "jadeiteOre";
         public static final String MAGNETITE_ORE = "magnetiteOre";
+        public static final String MALACHITE_ORE = "malachiteOre";
         public static final String MOLYBDENITE_ORE = "molybdeniteOre";
+        public static final String OLIVINE_ORE = "olivineOre";
+        public static final String OPAL_ORE = "opalOre";
         public static final String PENTLANDITE_ORE = "pentlanditeOre";
         public static final String PLATINUM_ORE = "platinumOre";
+        public static final String PYROLUSITE_ORE = "pyrolusiteOre";
+        public static final String REALGAR_ORE = "realgarOre";
         public static final String RUTILE_ORE = "rutileOre";
+        public static final String SCHEELITE_ORE = "scheeliteOre";
+        public static final String SPERRYLITE_ORE = "sperryliteOre";
+        public static final String SPHALERITE_ORE = "sphaleriteOre";
         public static final String STIBNITE_ORE = "stibniteOre";
+        public static final String SULFUR_ORE = "sulfurOre";
+        public static final String SYLVITE_ORE = "sylviteOre";
         public static final String TANTALITE_ORE = "tantaliteOre";
+        public static final String TOPAZ_ORE = "topazOre";
+        public static final String TURQUOISE_ORE = "turquoiseOre";
+        public static final String URANINITE_ORE = "uraniniteOre";
+
+        public static final String METEORITE_ORE = "meteoriteOre";
     }
 
     public static final class Items{
@@ -86,6 +113,7 @@ public class Names {
         //Ingots
         public static final String ALUMINUM_INGOT = "aluminumIngot";
         public static final String ANTIMONY_INGOT = "antimonyIngot";
+        public static final String BARIUM_INGOT = "bariumIngot";
         public static final String BISMUTH_INGOT = "bismuthIngot";
         public static final String CADMIUM_INGOT = "cadmiumIngot";
         public static final String CHROMIUM_INGOT = "chromiumIngot";
@@ -95,6 +123,7 @@ public class Names {
         public static final String IRIDIUM_INGOT = "iridiumIngot";
         public static final String LEAD_INGOT = "leadIngot";
         public static final String MAGNESIUM_INGOT = "magnesiumIngot";
+        public static final String MANGANESE_INGOT = "manganeseIngot";
         public static final String MOLYBDENUM_INGOT = "molybdenumIngot";
         public static final String NICKEL_INGOT = "nickelIngot";
         public static final String PLATINUM_INGOT = "platinumIngot";
@@ -102,13 +131,27 @@ public class Names {
         public static final String TANTALUM_INGOT = "tantalumIngot";
         public static final String TIN_INGOT = "tinIngot";
         public static final String TITANIUM_INGOT = "titaniumIngot";
+        public static final String TUNGSTEN_INGOT = "tungstenIngot";
+        public static final String ZINC_INGOT = "zincIngot";
+
+        //Nuggets
+        public static final String ALUMINUM_NUGGET = "aluminumNugget";
+        public static final String SILVER_NUGGET = "silverNugget";
+        public static final String BARIUM_NUGGET = "bariumNugget";
 
         //Gems
         public static final String AMETHYST_GEM = "amethystGem";
         public static final String AQUAMARINE_GEM = "aquamarineGem";
         public static final String JADE_GEM = "jadeGem";
+        public static final String OPAL_GEM = "opalGem";
+        public static final String PERIDOT_GEM = "peridotGem";
         public static final String SCARLET_EMERALD_GEM = "scarletEmeraldGem";
+        public static final String SAPPHIRE_GEM = "sapphireGem";
+        public static final String RUBY_GEM = "rubyGem";
+        public static final String TOPAZ_GEM = "topazGem";
+        public static final String TURQUOISE_GEM = "turquoiseGem";
 
+        public static final String APATITE_CRYSTAL = "apatiteCrystal";
         public static final String CALCITE_CRYSTAL = "calciteCrystal";
         public static final String FLUORITE_CRYSTAL = "fluoriteCrystal";
     }
@@ -116,10 +159,13 @@ public class Names {
     public static final class Powders{
         //Powders
         public static final String ALUMINUM_POWDER = "aluminumPowder";
+        public static final String AMETHYST_POWDER = "amethystPowder";
         public static final String ANTIMONY_POWDER = "antimonyPowder";
+        public static final String APATITE_POWDER = "apatitePowder";
+        public static final String AQUAMARINE_POWDER = "aquamarinePowder";
         public static final String ARSENIC_POWDER = "arsenicPowder";
         public static final String BARIUM_POWDER = "bariumPowder";
-        public static final String BISMUTH_POWDER = "bismuthv";
+        public static final String BISMUTH_POWDER = "bismuthPowder";
         public static final String BLACK_POWDER = "blackPowder";
         public static final String BORAX_POWDER = "boraxPowder";
         public static final String CADMIUM_POWDER = "cadmiumPowder";
@@ -131,20 +177,27 @@ public class Names {
         public static final String CRYOLITE_POWDER = "cryolitePowder";
         public static final String FLUORITE_POWDER = "fluoritePowder";
         public static final String GRAPHITE_POWDER = "graphitePowder";
+        public static final String GYPSUM_POWDER = "gypsumPowder";
         public static final String INDIUM_POWDER = "indiumPowder";
         public static final String IRIDIUM_POWDER = "iridiumPowder";
         public static final String IRON_POWDER = "ironPowder";
         public static final String LEAD_POWDER = "leadPowder";
         public static final String MAGNESIUM_POWDER = "magnesiumPowder";
+        public static final String MANGANESE_POWDER = "manganesePowder";
         public static final String MOLYBDENUM_POWDER = "molybdenumPowder";
         public static final String NICKEL_POWDER = "nickelPowder";
         public static final String PLATINUM_POWDER = "platinumPowder";
+        public static final String POTASH_POWDER = "potashPowder";
         public static final String QUICKLIME = "quicklime";
+        public static final String SCARLET_EMERALD_POWDER = "scarletEmeraldPowder";
         public static final String SILVER_POWDER = "silverPowder";
         public static final String SULPHUR = "sulphur";
         public static final String TANTALUM_POWDER = "tantalumPowder";
         public static final String TIN_POWDER = "tinPowder";
         public static final String TITANIUM_POWDER = "titaniumPowder";
+        public static final String TUNGSTEN_POWDER = "tungstenPowder";
+        public static final String URANIUM_POWDER = "uraniumPowder";
+        public static final String ZINC_POWDER = "zincPowder";
 
         //Minerals
         public static final String SILT = "silt";

@@ -8,9 +8,5 @@ public class BlockStibniteOre extends OreShinsei {
     public BlockStibniteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.STIBNITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

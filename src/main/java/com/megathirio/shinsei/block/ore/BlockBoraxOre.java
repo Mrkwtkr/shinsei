@@ -8,9 +8,5 @@ public class BlockBoraxOre extends OreShinsei {
     public BlockBoraxOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.BORAX_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

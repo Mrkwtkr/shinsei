@@ -8,9 +8,5 @@ public class BlockDolomiteOre extends OreShinsei {
     public BlockDolomiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.DOLOMITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

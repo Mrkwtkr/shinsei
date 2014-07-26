@@ -12,11 +12,7 @@ public class OreShinsei extends BlockShinsei{
 
 		this.setHardness(1f);
 		this.setResistance(3f);
-	    this.setHarvestLevel("pickaxe", 1);
-		this.setStepSound(soundTypeStone);
         this.setCreativeTab(ShinseiTabs.ORES_TAB);
         this.enableStats = true;
 	}
-    public boolean isOre(){ return true;}
-
 }

@@ -8,9 +8,5 @@ public class BlockPentlanditeOre extends OreShinsei {
     public BlockPentlanditeOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.PENTLANDITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

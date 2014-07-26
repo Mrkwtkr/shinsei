@@ -8,9 +8,5 @@ public class BlockJadeiteOre extends OreShinsei {
     public BlockJadeiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.JADEITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

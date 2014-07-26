@@ -8,9 +8,8 @@ public class BlockAcanthiteOre extends OreShinsei {
     public BlockAcanthiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.ACANTHITE_ORE);
+        this.setHardness(2.0f);
+        this.setResistance(3f);
         this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

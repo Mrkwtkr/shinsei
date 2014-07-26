@@ -12,7 +12,6 @@ public class BlockGraphiteOre extends OreShinsei {
     public BlockGraphiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.GRAPHITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
 
     @Override
@@ -22,8 +21,4 @@ public class BlockGraphiteOre extends OreShinsei {
     public int quantityDropped(Random random){
         return (random.nextInt(6) + 3);
     }
-
-
-    public boolean isOre(){ return true;}
-
 }

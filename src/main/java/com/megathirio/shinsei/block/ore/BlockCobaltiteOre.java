@@ -7,10 +7,6 @@ import net.minecraft.block.material.Material;
 public class BlockCobaltiteOre extends OreShinsei {
     public BlockCobaltiteOre(){
         super(Material.rock);
-        this.setBlockName(Names.Ores.CHROMITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
+        this.setBlockName(Names.Ores.COBALTITE_ORE);
     }
-
-    public boolean isOre(){ return true;}
-
 }

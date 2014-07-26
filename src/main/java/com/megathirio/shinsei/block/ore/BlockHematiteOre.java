@@ -8,9 +8,5 @@ public class BlockHematiteOre extends OreShinsei {
     public BlockHematiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.HEMATITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

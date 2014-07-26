@@ -1,4 +1,4 @@
-package com.megathirio.shinsei.block;
+package com.megathirio.shinsei.block.machine;
 
 import com.megathirio.shinsei.init.ShinseiMachines;
 import com.megathirio.shinsei.reference.Reference;

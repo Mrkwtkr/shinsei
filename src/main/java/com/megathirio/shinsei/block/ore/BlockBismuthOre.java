@@ -8,9 +8,5 @@ public class BlockBismuthOre extends OreShinsei {
     public BlockBismuthOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.BISMUTH_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

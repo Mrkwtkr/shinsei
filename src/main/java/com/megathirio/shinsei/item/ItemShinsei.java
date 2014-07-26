@@ -14,11 +14,7 @@ public class ItemShinsei extends Item {
 	//Default Item Properties
 	public ItemShinsei(){
 		super();
-        if(isPowder()){
-            setCreativeTab(ShinseiTabs.POWDERS_TAB);
-        }else{
             setCreativeTab(ShinseiTabs.ITEMS_TAB);
-        }
 	}
 
     @Override
@@ -42,6 +38,4 @@ public class ItemShinsei extends Item {
 		
 		itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
 	}
-
-    public boolean isPowder(){ return false; }
 }

@@ -8,9 +8,5 @@ public class BlockIlmeniteOre extends OreShinsei {
     public BlockIlmeniteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.ILMENITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

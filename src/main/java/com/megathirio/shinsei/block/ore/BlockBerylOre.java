@@ -11,27 +11,47 @@ import net.minecraft.item.Item;
 import java.util.Random;
 
 public class BlockBerylOre extends OreShinsei {
+
     Item itemDrop = null;
     int intQty = 1;
 
     public BlockBerylOre() {
         super(Material.rock);
         this.setBlockName(Names.Ores.BERYL_ORE);
+        this.setHardness(7.5f);
+        this.setResistance(14f);
         this.setHarvestLevel("pickaxe", 2);
     }
 
     @Override
     public Item getItemDropped(int intX, Random random, int intY) {
         int intWeight = random.nextInt(100) + 1;
-        if (intWeight <= 5){
+        int intWeight1 = random.nextInt(100) + 1;
+        if (intWeight <= 2) {
             itemDrop = ShinseiItems.scarletEmeraldGem;
-            intQty = 1;
-        }else if(intWeight <= 15) {
+            if (intWeight1 <= 20) {
+                intQty = 2;
+            } else {
+                intQty = 1;
+            }
+        }else if(intWeight <= 12) {
             itemDrop = Items.emerald;
-            intQty = random.nextInt(1) + 1;
+            if (intWeight1 <= 20) {
+                intQty = 2;
+            } else {
+                intQty = 1;
+            }
         }else {
             itemDrop = ShinseiItems.aquamarineGem;
-            intQty = random.nextInt(2) + 1;
+            if (intWeight1 <= 5) {
+                intQty = 4;
+            } else if (intWeight1 <= 15) {
+                intQty = 3;
+            } else if (intWeight1 <= 25) {
+                intQty = 2;
+            } else {
+                intQty = 1;
+            }
         }
         return itemDrop;
     }

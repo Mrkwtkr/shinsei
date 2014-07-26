@@ -3,7 +3,7 @@ package com.megathirio.shinsei;
 import com.megathirio.shinsei.core.handler.ConfigurationHandler;
 import com.megathirio.shinsei.core.handler.*;
 import com.megathirio.shinsei.core.proxy.IProxy;
-import com.megathirio.shinsei.crafting.ShinseiRecipes;
+import com.megathirio.shinsei.init.ShinseiRecipes;
 import com.megathirio.shinsei.init.ShinseiItems;
 import com.megathirio.shinsei.init.*;
 import com.megathirio.shinsei.reference.Reference;

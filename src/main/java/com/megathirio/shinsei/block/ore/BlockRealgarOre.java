@@ -12,7 +12,6 @@ public class BlockRealgarOre extends OreShinsei {
     public BlockRealgarOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.REALGAR_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
 
     @Override
@@ -24,7 +23,4 @@ public class BlockRealgarOre extends OreShinsei {
     public int quantityDropped(Random random){
             return (random.nextInt(4) + 3);
     }
-
-    public boolean isOre(){ return true;}
-
 }

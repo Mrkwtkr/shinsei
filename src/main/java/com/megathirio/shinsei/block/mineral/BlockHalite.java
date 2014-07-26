@@ -13,10 +13,8 @@ public class BlockHalite extends BlockShinsei {
     public BlockHalite(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.HALITE);
-        this.setHardness(1.0F);
-        this.setResistance(3.5F);
-        this.setStepSound(soundTypeStone);
-        this.setHarvestLevel("pickaxe", 1);
+        this.setHardness(2.5F);
+        this.setResistance(3.0F);
     }
 
     @Override

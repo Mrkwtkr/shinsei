@@ -1,9 +1,8 @@
 package com.megathirio.shinsei.init;
 
-import com.megathirio.shinsei.block.BlockShinsei;
-import com.megathirio.shinsei.block.MachinePress;
-import com.megathirio.shinsei.block.Tatara;
-import com.megathirio.shinsei.block.ToolBench;
+import com.megathirio.shinsei.block.machine.MachinePress;
+import com.megathirio.shinsei.block.machine.Tatara;
+import com.megathirio.shinsei.block.machine.ToolBench;
 import com.megathirio.shinsei.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;

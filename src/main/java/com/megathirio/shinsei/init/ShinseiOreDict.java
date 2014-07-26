@@ -1,84 +1,85 @@
 package com.megathirio.shinsei.init;
 
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class ShinseiOreDict {
 
     public static void items(){
+        //Vanilla
+        OreDictionary.registerOre("gemEmerald", Items.emerald);
+
         //Ingots
         OreDictionary.registerOre("ingotAluminum", ShinseiItems.aluminumIngot);
-        OreDictionary.registerOre("ingotBismuth", ShinseiItems.bismuthIngot);
-        OreDictionary.registerOre("ingotCadmium", ShinseiItems.cadmiumIngot);
-        OreDictionary.registerOre("ingotChromium", ShinseiItems.chromiumIngot);
-        OreDictionary.registerOre("ingotCopper", ShinseiItems.copperIngot);
-        OreDictionary.registerOre("ingotIndium", ShinseiItems.indiumIngot);
-        OreDictionary.registerOre("ingotIridium", ShinseiItems.iridiumIngot);
-        OreDictionary.registerOre("ingotLead", ShinseiItems.leadIngot);
-        OreDictionary.registerOre("ingotNickel", ShinseiItems.nickelIngot);
-        OreDictionary.registerOre("ingotMagnesium", ShinseiItems.magnesiumIngot);
+        OreDictionary.registerOre("ingotBarium", ShinseiItems.bariumIngot);
         OreDictionary.registerOre("ingotSilver", ShinseiItems.silverIngot);
-        OreDictionary.registerOre("ingotTin", ShinseiItems.tinIngot);
 
-        //Liquids
-//        OreDictionary.registerOre("slakedLime", ShinseiLiquids.slakedLimeBucket);
-//        OreDictionary.registerOre("mercury", ShinseiItems.mercury);
-
-        //Dusts
-        OreDictionary.registerOre("dustAluminum", ShinseiItems.aluminumPowder);
-        OreDictionary.registerOre("dustAntimony", ShinseiItems.antimonyPowder);
-        OreDictionary.registerOre("dustArsenic", ShinseiItems.arsenicPowder);
-        OreDictionary.registerOre("dustBarium", ShinseiItems.bariumPowder);
-        OreDictionary.registerOre("dustBismuth", ShinseiItems.bismuthPowder);
-        OreDictionary.registerOre("dustChromium", ShinseiItems.chromiumPowder);
-        OreDictionary.registerOre("dustCinnabar", ShinseiItems.cinnabarPowder);
-        OreDictionary.registerOre("dustCopper", ShinseiItems.copperPowder);
-        OreDictionary.registerOre("dustGunPowder", ShinseiItems.blackPowder);
-        OreDictionary.registerOre("dustGraphite", ShinseiItems.graphitePowder);
-        OreDictionary.registerOre("dustIridium", ShinseiItems.iridiumPowder);
-        OreDictionary.registerOre("dustIron", ShinseiItems.ironPowder);
-        OreDictionary.registerOre("dustLead", ShinseiItems.leadPowder);
-        OreDictionary.registerOre("dustMagnesium", ShinseiItems.magnesiumPowder);
-        OreDictionary.registerOre("dustNickel", ShinseiItems.nickelPowder);
-        OreDictionary.registerOre("dustQuicklime", ShinseiItems.quicklime);
-        OreDictionary.registerOre("dustSilver", ShinseiItems.silverPowder);
-        OreDictionary.registerOre("dustSulphur", ShinseiItems.sulphur);
-        OreDictionary.registerOre("dustTin", ShinseiItems.tinPowder);
-        OreDictionary.registerOre("dustSalt", ShinseiItems.salt);
+        //Nuggets
+        OreDictionary.registerOre("nuggetAluminum", ShinseiItems.aluminumNugget);
+        OreDictionary.registerOre("nuggetBarium", ShinseiItems.bariumNugget);
+        OreDictionary.registerOre("nuggetSilver", ShinseiItems.silverNugget);
 
         //Gems
+
+        //Powders
+        OreDictionary.registerOre("dustChalk", ShinseiItems.chalkPowder);
+        OreDictionary.registerOre("dustSalt", ShinseiItems.salt);
+        OreDictionary.registerOre("dustGypsum", ShinseiItems.gypsumPowder);
+        OreDictionary.registerOre("dustLime", ShinseiItems.quicklime);
+
+        OreDictionary.registerOre("dustAluminum", ShinseiItems.aluminumPowder);
+        OreDictionary.registerOre("dustAmethyst", ShinseiItems.amethystPowder);
+        OreDictionary.registerOre("dustApatite", ShinseiItems.apatitePowder);
+        OreDictionary.registerOre("dustBarium", ShinseiItems.bariumPowder);
+        OreDictionary.registerOre("dustSilver", ShinseiItems.silverPowder);
+
+        //Gems
+        OreDictionary.registerOre("gemAmethyst", ShinseiItems.amethystGem);
+        OreDictionary.registerOre("gemApatite", ShinseiItems.apatiteCrystal);
         OreDictionary.registerOre("gemAquamarine", ShinseiItems.aquamarineGem);
         OreDictionary.registerOre("gemEmerald", ShinseiItems.scarletEmeraldGem);
+
+        //Liquids
 
         //General
 
     }
 
     public static void blocks(){
+        //Vanilla
+        OreDictionary.registerOre("blockStone", Blocks.stone);
+        OreDictionary.registerOre("blockCobble", Blocks.cobblestone);
+        OreDictionary.registerOre("blockEmerald", Blocks.emerald_block);
+
+        //Blocks
+        OreDictionary.registerOre("blockAluminum", ShinseiBlocks.aluminumBlock);
+        OreDictionary.registerOre("blockAmethyst", ShinseiBlocks.amethystBlock);
+        OreDictionary.registerOre("blockApatite", ShinseiBlocks.apatiteBlock);
+        OreDictionary.registerOre("blockAquamarine", ShinseiBlocks.aquamarineBlock);
+        OreDictionary.registerOre("blockBarium", ShinseiBlocks.bariumBlock);
+        OreDictionary.registerOre("blockSilver", ShinseiBlocks.silverBlock);
+        OreDictionary.registerOre("blockEmerald", ShinseiBlocks.scarletEmeraldBlock);
+
         //Ores
         OreDictionary.registerOre("oreAluminum", ShinseiBlocks.bauxiteOre);
-        OreDictionary.registerOre("oreAntimony", ShinseiBlocks.stibniteOre);
-        OreDictionary.registerOre("oreArsenic", ShinseiBlocks.realgarOre);
-        OreDictionary.registerOre("oreBaryte", ShinseiBlocks.bariteOre);
-        OreDictionary.registerOre("oreBeryl", ShinseiBlocks.berylOre);
-        OreDictionary.registerOre("oreBismuth", ShinseiBlocks.bismuthOre);
-        OreDictionary.registerOre("oreChromite", ShinseiBlocks.chromiteOre);
-        OreDictionary.registerOre("oreCinnabar", ShinseiBlocks.cinnabarOre);
-        OreDictionary.registerOre("oreCopper", ShinseiBlocks.borniteOre);
-        OreDictionary.registerOre("oreCopper", ShinseiBlocks.chalcopyriteOre);
-        OreDictionary.registerOre("oreGraphite", ShinseiBlocks.graphiteOre);
-//        OreDictionary.registerOre("oreIron", ShinseiBlocks.hematiteOre);
-        OreDictionary.registerOre("oreLead", ShinseiBlocks.galenaOre);
-        OreDictionary.registerOre("oreMagnesium", ShinseiBlocks.dolomiteOre);
-        OreDictionary.registerOre("oreMolybdenite", ShinseiBlocks.molybdeniteOre);
-        OreDictionary.registerOre("oreNickel", ShinseiBlocks.pentlanditeOre);
+        OreDictionary.registerOre("oreApatite", ShinseiBlocks.apatiteOre);
         OreDictionary.registerOre("oreSilver", ShinseiBlocks.acanthiteOre);
-        OreDictionary.registerOre("oreTin", ShinseiBlocks.cassiteriteOre);
+        OreDictionary.registerOre("oreBarite", ShinseiBlocks.bariteOre);
 
         //Minerals
+        OreDictionary.registerOre("blockStone", ShinseiBlocks.basaltBlock);
+        OreDictionary.registerOre("blockCobble", ShinseiBlocks.basaltCobble);
+        OreDictionary.registerOre("blockChalk", ShinseiBlocks.chalkBlock);
+        OreDictionary.registerOre("blockGypsum", ShinseiBlocks.gypsumBlock);
+        OreDictionary.registerOre("blockGranite", ShinseiBlocks.graniteBlock);
+        OreDictionary.registerOre("blockSalt", ShinseiBlocks.haliteBlock);
         OreDictionary.registerOre("blockStone", ShinseiBlocks.limestoneBlock);
-        OreDictionary.registerOre("blockClay", ShinseiBlocks.claystoneBlock);
-        OreDictionary.registerOre("oreSalt", ShinseiBlocks.haliteBlock);
+        OreDictionary.registerOre("blockMarble", ShinseiBlocks.marbleBlock);
         OreDictionary.registerOre("blockSilt", ShinseiBlocks.siltstoneBlock);
+
+        //Minerals
+        OreDictionary.registerOre("blockStone", ShinseiBlocks.basaltBlock);
 
     }
 }

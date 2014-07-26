@@ -8,9 +8,5 @@ public class BlockRutileOre extends OreShinsei {
     public BlockRutileOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.RUTILE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

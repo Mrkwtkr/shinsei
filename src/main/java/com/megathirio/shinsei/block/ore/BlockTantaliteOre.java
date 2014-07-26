@@ -8,9 +8,5 @@ public class BlockTantaliteOre extends OreShinsei {
     public BlockTantaliteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.TANTALITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

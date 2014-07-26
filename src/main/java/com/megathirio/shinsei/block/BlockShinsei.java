@@ -28,15 +28,12 @@ public class BlockShinsei extends Block{
 		
 		super(material);
 
-		this.setHardness(3.5f);
+		this.setHardness(3.0f);
 		this.setResistance(5f);
-        if(isOre()){
-            setCreativeTab(ShinseiTabs.ORES_TAB);
-        }else if(isMachine()){
-            setCreativeTab(ShinseiTabs.MACHINES_TAB);
-        }else{
-            setCreativeTab(ShinseiTabs.BLOCKS_TAB);
-        }
+        this.setHarvestLevel("pickaxe", 1);
+        this.setStepSound(soundTypeStone);
+        this.enableStats = true;
+        this.setCreativeTab(ShinseiTabs.BLOCKS_TAB);
 	}
 
     public BlockShinsei(){

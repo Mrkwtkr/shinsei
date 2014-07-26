@@ -8,9 +8,5 @@ public class BlockPlatinumOre extends OreShinsei {
     public BlockPlatinumOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.PLATINUM_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

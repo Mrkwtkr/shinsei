@@ -1,17 +1,11 @@
 package com.megathirio.shinsei.item.powder;
 
-import com.megathirio.shinsei.item.ItemShinsei;
+import com.megathirio.shinsei.item.PowderShinsei;
 import com.megathirio.shinsei.reference.Names;
 
-public class ItemIronPowder extends ItemShinsei {
+public class ItemIronPowder extends PowderShinsei {
     public ItemIronPowder(){
         super();
         this.setUnlocalizedName(Names.Powders.IRON_POWDER);
-
-    }
-
-    @Override
-    public boolean isPowder(){
-        return true;
     }
 }

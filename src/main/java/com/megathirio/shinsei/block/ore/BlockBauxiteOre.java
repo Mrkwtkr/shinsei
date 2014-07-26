@@ -7,9 +7,8 @@ public class BlockBauxiteOre extends OreShinsei {
     public BlockBauxiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.BAUXITE_ORE);
+        this.setHardness(2.0f);
+        this.setResistance(3f);
         this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

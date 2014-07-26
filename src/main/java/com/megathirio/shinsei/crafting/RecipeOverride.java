@@ -36,33 +36,8 @@ public class RecipeOverride {
                 if (itemstack.getItem() == Items.wooden_shovel)override.remove();
                 if (itemstack.getItem() == Items.wooden_sword)override.remove();
                 if (itemstack.getItem() == Item.getItemFromBlock(Blocks.furnace))override.remove();
+                if (itemstack.getItem() == Item.getItemFromBlock(Blocks.emerald_block))override.remove();
             }
         }
     }
-/*    public static void overrideSmeltingRecipe() {
-        List<IRecipe> recipes = FurnaceRecipes.smelting().getSmeltingResult();
-
-        Iterator<IRecipe> override = recipes.iterator();
-
-        while (override.hasNext()) {
-            ItemStack itemstack = override.next().getRecipeOutput();
-            if (itemstack != null) {
-                if (itemstack.getItem() == Items.iron_axe)override.remove();
-                if (itemstack.getItem() == Items.iron_hoe)override.remove();
-                if (itemstack.getItem() == Items.iron_pickaxe)override.remove();
-                if (itemstack.getItem() == Items.iron_shovel)override.remove();
-                if (itemstack.getItem() == Items.iron_sword)override.remove();
-                if (itemstack.getItem() == Items.stone_axe)override.remove();
-                if (itemstack.getItem() == Items.stone_hoe)override.remove();
-                if (itemstack.getItem() == Items.stone_pickaxe)override.remove();
-                if (itemstack.getItem() == Items.stone_shovel)override.remove();
-                if (itemstack.getItem() == Items.stone_sword)override.remove();
-                if (itemstack.getItem() == Items.wooden_axe)override.remove();
-                if (itemstack.getItem() == Items.wooden_hoe)override.remove();
-                if (itemstack.getItem() == Items.wooden_shovel)override.remove();
-                if (itemstack.getItem() == Items.wooden_sword)override.remove();
-                if (itemstack.getItem() == Item.getItemFromBlock(Blocks.furnace))override.remove();
-            }
-        }
-    }*/
 }

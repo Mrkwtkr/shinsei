@@ -16,7 +16,6 @@ public class BlockSiltstone extends BlockShinsei {
         this.setBlockName(Names.Blocks.SILTSTONE);
         this.setHardness(0.5F);
         this.setResistance(1.5F);
-        this.setStepSound(soundTypeStone);
         this.setHarvestLevel("pickaxe", 0);
     }
 

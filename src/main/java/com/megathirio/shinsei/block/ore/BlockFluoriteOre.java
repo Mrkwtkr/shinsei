@@ -8,9 +8,5 @@ public class BlockFluoriteOre extends OreShinsei {
     public BlockFluoriteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.FLUORITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

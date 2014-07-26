@@ -9,10 +9,6 @@ public class BlockLimestone extends BlockShinsei {
     public BlockLimestone(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.LIMESTONE);
-        this.setHardness(1F);
-        this.setResistance(2.5F);
-        this.setStepSound(soundTypeStone);
-        this.setHarvestLevel("pickaxe", 0);
     }
 
 }

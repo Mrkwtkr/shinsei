@@ -29,9 +29,6 @@ public class BlockMarble extends BlockShinsei {
 		
 		//Block Properties
 		super(Material.rock);
-		setHardness(5f);
-		setResistance(8f);
-		setCreativeTab(ShinseiTabs.BLOCKS_TAB);
         this.setBlockName(Names.Blocks.MARBLE);
     }
 

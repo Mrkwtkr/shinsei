@@ -8,9 +8,5 @@ public class BlockChalcopyriteOre extends OreShinsei {
     public BlockChalcopyriteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CHALCOPYRITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

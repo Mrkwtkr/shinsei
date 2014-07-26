@@ -8,9 +8,5 @@ public class BlockMagnetiteOre extends OreShinsei {
     public BlockMagnetiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.MAGNETITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

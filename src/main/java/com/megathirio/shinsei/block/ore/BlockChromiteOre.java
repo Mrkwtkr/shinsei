@@ -8,9 +8,5 @@ public class BlockChromiteOre extends OreShinsei {
     public BlockChromiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CHROMITE_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

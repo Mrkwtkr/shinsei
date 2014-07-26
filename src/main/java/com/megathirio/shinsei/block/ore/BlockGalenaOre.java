@@ -8,9 +8,5 @@ public class BlockGalenaOre extends OreShinsei {
     public BlockGalenaOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.GALENA_ORE);
-        this.setHarvestLevel("pickaxe", 1);
     }
-
-    public boolean isOre(){ return true;}
-
 }

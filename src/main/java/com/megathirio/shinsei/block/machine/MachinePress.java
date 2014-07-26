@@ -1,4 +1,4 @@
-package com.megathirio.shinsei.block;
+package com.megathirio.shinsei.block.machine;
 
 import com.megathirio.shinsei.Main;
 import com.megathirio.shinsei.init.ShinseiTabs;
