@@ -21,7 +21,12 @@ public final class ShinseiBlocks {
     public static BlockShinsei amethystBlock = new BlockAmethystBlock();
     public static BlockShinsei apatiteBlock = new BlockApatiteBlock();
     public static BlockShinsei bariumBlock = new BlockBariumBlock();
+    public static BlockShinsei bismuthBlock = new BlockBismuthBlock();
+    public static BlockShinsei chromiumBlock = new BlockChromiumBlock();
+    public static BlockShinsei copperBlock = new BlockCopperBlock();
+    public static BlockShinsei onyxBlock = new BlockOnyxBlock();
     public static BlockShinsei silverBlock = new BlockSilverBlock();
+    public static BlockShinsei tinBlock = new BlockTinBlock();
     public static BlockShinsei aquamarineBlock = new BlockAquamarineBlock();
     public static BlockShinsei scarletEmeraldBlock = new BlockScarletEmeraldBlock();
 
@@ -33,9 +38,9 @@ public final class ShinseiBlocks {
     public static OreShinsei bauxiteOre = new BlockBauxiteOre();
     public static OreShinsei berylOre = new BlockBerylOre();
     public static OreShinsei bismuthOre = new BlockBismuthOre();
-    public static OreShinsei boraxOre = new BlockBoraxOre();
     public static OreShinsei borniteOre = new BlockBorniteOre();
     public static OreShinsei cassiteriteOre = new BlockCassiteriteOre();
+    public static OreShinsei chalcedonyOre = new BlockChalcedonyOre();
     public static OreShinsei chalcopyriteOre = new BlockChalcopyriteOre();
     public static OreShinsei chromiteOre = new BlockChromiteOre();
     public static OreShinsei cinnabarOre = new BlockCinnabarOre();
@@ -77,6 +82,7 @@ public final class ShinseiBlocks {
     public static BlockShinsei chalkBlock = new BlockChalk();
     public static BlockShinsei basaltBlock = new BlockBasalt();
     public static BlockShinsei basaltCobble = new BlockBasaltCobble();
+    public static BlockShinsei boraxBlock = new BlockBorax();
     public static BlockShinsei limestoneBlock = new BlockLimestone();
     public static BlockShinsei marbleBlock = new BlockMarble();
 	public static BlockShinsei siltstoneBlock = new BlockSiltstone();
@@ -95,8 +101,14 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(apatiteBlock, Names.Blocks.APATITE_BLOCK);
         GameRegistry.registerBlock(aquamarineBlock, Names.Blocks.AQUAMARINE_BLOCK);
         GameRegistry.registerBlock(bariumBlock, Names.Blocks.BARIUM_BLOCK);
+        GameRegistry.registerBlock(bismuthBlock, Names.Blocks.BISMUTH_BLOCK);
+        GameRegistry.registerBlock(boraxBlock, Names.Blocks.BORAX);
+        GameRegistry.registerBlock(chromiumBlock, Names.Blocks.CHROMIUM_BLOCK);
+        GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
+        GameRegistry.registerBlock(onyxBlock, Names.Blocks.ONYX_BLOCK);
         GameRegistry.registerBlock(silverBlock, Names.Blocks.SILVER_BLOCK);
         GameRegistry.registerBlock(scarletEmeraldBlock, Names.Blocks.SCARLET_EMERALD_BLOCK);
+        GameRegistry.registerBlock(tinBlock, Names.Blocks.TIN_BLOCK);
 
         //Ores
         GameRegistry.registerBlock(acanthiteOre, Names.Ores.ACANTHITE_ORE);
@@ -106,9 +118,9 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(bauxiteOre, Names.Ores.BAUXITE_ORE);
         GameRegistry.registerBlock(berylOre, Names.Ores.BERYL_ORE);
         GameRegistry.registerBlock(bismuthOre, Names.Ores.BISMUTH_ORE);
-        GameRegistry.registerBlock(boraxOre, Names.Ores.BORAX_ORE);
         GameRegistry.registerBlock(borniteOre, Names.Ores.BORNITE_ORE);
         GameRegistry.registerBlock(cassiteriteOre, Names.Ores.CASSITERITE_ORE);
+        GameRegistry.registerBlock(chalcedonyOre, Names.Ores.CHALCEDONY_ORE);
         GameRegistry.registerBlock(chalcopyriteOre, Names.Ores.CHALCOPYRITE_ORE);
         GameRegistry.registerBlock(chromiteOre, Names.Ores.CHROMITE_ORE);
         GameRegistry.registerBlock(cinnabarOre, Names.Ores.CINNABAR_ORE);
@@ -145,6 +157,7 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(uraniniteOre, Names.Ores.URANINITE_ORE);
 
         GameRegistry.registerBlock(meteoriteOre, Names.Ores.METEORITE_ORE);
+
         //Mineral Blocks
         GameRegistry.registerBlock(basaltBlock, Names.Blocks.BASALT);
         GameRegistry.registerBlock(basaltCobble, Names.Blocks.BASALT_COBBLE);

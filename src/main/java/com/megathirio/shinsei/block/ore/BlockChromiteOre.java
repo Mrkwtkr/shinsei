@@ -8,5 +8,8 @@ public class BlockChromiteOre extends OreShinsei {
     public BlockChromiteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CHROMITE_ORE);
+        this.setHardness(8.5f);
+        this.setResistance(21f);
+        this.setHarvestLevel("pickaxe", 3);
     }
 }

@@ -8,5 +8,8 @@ public class BlockCinnabarOre extends OreShinsei {
     public BlockCinnabarOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CINNABAR_ORE);
+        this.setHardness(2.0f);
+        this.setResistance(3f);
+        this.setHarvestLevel("pickaxe", 1);
     }
 }

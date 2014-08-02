@@ -8,5 +8,8 @@ public class BlockBismuthOre extends OreShinsei {
     public BlockBismuthOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.BISMUTH_ORE);
+        this.setHardness(2.25f);
+        this.setResistance(4f);
+        this.setHarvestLevel("pickaxe", 1);
     }
 }

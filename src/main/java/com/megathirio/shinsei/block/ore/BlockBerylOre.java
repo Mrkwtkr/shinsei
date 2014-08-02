@@ -27,14 +27,14 @@ public class BlockBerylOre extends OreShinsei {
     public Item getItemDropped(int intX, Random random, int intY) {
         int intWeight = random.nextInt(100) + 1;
         int intWeight1 = random.nextInt(100) + 1;
-        if (intWeight <= 2) {
+        if (intWeight <= 5) {
             itemDrop = ShinseiItems.scarletEmeraldGem;
             if (intWeight1 <= 20) {
                 intQty = 2;
             } else {
                 intQty = 1;
             }
-        }else if(intWeight <= 12) {
+        }else if(intWeight <= 25) {
             itemDrop = Items.emerald;
             if (intWeight1 <= 20) {
                 intQty = 2;

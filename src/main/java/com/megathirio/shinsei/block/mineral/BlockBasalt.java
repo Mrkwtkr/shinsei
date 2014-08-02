@@ -14,7 +14,7 @@ public class BlockBasalt extends BlockShinsei {
         this.setBlockName(Names.Blocks.BASALT);
         this.setHardness(8.0f);
         this.setResistance(20f);
-        this.setHarvestLevel("pickaxe", 2);
+        this.setHarvestLevel("pickaxe", 3);
     }
     @Override
     public Item getItemDropped(int intX, Random random, int intY) { return Item.getItemFromBlock(ShinseiBlocks.basaltCobble); }

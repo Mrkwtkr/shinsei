@@ -10,6 +10,6 @@ public class BlockBasaltCobble extends BlockShinsei {
         this.setBlockName(Names.Blocks.BASALT_COBBLE);
         this.setHardness(6.0f);
         this.setResistance(12f);
-        this.setHarvestLevel("pickaxe", 2);
+        this.setHarvestLevel("pickaxe", 3);
     }
 }
