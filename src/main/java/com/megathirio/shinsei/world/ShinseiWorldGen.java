@@ -54,7 +54,7 @@ public class ShinseiWorldGen implements IWorldGenerator {
         if(ConfigValues.booCopperValue == true){this.addOreSpawn(ShinseiBlocks.chalcopyriteOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 35, 0, 256);}
         this.addOreSpawn(ShinseiBlocks.chromiteOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 30, 0, 256);
         if(ConfigValues.booCinnabarValue == true){this.addOreSpawn(ShinseiBlocks.cinnabarOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 30, 0, 256);}
-//        this.addOreSpawn(ShinseiBlocks.cobaltiteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
+        if(ConfigValues.booCobaltValue == true){this.addOreSpawn(ShinseiBlocks.cobaltiteOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 15, 0, 66);}
 //        this.addOreSpawn(ShinseiBlocks.corundumOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
 //        this.addOreSpawn(ShinseiBlocks.cryoliteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
 //        this.addOreSpawn(ShinseiBlocks.dolomiteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);

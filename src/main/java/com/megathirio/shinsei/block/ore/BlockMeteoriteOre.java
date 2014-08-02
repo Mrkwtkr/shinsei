@@ -28,6 +28,9 @@ public class BlockMeteoriteOre extends OreShinsei {
         }else if(intWeight <= 10) {
             itemDrop = ShinseiItems.silverNugget;
             intQty = random.nextInt(5) + 1;
+        }else if(intWeight <= 15) {
+            itemDrop = ShinseiItems.cobaltNugget;
+            intQty = random.nextInt(5) + 1;
         }else {
             itemDrop = ShinseiItems.chromiumNugget;
             intQty = random.nextInt(5) + 1;

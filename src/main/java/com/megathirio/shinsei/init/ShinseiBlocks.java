@@ -23,6 +23,7 @@ public final class ShinseiBlocks {
     public static BlockShinsei bariumBlock = new BlockBariumBlock();
     public static BlockShinsei bismuthBlock = new BlockBismuthBlock();
     public static BlockShinsei chromiumBlock = new BlockChromiumBlock();
+    public static BlockShinsei cobaltBlock = new BlockCobaltBlock();
     public static BlockShinsei copperBlock = new BlockCopperBlock();
     public static BlockShinsei onyxBlock = new BlockOnyxBlock();
     public static BlockShinsei silverBlock = new BlockSilverBlock();
@@ -104,6 +105,7 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(bismuthBlock, Names.Blocks.BISMUTH_BLOCK);
         GameRegistry.registerBlock(boraxBlock, Names.Blocks.BORAX);
         GameRegistry.registerBlock(chromiumBlock, Names.Blocks.CHROMIUM_BLOCK);
+        GameRegistry.registerBlock(cobaltBlock, Names.Blocks.COBALT_BLOCK);
         GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
         GameRegistry.registerBlock(onyxBlock, Names.Blocks.ONYX_BLOCK);
         GameRegistry.registerBlock(silverBlock, Names.Blocks.SILVER_BLOCK);

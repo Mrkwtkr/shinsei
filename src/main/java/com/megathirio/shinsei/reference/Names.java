@@ -33,6 +33,7 @@ public class Names {
         public static final String BARIUM_BLOCK = "bariumBlock";
         public static final String BISMUTH_BLOCK = "bismuthBlock";
         public static final String CHROMIUM_BLOCK = "chromiumBlock";
+        public static final String COBALT_BLOCK = "cobaltBlock";
         public static final String COPPER_BLOCK = "copperBlock";
         public static final String ONYX_BLOCK = "onyxBlock";
         public static final String SCARLET_EMERALD_BLOCK = "scarletEmeraldBlock";
@@ -144,6 +145,7 @@ public class Names {
         public static final String BARIUM_NUGGET = "bariumNugget";
         public static final String BISMUTH_NUGGET = "bismuthNugget";
         public static final String CHROMIUM_NUGGET = "chromiumNugget";
+        public static final String COBALT_NUGGET = "cobaltNugget";
         public static final String COPPER_NUGGET = "copperNugget";
         public static final String SILVER_NUGGET = "silverNugget";
         public static final String TIN_NUGGET = "tinNugget";

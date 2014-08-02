@@ -93,6 +93,7 @@ public final class ShinseiItems {
     public static ItemShinsei bariumNugget = new ItemBariumNugget();
     public static ItemShinsei bismuthNugget = new ItemBismuthNugget();
     public static ItemShinsei chromiumNugget = new ItemChromiumNugget();
+    public static ItemShinsei cobaltNugget = new ItemCobaltNugget();
     public static ItemShinsei copperNugget = new ItemCopperNugget();
     public static ItemShinsei silverNugget = new ItemSilverNugget();
     public static ItemShinsei tinNugget = new ItemTinNugget();
@@ -209,6 +210,7 @@ public final class ShinseiItems {
         GameRegistry.registerItem(bariumNugget, Names.Ingots.BARIUM_NUGGET);
         GameRegistry.registerItem(bismuthNugget, Names.Ingots.BISMUTH_NUGGET);
         GameRegistry.registerItem(chromiumNugget, Names.Ingots.CHROMIUM_NUGGET);
+        GameRegistry.registerItem(cobaltNugget, Names.Ingots.COBALT_NUGGET);
         GameRegistry.registerItem(copperNugget, Names.Ingots.COPPER_NUGGET);
         GameRegistry.registerItem(silverNugget, Names.Ingots.SILVER_NUGGET);
         GameRegistry.registerItem(tinNugget, Names.Ingots.TIN_NUGGET);

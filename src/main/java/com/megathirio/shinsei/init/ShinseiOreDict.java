@@ -19,7 +19,7 @@ public class ShinseiOreDict {
         OreDictionary.registerOre("blockAquamarine", ShinseiBlocks.aquamarineBlock);
         OreDictionary.registerOre("blockBarium", ShinseiBlocks.bariumBlock);
         OreDictionary.registerOre("blockBismuth", ShinseiBlocks.bismuthBlock);
-        OreDictionary.registerOre("blockChromium", ShinseiBlocks.chromiumBlock);
+        OreDictionary.registerOre("blockChrome", ShinseiBlocks.chromiumBlock);
         OreDictionary.registerOre("blockCopper", ShinseiBlocks.copperBlock);
         OreDictionary.registerOre("blockOnyx", ShinseiBlocks.onyxBlock);
         OreDictionary.registerOre("blockSilver", ShinseiBlocks.silverBlock);
@@ -34,8 +34,9 @@ public class ShinseiOreDict {
         OreDictionary.registerOre("oreAluminum", ShinseiBlocks.bauxiteOre);
         OreDictionary.registerOre("oreBeryl", ShinseiBlocks.berylOre);
         OreDictionary.registerOre("oreBismuth", ShinseiBlocks.bismuthOre);
-        OreDictionary.registerOre("oreChromite", ShinseiBlocks.chromiteOre);
+        OreDictionary.registerOre("oreChrome", ShinseiBlocks.chromiteOre);
         OreDictionary.registerOre("oreCinnabar", ShinseiBlocks.cinnabarOre);
+        OreDictionary.registerOre("oreCobalt", ShinseiBlocks.cobaltiteOre);
         OreDictionary.registerOre("oreCopper", ShinseiBlocks.borniteOre);
         OreDictionary.registerOre("oreTin", ShinseiBlocks.cassiteriteOre);
         OreDictionary.registerOre("oreCopper", ShinseiBlocks.chalcopyriteOre);
@@ -64,7 +65,8 @@ public class ShinseiOreDict {
         OreDictionary.registerOre("ingotAluminum", ShinseiItems.aluminumIngot);
         OreDictionary.registerOre("ingotBarium", ShinseiItems.bariumIngot);
         OreDictionary.registerOre("ingotBismuth", ShinseiItems.bismuthIngot);
-        OreDictionary.registerOre("ingotChromium", ShinseiItems.chromiumIngot);
+        OreDictionary.registerOre("ingotChrome", ShinseiItems.chromiumIngot);
+        OreDictionary.registerOre("ingotCobalt", ShinseiItems.cobaltIngot);
         OreDictionary.registerOre("ingotCopper", ShinseiItems.copperIngot);
         OreDictionary.registerOre("ingotSilver", ShinseiItems.silverIngot);
         OreDictionary.registerOre("ingotTin", ShinseiItems.tinIngot);
@@ -73,7 +75,8 @@ public class ShinseiOreDict {
         OreDictionary.registerOre("nuggetAluminum", ShinseiItems.aluminumNugget);
         OreDictionary.registerOre("nuggetBarium", ShinseiItems.bariumNugget);
         OreDictionary.registerOre("nuggetBismuth", ShinseiItems.bismuthNugget);
-        OreDictionary.registerOre("nuggetChromium", ShinseiItems.chromiumNugget);
+        OreDictionary.registerOre("nuggetChrome", ShinseiItems.chromiumNugget);
+        OreDictionary.registerOre("nuggetCobalt", ShinseiItems.cobaltNugget);
         OreDictionary.registerOre("nuggetCopper", ShinseiItems.copperNugget);
         OreDictionary.registerOre("nuggetSilver", ShinseiItems.silverNugget);
         OreDictionary.registerOre("nuggetTin", ShinseiItems.tinNugget);
@@ -91,8 +94,9 @@ public class ShinseiOreDict {
         OreDictionary.registerOre("dustApatite", ShinseiItems.apatitePowder);
         OreDictionary.registerOre("dustBarium", ShinseiItems.bariumPowder);
         OreDictionary.registerOre("dustBismuth", ShinseiItems.bismuthPowder);
-        OreDictionary.registerOre("dustChromium", ShinseiItems.chromiumPowder);
+        OreDictionary.registerOre("dustChrome", ShinseiItems.chromiumPowder);
         OreDictionary.registerOre("dustCinnabar", ShinseiItems.cinnabarPowder);
+        OreDictionary.registerOre("dustCobalt", ShinseiItems.cobaltPowder);
         OreDictionary.registerOre("dustCopper", ShinseiItems.copperPowder);
         OreDictionary.registerOre("dustIron", ShinseiItems.ironPowder);
         OreDictionary.registerOre("dustMagnesium", ShinseiItems.magnesiumPowder);

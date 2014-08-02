@@ -20,6 +20,7 @@ public class ConfigValues {
     public static boolean booApatiteValue = true;
     public static boolean booBariteValue = true;
     public static boolean booCinnabarValue = true;
+    public static boolean booCobaltValue = true;
     public static boolean booCopperValue = true;
     public static boolean booLeadValue = true;
     public static boolean booSilverValue = true;
