@@ -8,5 +8,7 @@ public class BlockCryoliteOre extends OreShinsei {
     public BlockCryoliteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CRYOLITE_ORE);
+        this.setHardness(2.5F);
+        this.setResistance(3.0F);
     }
 }

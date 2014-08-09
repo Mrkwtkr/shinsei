@@ -39,6 +39,8 @@ public final class ShinseiItems {
     public static ItemShinsei cobaltPowder = new ItemCobaltPowder();
     public static ItemShinsei copperPowder = new ItemCopperPowder();
     public static ItemShinsei cryolitePowder = new ItemCryolitePowder();
+    public static ItemShinsei dolomitePowder = new ItemDolomitePowder();
+    public static ItemShinsei ferrosiliconPowder = new ItemFerrosiliconPowder();
     public static ItemShinsei fluoritePowder = new ItemFluoritePowder();
     public static ItemShinsei graphitePowder = new ItemGraphitePowder();
     public static ItemShinsei gypsumPowder = new ItemGypsumPowder();
@@ -54,6 +56,8 @@ public final class ShinseiItems {
     public static ItemShinsei platinumPowder = new ItemPlatinumPowder();
     public static ItemShinsei potashPowder = new ItemPotashPowder();
     public static ItemShinsei quicklime = new ItemQuicklime();
+    public static ItemShinsei rubyPowder = new ItemRubyPowder();
+    public static ItemShinsei sapphirePowder = new ItemSapphirePowder();
     public static ItemShinsei scarletEmeraldPowder = new ItemScarletEmeraldPowder();
     public static ItemShinsei silverPowder = new ItemSilverPowder();
     public static ItemShinsei sulphur = new ItemSulphur();
@@ -95,6 +99,7 @@ public final class ShinseiItems {
     public static ItemShinsei chromiumNugget = new ItemChromiumNugget();
     public static ItemShinsei cobaltNugget = new ItemCobaltNugget();
     public static ItemShinsei copperNugget = new ItemCopperNugget();
+    public static ItemShinsei magnesiumNugget = new ItemMagnesiumNugget();
     public static ItemShinsei silverNugget = new ItemSilverNugget();
     public static ItemShinsei tinNugget = new ItemTinNugget();
 
@@ -105,7 +110,7 @@ public final class ShinseiItems {
     public static ItemShinsei onyxGem = new ItemOnyxGem();
     public static ItemShinsei opalGem = new ItemOpalGem();
     public static ItemShinsei peridotGem = new ItemPeridotGem();
-    public static ItemShinsei rubyOre = new ItemRubyGem();
+    public static ItemShinsei rubyGem = new ItemRubyGem();
     public static ItemShinsei scarletEmeraldGem = new ItemScarletEmeraldGem();
     public static ItemShinsei sapphireGem = new ItemSapphireGem();
     public static ItemShinsei topazGem = new ItemTopazGem();
@@ -152,6 +157,8 @@ public final class ShinseiItems {
         GameRegistry.registerItem(cobaltPowder, Names.Powders.COBALT_POWDER);
         GameRegistry.registerItem(copperPowder, Names.Powders.COPPER_POWDER);
         GameRegistry.registerItem(cryolitePowder, Names.Powders.CRYOLITE_POWDER);
+        GameRegistry.registerItem(dolomitePowder, Names.Powders.DOLOMITE_POWDER);
+        GameRegistry.registerItem(ferrosiliconPowder, Names.Powders.FERROSILICON_POWDER);
         GameRegistry.registerItem(fluoritePowder, Names.Powders.FLUORITE_POWDER);
         GameRegistry.registerItem(graphitePowder, Names.Powders.GRAPHITE_POWDER);
         GameRegistry.registerItem(gypsumPowder, Names.Powders.GYPSUM_POWDER);
@@ -167,6 +174,8 @@ public final class ShinseiItems {
         GameRegistry.registerItem(platinumPowder, Names.Powders.PLATINUM_POWDER);
         GameRegistry.registerItem(potashPowder, Names.Powders.POTASH_POWDER);
         GameRegistry.registerItem(quicklime, Names.Powders.QUICKLIME);
+        GameRegistry.registerItem(rubyPowder, Names.Powders.RUBY_POWDER);
+        GameRegistry.registerItem(sapphirePowder, Names.Powders.SAPPHIRE_POWDER);
         GameRegistry.registerItem(scarletEmeraldPowder, Names.Powders.SCARLET_EMERALD_POWDER);
         GameRegistry.registerItem(silverPowder, Names.Powders.SILVER_POWDER);
         GameRegistry.registerItem(sulphur, Names.Powders.SULPHUR);
@@ -212,6 +221,7 @@ public final class ShinseiItems {
         GameRegistry.registerItem(chromiumNugget, Names.Ingots.CHROMIUM_NUGGET);
         GameRegistry.registerItem(cobaltNugget, Names.Ingots.COBALT_NUGGET);
         GameRegistry.registerItem(copperNugget, Names.Ingots.COPPER_NUGGET);
+        GameRegistry.registerItem(magnesiumNugget, Names.Ingots.MAGNESIUM_NUGGET);
         GameRegistry.registerItem(silverNugget, Names.Ingots.SILVER_NUGGET);
         GameRegistry.registerItem(tinNugget, Names.Ingots.TIN_NUGGET);
 
@@ -222,7 +232,7 @@ public final class ShinseiItems {
         GameRegistry.registerItem(onyxGem, Names.Ingots.ONYX_GEM);
         GameRegistry.registerItem(opalGem, Names.Ingots.OPAL_GEM);
         GameRegistry.registerItem(peridotGem, Names.Ingots.PERIDOT_GEM);
-        GameRegistry.registerItem(rubyOre, Names.Ingots.RUBY_GEM);
+        GameRegistry.registerItem(rubyGem, Names.Ingots.RUBY_GEM);
         GameRegistry.registerItem(scarletEmeraldGem, Names.Ingots.SCARLET_EMERALD_GEM);
         GameRegistry.registerItem(sapphireGem, Names.Ingots.SAPPHIRE_GEM);
         GameRegistry.registerItem(topazGem, Names.Ingots.TOPAZ_GEM);

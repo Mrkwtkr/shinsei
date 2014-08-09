@@ -35,7 +35,10 @@ public class Names {
         public static final String CHROMIUM_BLOCK = "chromiumBlock";
         public static final String COBALT_BLOCK = "cobaltBlock";
         public static final String COPPER_BLOCK = "copperBlock";
+        public static final String MAGNESIUM_BLOCK = "magnesiumBlock";
         public static final String ONYX_BLOCK = "onyxBlock";
+        public static final String RUBY_BLOCK = "rubyBlock";
+        public static final String SAPPHIRE_BLOCK = "sapphireBlock";
         public static final String SCARLET_EMERALD_BLOCK = "scarletEmeraldBlock";
         public static final String SILVER_BLOCK = "silverBlock";
         public static final String TIN_BLOCK = "tinBlock";
@@ -147,6 +150,7 @@ public class Names {
         public static final String CHROMIUM_NUGGET = "chromiumNugget";
         public static final String COBALT_NUGGET = "cobaltNugget";
         public static final String COPPER_NUGGET = "copperNugget";
+        public static final String MAGNESIUM_NUGGET = "magnesiumNugget";
         public static final String SILVER_NUGGET = "silverNugget";
         public static final String TIN_NUGGET = "tinNugget";
 
@@ -188,6 +192,8 @@ public class Names {
         public static final String COBALT_POWDER = "cobaltPowder";
         public static final String COPPER_POWDER = "copperPowder";
         public static final String CRYOLITE_POWDER = "cryolitePowder";
+        public static final String DOLOMITE_POWDER = "dolomitePowder";
+        public static final String FERROSILICON_POWDER = "ferrosiliconPowder";
         public static final String FLUORITE_POWDER = "fluoritePowder";
         public static final String GRAPHITE_POWDER = "graphitePowder";
         public static final String GYPSUM_POWDER = "gypsumPowder";
@@ -203,6 +209,8 @@ public class Names {
         public static final String PLATINUM_POWDER = "platinumPowder";
         public static final String POTASH_POWDER = "potashPowder";
         public static final String QUICKLIME = "quicklime";
+        public static final String RUBY_POWDER = "rubyPowder";
+        public static final String SAPPHIRE_POWDER = "sapphirePowder";
         public static final String SCARLET_EMERALD_POWDER = "scarletEmeraldPowder";
         public static final String SILVER_POWDER = "silverPowder";
         public static final String SULPHUR = "sulphur";
