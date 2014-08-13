@@ -35,6 +35,8 @@ public class Names {
         public static final String CHROMIUM_BLOCK = "chromiumBlock";
         public static final String COBALT_BLOCK = "cobaltBlock";
         public static final String COPPER_BLOCK = "copperBlock";
+        public static final String FLUORITE_BLOCK = "fluoriteBlock";
+        public static final String LEAD_BLOCK = "leadBlock";
         public static final String MAGNESIUM_BLOCK = "magnesiumBlock";
         public static final String ONYX_BLOCK = "onyxBlock";
         public static final String RUBY_BLOCK = "rubyBlock";
@@ -150,6 +152,7 @@ public class Names {
         public static final String CHROMIUM_NUGGET = "chromiumNugget";
         public static final String COBALT_NUGGET = "cobaltNugget";
         public static final String COPPER_NUGGET = "copperNugget";
+        public static final String LEAD_NUGGET = "leadNugget";
         public static final String MAGNESIUM_NUGGET = "magnesiumNugget";
         public static final String SILVER_NUGGET = "silverNugget";
         public static final String TIN_NUGGET = "tinNugget";
@@ -194,7 +197,7 @@ public class Names {
         public static final String CRYOLITE_POWDER = "cryolitePowder";
         public static final String DOLOMITE_POWDER = "dolomitePowder";
         public static final String FERROSILICON_POWDER = "ferrosiliconPowder";
-        public static final String FLUORITE_POWDER = "fluoritePowder";
+        public static final String FLUORIDE_POWDER = "fluoridePowder";
         public static final String GRAPHITE_POWDER = "graphitePowder";
         public static final String GYPSUM_POWDER = "gypsumPowder";
         public static final String INDIUM_POWDER = "indiumPowder";

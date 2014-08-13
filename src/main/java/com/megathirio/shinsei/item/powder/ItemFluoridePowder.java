@@ -3,9 +3,9 @@ package com.megathirio.shinsei.item.powder;
 import com.megathirio.shinsei.item.PowderShinsei;
 import com.megathirio.shinsei.reference.Names;
 
-public class ItemFluoritePowder extends PowderShinsei {
-    public ItemFluoritePowder(){
+public class ItemFluoridePowder extends PowderShinsei {
+    public ItemFluoridePowder(){
         super();
-        this.setUnlocalizedName(Names.Powders.FLUORITE_POWDER);
+        this.setUnlocalizedName(Names.Powders.FLUORIDE_POWDER);
     }
 }

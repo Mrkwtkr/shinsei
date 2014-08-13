@@ -41,7 +41,7 @@ public final class ShinseiItems {
     public static ItemShinsei cryolitePowder = new ItemCryolitePowder();
     public static ItemShinsei dolomitePowder = new ItemDolomitePowder();
     public static ItemShinsei ferrosiliconPowder = new ItemFerrosiliconPowder();
-    public static ItemShinsei fluoritePowder = new ItemFluoritePowder();
+    public static ItemShinsei fluoritePowder = new ItemFluoridePowder();
     public static ItemShinsei graphitePowder = new ItemGraphitePowder();
     public static ItemShinsei gypsumPowder = new ItemGypsumPowder();
     public static ItemShinsei indiumPowder = new ItemIndiumPowder();
@@ -99,6 +99,7 @@ public final class ShinseiItems {
     public static ItemShinsei chromiumNugget = new ItemChromiumNugget();
     public static ItemShinsei cobaltNugget = new ItemCobaltNugget();
     public static ItemShinsei copperNugget = new ItemCopperNugget();
+    public static ItemShinsei leadNugget = new ItemLeadNugget();
     public static ItemShinsei magnesiumNugget = new ItemMagnesiumNugget();
     public static ItemShinsei silverNugget = new ItemSilverNugget();
     public static ItemShinsei tinNugget = new ItemTinNugget();
@@ -159,7 +160,7 @@ public final class ShinseiItems {
         GameRegistry.registerItem(cryolitePowder, Names.Powders.CRYOLITE_POWDER);
         GameRegistry.registerItem(dolomitePowder, Names.Powders.DOLOMITE_POWDER);
         GameRegistry.registerItem(ferrosiliconPowder, Names.Powders.FERROSILICON_POWDER);
-        GameRegistry.registerItem(fluoritePowder, Names.Powders.FLUORITE_POWDER);
+        GameRegistry.registerItem(fluoritePowder, Names.Powders.FLUORIDE_POWDER);
         GameRegistry.registerItem(graphitePowder, Names.Powders.GRAPHITE_POWDER);
         GameRegistry.registerItem(gypsumPowder, Names.Powders.GYPSUM_POWDER);
         GameRegistry.registerItem(indiumPowder, Names.Powders.INDIUM_POWDER);
@@ -221,6 +222,7 @@ public final class ShinseiItems {
         GameRegistry.registerItem(chromiumNugget, Names.Ingots.CHROMIUM_NUGGET);
         GameRegistry.registerItem(cobaltNugget, Names.Ingots.COBALT_NUGGET);
         GameRegistry.registerItem(copperNugget, Names.Ingots.COPPER_NUGGET);
+        GameRegistry.registerItem(leadNugget, Names.Ingots.LEAD_NUGGET);
         GameRegistry.registerItem(magnesiumNugget, Names.Ingots.MAGNESIUM_NUGGET);
         GameRegistry.registerItem(silverNugget, Names.Ingots.SILVER_NUGGET);
         GameRegistry.registerItem(tinNugget, Names.Ingots.TIN_NUGGET);

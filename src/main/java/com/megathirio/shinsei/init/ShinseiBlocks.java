@@ -25,6 +25,8 @@ public final class ShinseiBlocks {
     public static BlockShinsei chromiumBlock = new BlockChromiumBlock();
     public static BlockShinsei cobaltBlock = new BlockCobaltBlock();
     public static BlockShinsei copperBlock = new BlockCopperBlock();
+    public static BlockShinsei fluoriteBlock = new BlockFluoriteBlock();
+    public static BlockShinsei leadBlock = new BlockLeadBlock();
     public static BlockShinsei magnesiumBlock = new BlockMagnesiumBlock();
     public static BlockShinsei onyxBlock = new BlockOnyxBlock();
     public static BlockShinsei rubyBlock = new BlockRubyBlock();
@@ -54,7 +56,6 @@ public final class ShinseiBlocks {
     public static OreShinsei dolomiteOre = new BlockDolomiteOre();
     public static OreShinsei fluoriteOre = new BlockFluoriteOre();
     public static OreShinsei galenaOre = new BlockGalenaOre();
-    public static OreShinsei goethiteOre = new BlockGoethiteOre();
     public static OreShinsei graphiteOre = new BlockGraphiteOre();
     public static OreShinsei hematiteOre = new BlockHematiteOre();
     public static OreShinsei ilmeniteOre = new BlockIlmeniteOre();
@@ -110,6 +111,8 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(chromiumBlock, Names.Blocks.CHROMIUM_BLOCK);
         GameRegistry.registerBlock(cobaltBlock, Names.Blocks.COBALT_BLOCK);
         GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
+        GameRegistry.registerBlock(fluoriteBlock, Names.Blocks.FLUORITE_BLOCK);
+        GameRegistry.registerBlock(leadBlock, Names.Blocks.LEAD_BLOCK);
         GameRegistry.registerBlock(magnesiumBlock, Names.Blocks.MAGNESIUM_BLOCK);
         GameRegistry.registerBlock(onyxBlock, Names.Blocks.ONYX_BLOCK);
         GameRegistry.registerBlock(rubyBlock, Names.Blocks.RUBY_BLOCK);
@@ -138,7 +141,6 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(dolomiteOre, Names.Ores.DOLOMITE_ORE);
         GameRegistry.registerBlock(fluoriteOre, Names.Ores.FLUORITE_ORE);
         GameRegistry.registerBlock(galenaOre, Names.Ores.GALENA_ORE);
-        GameRegistry.registerBlock(goethiteOre, Names.Ores.GOETHITE_ORE);
         GameRegistry.registerBlock(graphiteOre, Names.Ores.GRAPHITE_ORE);
         GameRegistry.registerBlock(hematiteOre, Names.Ores.HEMATITE_ORE);
         GameRegistry.registerBlock(ilmeniteOre, Names.Ores.ILMENITE_ORE);

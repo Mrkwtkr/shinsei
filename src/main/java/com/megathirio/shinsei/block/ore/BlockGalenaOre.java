@@ -8,5 +8,7 @@ public class BlockGalenaOre extends OreShinsei {
     public BlockGalenaOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.GALENA_ORE);
+        this.setHardness(2.5F);
+        this.setResistance(5.0F);
     }
 }

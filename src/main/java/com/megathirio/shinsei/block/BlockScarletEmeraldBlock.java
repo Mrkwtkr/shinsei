@@ -10,7 +10,7 @@ public class BlockScarletEmeraldBlock extends BlockShinsei {
         this.setHardness(7.5f);
         this.setResistance(14f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setLightLevel(500F);
+        this.setLightLevel(.5F);
     }
    
 }

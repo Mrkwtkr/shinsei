@@ -25,13 +25,5 @@ public class BlockApatiteOre extends OreShinsei {
 
 
     @Override
-    public int quantityDropped(Random random) {
-        int intWeight = random.nextInt(100) + 1;
-        if (intWeight <= 20){
-            intQty = (random.nextInt(2) + 2);
-        }else {
-            intQty = 1;
-        }
-        return intQty;
-    }
+    public int quantityDropped(Random random) { return random.nextInt(4) + 2; }
 }
