@@ -65,6 +65,8 @@ public class ConfigurationHandler {
         LogHelper.info("Cinnabar Ore Spawning is set to: " + String.valueOf(ConfigValues.booCinnabarValue));
         ConfigValues.booCopperValue = configuration.get(Configuration.CATEGORY_GENERAL, "CopperOre", true, "Set to false to disable Copper Ore Spawning").getBoolean(true);
         LogHelper.info("Copper Ore Spawning is set to: " + String.valueOf(ConfigValues.booCopperValue));
+        ConfigValues.booIronValue = configuration.get(Configuration.CATEGORY_GENERAL, "IronOre", true, "Set to false to disable Iron Ore Spawning").getBoolean(true);
+        LogHelper.info("Iron Ore Spawning is set to: " + String.valueOf(ConfigValues.booIronValue));
         ConfigValues.booLeadValue = configuration.get(Configuration.CATEGORY_GENERAL, "LeadOre", true, "Set to false to disable Lead Ore Spawning").getBoolean(true);
         LogHelper.info("Lead Ore Spawning is set to: " + String.valueOf(ConfigValues.booLeadValue));
         ConfigValues.booSilverValue = configuration.get(Configuration.CATEGORY_GENERAL, "SilverOre", true, "Set to false to disable Silver Ore Spawning").getBoolean(true);

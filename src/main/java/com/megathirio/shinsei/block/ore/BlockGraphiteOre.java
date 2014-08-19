@@ -19,6 +19,6 @@ public class BlockGraphiteOre extends OreShinsei {
 
     @Override
     public int quantityDropped(Random random){
-        return (random.nextInt(4) + 3);
+        return (random.nextInt(3) + 3);
     }
 }

@@ -26,6 +26,7 @@ public final class ShinseiBlocks {
     public static BlockShinsei cobaltBlock = new BlockCobaltBlock();
     public static BlockShinsei copperBlock = new BlockCopperBlock();
     public static BlockShinsei fluoriteBlock = new BlockFluoriteBlock();
+    public static BlockShinsei jadeBlock = new BlockJadeBlock();
     public static BlockShinsei leadBlock = new BlockLeadBlock();
     public static BlockShinsei magnesiumBlock = new BlockMagnesiumBlock();
     public static BlockShinsei onyxBlock = new BlockOnyxBlock();
@@ -33,6 +34,7 @@ public final class ShinseiBlocks {
     public static BlockShinsei sapphireBlock = new BlockSapphireBlock();
     public static BlockShinsei silverBlock = new BlockSilverBlock();
     public static BlockShinsei tinBlock = new BlockTinBlock();
+    public static BlockShinsei titaniumBlock = new BlockTitaniumBlock();
     public static BlockShinsei aquamarineBlock = new BlockAquamarineBlock();
     public static BlockShinsei scarletEmeraldBlock = new BlockScarletEmeraldBlock();
 
@@ -112,6 +114,7 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(cobaltBlock, Names.Blocks.COBALT_BLOCK);
         GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
         GameRegistry.registerBlock(fluoriteBlock, Names.Blocks.FLUORITE_BLOCK);
+        GameRegistry.registerBlock(jadeBlock, Names.Blocks.JADE_BLOCK);
         GameRegistry.registerBlock(leadBlock, Names.Blocks.LEAD_BLOCK);
         GameRegistry.registerBlock(magnesiumBlock, Names.Blocks.MAGNESIUM_BLOCK);
         GameRegistry.registerBlock(onyxBlock, Names.Blocks.ONYX_BLOCK);
@@ -120,6 +123,7 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(silverBlock, Names.Blocks.SILVER_BLOCK);
         GameRegistry.registerBlock(scarletEmeraldBlock, Names.Blocks.SCARLET_EMERALD_BLOCK);
         GameRegistry.registerBlock(tinBlock, Names.Blocks.TIN_BLOCK);
+        GameRegistry.registerBlock(titaniumBlock, Names.Blocks.TITANIUM_BLOCK);
 
         //Ores
         GameRegistry.registerBlock(acanthiteOre, Names.Ores.ACANTHITE_ORE);

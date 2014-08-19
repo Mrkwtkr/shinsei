@@ -38,6 +38,9 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.copperNugget, 9), "ingotCopper"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.copperIngot, 9), "blockCopper"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.fluoriteCrystal, 9), "blockFluorite"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.ironNugget, 9), "ingotIron"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.iron_ingot, 9), "blockIron"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.jadeGem, 9), "blockJade"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.leadNugget, 9), "ingotLead"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.leadIngot, 9), "blockLead"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.magnesiumNugget, 9), "ingotMagnesium"));
@@ -50,6 +53,8 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.silverIngot, 9), "blockSilver"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.tinNugget, 9), "ingotTin"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.tinIngot, 9), "blockTin"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.titaniumNugget, 9), "ingotTitanium"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.titaniumIngot, 9), "blockTitanium"));
 
 		//Shaped
             //Vanilla
@@ -65,7 +70,9 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.chromiumBlock, 1), "@@@","@@@","@@@", '@', "ingotChrome"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.cobaltBlock, 1), "@@@","@@@","@@@", '@', "ingotCobalt"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.copperBlock, 1), "@@@","@@@","@@@", '@', "ingotCopper"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.iron_block, 1), "@@@","@@@","@@@", '@', "ingotIron"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.fluoriteBlock, 1), "@@@","@@@","@@@", '@', "gemFluorite"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.jadeBlock, 1), "@@@","@@@","@@@", '@', "gemJade"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.leadBlock, 1), "@@@","@@@","@@@", '@', "ingotLead"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.magnesiumBlock, 1), "@@@","@@@","@@@", '@', "ingotMagnesium"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.onyxBlock, 1), "@@@","@@@","@@@", '@', "gemOnyx"));
@@ -74,6 +81,7 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.scarletEmeraldBlock, 1), "@@@","@@@","@@@", '@', ShinseiItems.scarletEmeraldGem));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.silverBlock, 1), "@@@","@@@","@@@", '@', "ingotSilver"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.tinBlock, 1), "@@@","@@@","@@@", '@', "ingotTin"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.titaniumBlock, 1), "@@@","@@@","@@@", '@', "ingotTitanium"));
 
             //Ingots
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.aluminumIngot, 1), "@@@","@@@","@@@", '@', "nuggetAluminum"));
@@ -82,10 +90,12 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.chromiumIngot, 1), "@@@","@@@","@@@", '@', "nuggetChrome"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.cobaltIngot, 1), "@@@","@@@","@@@", '@', "nuggetCobalt"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.copperIngot, 1), "@@@","@@@","@@@", '@', "nuggetCopper"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.iron_ingot, 1), "@@@","@@@","@@@", '@', "nuggetIron"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.leadIngot, 1), "@@@","@@@","@@@", '@', "nuggetLead"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.magnesiumIngot, 1), "@@@","@@@","@@@", '@', "nuggetMagnesium"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.silverIngot, 1), "@@@","@@@","@@@", '@', "nuggetSilver"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.tinIngot, 1), "@@@","@@@","@@@", '@', "nuggetTin"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.titaniumIngot, 1), "@@@","@@@","@@@", '@', "nuggetTitanium"));
 
             //Machines
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.furnace, 1), "@@@","@ @","@@@", '@', "blockCobble"));
@@ -112,9 +122,11 @@ public class ShinseiRecipes {
             GameRegistry.addSmelting(ShinseiItems.cobaltPowder, new ItemStack(ShinseiItems.cobaltIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.copperPowder, new ItemStack(ShinseiItems.copperIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.dolomiteOre, new ItemStack(ShinseiItems.dolomitePowder, 1), 1f);
+            GameRegistry.addSmelting(ShinseiItems.ironPowder, new ItemStack(Items.iron_ingot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.leadPowder, new ItemStack(ShinseiItems.leadIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.silverPowder, new ItemStack(ShinseiItems.silverIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.tinPowder, new ItemStack(ShinseiItems.tinIngot, 1), 1f);
+            GameRegistry.addSmelting(ShinseiItems.titaniumPowder, new ItemStack(ShinseiItems.titaniumIngot, 1), 1f);
 
             //Ores
             GameRegistry.addSmelting(ShinseiBlocks.acanthiteOre, new ItemStack(ShinseiItems.silverIngot, 1), 1f);
@@ -137,6 +149,7 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.copperPowder, 2), "oreCopper", Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.cryolitePowder, 4), "oreCryolite", Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.fluoritePowder, 1), "gemFluorite", Items.flint));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.jadePowder, 1), "gemJade", Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.leadPowder, 2), "oreLead", Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.ironPowder, 2), "oreIron", Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.ferrosiliconPowder, 2), "oreIron", "blockSand", Items.flint));
@@ -147,6 +160,7 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.scarletEmeraldPowder, 1), ShinseiItems.scarletEmeraldGem, Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.silverPowder, 2), "oreSilver", Items.flint));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.tinPowder, 2), "oreTin", Items.flint));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.titaniumPowder, 2), "oreTitanium",  "dustMagnesium", Items.flint));
 
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.aluminumPowder, 2), "oreAluminum", ShinseiItems.cryolitePowder, Items.redstone));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bismuthPowder, 2), "oreBismuth", Items.redstone));
@@ -161,6 +175,7 @@ public class ShinseiRecipes {
             GameRegistry.addSmelting(ShinseiItems.apatitePowder, new ItemStack(ShinseiItems.apatiteCrystal, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.aquamarinePowder, new ItemStack(ShinseiItems.aquamarineGem, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.fluoritePowder, new ItemStack(ShinseiItems.fluoriteCrystal, 1), 1f);
+            GameRegistry.addSmelting(ShinseiItems.jadePowder, new ItemStack(ShinseiItems.jadeGem, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.magnesiumPowder, new ItemStack(ShinseiItems.magnesiumIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.onyxPowder, new ItemStack(ShinseiItems.onyxGem, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.rubyPowder, new ItemStack(ShinseiItems.rubyGem, 1), 1f);

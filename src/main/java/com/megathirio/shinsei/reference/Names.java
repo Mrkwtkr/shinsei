@@ -36,6 +36,7 @@ public class Names {
         public static final String COBALT_BLOCK = "cobaltBlock";
         public static final String COPPER_BLOCK = "copperBlock";
         public static final String FLUORITE_BLOCK = "fluoriteBlock";
+        public static final String JADE_BLOCK = "jadeBlock";
         public static final String LEAD_BLOCK = "leadBlock";
         public static final String MAGNESIUM_BLOCK = "magnesiumBlock";
         public static final String ONYX_BLOCK = "onyxBlock";
@@ -44,6 +45,7 @@ public class Names {
         public static final String SCARLET_EMERALD_BLOCK = "scarletEmeraldBlock";
         public static final String SILVER_BLOCK = "silverBlock";
         public static final String TIN_BLOCK = "tinBlock";
+        public static final String TITANIUM_BLOCK = "titaniumBlock";
 
     }
 
@@ -152,10 +154,12 @@ public class Names {
         public static final String CHROMIUM_NUGGET = "chromiumNugget";
         public static final String COBALT_NUGGET = "cobaltNugget";
         public static final String COPPER_NUGGET = "copperNugget";
+        public static final String IRON_NUGGET = "ironNugget";
         public static final String LEAD_NUGGET = "leadNugget";
         public static final String MAGNESIUM_NUGGET = "magnesiumNugget";
         public static final String SILVER_NUGGET = "silverNugget";
         public static final String TIN_NUGGET = "tinNugget";
+        public static final String TITANIUM_NUGGET = "titaniumNugget";
 
         //Gems
         public static final String AMETHYST_GEM = "amethystGem";
@@ -203,6 +207,7 @@ public class Names {
         public static final String INDIUM_POWDER = "indiumPowder";
         public static final String IRIDIUM_POWDER = "iridiumPowder";
         public static final String IRON_POWDER = "ironPowder";
+        public static final String JADE_POWDER = "jadePowder";
         public static final String LEAD_POWDER = "leadPowder";
         public static final String MAGNESIUM_POWDER = "magnesiumPowder";
         public static final String MANGANESE_POWDER = "manganesePowder";

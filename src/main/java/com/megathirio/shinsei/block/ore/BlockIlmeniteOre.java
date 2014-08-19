@@ -8,5 +8,8 @@ public class BlockIlmeniteOre extends OreShinsei {
     public BlockIlmeniteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.ILMENITE_ORE);
+        this.setHardness(6.0f);
+        this.setResistance(10f);
+        this.setHarvestLevel("pickaxe", 2);
     }
 }

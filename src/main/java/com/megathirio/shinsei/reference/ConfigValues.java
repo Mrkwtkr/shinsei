@@ -22,6 +22,7 @@ public class ConfigValues {
     public static boolean booCinnabarValue = true;
     public static boolean booCobaltValue = true;
     public static boolean booCopperValue = true;
+    public static boolean booIronValue = true;
     public static boolean booLeadValue = true;
     public static boolean booSilverValue = true;
     public static boolean booTinValue = true;
