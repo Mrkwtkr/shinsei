@@ -29,11 +29,10 @@ public final class ShinseiItems {
     public static ItemShinsei arsenicPowder = new ItemArsenicPowder();
     public static ItemShinsei bariumPowder = new ItemBariumPowder();
     public static ItemShinsei bismuthPowder = new ItemBismuthPowder();
-    public static ItemShinsei blackPowder = new ItemBlackPowder();
     public static ItemShinsei boraxPowder = new ItemBoraxPowder();
     public static ItemShinsei chalkPowder = new ItemChalkPowder();
-    public static ItemShinsei cadmiumPowder = new ItemCadmiumPowder();
     public static ItemShinsei calciumPowder = new ItemCalciumPowder();
+    public static ItemShinsei causticPotash = new ItemCausticPotash();
     public static ItemShinsei chromiumPowder = new ItemChromiumPowder();
     public static ItemShinsei cinnabarPowder = new ItemCinnabarPowder();
     public static ItemShinsei cobaltPowder = new ItemCobaltPowder();
@@ -54,6 +53,8 @@ public final class ShinseiItems {
     public static ItemShinsei molybdenumPowder = new ItemMolybdenumPowder();
     public static ItemShinsei nickelPowder = new ItemNickelPowder();
     public static ItemShinsei onyxPowder = new ItemOnyxPowder();
+    public static ItemShinsei opalPowder = new ItemOpalPowder();
+    public static ItemShinsei peridotPowder = new ItemPeridotPowder();
     public static ItemShinsei platinumPowder = new ItemPlatinumPowder();
     public static ItemShinsei potashPowder = new ItemPotashPowder();
     public static ItemShinsei quicklime = new ItemQuicklime();
@@ -65,8 +66,11 @@ public final class ShinseiItems {
     public static ItemShinsei tantalumPowder = new ItemTantalumPowder();
     public static ItemShinsei tinPowder = new ItemTinPowder();
     public static ItemShinsei titaniumPowder = new ItemTitaniumPowder();
+    public static ItemShinsei topazPowder = new ItemTopazPowder();
     public static ItemShinsei tungstenPowder = new ItemTungstenPowder();
+    public static ItemShinsei turquoisePowder = new ItemTurquoisePowder();
     public static ItemShinsei uraniumPowder = new ItemUraniumPowder();
+    public static ItemShinsei yellowcakePowder = new ItemYellowcakePowder();
     public static ItemShinsei zincPowder = new ItemZincPowder();
 
     //Ingots
@@ -95,17 +99,26 @@ public final class ShinseiItems {
 
     //Nuggets
     public static ItemShinsei aluminumNugget = new ItemAluminumNugget();
+    public static ItemShinsei antimonyNugget = new ItemAntimonyNugget();
     public static ItemShinsei bariumNugget = new ItemBariumNugget();
     public static ItemShinsei bismuthNugget = new ItemBismuthNugget();
     public static ItemShinsei chromiumNugget = new ItemChromiumNugget();
     public static ItemShinsei cobaltNugget = new ItemCobaltNugget();
     public static ItemShinsei copperNugget = new ItemCopperNugget();
+    public static ItemShinsei indiumNugget = new ItemIndiumNugget();
+    public static ItemShinsei iridiumNugget = new ItemIridiumNugget();
     public static ItemShinsei ironNugget = new ItemIronNugget();
     public static ItemShinsei leadNugget = new ItemLeadNugget();
     public static ItemShinsei magnesiumNugget = new ItemMagnesiumNugget();
+    public static ItemShinsei manganeseNugget = new ItemManganeseNugget();
+    public static ItemShinsei nickelNugget = new ItemNickelNugget();
+    public static ItemShinsei platinumNugget = new ItemPlatinumNugget();
     public static ItemShinsei silverNugget = new ItemSilverNugget();
+    public static ItemShinsei tantalumNugget = new ItemTantalumNugget();
     public static ItemShinsei tinNugget = new ItemTinNugget();
     public static ItemShinsei titaniumNugget = new ItemTitaniumNugget();
+    public static ItemShinsei tungstenNugget = new ItemTungstenNugget();
+    public static ItemShinsei zincNugget = new ItemZincNugget();
 
     //Gems
     public static ItemShinsei amethystGem = new ItemAmethystGem();
@@ -151,11 +164,10 @@ public final class ShinseiItems {
         GameRegistry.registerItem(arsenicPowder, Names.Powders.ARSENIC_POWDER);
         GameRegistry.registerItem(bariumPowder, Names.Powders.BARIUM_POWDER);
         GameRegistry.registerItem(bismuthPowder, Names.Powders.BISMUTH_POWDER);
-        GameRegistry.registerItem(blackPowder, Names.Powders.BLACK_POWDER);
         GameRegistry.registerItem(boraxPowder, Names.Powders.BORAX_POWDER);
         GameRegistry.registerItem(chalkPowder, Names.Powders.CHALK_POWDER);
-        GameRegistry.registerItem(cadmiumPowder, Names.Powders.CADMIUM_POWDER);
         GameRegistry.registerItem(calciumPowder, Names.Powders.CALCIUM_POWDER);
+        GameRegistry.registerItem(causticPotash, Names.Powders.CAUSTIC_POTASH);
         GameRegistry.registerItem(chromiumPowder, Names.Powders.CHROMIUM_POWDER);
         GameRegistry.registerItem(cinnabarPowder, Names.Powders.CINNABAR_POWDER);
         GameRegistry.registerItem(cobaltPowder, Names.Powders.COBALT_POWDER);
@@ -176,6 +188,8 @@ public final class ShinseiItems {
         GameRegistry.registerItem(molybdenumPowder, Names.Powders.MOLYBDENUM_POWDER);
         GameRegistry.registerItem(nickelPowder, Names.Powders.NICKEL_POWDER);
         GameRegistry.registerItem(onyxPowder, Names.Powders.ONYX_POWDER);
+        GameRegistry.registerItem(opalPowder, Names.Powders.OPAL_POWDER);
+        GameRegistry.registerItem(peridotPowder, Names.Powders.PERIDOT_POWDER);
         GameRegistry.registerItem(platinumPowder, Names.Powders.PLATINUM_POWDER);
         GameRegistry.registerItem(potashPowder, Names.Powders.POTASH_POWDER);
         GameRegistry.registerItem(quicklime, Names.Powders.QUICKLIME);
@@ -187,8 +201,11 @@ public final class ShinseiItems {
         GameRegistry.registerItem(tantalumPowder, Names.Powders.TANTALUM_POWDER);
         GameRegistry.registerItem(tinPowder, Names.Powders.TIN_POWDER);
         GameRegistry.registerItem(titaniumPowder, Names.Powders.TITANIUM_POWDER);
+        GameRegistry.registerItem(topazPowder, Names.Powders.TOPAZ_POWDER);
+        GameRegistry.registerItem(turquoisePowder, Names.Powders.TURQUOISE_POWDER);
         GameRegistry.registerItem(tungstenPowder, Names.Powders.TUNGSTEN_POWDER);
         GameRegistry.registerItem(uraniumPowder, Names.Powders.URANIUM_POWDER);
+        GameRegistry.registerItem(yellowcakePowder, Names.Powders.YELLOWCAKE_POWDER);
         GameRegistry.registerItem(zincPowder, Names.Powders.ZINC_POWDER);
 
 		//Mineral Drops
@@ -221,17 +238,26 @@ public final class ShinseiItems {
 
         //Nuggets
         GameRegistry.registerItem(aluminumNugget, Names.Ingots.ALUMINUM_NUGGET);
+        GameRegistry.registerItem(antimonyNugget, Names.Ingots.ANTIMONY_NUGGET);
         GameRegistry.registerItem(bariumNugget, Names.Ingots.BARIUM_NUGGET);
         GameRegistry.registerItem(bismuthNugget, Names.Ingots.BISMUTH_NUGGET);
         GameRegistry.registerItem(chromiumNugget, Names.Ingots.CHROMIUM_NUGGET);
         GameRegistry.registerItem(cobaltNugget, Names.Ingots.COBALT_NUGGET);
         GameRegistry.registerItem(copperNugget, Names.Ingots.COPPER_NUGGET);
+        GameRegistry.registerItem(indiumNugget, Names.Ingots.INDIUM_NUGGET);
+        GameRegistry.registerItem(iridiumNugget, Names.Ingots.IRIDIUM_NUGGET);
         GameRegistry.registerItem(ironNugget, Names.Ingots.IRON_NUGGET);
         GameRegistry.registerItem(leadNugget, Names.Ingots.LEAD_NUGGET);
         GameRegistry.registerItem(magnesiumNugget, Names.Ingots.MAGNESIUM_NUGGET);
+        GameRegistry.registerItem(manganeseNugget, Names.Ingots.MANGANESE_NUGGET);
+        GameRegistry.registerItem(nickelNugget, Names.Ingots.NICKEL_NUGGET);
+        GameRegistry.registerItem(platinumNugget, Names.Ingots.PLATINUM_NUGGET);
         GameRegistry.registerItem(silverNugget, Names.Ingots.SILVER_NUGGET);
         GameRegistry.registerItem(tinNugget, Names.Ingots.TIN_NUGGET);
+        GameRegistry.registerItem(tantalumNugget, Names.Ingots.TANTALUM_NUGGET);
         GameRegistry.registerItem(titaniumNugget, Names.Ingots.TITANIUM_NUGGET);
+        GameRegistry.registerItem(tungstenNugget, Names.Ingots.TUNGSTEN_NUGGET);
+        GameRegistry.registerItem(zincNugget, Names.Ingots.ZINC_NUGGET);
 
         //Gems
         GameRegistry.registerItem(amethystGem, Names.Ingots.AMETHYST_GEM);

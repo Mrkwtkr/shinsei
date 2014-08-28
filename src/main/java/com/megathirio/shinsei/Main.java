@@ -1,5 +1,6 @@
 package com.megathirio.shinsei;
 
+import com.megathirio.shinsei.core.client.handler.KeyInputEventHandler;
 import com.megathirio.shinsei.core.handler.ConfigurationHandler;
 import com.megathirio.shinsei.core.handler.*;
 import com.megathirio.shinsei.core.proxy.IProxy;
@@ -38,6 +39,8 @@ public class Main {
 	@Mod.EventHandler
 	public static void preInit(FMLPreInitializationEvent event){
 
+        //KeyBinding Initializations
+        proxy.registerKeyBindings();
 
         //Configuration file Initializations
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
@@ -73,6 +76,9 @@ public class Main {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+
+        //KeyBinding Initializations
+        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 
         //Fluid Handler Initialization
         FluidHandler.init();

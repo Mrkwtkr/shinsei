@@ -17,6 +17,9 @@ public class BlockCorundumOre extends OreShinsei {
     public BlockCorundumOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CORUNDUM_ORE);
+        this.setHardness(9f);
+        this.setResistance(23f);
+        this.setHarvestLevel("pickaxe", 3);
     }
     @Override
     public Item getItemDropped(int intX, Random random, int intY) {

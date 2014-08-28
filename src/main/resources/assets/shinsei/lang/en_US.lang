@@ -1,3 +1,9 @@
+# Keys
+keys.shinsei.category=Shinsei
+keys.shinsei.charge=Charge
+keys.shinsei.release=Release
+
+# Creative Tabs
 itemGroup.shinsei:blockTab=Shinsei Blocks
 itemGroup.shinsei:oreTab=Shinsei Ores
 itemGroup.shinsei:itemTab=Shinsei Items
@@ -6,6 +12,7 @@ itemGroup.shinsei:fluidTab=Shinsei Fluids
 itemGroup.shinsei:machineTab=Shinsei Machines
 itemGroup.shinsei:toolTab=Shinsei Tools
 
+# Mineral Blocks
 tile.shinsei:basaltBlock.name=Basalt
 tile.shinsei:basaltCobble.name=Basalt Cobblestone
 tile.shinsei:chalkBlock.name=Chalk
@@ -14,6 +21,7 @@ tile.shinsei:haliteBlock.name=Halite
 tile.shinsei:limestoneBlock.name=Limestone
 tile.shinsei:siltstoneBlock.name=Siltstone
 
+# Blocks
 tile.shinsei:amethystBlock.name=Amethyst Block
 tile.shinsei:apatiteBlock.name=Apatite Block
 tile.shinsei:aluminumBlock.name=Aluminum Block
@@ -32,61 +40,23 @@ tile.shinsei:iridiumBlock.name=Iridium Block
 tile.shinsei:jadeBlock.name=Jade Block
 tile.shinsei:leadBlock.name=Lead Block
 tile.shinsei:magnesiumBlock.name=Magnesium Block
+tile.shinsei:manganeseBlock.name=Manganese Block
+tile.shinsei:nickelBlock.name=Nickel Block
 tile.shinsei:onyxBlock.name=Onyx Block
+tile.shinsei:opalBlock.name=Opal Block
+tile.shinsei:peridotBlock.name=Peridot Block
+tile.shinsei:platinumBlock.name=Platinum Block
 tile.shinsei:rubyBlock.name=Ruby Block
 tile.shinsei:sapphireBlock.name=Sapphire Block
 tile.shinsei:scarletEmeraldBlock.name=Scarlet Emerald Block
 tile.shinsei:silverBlock.name=Silver Block
+tile.shinsei:tantalumBlock.name=Tantalum Block
 tile.shinsei:tinBlock.name=Tin Block
 tile.shinsei:titaniumBlock.name=Titanium Block
-
-tile.shinsei:acanthiteOre.name=Acanthite Ore
-tile.shinsei:amethystOre.name=Amethyst Ore
-tile.shinsei:apatiteOre.name=Apatite Ore
-tile.shinsei:bariteOre.name=Barite Ore
-tile.shinsei:bauxiteOre.name=Bauxite Ore
-tile.shinsei:berylOre.name=Beryl Ore
-tile.shinsei:bismuthOre.name=Bismuth Ore
-tile.shinsei:boraxOre.name=Borax Ore
-tile.shinsei:borniteOre.name=Bornite Ore
-tile.shinsei:cassiteriteOre.name=Cassiterite Ore
-tile.shinsei:chalcedonyOre.name=Chalcedony Ore
-tile.shinsei:chalcopyriteOre.name=Chalcopyrite Ore
-tile.shinsei:chromiteOre.name=Chromite Ore
-tile.shinsei:cinnabarOre.name=Cinnabar Ore
-tile.shinsei:cobaltiteOre.name=Cobaltite Ore
-tile.shinsei:corundumOre.name=Corundum Ore
-tile.shinsei:cryoliteOre.name=Cryolite Ore
-tile.shinsei:dolomiteOre.name=Dolomite Ore
-tile.shinsei:fluoriteOre.name=Fluorite Ore
-tile.shinsei:galenaOre.name=Galena Ore
-tile.shinsei:goethiteOre.name=Goethite Ore
-tile.shinsei:graphiteOre.name=Graphite Ore
-tile.shinsei:hematiteOre.name=Hematite Ore
-tile.shinsei:ilmeniteOre.name=Ilmenite Ore
-tile.shinsei:jadeiteOre.name=Jadeite Ore
-tile.shinsei:magnetiteOre.name=Magnetite Ore
-tile.shinsei:malachiteOre.name=Malachite Ore
-tile.shinsei:molybdeniteOre.name=Molybdenite Ore
-tile.shinsei:olivineOre.name=Olivine Ore
-tile.shinsei:opalOre.name=Opal Ore
-tile.shinsei:pentlanditeOre.name=Pentlandite Ore
-tile.shinsei:platinumOre.name=Platinum Ore
-tile.shinsei:pyrolusiteOre.name=Pyrolusite Ore
-tile.shinsei:realgarOre.name=Realgar Ore
-tile.shinsei:rutileOre.name=Rutile Ore
-tile.shinsei:scheeliteOre.name=Scheelite Ore
-tile.shinsei:sperryliteOre.name=Sperrylite Ore
-tile.shinsei:sphaleriteOre.name=Sphalerite Ore
-tile.shinsei:stibniteOre.name=Stibnite Ore
-tile.shinsei:sulfurOre.name=Sulfur Ore
-tile.shinsei:sylviteOre.name=Sylvite Ore
-tile.shinsei:tantaliteOre.name=Tantalite Ore
-tile.shinsei:topazOre.name=Topaz Ore
-tile.shinsei:turquoiseOre.name=Turquoise Ore
-tile.shinsei:uraniniteOre.name=Uraninite Ore
-
-tile.shinsei:meteoriteOre.name=Meteorite Ore
+tile.shinsei:topazBlock.name=Topaz Block
+tile.shinsei:tungstenBlock.name=Tungsten Block
+tile.shinsei:turquoiseBlock.name=Turquoise Block
+tile.shinsei:zincBlock.name=Zinc Block
 
 tile.shinsei:marbleWhite.name=White Marble
 tile.shinsei:marbleBlack.name=Black Marble
@@ -122,21 +92,70 @@ tile.shinsei:graniteRed.name=Red Granite
 tile.shinsei:graniteSilver.name=Silver Granite
 tile.shinsei:graniteYellow.name=Yellow Granite
 
+# Ores
+tile.shinsei:acanthiteOre.name=Acanthite Ore
+tile.shinsei:amethystOre.name=Amethyst Ore
+tile.shinsei:apatiteOre.name=Apatite Ore
+tile.shinsei:bariteOre.name=Barite Ore
+tile.shinsei:bauxiteOre.name=Bauxite Ore
+tile.shinsei:berylOre.name=Beryl Ore
+tile.shinsei:bismuthOre.name=Bismuth Ore
+tile.shinsei:boraxOre.name=Borax Ore
+tile.shinsei:borniteOre.name=Bornite Ore
+tile.shinsei:cassiteriteOre.name=Cassiterite Ore
+tile.shinsei:chalcedonyOre.name=Chalcedony Ore
+tile.shinsei:chalcopyriteOre.name=Chalcopyrite Ore
+tile.shinsei:chromiteOre.name=Chromite Ore
+tile.shinsei:cinnabarOre.name=Cinnabar Ore
+tile.shinsei:cobaltiteOre.name=Cobaltite Ore
+tile.shinsei:corundumOre.name=Corundum Ore
+tile.shinsei:cryoliteOre.name=Cryolite Ore
+tile.shinsei:dolomiteOre.name=Dolomite Ore
+tile.shinsei:fluoriteOre.name=Fluorite Ore
+tile.shinsei:galenaOre.name=Galena Ore
+tile.shinsei:graphiteOre.name=Graphite Ore
+tile.shinsei:hematiteOre.name=Hematite Ore
+tile.shinsei:ilmeniteOre.name=Ilmenite Ore
+tile.shinsei:jadeiteOre.name=Jadeite Ore
+tile.shinsei:olivineOre.name=Olivine Ore
+tile.shinsei:opalOre.name=Opal Ore
+tile.shinsei:pentlanditeOre.name=Pentlandite Ore
+tile.shinsei:platinumOre.name=Platinum Ore
+tile.shinsei:pyrolusiteOre.name=Pyrolusite Ore
+tile.shinsei:realgarOre.name=Realgar Ore
+tile.shinsei:rutileOre.name=Rutile Ore
+tile.shinsei:scheeliteOre.name=Scheelite Ore
+tile.shinsei:sperryliteOre.name=Sperrylite Ore
+tile.shinsei:sphaleriteOre.name=Sphalerite Ore
+tile.shinsei:stibniteOre.name=Stibnite Ore
+tile.shinsei:sulphurOre.name=Sulphur Ore
+tile.shinsei:sylviteOre.name=Sylvite Ore
+tile.shinsei:tantaliteOre.name=Tantalite Ore
+tile.shinsei:topazOre.name=Topaz Ore
+tile.shinsei:turquoiseOre.name=Turquoise Ore
+tile.shinsei:uraniniteOre.name=Uraninite Ore
+
+tile.shinsei:meteoriteOre.name=Meteorite Ore
+
 item.shinsei:chalkPowder.name=Chalk
 item.shinsei:gypsumPowder.name=Gypsum Powder
 item.shinsei:salt.name=Salt
 item.shinsei:silt.name=Silt
 item.shinsei:quicklime.name=Quicklime
 
+# Fuels
 item.shinsei:splitWood.name=Split Wood
 item.shinsei:coke.name=Coke
 
+# Liquids
 tile.shinsei:slakedLime.name=Slaked Lime
 tile.shinsei:slakedLimeBlock.name=Slaked Lime
 item.shinsei:slakedLimeBucket.name=Slaked Lime
 
+# Powders
 item.shinsei:aluminumPowder.name=Aluminum Powder
 item.shinsei:amethystPowder.name=Amethyst Powder
+tile.shinsei:antimonyPowder.name=Antimony Powder
 item.shinsei:apatitePowder.name=Apatite Powder
 item.shinsei:antimonyPowder.name=Antimony Powder
 item.shinsei:aquamarinePowder.name=Aquamarine Powder
@@ -147,6 +166,7 @@ item.shinsei:blackPowder.name=Black Powder
 item.shinsei:boraxPowder.name=Borax Powder
 item.shinsei:cadmiumPowder.name=Cadmium Powder
 item.shinsei:calciumPowder.name=Calcium Powder
+item.shinsei:causticPotashPowder.name=Caustic Potash
 item.shinsei:chalkPowder.name=Chalk Powder
 item.shinsei:chromiumPowder.name=Chromium Powder
 item.shinsei:cinnabarPowder.name= Cinnabar Powder
@@ -163,23 +183,30 @@ item.shinsei:ironPowder.name=Iron Powder
 item.shinsei:jadePowder.name=Jade Powder
 item.shinsei:leadPowder.name=Lead Powder
 item.shinsei:magnesiumPowder.name=Magnesium Powder
+item.shinsei:manganesePowder.name=Manganese Powder
 item.shinsei:molybdenumPowder.name=Molybdenum Powder
 item.shinsei:nickelPowder.name=Nickel Powder
 item.shinsei:onyxPowder.name=Onyx Powder
+item.shinsei:opalPowder.name=Opal Powder
+item.shinsei:peridotPowder.name=Peridot Powder
 item.shinsei:platinumPowder.name=Platinum Powder
 item.shinsei:potashPowder.name=Potash Powder
 item.shinsei:rubyPowder.name=Ruby Powder
 item.shinsei:sapphirePowder.name=Sapphire Powder
 item.shinsei:scarletEmeraldPowder.name=Scarlet Emerald Powder
 item.shinsei:silverPowder.name=Silver Powder
-item.shinsei:sulphur.name=Sulphur
+item.shinsei:sulphur.name=Sulphur Powder
 item.shinsei:tantalumPowder.name=Tantalum Powder
 item.shinsei:tinPowder.name=Tin Powder
 item.shinsei:titaniumPowder.name=Titanium Powder
+item.shinsei:topazPowder.name=Topaz Powder
 item.shinsei:tungstenPowder.name=Tungsten Powder
+item.shinsei:turquoisePowder.name=Turquoise Powder
 item.shinsei:uraniumPowder.name=Uranium Powder
+item.shinsei:yellowcakePowder.name=Yellowcake Powder
 item.shinsei:zincPowder.name=Zinc Powder
 
+# Ingots
 item.shinsei:aluminumIngot.name=Aluminum Ingot
 item.shinsei:antimonyIngot.name=Antimony Ingot
 item.shinsei:bariumIngot.name=Barium Ingot
@@ -203,7 +230,9 @@ item.shinsei:titaniumIngot.name=Titanium Ingot
 item.shinsei:tungstenIngot.name=Tungsten Ingot
 item.shinsei:zincIngot.name=Zinc Ingot
 
+# Nuggets
 item.shinsei:aluminumNugget.name=Aluminum Nugget
+item.shinsei:antimonyNugget.name=Antimony Nugget
 item.shinsei:bariumNugget.name=Barium Nugget
 item.shinsei:bismuthNugget.name=Bismuth Nugget
 item.shinsei:chromiumNugget.name=Chromium Nugget
@@ -212,10 +241,17 @@ item.shinsei:copperNugget.name=Copper Nugget
 item.shinsei:ironNugget.name=Iron Nugget
 item.shinsei:leadNugget.name=Lead Nugget
 item.shinsei:magnesiumNugget.name=Magnesium Nugget
+item.shinsei:manganeseNugget.name=Manganese Nugget
+item.shinsei:nickelNugget.name=Nickel Nugget
+item.shinsei:platinumNugget.name=Platinum Nugget
 item.shinsei:silverNugget.name=Silver Nugget
+item.shinsei:tantalumNugget.name=Tantalum Nugget
 item.shinsei:tinNugget.name=Tin Nugget
 item.shinsei:titaniumNugget.name=Titanium Nugget
+item.shinsei:tungstenNugget.name=Tungsten Nugget
+item.shinsei:zincNugget.name=Zinc Nugget
 
+# Gems/Crystals
 item.shinsei:amethystGem.name=Amethyst
 item.shinsei:apatiteCrystal.name=Apatite
 item.shinsei:aquamarineGem.name=Aquamarine
@@ -231,6 +267,7 @@ item.shinsei:turquoiseGem.name=Turquoise
 item.shinsei:calciteCrystal.name=Calcite Crystal
 item.shinsei:fluoriteCrystal.name=Fluorite Crystal
 
+# Tools
 item.shinsei:copperAxe.name=Copper Axe
 item.shinsei:copperHoe.name=Copper Hoe
 item.shinsei:copperPickaxe.name=Copper Pickaxe

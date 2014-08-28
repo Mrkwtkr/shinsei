@@ -8,5 +8,7 @@ public class BlockPentlanditeOre extends OreShinsei {
     public BlockPentlanditeOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.PENTLANDITE_ORE);
+        this.setHardness(4.0f);
+        this.setResistance(8f);
     }
 }

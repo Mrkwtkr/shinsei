@@ -19,6 +19,7 @@ public final class ShinseiBlocks {
     //Blocks
     public static BlockShinsei aluminumBlock = new BlockAluminumBlock();
     public static BlockShinsei amethystBlock = new BlockAmethystBlock();
+    public static BlockShinsei antimonyBlock = new BlockAntimonyBlock();
     public static BlockShinsei apatiteBlock = new BlockApatiteBlock();
     public static BlockShinsei bariumBlock = new BlockBariumBlock();
     public static BlockShinsei bismuthBlock = new BlockBismuthBlock();
@@ -29,14 +30,24 @@ public final class ShinseiBlocks {
     public static BlockShinsei jadeBlock = new BlockJadeBlock();
     public static BlockShinsei leadBlock = new BlockLeadBlock();
     public static BlockShinsei magnesiumBlock = new BlockMagnesiumBlock();
+    public static BlockShinsei manganeseBlock = new BlockManganeseBlock();
+    public static BlockShinsei nickelBlock = new BlockNickelBlock();
+    public static BlockShinsei opalBlock = new BlockOpalBlock();
     public static BlockShinsei onyxBlock = new BlockOnyxBlock();
+    public static BlockShinsei peridotBlock = new BlockPeridotBlock();
+    public static BlockShinsei platinumBlock = new BlockPlatinumBlock();
     public static BlockShinsei rubyBlock = new BlockRubyBlock();
     public static BlockShinsei sapphireBlock = new BlockSapphireBlock();
     public static BlockShinsei silverBlock = new BlockSilverBlock();
+    public static BlockShinsei tantalumBlock = new BlockTantalumBlock();
     public static BlockShinsei tinBlock = new BlockTinBlock();
     public static BlockShinsei titaniumBlock = new BlockTitaniumBlock();
+    public static BlockShinsei topazBlock = new BlockTopazBlock();
+    public static BlockShinsei tungstenBlock = new BlockTungstenBlock();
+    public static BlockShinsei turquoiseBlock = new BlockTurquoiseBlock();
     public static BlockShinsei aquamarineBlock = new BlockAquamarineBlock();
     public static BlockShinsei scarletEmeraldBlock = new BlockScarletEmeraldBlock();
+    public static BlockShinsei zincBlock = new BlockZincBlock();
 
 	//Ores
     public static OreShinsei acanthiteOre = new BlockAcanthiteOre();
@@ -62,13 +73,9 @@ public final class ShinseiBlocks {
     public static OreShinsei hematiteOre = new BlockHematiteOre();
     public static OreShinsei ilmeniteOre = new BlockIlmeniteOre();
     public static OreShinsei jadeiteOre = new BlockJadeiteOre();
-    public static OreShinsei magnetiteOre = new BlockMagnetiteOre();
-    public static OreShinsei malachiteOre = new BlockMalachiteOre();
-    public static OreShinsei molybdeniteOre = new BlockMolybdeniteOre();
     public static OreShinsei olivineOre = new BlockOlivineOre();
     public static OreShinsei opalOre = new BlockOpalOre();
     public static OreShinsei pentlanditeOre = new BlockPentlanditeOre();
-    public static OreShinsei platinumOre = new BlockPlatinumOre();
     public static OreShinsei pyrolusiteOre = new BlockPyrolusiteOre();
     public static OreShinsei realgarOre = new BlockRealgarOre();
     public static OreShinsei rutileOre = new BlockRutileOre();
@@ -76,7 +83,7 @@ public final class ShinseiBlocks {
     public static OreShinsei sperryliteOre = new BlockSperryliteOre();
     public static OreShinsei sphaleriteOre = new BlockSphaleriteOre();
     public static OreShinsei stibniteOre = new BlockStibniteOre();
-    public static OreShinsei sulfurOre = new BlockSulfurOre();
+    public static OreShinsei sulphurOre = new BlockSulphurOre();
     public static OreShinsei sylviteOre = new BlockSylviteOre();
     public static OreShinsei tantaliteOre = new BlockTantaliteOre();
     public static OreShinsei topazOre = new BlockTopazOre();
@@ -105,6 +112,7 @@ public final class ShinseiBlocks {
         //Blocks
         GameRegistry.registerBlock(aluminumBlock, Names.Blocks.ALUMINUM_BLOCK);
         GameRegistry.registerBlock(amethystBlock, Names.Blocks.AMETHYST_BLOCK);
+        GameRegistry.registerBlock(antimonyBlock, Names.Blocks.ANTIMONY_BLOCK);
         GameRegistry.registerBlock(apatiteBlock, Names.Blocks.APATITE_BLOCK);
         GameRegistry.registerBlock(aquamarineBlock, Names.Blocks.AQUAMARINE_BLOCK);
         GameRegistry.registerBlock(bariumBlock, Names.Blocks.BARIUM_BLOCK);
@@ -117,13 +125,23 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(jadeBlock, Names.Blocks.JADE_BLOCK);
         GameRegistry.registerBlock(leadBlock, Names.Blocks.LEAD_BLOCK);
         GameRegistry.registerBlock(magnesiumBlock, Names.Blocks.MAGNESIUM_BLOCK);
+        GameRegistry.registerBlock(manganeseBlock, Names.Blocks.MANGANESE_BLOCK);
+        GameRegistry.registerBlock(nickelBlock, Names.Blocks.NICKEL_BLOCK);
         GameRegistry.registerBlock(onyxBlock, Names.Blocks.ONYX_BLOCK);
+        GameRegistry.registerBlock(opalBlock, Names.Blocks.OPAL_BLOCK);
+        GameRegistry.registerBlock(peridotBlock, Names.Blocks.PERIDOT_BLOCK);
+        GameRegistry.registerBlock(platinumBlock, Names.Blocks.PLATINUM_BLOCK);
         GameRegistry.registerBlock(rubyBlock, Names.Blocks.RUBY_BLOCK);
         GameRegistry.registerBlock(sapphireBlock, Names.Blocks.SAPPHIRE_BLOCK);
         GameRegistry.registerBlock(silverBlock, Names.Blocks.SILVER_BLOCK);
         GameRegistry.registerBlock(scarletEmeraldBlock, Names.Blocks.SCARLET_EMERALD_BLOCK);
+        GameRegistry.registerBlock(tantalumBlock, Names.Blocks.TANTALUM_BLOCK);
         GameRegistry.registerBlock(tinBlock, Names.Blocks.TIN_BLOCK);
         GameRegistry.registerBlock(titaniumBlock, Names.Blocks.TITANIUM_BLOCK);
+        GameRegistry.registerBlock(topazBlock, Names.Blocks.TOPAZ_BLOCK);
+        GameRegistry.registerBlock(tungstenBlock, Names.Blocks.TUNGSTEN_BLOCK);
+        GameRegistry.registerBlock(turquoiseBlock, Names.Blocks.TURQUOISE_BLOCK);
+        GameRegistry.registerBlock(zincBlock, Names.Blocks.ZINC_BLOCK);
 
         //Ores
         GameRegistry.registerBlock(acanthiteOre, Names.Ores.ACANTHITE_ORE);
@@ -149,13 +167,9 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(hematiteOre, Names.Ores.HEMATITE_ORE);
         GameRegistry.registerBlock(ilmeniteOre, Names.Ores.ILMENITE_ORE);
         GameRegistry.registerBlock(jadeiteOre, Names.Ores.JADEITE_ORE);
-        GameRegistry.registerBlock(magnetiteOre, Names.Ores.MAGNETITE_ORE);
-        GameRegistry.registerBlock(malachiteOre, Names.Ores.MALACHITE_ORE);
-        GameRegistry.registerBlock(molybdeniteOre, Names.Ores.MOLYBDENITE_ORE);
         GameRegistry.registerBlock(olivineOre, Names.Ores.OLIVINE_ORE);
         GameRegistry.registerBlock(opalOre, Names.Ores.OPAL_ORE);
         GameRegistry.registerBlock(pentlanditeOre, Names.Ores.PENTLANDITE_ORE);
-        GameRegistry.registerBlock(platinumOre, Names.Ores.PLATINUM_ORE);
         GameRegistry.registerBlock(pyrolusiteOre, Names.Ores.PYROLUSITE_ORE);
         GameRegistry.registerBlock(realgarOre, Names.Ores.REALGAR_ORE);
         GameRegistry.registerBlock(rutileOre, Names.Ores.RUTILE_ORE);
@@ -163,7 +177,7 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(sperryliteOre, Names.Ores.SPERRYLITE_ORE);
         GameRegistry.registerBlock(sphaleriteOre, Names.Ores.SPHALERITE_ORE);
         GameRegistry.registerBlock(stibniteOre, Names.Ores.STIBNITE_ORE);
-        GameRegistry.registerBlock(sulfurOre, Names.Ores.SULFUR_ORE);
+        GameRegistry.registerBlock(sulphurOre, Names.Ores.SULFUR_ORE);
         GameRegistry.registerBlock(sylviteOre, Names.Ores.SYLVITE_ORE);
         GameRegistry.registerBlock(tantaliteOre, Names.Ores.TANTALITE_ORE);
         GameRegistry.registerBlock(topazOre, Names.Ores.TOPAZ_ORE);

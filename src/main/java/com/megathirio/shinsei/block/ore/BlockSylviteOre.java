@@ -8,5 +8,8 @@ public class BlockSylviteOre extends OreShinsei {
     public BlockSylviteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.SYLVITE_ORE);
+        this.setHardness(2.0f);
+        this.setResistance(3f);
+        this.setHarvestLevel("pickaxe", 1);
     }
 }

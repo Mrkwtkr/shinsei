@@ -55,35 +55,31 @@ public class ShinseiWorldGen implements IWorldGenerator {
         this.addOreSpawn(ShinseiBlocks.chromiteOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 30, 0, 256);
         if(ConfigValues.booCinnabarValue == true){this.addOreSpawn(ShinseiBlocks.cinnabarOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 30, 0, 256);}
         if(ConfigValues.booCobaltValue == true){this.addOreSpawn(ShinseiBlocks.cobaltiteOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 25, 0, 64);}
-        this.addOreSpawn(ShinseiBlocks.corundumOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 20, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.corundumOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 20, 0, 64);
         this.addOreSpawn(ShinseiBlocks.cryoliteOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 25, 0, 64);
         this.addOreSpawn(ShinseiBlocks.dolomiteOre, world, random, x, z, 16, 16, 2 + random.nextInt(7), 35, 0, 75);
         this.addOreSpawn(ShinseiBlocks.fluoriteOre, world, random, x, z, 16, 16, 4 + random.nextInt(5), 50, 0, 256);
         if(ConfigValues.booLeadValue == true){this.addOreSpawn(ShinseiBlocks.galenaOre, world, random, x, z, 16, 16, 2 + random.nextInt(7), 40, 0, 256);}
         this.addOreSpawn(ShinseiBlocks.graphiteOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 30, 0, 75);
         if(ConfigValues.booIronValue == true){this.addOreSpawn(ShinseiBlocks.hematiteOre, world, random, x, z, 16, 16, 3 + random.nextInt(6), 40, 0, 256);}
-        this.addOreSpawn(ShinseiBlocks.ilmeniteOre, world, random, x, z, 16, 16, 2 + random.nextInt(4), 20, 0, 64);
-        this.addOreSpawn(ShinseiBlocks.jadeiteOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 20, 0, 64);
-//        this.addOreSpawn(ShinseiBlocks.magnetiteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.malachiteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.molybdeniteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.olivineOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.opalOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.pentlanditeOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.platinumOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.pyrolusiteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.realgarOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.rutileOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.scheeliteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.sperryliteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.sphaleriteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.stibniteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.sulfurOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.sylviteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.tantaliteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.topazOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.turquoiseOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
-//        this.addOreSpawn(ShinseiBlocks.uraniniteOre, world, random, x, z, 16, 16, 6+random.nextInt(8), 50, 0, 256);
+        this.addOreSpawn(ShinseiBlocks.ilmeniteOre, world, random, x, z, 16, 16, 2 + random.nextInt(4), 30, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.jadeiteOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 20, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.olivineOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 25, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.opalOre, world, random, x, z, 16, 16, 2 + random.nextInt(4), 30, 0, 128);
+        this.addOreSpawn(ShinseiBlocks.pentlanditeOre, world, random, x, z, 16, 16, 2 + random.nextInt(6), 40, 0, 35);
+        this.addOreSpawn(ShinseiBlocks.pyrolusiteOre, world, random, x, z, 16, 16, 4 + random.nextInt(5), 35, 0, 128);
+        this.addOreSpawn(ShinseiBlocks.realgarOre, world, random, x, z, 16, 16, 4 + random.nextInt(4), 40, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.rutileOre, world, random, x, z, 16, 16, 2 + random.nextInt(4), 30, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.scheeliteOre, world, random, x, z, 16, 16, 2 + random.nextInt(4), 25, 0, 35);
+        this.addOreSpawn(ShinseiBlocks.sperryliteOre, world, random, x, z, 16, 16, 2 + random.nextInt(2), 20, 0, 35);
+        this.addOreSpawn(ShinseiBlocks.sphaleriteOre, world, random, x, z, 16, 16, 4 + random.nextInt(5), 45, 0, 128);
+        this.addOreSpawn(ShinseiBlocks.stibniteOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 45, 0, 128);
+        this.addOreSpawn(ShinseiBlocks.sulphurOre, world, random, x, z, 16, 16, 4 + random.nextInt(5), 50, 0, 256);
+        this.addOreSpawn(ShinseiBlocks.sylviteOre, world, random, x, z, 16, 16, 2 + random.nextInt(6), 40, 0, 128);
+        this.addOreSpawn(ShinseiBlocks.tantaliteOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 30, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.topazOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 25, 0, 64);
+        this.addOreSpawn(ShinseiBlocks.turquoiseOre, world, random, x, z, 16, 16, 1 + random.nextInt(3), 30, 0, 128);
+        this.addOreSpawn(ShinseiBlocks.uraniniteOre, world, random, x, z, 16, 16, 1 + random.nextInt(5), 25, 0, 45);
 
         this.addMeteorSpawn(ShinseiBlocks.meteoriteOre, world, random, x, z, 16, 16, 1 + random.nextInt(6), 15, 0, 256);
     }

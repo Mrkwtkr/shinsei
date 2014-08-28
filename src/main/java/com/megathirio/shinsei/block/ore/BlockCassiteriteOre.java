@@ -8,5 +8,8 @@ public class BlockCassiteriteOre extends OreShinsei {
     public BlockCassiteriteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.CASSITERITE_ORE);
+        this.setHardness(7.0f);
+        this.setResistance(12f);
+        this.setHarvestLevel("pickaxe", 2);
     }
 }

@@ -6,6 +6,6 @@ import com.megathirio.shinsei.reference.Names;
 public class ItemManganesePowder extends PowderShinsei {
     public ItemManganesePowder(){
         super();
-        this.setUnlocalizedName(Names.Powders.ANTIMONY_POWDER);
+        this.setUnlocalizedName(Names.Powders.MANGANESE_POWDER);
     }
 }

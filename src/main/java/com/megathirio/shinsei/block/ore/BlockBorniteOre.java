@@ -8,5 +8,7 @@ public class BlockBorniteOre extends OreShinsei {
     public BlockBorniteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.BORNITE_ORE);
+        this.setHardness(3f);
+        this.setResistance(6f);
     }
 }

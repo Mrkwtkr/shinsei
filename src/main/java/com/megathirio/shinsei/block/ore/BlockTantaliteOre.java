@@ -8,5 +8,8 @@ public class BlockTantaliteOre extends OreShinsei {
     public BlockTantaliteOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.TANTALITE_ORE);
+        this.setHardness(6.5f);
+        this.setResistance(11f);
+        this.setHarvestLevel("pickaxe", 2);
     }
 }
