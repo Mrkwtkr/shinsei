@@ -8,9 +8,9 @@ public class BlockRubyBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.RUBY_BLOCK);
         this.setHardness(9f);
-        this.setResistance(25f);
+        this.setResistance(14.6f);
         this.setHarvestLevel("pickaxe", 3);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
    
 }

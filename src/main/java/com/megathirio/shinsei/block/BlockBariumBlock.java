@@ -8,6 +8,8 @@ public class BlockBariumBlock extends BlockShinsei {
     public BlockBariumBlock(){
         super(Material.iron);
         this.setBlockName(Names.Blocks.BARIUM_BLOCK);
+        this.setHardness(3.5f);
+        this.setResistance(5.7f);
     }
    
 }

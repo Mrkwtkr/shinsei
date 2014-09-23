@@ -8,7 +8,7 @@ public class ItemBismuthNugget extends ItemShinsei {
 
     public ItemBismuthNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.BISMUTH_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.BISMUTH_NUGGET);
 
     }
 

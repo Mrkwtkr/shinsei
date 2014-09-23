@@ -9,6 +9,6 @@ public class BlockChalcopyriteOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.CHALCOPYRITE_ORE);
         this.setHardness(3.5f);
-        this.setResistance(7f);
+        this.setResistance(5.7f);
     }
 }

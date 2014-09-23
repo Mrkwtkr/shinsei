@@ -8,7 +8,7 @@ public class ItemLeadNugget extends ItemShinsei {
 
     public ItemLeadNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.LEAD_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.LEAD_NUGGET);
 
     }
 

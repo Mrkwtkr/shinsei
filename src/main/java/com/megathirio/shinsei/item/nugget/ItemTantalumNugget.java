@@ -8,7 +8,7 @@ public class ItemTantalumNugget extends ItemShinsei {
 
     public ItemTantalumNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.TANTALUM_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.TANTALUM_NUGGET);
 
     }
 

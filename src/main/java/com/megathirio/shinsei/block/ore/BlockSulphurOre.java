@@ -9,7 +9,6 @@ public class BlockSulphurOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.SULFUR_ORE);
         this.setHardness(2.0f);
-        this.setResistance(3f);
-        this.setHarvestLevel("pickaxe", 1);
+        this.setResistance(3.2f);
     }
 }

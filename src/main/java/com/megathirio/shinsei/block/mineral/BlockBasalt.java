@@ -11,9 +11,9 @@ import java.util.Random;
 public class BlockBasalt extends BlockShinsei {
     public BlockBasalt(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.BASALT);
+        this.setBlockName(Names.Minerals.BASALT);
         this.setHardness(8.0f);
-        this.setResistance(20f);
+        this.setResistance(12.9f);
         this.setHarvestLevel("pickaxe", 3);
     }
     @Override

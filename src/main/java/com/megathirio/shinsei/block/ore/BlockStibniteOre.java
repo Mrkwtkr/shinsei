@@ -9,7 +9,6 @@ public class BlockStibniteOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.STIBNITE_ORE);
         this.setHardness(2.0f);
-        this.setResistance(3f);
-        this.setHarvestLevel("pickaxe", 1);
+        this.setResistance(3.2f);
     }
 }

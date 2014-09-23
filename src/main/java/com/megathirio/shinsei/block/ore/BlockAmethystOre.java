@@ -16,7 +16,7 @@ public class BlockAmethystOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.AMETHYST_ORE);
         this.setHardness(7.0f);
-        this.setResistance(12f);
+        this.setResistance(11.3f);
         this.setHarvestLevel("pickaxe", 2);
     }
 

@@ -7,8 +7,8 @@ public class BlockMagnesiumBlock extends BlockShinsei {
     public BlockMagnesiumBlock(){
         super(Material.rock);
         this.setBlockName(Names.Blocks.MAGNESIUM_BLOCK);
-        this.setHardness(2.5f);
-        this.setResistance(5f);
+        this.setHardness(3.5f);
+        this.setResistance(5.7f);
     }
    
 }

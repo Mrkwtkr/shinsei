@@ -8,7 +8,7 @@ public class BlockLeadBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.LEAD_BLOCK);
         this.setHardness(2.5F);
-        this.setResistance(5.0F);
+        this.setResistance(4.0f);
     }
    
 }

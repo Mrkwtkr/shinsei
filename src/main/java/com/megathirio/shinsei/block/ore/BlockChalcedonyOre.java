@@ -16,7 +16,7 @@ public class BlockChalcedonyOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.CHALCEDONY_ORE);
         this.setHardness(6.0f);
-        this.setResistance(10f);
+        this.setResistance(9.7f);
         this.setHarvestLevel("pickaxe", 2);
     }
 
@@ -35,43 +35,4 @@ public class BlockChalcedonyOre extends OreShinsei {
         }
         return intQty;
     }
-
-    /*
-        @Override
-    public Item getItemDropped(int intX, Random random, int intY) {
-        int intWeight = random.nextInt(100) + 1;
-        int intWeight1 = random.nextInt(100) + 1;
-        if (intWeight <= 5) {
-            itemDrop = ShinseiItems.onyxGem;
-            if (intWeight1 <= 20) {
-                intQty = 2;
-            } else {
-                intQty = 1;
-            }
-        }else if(intWeight <= 25) {
-            itemDrop = Items.emerald;
-            if (intWeight1 <= 20) {
-                intQty = 2;
-            } else {
-                intQty = 1;
-            }
-        }else {
-            itemDrop = ShinseiItems.aquamarineGem;
-            if (intWeight1 <= 5) {
-                intQty = 4;
-            } else if (intWeight1 <= 15) {
-                intQty = 3;
-            } else if (intWeight1 <= 25) {
-                intQty = 2;
-            } else {
-                intQty = 1;
-            }
-        }
-        return itemDrop;
-    }
-
-    @Override
-    public int quantityDropped(Random random) { return intQty; }
-
-     */
 }

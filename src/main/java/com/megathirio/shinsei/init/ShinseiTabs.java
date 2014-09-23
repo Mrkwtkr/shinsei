@@ -38,7 +38,7 @@ public class ShinseiTabs {
     public static final CreativeTabs MACHINES_TAB = new CreativeTabs(Reference.RESOURCE_PREFIX + Names.Tabs.MACHINE_TAB) {
         @Override
         public Item getTabIconItem() {
-            return Item.getItemFromBlock(ShinseiMachines.blockToolBench);
+            return Item.getItemFromBlock(ShinseiBlocks.marbleBlock);
         }
     };
 

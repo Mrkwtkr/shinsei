@@ -8,7 +8,7 @@ public class ItemSapphireGem extends ItemShinsei {
 
     public ItemSapphireGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.SAPPHIRE_GEM);
+        this.setUnlocalizedName(Names.Gems.SAPPHIRE_GEM);
 
     }
 

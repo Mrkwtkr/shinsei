@@ -15,8 +15,8 @@ public class BlockTopazOre extends OreShinsei {
     public BlockTopazOre(){
         super(Material.rock);
         this.setBlockName(Names.Ores.TOPAZ_ORE);
-        this.setHardness(8f);
-        this.setResistance(18f);
+        this.setHardness(8.0f);
+        this.setResistance(12.9f);
         this.setHarvestLevel("pickaxe", 3);
     }
 

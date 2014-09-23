@@ -8,7 +8,7 @@ public class ItemChromiumNugget extends ItemShinsei {
 
     public ItemChromiumNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.CHROMIUM_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.CHROMIUM_NUGGET);
 
     }
 

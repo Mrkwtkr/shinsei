@@ -8,7 +8,7 @@ public class ItemIridiumNugget extends ItemShinsei {
 
     public ItemIridiumNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.IRIDIUM_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.IRIDIUM_NUGGET);
 
     }
 

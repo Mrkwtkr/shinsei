@@ -8,7 +8,7 @@ public class ItemIndiumNugget extends ItemShinsei {
 
     public ItemIndiumNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.INDIUM_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.INDIUM_NUGGET);
 
     }
 

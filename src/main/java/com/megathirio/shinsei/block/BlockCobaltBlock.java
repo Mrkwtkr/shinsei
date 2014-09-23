@@ -8,7 +8,7 @@ public class BlockCobaltBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.COBALT_BLOCK);
         this.setHardness(5.0f);
-        this.setResistance(10f);
+        this.setResistance(8.1f);
         this.setHarvestLevel("pickaxe", 2);
     }
    

@@ -3,7 +3,6 @@ package com.megathirio.shinsei.block;
 import com.megathirio.shinsei.init.ShinseiTabs;
 import com.megathirio.shinsei.reference.Reference;
 
-import com.megathirio.shinsei.tileentity.TileEntityShinsei;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -29,7 +28,7 @@ public class BlockShinsei extends Block{
 		super(material);
 
 		this.setHardness(3.0f);
-		this.setResistance(5f);
+		this.setResistance(5.0f);
         this.setHarvestLevel("pickaxe", 1);
         this.setStepSound(soundTypeStone);
         this.enableStats = true;
@@ -63,7 +62,7 @@ public class BlockShinsei extends Block{
 
     @Override
     public void onBlockPlacedBy(World world, int intX, int intY, int intZ, EntityLivingBase entityLiving, ItemStack istack){
-        if (world.getTileEntity(intX, intY, intZ) instanceof TileEntityShinsei){
+        //if (world.getTileEntity(intX, intY, intZ) instanceof TileEntityShinsei){
             int direction = 0;
             int facing = MathHelper.floor_double(entityLiving.rotationYaw * 4.0F / 360.0F + 0.5D) & 3;
 
@@ -78,12 +77,12 @@ public class BlockShinsei extends Block{
             }
 
             if (istack.hasDisplayName()){
-                ((TileEntityShinsei) world.getTileEntity(intX, intY, intZ)).setCustomName(istack.getDisplayName());
+               // ((TileEntityShinsei) world.getTileEntity(intX, intY, intZ)).setCustomName(istack.getDisplayName());
             }
 
-            ((TileEntityShinsei) world.getTileEntity(intX, intY, intZ)).setOrientation(direction);
+            // ((TileEntityShinsei) world.getTileEntity(intX, intY, intZ)).setOrientation(direction);
         }
-    }
+    //}
 
     protected void dropInventory(World world, int intX, int intY, int intZ){
         TileEntity tileEntity = world.getTileEntity(intX, intY, intZ);

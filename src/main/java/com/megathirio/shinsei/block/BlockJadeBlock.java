@@ -8,8 +8,8 @@ public class BlockJadeBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.JADE_BLOCK);
         this.setHardness(7.0f);
-        this.setResistance(12f);
+        this.setResistance(11.3f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
 }

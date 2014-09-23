@@ -8,7 +8,7 @@ public class ItemOnyxGem extends ItemShinsei {
 
     public ItemOnyxGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.ONYX_GEM);
+        this.setUnlocalizedName(Names.Gems.ONYX_GEM);
 
     }
 

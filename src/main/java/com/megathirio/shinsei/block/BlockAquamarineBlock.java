@@ -8,9 +8,9 @@ public class BlockAquamarineBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.AQUAMARINE_BLOCK);
         this.setHardness(7.5f);
-        this.setResistance(14f);
+        this.setResistance(12.1f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
    
 }

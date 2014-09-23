@@ -8,7 +8,7 @@ public class ItemAntimonyNugget extends ItemShinsei {
 
     public ItemAntimonyNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.ANTIMONY_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.ANTIMONY_NUGGET);
 
     }
 

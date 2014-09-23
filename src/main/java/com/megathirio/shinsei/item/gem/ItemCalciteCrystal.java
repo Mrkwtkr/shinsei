@@ -8,7 +8,7 @@ public class ItemCalciteCrystal extends ItemShinsei {
 
     public ItemCalciteCrystal(){
         super();
-        this.setUnlocalizedName(Names.Ingots.CALCITE_CRYSTAL);
+        this.setUnlocalizedName(Names.Gems.CALCITE_CRYSTAL);
 
     }
 

@@ -8,7 +8,7 @@ public class ItemMagnesiumNugget extends ItemShinsei {
 
     public ItemMagnesiumNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.MAGNESIUM_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.MAGNESIUM_NUGGET);
 
     }
 

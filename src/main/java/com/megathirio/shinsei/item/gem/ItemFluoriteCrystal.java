@@ -7,7 +7,7 @@ public class ItemFluoriteCrystal extends ItemShinsei {
 
     public ItemFluoriteCrystal(){
         super();
-        this.setUnlocalizedName(Names.Ingots.FLUORITE_CRYSTAL);
+        this.setUnlocalizedName(Names.Gems.FLUORITE_CRYSTAL);
 
     }
 

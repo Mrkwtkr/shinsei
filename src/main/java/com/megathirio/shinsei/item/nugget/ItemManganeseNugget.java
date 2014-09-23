@@ -8,7 +8,7 @@ public class ItemManganeseNugget extends ItemShinsei {
 
     public ItemManganeseNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.MANGANESE_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.MANGANESE_NUGGET);
 
     }
 

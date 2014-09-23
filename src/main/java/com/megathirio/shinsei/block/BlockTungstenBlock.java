@@ -7,8 +7,8 @@ public class BlockTungstenBlock extends BlockShinsei {
     public BlockTungstenBlock(){
         super(Material.iron);
         this.setBlockName(Names.Blocks.TUNGSTEN_BLOCK);
-        this.setHardness(7.5f);
-        this.setResistance(12f);
+        this.setHardness(5.0f);
+        this.setResistance(8.1f);
         this.setHarvestLevel("pickaxe", 2);
     }
    

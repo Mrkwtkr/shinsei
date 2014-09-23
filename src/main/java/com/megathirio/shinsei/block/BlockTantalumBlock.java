@@ -8,7 +8,7 @@ public class BlockTantalumBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.TANTALUM_BLOCK);
         this.setHardness(6.5f);
-        this.setResistance(11f);
+        this.setResistance(10.5f);
         this.setHarvestLevel("pickaxe", 2);
     }
    

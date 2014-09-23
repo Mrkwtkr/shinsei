@@ -8,7 +8,7 @@ public class BlockManganeseBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.MANGANESE_BLOCK);
         this.setHardness(6.0f);
-        this.setResistance(10f);
+        this.setResistance(9.7f);
         this.setHarvestLevel("pickaxe", 2);
     }
    

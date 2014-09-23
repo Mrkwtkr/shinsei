@@ -8,7 +8,7 @@ public class ItemOpalGem extends ItemShinsei {
 
     public ItemOpalGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.OPAL_GEM);
+        this.setUnlocalizedName(Names.Gems.OPAL_GEM);
 
     }
 

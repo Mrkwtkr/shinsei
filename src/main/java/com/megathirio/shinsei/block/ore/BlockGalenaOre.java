@@ -9,6 +9,6 @@ public class BlockGalenaOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.GALENA_ORE);
         this.setHardness(2.5F);
-        this.setResistance(5.0F);
+        this.setResistance(6.5f);
     }
 }

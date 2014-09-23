@@ -8,9 +8,9 @@ public class BlockTopazBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.TOPAZ_BLOCK);
         this.setHardness(8f);
-        this.setResistance(18f);
+        this.setResistance(12.9f);
         this.setHarvestLevel("pickaxe", 3);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
    
 }

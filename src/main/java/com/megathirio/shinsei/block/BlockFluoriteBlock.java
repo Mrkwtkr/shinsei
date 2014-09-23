@@ -8,8 +8,8 @@ public class BlockFluoriteBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.FLUORITE_BLOCK);
         this.setHardness(4.0f);
-        this.setResistance(8f);
-        this.setLightLevel(.5F);
+        this.setResistance(6.5f);
+        this.setLightLevel(.5f);
     }
    
 }

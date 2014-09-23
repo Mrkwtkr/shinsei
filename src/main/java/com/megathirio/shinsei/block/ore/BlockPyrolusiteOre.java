@@ -9,7 +9,7 @@ public class BlockPyrolusiteOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.PYROLUSITE_ORE);
         this.setHardness(6.0f);
-        this.setResistance(10f);
+        this.setResistance(9.7f);
         this.setHarvestLevel("pickaxe", 2);
     }
 }

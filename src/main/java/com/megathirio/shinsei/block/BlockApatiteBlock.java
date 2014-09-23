@@ -11,7 +11,7 @@ public class BlockApatiteBlock extends BlockShinsei {
         this.setHardness(5.0f);
         this.setResistance(10f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
    
 }

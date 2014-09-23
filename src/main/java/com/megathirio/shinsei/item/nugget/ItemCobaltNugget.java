@@ -8,7 +8,7 @@ public class ItemCobaltNugget extends ItemShinsei {
 
     public ItemCobaltNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.COBALT_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.COBALT_NUGGET);
 
     }
 

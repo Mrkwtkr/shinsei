@@ -8,7 +8,7 @@ public class ItemTinNugget extends ItemShinsei {
 
     public ItemTinNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.TIN_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.TIN_NUGGET);
 
     }
 

@@ -8,8 +8,7 @@ public class BlockBismuthBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.BISMUTH_BLOCK);
         this.setHardness(2.25f);
-        this.setResistance(4f);
-        this.setHarvestLevel("pickaxe", 1);
+        this.setResistance(3.6f);
     }
    
 }

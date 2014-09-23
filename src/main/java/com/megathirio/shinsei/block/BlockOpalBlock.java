@@ -13,8 +13,8 @@ public class BlockOpalBlock extends BlockShinsei {
         super(Material.rock);
         this.setBlockName(Names.Blocks.OPAL_BLOCK);
         this.setHardness(6.0f);
-        this.setResistance(10f);
+        this.setResistance(9.7f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
 }

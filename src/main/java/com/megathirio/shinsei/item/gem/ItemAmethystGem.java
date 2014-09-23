@@ -8,7 +8,7 @@ public class ItemAmethystGem extends ItemShinsei {
 
     public ItemAmethystGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.AMETHYST_GEM);
+        this.setUnlocalizedName(Names.Gems.AMETHYST_GEM);
 
     }
 

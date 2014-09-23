@@ -29,7 +29,10 @@ public class BlockMarble extends BlockShinsei {
 		
 		//Block Properties
 		super(Material.rock);
-        this.setBlockName(Names.Blocks.MARBLE);
+        this.setBlockName(Names.Minerals.MARBLE);
+        this.setHardness(4.0f);
+        this.setResistance(6.5f);
+        this.setHarvestLevel("pickaxe", 1);
     }
 
 	//MetaBlock Texture Setup

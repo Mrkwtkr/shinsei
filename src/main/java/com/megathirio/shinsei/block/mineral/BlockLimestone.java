@@ -8,7 +8,7 @@ import net.minecraft.block.material.Material;
 public class BlockLimestone extends BlockShinsei {
     public BlockLimestone(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.LIMESTONE);
+        this.setBlockName(Names.Minerals.LIMESTONE);
     }
 
 }

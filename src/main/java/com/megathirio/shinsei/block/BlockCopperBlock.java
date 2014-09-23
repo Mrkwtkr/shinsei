@@ -7,6 +7,8 @@ public class BlockCopperBlock extends BlockShinsei {
     public BlockCopperBlock(){
         super(Material.iron);
         this.setBlockName(Names.Blocks.COPPER_BLOCK);
+        this.setHardness(3.5f);
+        this.setResistance(5.7f);
     }
-   
+
 }

@@ -8,7 +8,7 @@ public class ItemBariumNugget extends ItemShinsei {
 
     public ItemBariumNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.BARIUM_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.BARIUM_NUGGET);
 
     }
 

@@ -58,9 +58,6 @@ public class Main {
         //Block Initializations
         ShinseiTrees.init();
 
-		//Machine Initializations
-		ShinseiMachines.init();
-
 		//Item Initializations
 		ShinseiItems.init();
 
@@ -85,9 +82,6 @@ public class Main {
 
 		//Crafting Handler Registration
 		FMLCommonHandler.instance().bus().register(new CraftingHandler());
-		
-		//Gui Handler Registration 
-		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 		
 		//Fuel Handler Registration
 		GameRegistry.registerFuelHandler(new FuelHandler());

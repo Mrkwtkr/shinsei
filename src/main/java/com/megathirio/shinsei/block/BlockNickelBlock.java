@@ -7,8 +7,8 @@ public class BlockNickelBlock extends BlockShinsei {
     public BlockNickelBlock(){
         super(Material.iron);
         this.setBlockName(Names.Blocks.NICKEL_BLOCK);
-        this.setHardness(3.5F);
-        this.setResistance(7.0F);
+        this.setHardness(4.0f);
+        this.setResistance(6.5f);
     }
    
 }

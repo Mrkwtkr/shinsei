@@ -12,30 +12,31 @@ import java.util.Random;
 
 public class BlockGypsum extends BlockShinsei {
 
-    Item itemDrop = null;
     int intQty = 1;
 
     public BlockGypsum(){
         super(Material.rock);
-        this.setBlockName(Names.Blocks.GYPSUM);
+        this.setBlockName(Names.Minerals.GYPSUM);
         this.setHardness(1.5F);
-        this.setResistance(2.0F);
+        this.setResistance(2.4f);
         this.setHarvestLevel("pickaxe", 0);
     }
 
     @Override
-    public Item getItemDropped(int intX, Random random, int intY) {
-        int intWeight = random.nextInt(100) + 1;
-        if (intWeight <= 10) {
-            itemDrop = ShinseiItems.calciumPowder;
-                intQty = random.nextInt(3) + 2;
-        }else {
-            itemDrop = ShinseiItems.gypsumPowder;
-            intQty = random.nextInt(4) + 3;
-        }
-        return itemDrop;
-    }
+    public Item getItemDropped(int intX, Random random, int intY){ return ShinseiItems.gypsumPowder; }
 
     @Override
-    public int quantityDropped(Random random) { return intQty; }
+    public int quantityDropped(Random random) {
+        int intWeight = random.nextInt(100) + 1;
+        if (intWeight <= 10){
+            intQty = 6;
+        }else if(intWeight <= 25){
+            intQty = 5;
+        }else if(intWeight <= 50){
+            intQty = 4;
+        }else {
+            intQty = 3;
+        }
+        return intQty;
+    }
 }

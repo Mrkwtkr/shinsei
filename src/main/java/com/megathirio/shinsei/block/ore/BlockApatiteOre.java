@@ -16,7 +16,7 @@ public class BlockApatiteOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.APATITE_ORE);
         this.setHardness(5.0f);
-        this.setResistance(10f);
+        this.setResistance(8.1f);
         this.setHarvestLevel("pickaxe", 2);
     }
 
@@ -25,5 +25,17 @@ public class BlockApatiteOre extends OreShinsei {
 
 
     @Override
-    public int quantityDropped(Random random) { return random.nextInt(4) + 2; }
+    public int quantityDropped(Random random) {
+    int intWeight = random.nextInt(100) + 1;
+    if (intWeight <= 10){
+        intQty = 5;
+    }else if(intWeight <= 25){
+        intQty = 4;
+    }else if(intWeight <= 50){
+        intQty = 3;
+    }else {
+        intQty = 2;
+    }
+    return intQty;
+    }
 }

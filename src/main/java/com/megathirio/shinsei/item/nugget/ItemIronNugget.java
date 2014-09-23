@@ -8,7 +8,7 @@ public class ItemIronNugget extends ItemShinsei {
 
     public ItemIronNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.IRON_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.IRON_NUGGET);
 
     }
 

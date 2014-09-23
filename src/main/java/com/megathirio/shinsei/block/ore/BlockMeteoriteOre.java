@@ -24,45 +24,46 @@ public class BlockMeteoriteOre extends OreShinsei {
         int intWeight = random.nextInt(100) + 1;
         if (intWeight <= 5){
             itemDrop = ShinseiItems.bariumNugget;
-            intQty = random.nextInt(4) + 1;
         }else if(intWeight <= 10) {
-            itemDrop = ShinseiItems.silverNugget;
-            intQty = random.nextInt(4) + 1;
+            itemDrop = ShinseiItems.chromiumNugget;
         }else if(intWeight <= 15) {
             itemDrop = ShinseiItems.cobaltNugget;
-            intQty = random.nextInt(4) + 1;
-        }else if(intWeight <= 15) {
-            itemDrop = ShinseiItems.chromiumNugget;
-            intQty = random.nextInt(4) + 1;
         }else if(intWeight <= 20) {
-            itemDrop = ShinseiItems.graphitePowder;
-            intQty = random.nextInt(4) + 1;
+            itemDrop = Items.gold_nugget;
         }else if(intWeight <= 25) {
-            itemDrop = ShinseiItems.nickelNugget;
-            intQty = random.nextInt(4) + 1;
+            itemDrop = ShinseiItems.graphitePowder;
         }else if(intWeight <= 30) {
-            itemDrop = ShinseiItems.platinumNugget;
-            intQty = random.nextInt(4) + 1;
-        }else if(intWeight <= 35) {
-            itemDrop = ShinseiItems.sulphur;
-            intQty = random.nextInt(4) + 1;
-        }else if(intWeight <= 40) {
-            itemDrop = ShinseiItems.uraniumPowder;
-            intQty = random.nextInt(4) + 1;
-        }else if(intWeight <= 45) {
-            itemDrop = ShinseiItems.iridiumNugget;
-            intQty = random.nextInt(4) + 1;
-        }else if(intWeight <= 50) {
             itemDrop = ShinseiItems.indiumNugget;
-            intQty = random.nextInt(4) + 1;
+        }else if(intWeight <= 35) {
+            itemDrop = ShinseiItems.iridiumNugget;
+        }else if(intWeight <= 40) {
+            itemDrop = ShinseiItems.platinumNugget;
+        }else if(intWeight <= 45) {
+            itemDrop = ShinseiItems.silverNugget;
+        }else if(intWeight <= 50) {
+            itemDrop = ShinseiItems.sulphur;
+        }else if(intWeight <= 55) {
+            itemDrop = ShinseiItems.uraniumPowder;
+        }else if(intWeight <= 75) {
+            itemDrop = ShinseiItems.nickelNugget;
         }else{
             itemDrop = ShinseiItems.ironNugget;
-            intQty = random.nextInt(4) + 1;
         }
         return itemDrop;
     }
 
     @Override
-    public int quantityDropped(Random random) { return intQty; }
-
+    public int quantityDropped(Random random) {
+        int intWeight = random.nextInt(100) + 1;
+        if (intWeight <= 20){
+            intQty = 4;
+        }else if(intWeight <= 40){
+            intQty = 3;
+        }else if(intWeight <= 60){
+            intQty = 2;
+        }else {
+            intQty = 1;
+        }
+        return intQty;
+    }
 }

@@ -8,7 +8,7 @@ public class ItemJadeGem extends ItemShinsei {
 
     public ItemJadeGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.JADE_GEM);
+        this.setUnlocalizedName(Names.Gems.JADE_GEM);
 
     }
 

@@ -8,7 +8,7 @@ public class ItemTopazGem extends ItemShinsei {
 
     public ItemTopazGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.TOPAZ_GEM);
+        this.setUnlocalizedName(Names.Gems.TOPAZ_GEM);
 
     }
 

@@ -8,7 +8,7 @@ public class ItemTungstenNugget extends ItemShinsei {
 
     public ItemTungstenNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.TUNGSTEN_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.TUNGSTEN_NUGGET);
 
     }
 

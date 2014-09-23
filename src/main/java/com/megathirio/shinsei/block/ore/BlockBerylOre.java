@@ -19,7 +19,7 @@ public class BlockBerylOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.BERYL_ORE);
         this.setHardness(7.5f);
-        this.setResistance(14f);
+        this.setResistance(12.1f);
         this.setHarvestLevel("pickaxe", 2);
     }
 

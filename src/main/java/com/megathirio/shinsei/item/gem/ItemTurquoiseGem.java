@@ -8,7 +8,7 @@ public class ItemTurquoiseGem extends ItemShinsei {
 
     public ItemTurquoiseGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.TURQUOISE_GEM);
+        this.setUnlocalizedName(Names.Gems.TURQUOISE_GEM);
 
     }
 

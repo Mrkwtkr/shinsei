@@ -8,9 +8,9 @@ public class BlockTurquoiseBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.TURQUOISE_BLOCK);
         this.setHardness(6.0f);
-        this.setResistance(10f);
+        this.setResistance(9.7f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setLightLevel(.5F);
+        this.setLightLevel(.5f);
     }
    
 }

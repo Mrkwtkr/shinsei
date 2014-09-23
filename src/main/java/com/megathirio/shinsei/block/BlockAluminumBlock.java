@@ -9,8 +9,7 @@ public class BlockAluminumBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.ALUMINUM_BLOCK);
         this.setHardness(2.0f);
-        this.setResistance(3f);
-        this.setHarvestLevel("pickaxe", 1);
+        this.setResistance(3.2f);
     }
    
 }

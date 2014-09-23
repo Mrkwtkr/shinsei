@@ -8,7 +8,7 @@ public class ItemApatiteCrystal extends ItemShinsei {
 
     public ItemApatiteCrystal(){
         super();
-        this.setUnlocalizedName(Names.Ingots.APATITE_CRYSTAL);
+        this.setUnlocalizedName(Names.Gems.APATITE_CRYSTAL);
 
     }
 

@@ -8,7 +8,7 @@ public class ItemRubyGem extends ItemShinsei {
 
     public ItemRubyGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.RUBY_GEM);
+        this.setUnlocalizedName(Names.Gems.RUBY_GEM);
 
     }
 

@@ -30,10 +30,10 @@ public class BlockGranite extends BlockShinsei {
 
         //Block Properties
         super(Material.rock);
+        this.setBlockName(Names.Minerals.GRANITE);
         this.setHardness(7.0f);
-        this.setResistance(15f);
+        this.setResistance(11.3f);
         this.setHarvestLevel("pickaxe", 2);
-        this.setBlockName(Names.Blocks.GRANITE);
     }
 
     //MetaBlock Texture Setup

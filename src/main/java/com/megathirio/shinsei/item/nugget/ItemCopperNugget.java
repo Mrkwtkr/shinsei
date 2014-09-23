@@ -8,7 +8,7 @@ public class ItemCopperNugget extends ItemShinsei {
 
     public ItemCopperNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.COPPER_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.COPPER_NUGGET);
 
     }
 

@@ -8,7 +8,7 @@ public class ItemNickelNugget extends ItemShinsei {
 
     public ItemNickelNugget(){
         super();
-        this.setUnlocalizedName(Names.Ingots.NICKEL_NUGGET);
+        this.setUnlocalizedName(Names.Nuggets.NICKEL_NUGGET);
 
     }
 

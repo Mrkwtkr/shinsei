@@ -8,7 +8,7 @@ public class BlockZincBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.ZINC_BLOCK);
         this.setHardness(3.5f);
-        this.setResistance(7f);
+        this.setResistance(4.9f);
     }
    
 }

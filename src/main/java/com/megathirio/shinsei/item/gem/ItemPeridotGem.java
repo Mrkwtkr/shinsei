@@ -8,7 +8,7 @@ public class ItemPeridotGem extends ItemShinsei {
 
     public ItemPeridotGem(){
         super();
-        this.setUnlocalizedName(Names.Ingots.PERIDOT_GEM);
+        this.setUnlocalizedName(Names.Gems.PERIDOT_GEM);
 
     }
 

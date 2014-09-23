@@ -8,7 +8,7 @@ public class BlockTitaniumBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.TITANIUM_BLOCK);
         this.setHardness(6.0f);
-        this.setResistance(10f);
+        this.setResistance(9.7f);
         this.setHarvestLevel("pickaxe", 2);
     }
    

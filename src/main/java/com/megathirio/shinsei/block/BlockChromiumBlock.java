@@ -8,7 +8,7 @@ public class BlockChromiumBlock extends BlockShinsei {
         super(Material.iron);
         this.setBlockName(Names.Blocks.CHROMIUM_BLOCK);
         this.setHardness(8.5f);
-        this.setResistance(21f);
+        this.setResistance(13.8f);
         this.setHarvestLevel("pickaxe", 3);
     }
    

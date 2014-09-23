@@ -9,7 +9,7 @@ public class BlockCobaltiteOre extends OreShinsei {
         super(Material.rock);
         this.setBlockName(Names.Ores.COBALTITE_ORE);
         this.setHardness(5.0f);
-        this.setResistance(10f);
+        this.setResistance(8.1f);
         this.setHarvestLevel("pickaxe", 2);
     }
 }
