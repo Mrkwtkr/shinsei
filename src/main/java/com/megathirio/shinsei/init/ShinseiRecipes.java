@@ -370,6 +370,7 @@ public class ShinseiRecipes {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.zincPowder, 2), "oreZinc", Items.redstone));
 
         //Colored Stones
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.copperPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 1), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 0)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 2), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 4)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 3), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 3)));
