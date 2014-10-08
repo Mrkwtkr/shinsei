@@ -5,8 +5,10 @@ import com.megathirio.shinsei.block.mineral.*;
 import com.megathirio.shinsei.block.mineral.BlockMarble;
 import com.megathirio.shinsei.block.ore.*;
 
+import com.megathirio.shinsei.item.ItemBrickBlock;
 import com.megathirio.shinsei.item.ItemGraniteBlock;
 import com.megathirio.shinsei.item.ItemMarbleBlock;
+import com.megathirio.shinsei.item.ItemSidingBlock;
 import com.megathirio.shinsei.reference.Names;
 import com.megathirio.shinsei.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -68,6 +70,8 @@ public final class ShinseiBlocks {
     public static BlockShinsei antimonyBlock = new BlockAntimonyBlock();
     public static BlockShinsei bariumBlock = new BlockBariumBlock();
     public static BlockShinsei bismuthBlock = new BlockBismuthBlock();
+    public static BlockShinsei brassBlock = new BlockBrassBlock();
+    public static BlockShinsei bronzeBlock = new BlockBronzeBlock();
     public static BlockShinsei chromiumBlock = new BlockChromiumBlock();
     public static BlockShinsei cobaltBlock = new BlockCobaltBlock();
     public static BlockShinsei copperBlock = new BlockCopperBlock();
@@ -113,6 +117,10 @@ public final class ShinseiBlocks {
     public static BlockShinsei graniteBlock = new BlockGranite();
     public static BlockShinsei gypsumBlock = new BlockGypsum();
     public static BlockShinsei haliteBlock = new BlockHalite();
+
+    public static BlockShinsei brickBlock = new BlockBrick();
+    public static BlockShinsei sidingBlock = new BlockSiding();
+    public static BlockShinsei stuccoBlock = new BlockStuccoBlock();
 
     public static BlockFluidClassic slakedLimeBlock;
 
@@ -167,6 +175,8 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(antimonyBlock, Names.Blocks.ANTIMONY_BLOCK);
         GameRegistry.registerBlock(bariumBlock, Names.Blocks.BARIUM_BLOCK);
         GameRegistry.registerBlock(bismuthBlock, Names.Blocks.BISMUTH_BLOCK);
+        GameRegistry.registerBlock(brassBlock, Names.Blocks.BRASS_BLOCK);
+        GameRegistry.registerBlock(bronzeBlock, Names.Blocks.BRONZE_BLOCK);
         GameRegistry.registerBlock(chromiumBlock, Names.Blocks.CHROMIUM_BLOCK);
         GameRegistry.registerBlock(cobaltBlock, Names.Blocks.COBALT_BLOCK);
         GameRegistry.registerBlock(copperBlock, Names.Blocks.COPPER_BLOCK);
@@ -213,5 +223,8 @@ public final class ShinseiBlocks {
         GameRegistry.registerBlock(gypsumBlock, Names.Minerals.GYPSUM);
         GameRegistry.registerBlock(haliteBlock, Names.Minerals.HALITE);
 
+        GameRegistry.registerBlock(brickBlock, ItemBrickBlock.class, Names.Blocks.BRICK);
+        GameRegistry.registerBlock(sidingBlock, ItemSidingBlock.class, Names.Blocks.SIDING);
+        GameRegistry.registerBlock(stuccoBlock, Names.Blocks.STUCCO_BLOCK);
 	}
 }

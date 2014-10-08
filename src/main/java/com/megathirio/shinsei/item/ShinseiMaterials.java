@@ -16,8 +16,12 @@ public class ShinseiMaterials {
 		enchantability: Wood:15; Stone:5; Iron:14; Diamond:10; Gold:22
 	*/
 
+    public static ToolMaterial materialBrass = EnumHelper.addToolMaterial(Names.Tools.BRASS_MATERIAL, 2, 225, 8.0F, 2.0F, 20);
+    public static ToolMaterial materialBronze = EnumHelper.addToolMaterial(Names.Tools.BRONZE_MATERIAL, 2, 200, 7.5F, 2.0F, 20);
 	public static ToolMaterial materialCopper = EnumHelper.addToolMaterial(Names.Tools.COPPER_MATERIAL, 2, 150, 7.0F, 1.5F, 20);
+    public static ToolMaterial materialSilver = EnumHelper.addToolMaterial(Names.Tools.SILVER_MATERIAL, 1, 100, 5.0F, 1.25F, 22);
     public static ToolMaterial materialStainlessSteel = EnumHelper.addToolMaterial(Names.Tools.STAINLESS_STEEL_MATERIAL, 3, 1000, 8.0F, 2.5F, 14);
     public static ToolMaterial materialSteel = EnumHelper.addToolMaterial(Names.Tools.STEEL_MATERIAL, 2, 400, 7.0F, 1.75F, 12);
+    public static ToolMaterial materialTitanium = EnumHelper.addToolMaterial(Names.Tools.TITANIUM_MATERIAL, 3, 1000, 8.0F, 2.5F, 16);
 
 }

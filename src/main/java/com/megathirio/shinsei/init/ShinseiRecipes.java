@@ -40,6 +40,8 @@ public class ShinseiRecipes {
             GameRegistry.addSmelting(ShinseiItems.antimonyPowder, new ItemStack(ShinseiItems.antimonyIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.bariumPowder, new ItemStack(ShinseiItems.bariumIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.bismuthPowder, new ItemStack(ShinseiItems.bismuthIngot, 1), 1f);
+            GameRegistry.addSmelting(ShinseiItems.brassPowder, new ItemStack(ShinseiItems.brassIngot, 1), 1f);
+            GameRegistry.addSmelting(ShinseiItems.bronzePowder, new ItemStack(ShinseiItems.bronzeIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.cadmiumPowder, new ItemStack(ShinseiItems.cadmiumIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.chromiumPowder, new ItemStack(ShinseiItems.chromiumIngot, 1), 1f);
             GameRegistry.addSmelting(ShinseiItems.cobaltPowder, new ItemStack(ShinseiItems.cobaltIngot, 1), 1f);
@@ -68,6 +70,7 @@ public class ShinseiRecipes {
             GameRegistry.addSmelting(ShinseiBlocks.realgarOre, new ItemStack(ShinseiItems.arsenicPowder, 4), 1f);
 
             //Misc
+            GameRegistry.addSmelting(ShinseiBlocks.basaltCobble, new ItemStack(ShinseiBlocks.basaltBlock, 1), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.limestoneBlock, new ItemStack(ShinseiItems.quicklime, 3), 1f);
             GameRegistry.addSmelting(ShinseiBlocks.chalkBlock, new ItemStack(ShinseiItems.quicklime, 3), 1f);
             GameRegistry.addSmelting(ShinseiItems.chalkPowder, new ItemStack(ShinseiItems.quicklime, 1), 1f);
@@ -82,6 +85,8 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.antimonyNugget, 9), "ingotAntimony"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bariumNugget, 9), "ingotBarium"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bismuthNugget, 9), "ingotBismuth"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.brassNugget, 9), "ingotBrass"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bronzeNugget, 9), "ingotBronze"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.chromiumNugget, 9), "ingotChrome"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.cobaltNugget, 9), "ingotCobalt"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.copperNugget, 9), "ingotCopper"));
@@ -107,6 +112,8 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.antimonyIngot, 9), "blockAntimony"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bariumIngot, 9), "blockBarite"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bismuthIngot, 9), "blockBismuth"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.brassIngot, 9), "blockBrass"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bronzeIngot, 9), "blockBronze"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.cadmiumIngot, 9), "blockCadmium"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.chromiumIngot, 9), "blockChrome"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.cobaltIngot, 9), "blockCobalt"));
@@ -164,6 +171,8 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.antimonyBlock, 1), "@@@","@@@","@@@", '@', "ingotAntimony"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.bariumBlock, 1), "@@@","@@@","@@@", '@', "ingotBarium"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.bismuthBlock, 1), "@@@","@@@","@@@", '@', "ingotBismuth"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.brassBlock, 1), "@@@","@@@","@@@", '@', "ingotBrass"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.bronzeBlock, 1), "@@@","@@@","@@@", '@', "ingotBronze"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.chromiumBlock, 1), "@@@","@@@","@@@", '@', "ingotChrome"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.cobaltBlock, 1), "@@@","@@@","@@@", '@', "ingotCobalt"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.copperBlock, 1), "@@@","@@@","@@@", '@', "ingotCopper"));
@@ -204,6 +213,8 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.antimonyIngot, 1), "@@@","@@@","@@@", '@', "nuggetAntimony"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.bariumIngot, 1), "@@@","@@@","@@@", '@', "nuggetBarium"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.bismuthIngot, 1), "@@@","@@@","@@@", '@', "nuggetBismuth"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.brassIngot, 1), "@@@","@@@","@@@", '@', "nuggetBrass"));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.bronzeIngot, 1), "@@@","@@@","@@@", '@', "nuggetBronze"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.chromiumIngot, 1), "@@@","@@@","@@@", '@', "nuggetChrome"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.cobaltIngot, 1), "@@@","@@@","@@@", '@', "nuggetCobalt"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.copperIngot, 1), "@@@","@@@","@@@", '@', "nuggetCopper"));
@@ -238,9 +249,13 @@ public class ShinseiRecipes {
     //Temporary Recipes
 
         //Fuels
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.brassAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.bronzeAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.copperAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.silverAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.stainlessSteelAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.steelAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(ShinseiTools.titaniumAxe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.wooden_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.stone_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.splitWood, 2), "@", "#", '@', new ItemStack(Items.iron_axe, 1, OreDictionary.WILDCARD_VALUE), '#', Blocks.log);
@@ -249,27 +264,39 @@ public class ShinseiRecipes {
         GameRegistry.addSmelting(Items.coal, new ItemStack(ShinseiItems.coke, 1), 1f);
 
         //Calcium
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.brassPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.bronzePickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.copperPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.silverPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.stainlessSteelPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.steelPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.titaniumPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.wooden_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.stone_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.iron_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.golden_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.diamond_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.dolomiteOre);
 
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.brassPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.bronzePickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.copperPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.silverPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.stainlessSteelPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.steelPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.titaniumPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.wooden_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.stone_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.iron_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.golden_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.diamond_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.gypsumBlock);
 
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.brassPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.bronzePickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.copperPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.silverPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.stainlessSteelPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.steelPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
+        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.titaniumPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.wooden_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.stone_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
         GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(Items.iron_pickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
@@ -313,6 +340,8 @@ public class ShinseiRecipes {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.antimonyPowder, 1), "ingotAntimony", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bariumPowder, 1), "ingotBarium", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bismuthPowder, 1), "ingotBismuth", Items.redstone));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.brassPowder, 1), "ingotBrass", Items.flint));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bronzePowder, 1), "ingotBronze", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.chromiumPowder, 1), "ingotChromium", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.cobaltPowder, 1), "ingotCobalt", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.copperPowder, 1), "ingotCopper", Items.flint));
@@ -332,6 +361,34 @@ public class ShinseiRecipes {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.tungstenPowder, 1), "ingotTungsten", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.vanadiumPowder, 1), "ingotVanadium", Items.flint));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.zincPowder, 1), "ingotZinc", Items.flint));
+
+        //Alloya (Temporary)
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.bronzeIngot, 3), "ingotCopper", "ingotCopper", "ingotTin", Items.redstone));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.brassIngot, 3), "ingotCopper", "ingotZinc", Items.redstone));
+
+        //Building Blocks (Temporary)
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 0), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 15)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 1), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 0)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 2), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 4)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 3), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 3)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 4), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 6)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 5), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 8)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 6), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 2)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 7), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 12)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 8), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 10)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 9), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 13)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 10), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 14)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 11), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 9)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 12), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 5)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 13), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 1)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 14), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 7)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.sidingBlock, 8, 15), "@@@","@#@","@@@", '@', new ItemStack(Blocks.planks) ,'#', new ItemStack(Items.dye, 1, 11)));
+
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.brickBlock, 1, 0), Blocks.brick_block, new ItemStack(Items.dye, 1, 7)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.brickBlock, 1, 1), Blocks.brick_block, new ItemStack(Items.dye, 1, 3)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.brickBlock, 1, 2), Blocks.brick_block, new ItemStack(Items.dye, 1, 0), new ItemStack(Items.dye, 1, 15)));
+
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.stuccoBlock, 1, 1), "dustLime", Blocks.sand, Items.water_bucket));
 
         //Steel (Temporary)
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiItems.pigIronIngot, 8), "@@@","@#@","@@@", '@', "oreIron", '#', "dustCoke"));
@@ -370,38 +427,37 @@ public class ShinseiRecipes {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiItems.zincPowder, 2), "oreZinc", Items.redstone));
 
         //Colored Stones
-        GameRegistry.addRecipe(new ItemStack(ShinseiItems.calciumPowder, 2), "@", "#", '@', new ItemStack(ShinseiTools.copperPickaxe, 1, OreDictionary.WILDCARD_VALUE), '#', ShinseiBlocks.limestoneBlock);
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 1), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 0)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 2), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 4)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 3), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 3)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 4), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 6)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 5), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 8)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 6), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 2)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 7), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 12)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 8), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 10)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 9), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 13)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 10), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 14)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 11), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 9)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 12), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 5)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 13), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 1)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 14), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 7)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 1, 15), new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,new ItemStack(Items.dye, 1, 11)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 1), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 0)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 2), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 4)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 3), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 3)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 4), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 6)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 5), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 8)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 6), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 2)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 7), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 12)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 8), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 10)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 9), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 13)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 10), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 14)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 11), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 9)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 12), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 5)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 13), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 1)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 14), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 7)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.marbleBlock, 8, 15), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.marbleBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 11)));
 
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 1), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 0)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 2), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 4)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 3), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 3)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 4), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 6)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 5), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 8)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 6), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 2)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 7), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 12)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 8), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 10)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 9), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 13)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 10), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 14)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 11), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 9)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 12), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 5)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 13), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 1)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 14), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 7)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 1, 15), new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,new ItemStack(Items.dye, 1, 11)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 1), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 0)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 2), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 4)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 3), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 3)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 4), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 6)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 5), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 8)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 6), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 2)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 7), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 12)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 8), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 10)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 9), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 13)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 10), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 14)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 11), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 9)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 12), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 5)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 13), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 1)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 14), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 7)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiBlocks.graniteBlock, 8, 15), "@@@","@#@","@@@", '@', new ItemStack(ShinseiBlocks.graniteBlock, 1, 0) ,'#', new ItemStack(Items.dye, 1, 11)));
 
         //Dual Yield
 //        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiRecipes.recipeRandomResult()), ShinseiBlocks.limestoneBlock, Items.flint));
@@ -419,6 +475,20 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.swordCast, 1), ShinseiTools.stoneSwordBlade, ShinseiItems.copperPlate));
 
         //Tool Parts
+            //Brass
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassAxeHead, 1), ShinseiTools.axeCast, "ingotBrass"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassHoeHead, 1), ShinseiTools.hoeCast, "ingotBrass"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassPickaxeHead, 1), ShinseiTools.pickaxeCast, "ingotBrass"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassShovelHead, 1), ShinseiTools.shovelCast, "ingotBrass"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassSwordBlade, 1), ShinseiTools.swordCast, "ingotBrass"));
+
+            //Bronze
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeAxeHead, 1), ShinseiTools.axeCast, "ingotBronze"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeHoeHead, 1), ShinseiTools.hoeCast, "ingotBronze"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzePickaxeHead, 1), ShinseiTools.pickaxeCast, "ingotBronze"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeShovelHead, 1), ShinseiTools.shovelCast, "ingotBronze"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeSwordBlade, 1), ShinseiTools.swordCast, "ingotBronze"));
+
             //Copper
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.copperAxeHead, 1), ShinseiTools.axeCast, "ingotCopper"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.copperHoeHead, 1), ShinseiTools.hoeCast, "ingotCopper"));
@@ -447,6 +517,13 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.ironShovelHead, 1), ShinseiTools.shovelCast, "ingotIron"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.ironSwordBlade, 1), ShinseiTools.swordCast, "ingotIron"));
 
+            //Silver
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverAxeHead, 1), ShinseiTools.axeCast, "ingotSilver"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverHoeHead, 1), ShinseiTools.hoeCast, "ingotSilver"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverPickaxeHead, 1), ShinseiTools.pickaxeCast, "ingotSilver"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverShovelHead, 1), ShinseiTools.shovelCast, "ingotSilver"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverSwordBlade, 1), ShinseiTools.swordCast, "ingotSilver"));
+
             //Stainless Steel
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.stainlessSteelAxeHead, 1), ShinseiTools.axeCast, "ingotStainlessSteel"));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.stainlessSteelHoeHead, 1), ShinseiTools.hoeCast, "ingotStainlessSteel"));
@@ -473,6 +550,13 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiTools.stoneSwordBlade, 1), " @ "," @ "," @ ", '@', "blockCobble"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiTools.stoneSwordBlade, 1), " @ "," @ "," @ ", '@', "blockStone"));
 
+            //Titanium
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumAxeHead, 1), ShinseiTools.axeCast, "ingotTitanium"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumHoeHead, 1), ShinseiTools.hoeCast, "ingotTitanium"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumPickaxeHead, 1), ShinseiTools.pickaxeCast, "ingotTitanium"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumShovelHead, 1), ShinseiTools.shovelCast, "ingotTitanium"));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumSwordBlade, 1), ShinseiTools.swordCast, "ingotTitanium"));
+
             //Wood
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiTools.woodAxeHead, 1), "@@ ","@  ","   ", '@', "plankWood"));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiTools.woodHoeHead, 1), " @ ","@  ","   ", '@', "plankWood"));
@@ -481,7 +565,21 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ShinseiTools.woodSwordBlade, 1), " @ "," @ "," @ ", '@', "plankWood"));
 
         //Tools
-           //Copper
+            //Brass
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassAxe, 1), ShinseiTools.brassAxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassHoe, 1), ShinseiTools.brassHoeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassPickaxe, 1), ShinseiTools.brassPickaxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassShovel, 1), ShinseiTools.brassShovelHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.brassSword, 1), ShinseiTools.brassSwordBlade, ShinseiTools.woodToolHandle));
+
+            //Bronze
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeAxe, 1), ShinseiTools.bronzeAxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeHoe, 1), ShinseiTools.bronzeHoeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzePickaxe, 1), ShinseiTools.bronzePickaxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeShovel, 1), ShinseiTools.bronzeShovelHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.bronzeSword, 1), ShinseiTools.bronzeSwordBlade, ShinseiTools.woodToolHandle));
+
+            //Copper
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.copperAxe, 1), ShinseiTools.copperAxeHead, ShinseiTools.woodToolHandle));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.copperHoe, 1), ShinseiTools.copperHoeHead, ShinseiTools.woodToolHandle));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.copperPickaxe, 1), ShinseiTools.copperPickaxeHead, ShinseiTools.woodToolHandle));
@@ -509,6 +607,13 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.iron_shovel, 1), ShinseiTools.ironShovelHead, ShinseiTools.woodToolHandle));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.iron_sword, 1), ShinseiTools.ironSwordBlade, ShinseiTools.woodToolHandle));
 
+            //Silver
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverAxe, 1), ShinseiTools.silverAxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverHoe, 1), ShinseiTools.silverHoeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverPickaxe, 1), ShinseiTools.silverPickaxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverShovel, 1), ShinseiTools.silverShovelHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.silverSword, 1), ShinseiTools.silverSwordBlade, ShinseiTools.woodToolHandle));
+
             //Stainless Steel
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.stainlessSteelAxe, 1), ShinseiTools.stainlessSteelAxeHead, ShinseiTools.woodToolHandle));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.stainlessSteelHoe, 1), ShinseiTools.stainlessSteelHoeHead, ShinseiTools.woodToolHandle));
@@ -529,6 +634,13 @@ public class ShinseiRecipes {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.stone_pickaxe, 1), ShinseiTools.stonePickaxeHead, ShinseiTools.woodToolHandle));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.stone_shovel, 1), ShinseiTools.stoneShovelHead, ShinseiTools.woodToolHandle));
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.stone_sword, 1), ShinseiTools.stoneSwordBlade, ShinseiTools.woodToolHandle));
+
+            //Steel
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumAxe, 1), ShinseiTools.titaniumAxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumHoe, 1), ShinseiTools.titaniumHoeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumPickaxe, 1), ShinseiTools.titaniumPickaxeHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumShovel, 1), ShinseiTools.titaniumShovelHead, ShinseiTools.woodToolHandle));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ShinseiTools.titaniumSword, 1), ShinseiTools.titaniumSwordBlade, ShinseiTools.woodToolHandle));
 
             //Wood
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.wooden_axe, 1), ShinseiTools.woodAxeHead, ShinseiTools.woodToolHandle));

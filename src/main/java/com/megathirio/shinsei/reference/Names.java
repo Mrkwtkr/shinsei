@@ -66,6 +66,8 @@ public final class Names {
         public static final String AQUAMARINE_BLOCK = "aquamarineBlock";
         public static final String BARIUM_BLOCK = "bariumBlock";
         public static final String BISMUTH_BLOCK = "bismuthBlock";
+        public static final String BRASS_BLOCK = "brassBlock";
+        public static final String BRONZE_BLOCK = "bronzeBlock";
         public static final String CHROMIUM_BLOCK = "chromiumBlock";
         public static final String COBALT_BLOCK = "cobaltBlock";
         public static final String COPPER_BLOCK = "copperBlock";
@@ -94,6 +96,11 @@ public final class Names {
         public static final String TURQUOISE_BLOCK = "turquoiseBlock";
         public static final String VANADIUM_BLOCK = "vanadiumBlock";
         public static final String ZINC_BLOCK = "zincBlock";
+
+        public static final String BRICK = "brick";
+        public static final String SIDING = "siding";
+        public static final String STUCCO_BLOCK = "stuccoBlock";
+
     }
 
     public static final class Minerals {
@@ -132,6 +139,8 @@ public final class Names {
         public static final String ANTIMONY_INGOT = "antimonyIngot";
         public static final String BARIUM_INGOT = "bariumIngot";
         public static final String BISMUTH_INGOT = "bismuthIngot";
+        public static final String BRASS_INGOT = "brassIngot";
+        public static final String BRONZE_INGOT = "bronzeIngot";
         public static final String CADMIUM_INGOT = "cadmiumIngot";
         public static final String CHROMIUM_INGOT = "chromiumIngot";
         public static final String COBALT_INGOT = "cobaltIngot";
@@ -162,6 +171,8 @@ public final class Names {
         public static final String ANTIMONY_NUGGET = "antimonyNugget";
         public static final String BARIUM_NUGGET = "bariumNugget";
         public static final String BISMUTH_NUGGET = "bismuthNugget";
+        public static final String BRASS_NUGGET = "brassNugget";
+        public static final String BRONZE_NUGGET = "bronzeNugget";
         public static final String CADMIUM_NUGGET = "cadmiumNugget";
         public static final String CHROMIUM_NUGGET = "chromiumNugget";
         public static final String COBALT_NUGGET = "cobaltNugget";
@@ -215,9 +226,11 @@ public final class Names {
         public static final String BARIUM_POWDER = "bariumPowder";
         public static final String BISMUTH_POWDER = "bismuthPowder";
         public static final String BORAX_POWDER = "boraxPowder";
+        public static final String BRASS_POWDER = "brassPowder";
+        public static final String BRONZE_POWDER = "bronzePowder";
         public static final String CADMIUM_POWDER = "cadmiumPowder";
         public static final String CALCIUM_POWDER = "calciumPowder";
-        public static final String CAUSTIC_POTASH = "causticPotash";
+        public static final String CAUSTIC_POTASH = "causticPotashPowder";
         public static final String CHALK_POWDER = "chalkPowder";
         public static final String CHROMIUM_POWDER = "chromiumPowder";
         public static final String CINNABAR_POWDER = "cinnabarPowder";
@@ -244,7 +257,6 @@ public final class Names {
         public static final String PLATINUM_POWDER = "platinumPowder";
         public static final String POTASH_POWDER = "potashPowder";
         public static final String QUICKLIME = "quicklime";
-        public static final String REDCAKE_POWDER = "redcakePowder";
         public static final String RUBY_POWDER = "rubyPowder";
         public static final String SAPPHIRE_POWDER = "sapphirePowder";
         public static final String SCARLET_EMERALD_POWDER = "scarletEmeraldPowder";
@@ -272,87 +284,131 @@ public final class Names {
     public static final class Tools{
     //Tools
         //Materials
+        public static final String BRASS_MATERIAL = "brassMaterial";
+        public static final String BRONZE_MATERIAL = "bronzeMaterial";
         public static final String COPPER_MATERIAL = "copperMaterial";
-        public static final String STEEL_MATERIAL = "steelMaterial";
+        public static final String SILVER_MATERIAL = "silverMaterial";
         public static final String STAINLESS_STEEL_MATERIAL = "stainlessSteelMaterial";
+        public static final String STEEL_MATERIAL = "steelMaterial";
+        public static final String TITANIUM_MATERIAL = "titaniumMaterial";
 
         //Axes
+        public static final String BRASS_AXE = "brassAxe";
+        public static final String BRONZE_AXE = "bronzeAxe";
         public static final String COPPER_AXE = "copperAxe";
-        public static final String STEEL_AXE = "steelAxe";
+        public static final String SILVER_AXE = "silverAxe";
         public static final String STAINLESS_STEEL_AXE = "stainlessSteelAxe";
+        public static final String STEEL_AXE = "steelAxe";
+        public static final String TITANIUM_AXE = "titaniumAxe";
 
         //Hoes
+        public static final String BRASS_HOE = "brassHoe";
+        public static final String BRONZE_HOE = "bronzeHoe";
         public static final String COPPER_HOE = "copperHoe";
-        public static final String STEEL_HOE = "steelHoe";
+        public static final String SILVER_HOE = "silverHoe";
         public static final String STAINLESS_STEEL_HOE = "stainlessSteelHoe";
+        public static final String STEEL_HOE = "steelHoe";
+        public static final String TITANIUM_HOE = "titaniumHoe";
 
         //Pickaxes
+        public static final String BRASS_PICKAXE = "brassPickaxe";
+        public static final String BRONZE_PICKAXE = "bronzePickaxe";
         public static final String COPPER_PICKAXE = "copperPickaxe";
-        public static final String STEEL_PICKAXE = "steelPickaxe";
+        public static final String SILVER_PICKAXE = "silverPickaxe";
         public static final String STAINLESS_STEEL_PICKAXE = "stainlessSteelPickaxe";
+        public static final String STEEL_PICKAXE = "steelPickaxe";
+        public static final String TITANIUM_PICKAXE = "titaniumPickaxe";
 
         //Shovels
+        public static final String BRASS_SHOVEL = "brassShovel";
+        public static final String BRONZE_SHOVEL = "bronzeShovel";
         public static final String COPPER_SHOVEL = "copperShovel";
-        public static final String STEEL_SHOVEL = "steelShovel";
+        public static final String SILVER_SHOVEL = "silverShovel";
         public static final String STAINLESS_STEEL_SHOVEL = "stainlessSteelShovel";
+        public static final String STEEL_SHOVEL = "steelShovel";
+        public static final String TITANIUM_SHOVEL = "titaniumShovel";
 
         //Swords
+        public static final String BRASS_SWORD = "brassSword";
+        public static final String BRONZE_SWORD = "bronzeSword";
         public static final String COPPER_SWORD = "copperSword";
-        public static final String STEEL_SWORD = "steelSword";
+        public static final String SILVER_SWORD = "silverSword";
         public static final String STAINLESS_STEEL_SWORD = "stainlessSteelSword";
+        public static final String STEEL_SWORD = "steelSword";
+        public static final String TITANIUM_SWORD = "titaniumSword";
 
     //Tool Parts
         //Misc
         public static final String WOOD_TOOL_HANDLE = "woodToolHandle";
 
         //Axes
+        public static final String BRASS_AXE_HEAD = "brassAxeHead";
+        public static final String BRONZE_AXE_HEAD = "bronzeAxeHead";
         public static final String COPPER_AXE_HEAD = "copperAxeHead";
         public static final String DIAMOND_AXE_HEAD = "diamondAxeHead";
         public static final String GOLD_AXE_HEAD = "goldAxeHead";
         public static final String IRON_AXE_HEAD = "ironAxeHead";
+        public static final String SILVER_AXE_HEAD = "silverAxeHead";
         public static final String STAINLESS_STEEL_AXE_HEAD = "stainlessSteelAxeHead";
         public static final String STEEL_AXE_HEAD = "steelAxeHead";
         public static final String STONE_AXE_HEAD = "stoneAxeHead";
+        public static final String TITANIUM_AXE_HEAD = "titaniumAxeHead";
         public static final String WOOD_AXE_HEAD = "woodAxeHead";
 
         //Hoes
+        public static final String BRASS_HOE_HEAD = "brassHoeHead";
+        public static final String BRONZE_HOE_HEAD = "bronzeHoeHead";
         public static final String COPPER_HOE_HEAD = "copperHoeHead";
         public static final String DIAMOND_HOE_HEAD = "diamondHoeHead";
         public static final String GOLD_HOE_HEAD = "goldHoeHead";
         public static final String IRON_HOE_HEAD = "ironHoeHead";
+        public static final String SILVER_HOE_HEAD = "silverHoeHead";
         public static final String STAINLESS_STEEL_HOE_HEAD = "stainlessSteelHoeHead";
         public static final String STEEL_HOE_HEAD = "steelHoeHead";
         public static final String STONE_HOE_HEAD = "stoneHoeHead";
+        public static final String TITANIUM_HOE_HEAD = "titaniumHoeHead";
         public static final String WOOD_HOE_HEAD = "woodHoeHead";
 
         //Pickaxes
+        public static final String BRASS_PICKAXE_HEAD = "brassPickaxeHead";
+        public static final String BRONZE_PICKAXE_HEAD = "bronzePickaxeHead";
         public static final String COPPER_PICKAXE_HEAD = "copperPickaxeHead";
         public static final String DIAMOND_PICKAXE_HEAD = "diamondPickaxeHead";
         public static final String GOLD_PICKAXE_HEAD = "goldPickaxeHead";
         public static final String IRON_PICKAXE_HEAD = "ironPickaxeHead";
+        public static final String SILVER_PICKAXE_HEAD = "silverPickaxeHead";
         public static final String STAINLESS_STEEL_PICKAXE_HEAD = "stainlessSteelPickaxeHead";
         public static final String STEEL_PICKAXE_HEAD = "steelPickaxeHead";
         public static final String STONE_PICKAXE_HEAD = "stonePickaxeHead";
+        public static final String TITANIUM_PICKAXE_HEAD = "titaniumPickaxeHead";
         public static final String WOOD_PICKAXE_HEAD = "woodPickaxeHead";
 
         //Shovels
+        public static final String BRASS_SHOVEL_HEAD = "brassShovelHead";
+        public static final String BRONZE_SHOVEL_HEAD = "bronzeShovelHead";
         public static final String COPPER_SHOVEL_HEAD = "copperShovelHead";
         public static final String DIAMOND_SHOVEL_HEAD = "diamondShovelHead";
         public static final String GOLD_SHOVEL_HEAD = "goldShovelHead";
         public static final String IRON_SHOVEL_HEAD = "ironShovelHead";
+        public static final String SILVER_SHOVEL_HEAD = "silverShovelHead";
         public static final String STAINLESS_STEEL_SHOVEL_HEAD = "stainlessSteelShovelHead";
         public static final String STEEL_SHOVEL_HEAD = "steelShovelHead";
         public static final String STONE_SHOVEL_HEAD = "stoneShovelHead";
+        public static final String TITANIUM_SHOVEL_HEAD = "titaniumShovelHead";
         public static final String WOOD_SHOVEL_HEAD = "woodShovelHead";
 
         //Swords
+        public static final String BRASS_SWORD_BLADE = "brassSwordBlade";
+        public static final String BRONZE_SWORD_BLADE = "bronzeSwordBlade";
         public static final String COPPER_SWORD_BLADE = "copperSwordBlade";
         public static final String DIAMOND_SWORD_BLADE = "diamondSwordBlade";
         public static final String GOLD_SWORD_BLADE = "goldSwordBlade";
         public static final String IRON_SWORD_BLADE = "ironSwordBlade";
+        public static final String SILVER_SWORD_BLADE = "silverSwordBlade";
         public static final String STAINLESS_STEEL_SWORD_BLADE = "stainlessSteelSwordBlade";
         public static final String STEEL_SWORD_BLADE = "steelSwordBlade";
         public static final String STONE_SWORD_BLADE = "stoneSwordBlade";
+        public static final String TITANIUM_SWORD_BLADE = "titaniumSwordBlade";
         public static final String WOOD_SWORD_BLADE = "woodSwordBlade";
 
         //Tool Casts
@@ -401,6 +457,8 @@ public final class Names {
         public static final String PURPLE = "Purple";
         public static final String RED = "Red";
         public static final String SILVER = "Silver";
+        public static final String TAN = "Tan";
+        public static final String VARIEGATED = "Variegated";
         public static final String YELLOW = "Yellow";
 
 }
